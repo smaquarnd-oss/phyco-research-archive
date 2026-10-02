@@ -1,0 +1,23 @@
+{
+  "name": "phyco-research-magazine",
+  "version": "1.0.0",
+  "description": "김/바다고리풀속 및 블루카본 연구 주간 아카이브 & 웹진",
+  "scripts": {
+    "build": "python scripts/build_site.py",
+    "fetch": "python scripts/fetch_and_archive.py",
+    "pipeline": "python scripts/run_all.py",
+    "serve": "npx serve public"
+  },
+  "keywords": [
+    "phycology",
+    "seaweed",
+    "pyropia",
+    "porphyra",
+    "asparagopsis",
+    "blue-carbon",
+    "methane-reduction",
+    "marine-science"
+  ],
+  "author": "Phyco Research Lab",
+  "license": "MIT"
+}

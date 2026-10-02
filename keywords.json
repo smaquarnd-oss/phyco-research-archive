@@ -1,0 +1,166 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "project": "Phyco & Blue Carbon Research Magazine",
+  "version": "1.0.0",
+  "description": "김/바다고리풀속 및 블루카본 연구 아카이브 키워드 설정 파일",
+  "target_taxa": {
+    "title": "주요 연구 대상 생물군 (Target Taxa)",
+    "description": "학명 개정과 신분류 체계를 반영한 홍조류 김 및 바다고리풀속",
+    "genera": [
+      {
+        "name": "Pyropia",
+        "common_name": "김속 (기존 광의의 김/참김류)",
+        "aliases": ["Pyropia yezoensis", "Pyropia tenera", "Pyropia haitanensis"],
+        "enabled": true
+      },
+      {
+        "name": "Porphyra",
+        "common_name": "전통 김속 (온대/한대성 원형 김속)",
+        "aliases": ["Porphyra umbilicalis", "Porphyra linearis", "Porphyra dioica"],
+        "enabled": true
+      },
+      {
+        "name": "Neopyropia",
+        "common_name": "신김속 (신분류 체계 반영 방사무늬김 등)",
+        "aliases": ["Neopyropia yezoensis", "Neopyropia tenera"],
+        "enabled": true
+      },
+      {
+        "name": "Neoporphyra",
+        "common_name": "신포르피라속 (모무늬돌김 등 아열대/난대성)",
+        "aliases": ["Neoporphyra haitanensis", "Neoporphyra dentata"],
+        "enabled": true
+      },
+      {
+        "name": "Phycocalidia",
+        "common_name": "피코칼리디아속 (열대/아열대성 엽상 홍조류)",
+        "aliases": ["Phycocalidia suborbiculata", "Phycocalidia vietnamensis"],
+        "enabled": true
+      },
+      {
+        "name": "Asparagopsis",
+        "common_name": "바다고리풀속 (저메탄 가축 사료 핵심 소재)",
+        "aliases": ["Asparagopsis taxiformis", "Asparagopsis armata", "Falkenbergia rufolanosa"],
+        "enabled": true
+      }
+    ]
+  },
+  "research_categories": {
+    "breeding_molecular_pathology": {
+      "id": "breeding_molecular_pathology",
+      "name_ko": "육종 · 분자생물학 · 병해",
+      "name_en": "Breeding, Molecular Genetics & Pathology",
+      "badge_color": "rose",
+      "icon": "dna",
+      "description": "품종 개량, 유전체 분석, 전사체, 후성유전학 및 붉은갯병/녹반병 등 병원균 감염 기전",
+      "keywords": [
+        "selective breeding",
+        "strain selection",
+        "hybridization",
+        "mutagenesis",
+        "protoplast fusion",
+        "genomics",
+        "transcriptome",
+        "epigenetics",
+        "QTL",
+        "CRISPR",
+        "molecular marker",
+        "SNP",
+        "genetic diversity",
+        "red rot disease",
+        "Pythium porphyrae",
+        "green spot disease",
+        "Olpidiopsis",
+        "Alternaria",
+        "pathogen resistance",
+        "disease defense",
+        "endophyte",
+        "seaweed disease",
+        "biosecurity"
+      ]
+    },
+    "thallus_lifecycle_cultivation": {
+      "id": "thallus_lifecycle_cultivation",
+      "name_ko": "엽체 · 생활사 · 양식·배양",
+      "name_en": "Thallus Biology, Life Cycle & Aquaculture",
+      "badge_color": "emerald",
+      "icon": "sprout",
+      "description": "사상체(Conchocelis) 및 엽상체 생리, 포자 방출, 채묘 및 스마트 육상/해상 양식 기술",
+      "keywords": [
+        "thallus",
+        "conchocelis",
+        "life history",
+        "life cycle",
+        "spore release",
+        "archeospore",
+        "conchospore",
+        "carpospore",
+        "seeding",
+        "nursery culture",
+        "tank culture",
+        "land-based aquaculture",
+        "mariculture",
+        "photoperiod",
+        "temperature adaptation",
+        "heat stress",
+        "nitrogen assimilation",
+        "phosphorus uptake",
+        "photosynthesis",
+        "gametophyte",
+        "sporophyte",
+        "bioreactor cultivation"
+      ]
+    },
+    "blue_carbon_feed_methane": {
+      "id": "blue_carbon_feed_methane",
+      "name_ko": "블루카본 · 저메탄 사료 · 기후대응",
+      "name_en": "Blue Carbon, Methane Abatement & Climate Solutions",
+      "badge_color": "cyan",
+      "icon": "leaf",
+      "description": "해조류 기반 해양 탄소격리, 온실가스 저감, 반추동물 장내 메탄 저감 사료 첨가제 연구",
+      "keywords": [
+        "blue carbon",
+        "carbon sequestration",
+        "carbon sink",
+        "marine carbon dioxide removal",
+        "mCDR",
+        "methane reduction",
+        "enteric methane",
+        "ruminant feed",
+        "livestock feed additive",
+        "bromoform",
+        "haloforms",
+        "climate change mitigation",
+        "macroalgal carbon flux",
+        "biomass valorization",
+        "sustainable aquaculture",
+        "carbon footprint",
+        "seaweed afforestation"
+      ]
+    }
+  },
+  "search_settings": {
+    "days_lookback": 7,
+    "max_results_per_query": 15,
+    "data_sources": [
+      {
+        "name": "PubMed",
+        "enabled": true,
+        "endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils"
+      },
+      {
+        "name": "Europe PMC",
+        "enabled": true,
+        "endpoint": "https://www.ebi.ac.uk/europepmc/webservices/rest/search"
+      },
+      {
+        "name": "OpenAlex",
+        "enabled": true,
+        "endpoint": "https://api.openalex.org/works"
+      }
+    ],
+    "language": "ko",
+    "generate_ai_summary": true,
+    "gemini_model": "gemini-2.5-flash"
+  }
+}
