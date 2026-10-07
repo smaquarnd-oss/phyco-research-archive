@@ -5,12 +5,12 @@
     "date": "2026-10-07",
     "total_papers": 24,
     "taxa_covered": [
-      "Asparagopsis",
-      "Porphyra",
       "Pyropia",
-      "Neopyropia",
+      "Asparagopsis",
       "Pyropia/Porphyra complex",
-      "Neoporphyra"
+      "Neoporphyra",
+      "Porphyra",
+      "Neopyropia"
     ],
     "categories": [
       "thallus_lifecycle_conchocelis",
@@ -249,8 +249,8 @@
         "journal": "Food chemistry: X (2026)",
         "url": "https://doi.org/10.1016/j.fochx.2026.104450",
         "taxa": [
-          "Pyropia",
-          "Neopyropia"
+          "Neopyropia",
+          "Pyropia"
         ],
         "category": "thallus_lifecycle_conchocelis",
         "category_name": "엽체 생리 · 생활사 · 사상체",
@@ -260,7 +260,7 @@
           "주요 발견: Ultra-performance liquid chromatography-quadrupole time-of-flight mass spectrometry-based metabolomics identified 69 metabolites, including mycosporine-like amino acids (MAAs) and their dehydrated derivatives.",
           "분석 성과: These findings provide insight into metabolite and antioxidant activity changes during roasting and offer fundamental data for optimizing roasting conditions.."
         ],
-        "implications": "본 연구는 Pyropia, Neopyropia의 엽체 생리 · 생활사 · 사상체 실증 연구에 기초 생물학적 메커니즘과 현장 적용 가이드라인을 제공합니다.",
+        "implications": "본 연구는 Neopyropia, Pyropia의 엽체 생리 · 생활사 · 사상체 실증 연구에 기초 생물학적 메커니즘과 현장 적용 가이드라인을 제공합니다.",
         "abstract": "This study investigated non-volatile metabolites in laver (Neopyropia yezoensis) roasted under different temperature/time conditions. Ultra-performance liquid chromatography-quadrupole time-of-flight mass spectrometry-based metabolomics identified 69 metabolites, including mycosporine-like amino acids (MAAs) and their dehydrated derivatives. Multivariate analysis showed that dehydrated MAAs were among the key roasting-responsive metabolites. As roasting intensity increased, MAAs decreased to 0.08-fold of the initial value, while dehydrated MAAs increased 1.22- to 13.61-fold. Antioxidant activity increased, with ABTS+ radical scavenging activity and FRAP exhibiting maximum increases of 4.55- and 4.18-fold, respectively. Pearson's correlation analysis revealed strong positive associations (r > 0.93) between dehydrated MAAs and antioxidant activity. This pattern is consistent with the extended conjugation and enhanced electron delocalization of dehydrated MAAs, which may facilitate radical stabilization. These findings provide insight into metabolite and antioxidant activity changes during roasting and offer fundamental data for optimizing roasting conditions."
       },
       {
@@ -270,8 +270,8 @@
         "journal": "Genes (2026)",
         "url": "https://doi.org/10.3390/genes17091089",
         "taxa": [
-          "Pyropia",
-          "Neopyropia"
+          "Neopyropia",
+          "Pyropia"
         ],
         "category": "thallus_lifecycle_conchocelis",
         "category_name": "엽체 생리 · 생활사 · 사상체",
@@ -281,7 +281,7 @@
           "주요 발견: Formins are key regulators of actin nucleation and cytoskeletal dynamics, but their functions and stress-responsive roles in red algae remain poorly understood.",
           "분석 성과: These findings provide a basis for further investigation of the molecular functions of Formins in red algae.."
         ],
-        "implications": "본 연구는 Pyropia, Neopyropia의 엽체 생리 · 생활사 · 사상체 실증 연구에 기초 생물학적 메커니즘과 현장 적용 가이드라인을 제공합니다.",
+        "implications": "본 연구는 Neopyropia, Pyropia의 엽체 생리 · 생활사 · 사상체 실증 연구에 기초 생물학적 메커니즘과 현장 적용 가이드라인을 제공합니다.",
         "abstract": "Background/Objectives:Neopyropia yezoensis is an economically important intertidal red alga that frequently experiences fluctuations in temperature, light intensity, and water availability. Formins are key regulators of actin nucleation and cytoskeletal dynamics, but their functions and stress-responsive roles in red algae remain poorly understood. This study aimed to systematically identify and characterize the Formin gene family in N. yezoensis and investigate their expression responses to different environmental stresses. Methods: Formin family members were identified from the N. yezoensis genome using HMMER and BLAST (2.17.0) searches based on the conserved FH2 domain, followed by domain validation. Gene structures, conserved motifs, physicochemical properties, predicted subcellular localization, protein structures, chromosomal distribution, phylogenetic relationships, and cis-acting elements in the upstream regions were analyzed. The expression patterns of the identified Formin genes were further examined by qRT-PCR under different temperature (4, 10, and 24 °C), light intensity (20, 60, and 100 μmol photons m-2 s-1), and desiccation/rehydration conditions. Results: Three Formin genes, designated NpyFormin01-03, were identified in N. yezoensis. All three encoded proteins contained the conserved FH2 domain but differed in motif composition, domain architecture, predicted subcellular localization, and structural features. NpyFormin01 contained additional PTEN_C2 and PTP_DSP_cys domains, whereas NpyFormin02 and NpyFormin03 contained only the FH2 domain. Phylogenetic analysis showed that the N. yezoensis Formins clustered with Formins from other red algae. Promoter analysis identified multiple predicted cis-acting elements associated with light, temperature, environmental, and phytohormone responses. Expression analysis revealed distinct responses among the three genes under the tested environmental conditions. Notably, NpyFormin01 was significantly upregulated under high-temperature treatment (24 °C), whereas NpyFormin02 and NpyFormin03 showed no statistically significant expression changes under the tested conditions. Conclusions: This study provides a systematic characterization of the Formin gene family in N. yezoensis. The differences in protein architecture, structural features, promoter cis-acting elements, and environmental-responsive expression patterns suggest potential functional divergence among NpyFormins. In particular, NpyFormin01 represents a potential heat-responsive candidate gene and may contribute to cytoskeletal regulation during environmental stress adaptation in N. yezoensis. These findings provide a basis for further investigation of the molecular functions of Formins in red algae."
       },
       {
@@ -291,8 +291,8 @@
         "journal": "Marine environmental research (2026)",
         "url": "https://doi.org/10.1016/j.marenvres.2026.108245",
         "taxa": [
-          "Pyropia",
-          "Neopyropia"
+          "Neopyropia",
+          "Pyropia"
         ],
         "category": "thallus_lifecycle_conchocelis",
         "category_name": "엽체 생리 · 생활사 · 사상체",
@@ -302,7 +302,7 @@
           "주요 발견: Here, two years of continuous field observations (2023-2024) were conducted in the Neopyropia yezoensis aquaculture area of the Subei Shoal, China, to examine the seasonal succession of epiphytic green algal communities and their natural detachment during spring.",
           "분석 성과: Incorporating epiphytic algal dynamics into monitoring, early warning, and management frameworks may improve prediction and mitigation of green tide development in aquaculture-dominated coastal systems.."
         ],
-        "implications": "본 연구는 Pyropia, Neopyropia의 엽체 생리 · 생활사 · 사상체 실증 연구에 기초 생물학적 메커니즘과 현장 적용 가이드라인을 제공합니다.",
+        "implications": "본 연구는 Neopyropia, Pyropia의 엽체 생리 · 생활사 · 사상체 실증 연구에 기초 생물학적 메커니즘과 현장 적용 가이드라인을 제공합니다.",
         "abstract": "Green tides have become a recurring ecological problem in the Yellow Sea, yet early-stage processes governing algal biomass supply remain poorly understood. Here, two years of continuous field observations (2023-2024) were conducted in the Neopyropia yezoensis aquaculture area of the Subei Shoal, China, to examine the seasonal succession of epiphytic green algal communities and their natural detachment during spring. Epiphytic communities exhibited a clear and repeatable successional pattern, shifting from dominance by cold-tolerant taxa in early spring to increased prevalence of Ulva prolifera by April, a transition closely associated with rising water temperatures. Natural detachment occurred continuously throughout the cultivation period, rather than being confined to the harvest stage. Detached biomass increased in concert with attached biomass, indicating a stable and persistent coupling between biomass accumulation and natural detachment in late spring. Spatial extrapolation suggested that natural detachment reached approximately 327.14 t and 656.96 t (wet weight) in April 2023 and 2024, respectively. Although these amounts are smaller than peak floating biomass during summer green tides, their seasonal timing coincides with the initial phase of bloom formation and may contribute to the background supply of floating algal material. Together, these findings provide field-based evidence that aquaculture-associated epiphytic algae represent a sustained early-season source of algal input to coastal waters. Incorporating epiphytic algal dynamics into monitoring, early warning, and management frameworks may improve prediction and mitigation of green tide development in aquaculture-dominated coastal systems."
       },
       {
@@ -312,9 +312,9 @@
         "journal": "Journal of phycology (2026)",
         "url": "https://doi.org/10.1111/jpy.70205",
         "taxa": [
+          "Neopyropia",
           "Pyropia",
           "Neoporphyra",
-          "Neopyropia",
           "Porphyra"
         ],
         "category": "thallus_lifecycle_conchocelis",
@@ -325,7 +325,7 @@
           "주요 발견: To address this, we utilized a genome skimming strategy on five No.",
           "분석 성과: This study provides comprehensive genomic resources-including complete plastomes, hypervariable regions, and polymorphic SSR markers-that will facilitate germplasm identification, phylogenetic studies, and molecular breeding in Porphyra sensu lato.."
         ],
-        "implications": "본 연구는 Pyropia, Neoporphyra, Neopyropia, Porphyra의 엽체 생리 · 생활사 · 사상체 실증 연구에 기초 생물학적 메커니즘과 현장 적용 가이드라인을 제공합니다.",
+        "implications": "본 연구는 Neopyropia, Pyropia, Neoporphyra, Porphyra의 엽체 생리 · 생활사 · 사상체 실증 연구에 기초 생물학적 메커니즘과 현장 적용 가이드라인을 제공합니다.",
         "abstract": "Neoporphyra haitanensis and Neopyropia yezoensis are two economically important seaweeds in Asia, yet their germplasm identification is often hindered by high phenotypic plasticity and limited molecular resources. To address this, we utilized a genome skimming strategy on five No. haitanensis and two Ny. yezoensis cultivars to retrieve their plastome information (including whole plastome sequences, plastome-divergent hotspots, and plastome-derived SSRs) and to identify genome-wide polymorphic nuclear SSRs. The plastomes of No. haitanensis (201,110-201,310 bp) were markedly larger than those of Ny. yezoensis (191,974 bp), a difference largely driven by expansions in intergenic regions. Gene annotation identified 253 genes in No. haitanensis and 256 in Ny. yezoensis, with the latter uniquely containing two additional hypothetical ORFs (ORF33 and ORF35) and an extra rRNA gene (rrfB). Further comparative analysis revealed seven hypervariable regions (π > 0.1), five of which-apcE-tatC, psbW-trnR, psbX-accD, trnW-rpl11, and ycf32-rpl32-are intergenic spacers with strong potential as species-discriminatory barcodes. We also characterized 26-30 chloroplast-derived SSRs and identified notable interspecific variations in their repeat-type profiles. Importantly, we developed 230 and 505 high-quality polymorphic nuclear SSRs for No. haitanensis and Ny. yezoensis, respectively, predominantly trinucleotide repeats, offering a robust toolset for fine-scale genetic analyses. Phylogenetic reconstruction using 201 shared plastid protein-coding genes clearly separated the two species into distinct clades, supporting their independent evolutionary trajectories, and further revealed intraspecific genetic differentiation, particularly with the cultivar ZD-1 forming a distinct branch within No. haitanensis. This study provides comprehensive genomic resources-including complete plastomes, hypervariable regions, and polymorphic SSR markers-that will facilitate germplasm identification, phylogenetic studies, and molecular breeding in Porphyra sensu lato."
       },
       {
@@ -335,9 +335,9 @@
         "journal": "International journal of genomics (2025)",
         "url": "https://doi.org/10.1155/ijog/9130170",
         "taxa": [
+          "Neopyropia",
           "Pyropia",
           "Neoporphyra",
-          "Neopyropia",
           "Porphyra"
         ],
         "category": "thallus_lifecycle_conchocelis",
@@ -348,7 +348,7 @@
           "주요 발견: A recently identified strain of Neopyropia yezoensis from Daebudo has demonstrated the ability to grow even under elevated temperatures.",
           "분석 성과: This information can be applied to the development of new cultivars with enhanced growth and heat tolerance, supporting sustainable aquaculture in the face of climate change.."
         ],
-        "implications": "본 연구는 Pyropia, Neoporphyra, Neopyropia, Porphyra의 엽체 생리 · 생활사 · 사상체 실증 연구에 기초 생물학적 메커니즘과 현장 적용 가이드라인을 제공합니다.",
+        "implications": "본 연구는 Neopyropia, Pyropia, Neoporphyra, Porphyra의 엽체 생리 · 생활사 · 사상체 실증 연구에 기초 생물학적 메커니즘과 현장 적용 가이드라인을 제공합니다.",
         "abstract": "[BACKGROUND] The escalating threats of global warming and the increasing demand for sustainable resources have driven research towards identifying resilient organisms capable of thriving under changing environmental conditions. A recently identified strain of Neopyropia yezoensis from Daebudo has demonstrated the ability to grow even under elevated temperatures. Understanding the genetic and molecular mechanisms underlying this resilience is crucial for the development of heat-tolerant cultivars.\n\n[METHODS] This study investigates the characteristics of the newly isolated strain N. yezoensis (Daebudo) through comprehensive transcriptome analysis on samples cultivated at various temperatures. Transcript reads were aligned to the genome sequences of N. yezoensis (susabi-nori) and Neoporphyra haitanensis. Aligned and unaligned reads were assembled separately, generating 45,089 transcripts and 105,750 transcripts, respectively. The transcripts were annotated using homologous sequences from the Swiss-Prot, NCBI NR, Pfam, SignalP, and KEGG databases. Differentially expressed gene (DEG) analysis was performed, and gene function classification (Gene Ontology) was conducted using BLASTX and BLASTP results from the Swiss-Prot database.\n\n[RESULTS] Some transcripts that were upregulated under higher temperatures were found to be involved in key metabolic pathways such as glycolysis or photosynthesis. Also, several DEGs, including heat shock proteins and elongation factor 1 alpha, were identified as potential contributors to high-temperature tolerance. These DEGs are likely involved in cellular stress response and protein synthesis, facilitating growth under elevated temperatures.\n\n[CONCLUSION] The findings provide new molecular-level insights into the growth mechanisms of N. yezoensis under heat stress. This information can be applied to the development of new cultivars with enhanced growth and heat tolerance, supporting sustainable aquaculture in the face of climate change."
       },
       {
@@ -520,8 +520,8 @@
         "journal": "Annals of medicine (2026)",
         "url": "https://doi.org/10.1080/07853890.2026.2637282",
         "taxa": [
-          "Pyropia",
-          "Neopyropia"
+          "Neopyropia",
+          "Pyropia"
         ],
         "category": "blue_carbon_feed_methane",
         "category_name": "블루카본 및 산업적 응용",
@@ -531,7 +531,7 @@
           "주요 발견: This review aimed to evaluate the current evidence on algal peptides, focusing on their nutritional content, mechanistic actions, health effects, potential for sustainability, and translational challenges.",
           "분석 성과: Standardized production methods, improved delivery strategies, comprehensive safety assessments, and well-designed clinical studies are essential to support their application in functional foods and nutraceuticals.."
         ],
-        "implications": "본 연구는 Pyropia, Neopyropia의 블루카본 및 산업적 응용 실증 연구에 기초 생물학적 메커니즘과 현장 적용 가이드라인을 제공합니다.",
+        "implications": "본 연구는 Neopyropia, Pyropia의 블루카본 및 산업적 응용 실증 연구에 기초 생물학적 메커니즘과 현장 적용 가이드라인을 제공합니다.",
         "abstract": "[INTRODUCTION] Algae-derived bioactive peptides are gaining recognition as functional ingredients offering health benefits and sustainability advantages over conventional proteins. This review aimed to evaluate the current evidence on algal peptides, focusing on their nutritional content, mechanistic actions, health effects, potential for sustainability, and translational challenges.\n\n[MATERIALS AND METHODS] A comprehensive literature search was conducted across PubMed, Scopus, ScienceDirect, Springer, Elsevier, and Google Scholar. Peer-reviewed studies reporting bioactive peptides derived from microalgae, macroalgae, or Cyanophyceae were included. In vitro, animal, and human intervention studies evaluating molecular mechanisms, metabolic outcomes, or clinical relevance were considered.\n\n[RESULTS] Available evidence shows that algal peptides exert multifunctional bioactivities, including inhibition of angiotensin-converting enzyme and renin, antioxidant and anti-inflammatory effects, modulation of glucose metabolism via α-amylase, α-glucosidase, and DPP-IV inhibition, and regulation of lipid metabolism and adipogenesis. Frequently studied sources included Limnospira, Chlorella, Auxenochlorella, Nannochloropsis, Undaria, Palmaria, Ulva, and Neopyropia. Limited human trials suggest modest but clinically relevant improvements in blood pressure, glycemic control, lipid profiles, and body-weight-related outcomes, primarily using whole algal biomass or extracts. Life-cycle assessments highlight favorable land-use efficiency and carbon sequestration potential, although economic feasibility is constrained by energy-intensive downstream processing.\n\n[CONCLUSION] Algal-derived peptides demonstrate promising health-promoting effects and align with sustainable nutrition goals. However, their clinical translation is limited by variability in peptide characterization, uncertain bioavailability, and lack of robust human trials. Standardized production methods, improved delivery strategies, comprehensive safety assessments, and well-designed clinical studies are essential to support their application in functional foods and nutraceuticals."
       }
     ]
