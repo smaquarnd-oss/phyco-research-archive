@@ -2,12 +2,12 @@
   "date": "2026-10-07",
   "total_papers": 24,
   "taxa": [
-    "Porphyra",
+    "Neoporphyra",
+    "Neopyropia",
+    "Asparagopsis",
     "Pyropia/Porphyra complex",
     "Pyropia",
-    "Neopyropia",
-    "Neoporphyra",
-    "Asparagopsis"
+    "Porphyra"
   ],
   "editor_insights": {
     "breeding_molecular_pathology": {
@@ -376,7 +376,7 @@
         "주요 발견: To address this, we utilized a genome skimming strategy on five No.",
         "분석 성과: This study provides comprehensive genomic resources-including complete plastomes, hypervariable regions, and polymorphic SSR markers-that will facilitate germplasm identification, phylogenetic studies, and molecular breeding in Porphyra sensu lato.."
       ],
-      "implications": "본 연구는 Neoporphyra, Pyropia, Neopyropia, Porphyra의 엽체 생리 · 생활사 · 사상체 실증 연구에 기초 생물학적 메커니즘과 현장 적용 가이드라인을 제공합니다.",
+      "implications": "본 연구는 Pyropia, Neopyropia, Neoporphyra, Porphyra의 엽체 생리 · 생활사 · 사상체 실증 연구에 기초 생물학적 메커니즘과 현장 적용 가이드라인을 제공합니다.",
       "thumbnail_url": "https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=800&q=80",
       "abstract": "Neoporphyra haitanensis and Neopyropia yezoensis are two economically important seaweeds in Asia, yet their germplasm identification is often hindered by high phenotypic plasticity and limited molecular resources. To address this, we utilized a genome skimming strategy on five No. haitanensis and two Ny. yezoensis cultivars to retrieve their plastome information (including whole plastome sequences, plastome-divergent hotspots, and plastome-derived SSRs) and to identify genome-wide polymorphic nuclear SSRs. The plastomes of No. haitanensis (201,110-201,310 bp) were markedly larger than those of Ny. yezoensis (191,974 bp), a difference largely driven by expansions in intergenic regions. Gene annotation identified 253 genes in No. haitanensis and 256 in Ny. yezoensis, with the latter uniquely containing two additional hypothetical ORFs (ORF33 and ORF35) and an extra rRNA gene (rrfB). Further comparative analysis revealed seven hypervariable regions (π > 0.1), five of which-apcE-tatC, psbW-trnR, psbX-accD, trnW-rpl11, and ycf32-rpl32-are intergenic spacers with strong potential as species-discriminatory barcodes. We also characterized 26-30 chloroplast-derived SSRs and identified notable interspecific variations in their repeat-type profiles. Importantly, we developed 230 and 505 high-quality polymorphic nuclear SSRs for No. haitanensis and Ny. yezoensis, respectively, predominantly trinucleotide repeats, offering a robust toolset for fine-scale genetic analyses. Phylogenetic reconstruction using 201 shared plastid protein-coding genes clearly separated the two species into distinct clades, supporting their independent evolutionary trajectories, and further revealed intraspecific genetic differentiation, particularly with the cultivar ZD-1 forming a distinct branch within No. haitanensis. This study provides comprehensive genomic resources-including complete plastomes, hypervariable regions, and polymorphic SSR markers-that will facilitate germplasm identification, phylogenetic studies, and molecular breeding in Porphyra sensu lato.",
       "authors": "Zhang C, Gao Z, Wang H, Zhou W et al.",
@@ -385,9 +385,9 @@
       "doi": "10.1111/jpy.70205",
       "url": "https://doi.org/10.1111/jpy.70205",
       "taxa": [
-        "Neoporphyra",
         "Pyropia",
         "Neopyropia",
+        "Neoporphyra",
         "Porphyra"
       ],
       "category": "thallus_lifecycle_conchocelis",
@@ -428,7 +428,7 @@
         "주요 발견: A recently identified strain of Neopyropia yezoensis from Daebudo has demonstrated the ability to grow even under elevated temperatures.",
         "분석 성과: This information can be applied to the development of new cultivars with enhanced growth and heat tolerance, supporting sustainable aquaculture in the face of climate change.."
       ],
-      "implications": "본 연구는 Neoporphyra, Pyropia, Neopyropia, Porphyra의 엽체 생리 · 생활사 · 사상체 실증 연구에 기초 생물학적 메커니즘과 현장 적용 가이드라인을 제공합니다.",
+      "implications": "본 연구는 Pyropia, Neopyropia, Neoporphyra, Porphyra의 엽체 생리 · 생활사 · 사상체 실증 연구에 기초 생물학적 메커니즘과 현장 적용 가이드라인을 제공합니다.",
       "thumbnail_url": "https://images.unsplash.com/photo-1614728894747-a83421789f10?auto=format&fit=crop&w=800&q=80",
       "abstract": "[BACKGROUND] The escalating threats of global warming and the increasing demand for sustainable resources have driven research towards identifying resilient organisms capable of thriving under changing environmental conditions. A recently identified strain of Neopyropia yezoensis from Daebudo has demonstrated the ability to grow even under elevated temperatures. Understanding the genetic and molecular mechanisms underlying this resilience is crucial for the development of heat-tolerant cultivars.\n\n[METHODS] This study investigates the characteristics of the newly isolated strain N. yezoensis (Daebudo) through comprehensive transcriptome analysis on samples cultivated at various temperatures. Transcript reads were aligned to the genome sequences of N. yezoensis (susabi-nori) and Neoporphyra haitanensis. Aligned and unaligned reads were assembled separately, generating 45,089 transcripts and 105,750 transcripts, respectively. The transcripts were annotated using homologous sequences from the Swiss-Prot, NCBI NR, Pfam, SignalP, and KEGG databases. Differentially expressed gene (DEG) analysis was performed, and gene function classification (Gene Ontology) was conducted using BLASTX and BLASTP results from the Swiss-Prot database.\n\n[RESULTS] Some transcripts that were upregulated under higher temperatures were found to be involved in key metabolic pathways such as glycolysis or photosynthesis. Also, several DEGs, including heat shock proteins and elongation factor 1 alpha, were identified as potential contributors to high-temperature tolerance. These DEGs are likely involved in cellular stress response and protein synthesis, facilitating growth under elevated temperatures.\n\n[CONCLUSION] The findings provide new molecular-level insights into the growth mechanisms of N. yezoensis under heat stress. This information can be applied to the development of new cultivars with enhanced growth and heat tolerance, supporting sustainable aquaculture in the face of climate change.",
       "authors": "Choi J, Kim J",
@@ -437,9 +437,9 @@
       "doi": "10.1155/ijog/9130170",
       "url": "https://doi.org/10.1155/ijog/9130170",
       "taxa": [
-        "Neoporphyra",
         "Pyropia",
         "Neopyropia",
+        "Neoporphyra",
         "Porphyra"
       ],
       "category": "thallus_lifecycle_conchocelis",

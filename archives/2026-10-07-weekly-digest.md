@@ -2,7 +2,7 @@
 title: "김·바다고리풀 & 블루카본 연구 주간 다이제스트 (2026-10-07)"
 date: "2026-10-07"
 total_papers: 24
-taxa_covered: ["Porphyra", "Pyropia/Porphyra complex", "Pyropia", "Neopyropia", "Neoporphyra", "Asparagopsis"]
+taxa_covered: ["Neoporphyra", "Neopyropia", "Asparagopsis", "Pyropia/Porphyra complex", "Pyropia", "Porphyra"]
 categories: ["thallus_lifecycle_conchocelis", "smart_aquaculture_mass_culture", "blue_carbon_feed_methane", "breeding_molecular_pathology"]
 tags: ["Phyco", "BlueCarbon", "Seaweed", "Pyropia", "Asparagopsis"]
 version: "2.0"
@@ -11,7 +11,7 @@ version: "2.0"
 # 🌊 김/바다고리풀속 및 블루카본 연구 주간 매거진 (2026-10-07)
 
 > **발행일**: 2026-10-07 | **분석 논문 수**: 24편  
-> **포함 생물군**: Porphyra, Pyropia/Porphyra complex, Pyropia, Neopyropia, Neoporphyra, Asparagopsis
+> **포함 생물군**: Neoporphyra, Neopyropia, Asparagopsis, Pyropia/Porphyra complex, Pyropia, Porphyra
 
 ---
 
@@ -286,7 +286,7 @@ Green tides have become a recurring ecological problem in the Yellow Sea, yet ea
 - **원문 제목**: Comparative plastome analyses and genomic resource development for five Neoporphyra haitanensis and two Neopyropia yezoensis cultivars based on genome skimming data
 - **저자**: Zhang C, Gao Z, Wang H, Zhou W et al.
 - **저널**: *Journal of phycology* (2026) | **원문 링크**: [10.1111/jpy.70205](https://doi.org/10.1111/jpy.70205)
-- **대상 생물군**: `Neoporphyra, Pyropia, Neopyropia, Porphyra`
+- **대상 생물군**: `Pyropia, Neopyropia, Neoporphyra, Porphyra`
 - **대표 이미지**: ![](https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=800&q=80)
 
 #### 📌 3가지 핵심 요약 (Key Takeaways)
@@ -295,7 +295,7 @@ Green tides have become a recurring ecological problem in the Yellow Sea, yet ea
 3. 분석 성과: This study provides comprehensive genomic resources-including complete plastomes, hypervariable regions, and polymorphic SSR markers-that will facilitate germplasm identification, phylogenetic studies, and molecular breeding in Porphyra sensu lato..
 
 #### 💡 연구자 시사점 (Researcher's Takeaway)
-본 연구는 Neoporphyra, Pyropia, Neopyropia, Porphyra의 엽체 생리 · 생활사 · 사상체 실증 연구에 기초 생물학적 메커니즘과 현장 적용 가이드라인을 제공합니다.
+본 연구는 Pyropia, Neopyropia, Neoporphyra, Porphyra의 엽체 생리 · 생활사 · 사상체 실증 연구에 기초 생물학적 메커니즘과 현장 적용 가이드라인을 제공합니다.
 
 #### 📄 논문 원문 초록 (Abstract)
 Neoporphyra haitanensis and Neopyropia yezoensis are two economically important seaweeds in Asia, yet their germplasm identification is often hindered by high phenotypic plasticity and limited molecular resources. To address this, we utilized a genome skimming strategy on five No. haitanensis and two Ny. yezoensis cultivars to retrieve their plastome information (including whole plastome sequences, plastome-divergent hotspots, and plastome-derived SSRs) and to identify genome-wide polymorphic nuclear SSRs. The plastomes of No. haitanensis (201,110-201,310 bp) were markedly larger than those of Ny. yezoensis (191,974 bp), a difference largely driven by expansions in intergenic regions. Gene annotation identified 253 genes in No. haitanensis and 256 in Ny. yezoensis, with the latter uniquely containing two additional hypothetical ORFs (ORF33 and ORF35) and an extra rRNA gene (rrfB). Further comparative analysis revealed seven hypervariable regions (π > 0.1), five of which-apcE-tatC, psbW-trnR, psbX-accD, trnW-rpl11, and ycf32-rpl32-are intergenic spacers with strong potential as species-discriminatory barcodes. We also characterized 26-30 chloroplast-derived SSRs and identified notable interspecific variations in their repeat-type profiles. Importantly, we developed 230 and 505 high-quality polymorphic nuclear SSRs for No. haitanensis and Ny. yezoensis, respectively, predominantly trinucleotide repeats, offering a robust toolset for fine-scale genetic analyses. Phylogenetic reconstruction using 201 shared plastid protein-coding genes clearly separated the two species into distinct clades, supporting their independent evolutionary trajectories, and further revealed intraspecific genetic differentiation, particularly with the cultivar ZD-1 forming a distinct branch within No. haitanensis. This study provides comprehensive genomic resources-including complete plastomes, hypervariable regions, and polymorphic SSR markers-that will facilitate germplasm identification, phylogenetic studies, and molecular breeding in Porphyra sensu lato.
@@ -306,7 +306,7 @@ Neoporphyra haitanensis and Neopyropia yezoensis are two economically important 
 - **원문 제목**: Genome-Guided and De Novo Transcriptome Analysis of a Newly Isolated
 - **저자**: Choi J, Kim J
 - **저널**: *International journal of genomics* (2025) | **원문 링크**: [10.1155/ijog/9130170](https://doi.org/10.1155/ijog/9130170)
-- **대상 생물군**: `Neoporphyra, Pyropia, Neopyropia, Porphyra`
+- **대상 생물군**: `Pyropia, Neopyropia, Neoporphyra, Porphyra`
 - **대표 이미지**: ![](https://images.unsplash.com/photo-1614728894747-a83421789f10?auto=format&fit=crop&w=800&q=80)
 
 #### 📌 3가지 핵심 요약 (Key Takeaways)
@@ -315,7 +315,7 @@ Neoporphyra haitanensis and Neopyropia yezoensis are two economically important 
 3. 분석 성과: This information can be applied to the development of new cultivars with enhanced growth and heat tolerance, supporting sustainable aquaculture in the face of climate change..
 
 #### 💡 연구자 시사점 (Researcher's Takeaway)
-본 연구는 Neoporphyra, Pyropia, Neopyropia, Porphyra의 엽체 생리 · 생활사 · 사상체 실증 연구에 기초 생물학적 메커니즘과 현장 적용 가이드라인을 제공합니다.
+본 연구는 Pyropia, Neopyropia, Neoporphyra, Porphyra의 엽체 생리 · 생활사 · 사상체 실증 연구에 기초 생물학적 메커니즘과 현장 적용 가이드라인을 제공합니다.
 
 #### 📄 논문 원문 초록 (Abstract)
 [BACKGROUND] The escalating threats of global warming and the increasing demand for sustainable resources have driven research towards identifying resilient organisms capable of thriving under changing environmental conditions. A recently identified strain of Neopyropia yezoensis from Daebudo has demonstrated the ability to grow even under elevated temperatures. Understanding the genetic and molecular mechanisms underlying this resilience is crucial for the development of heat-tolerant cultivars.
@@ -550,9 +550,9 @@ Asia is the largest producer of cattle, buffalo, sheep, and goats in the world, 
 | Roasting-induced changes in the metabolite profile of laver ... | *Pyropia, Neopyropia* | 엽체 생리 · 생활사 · 사상체 | [원문보기](https://doi.org/10.1016/j.fochx.2026.104450) |
 | Identification and Expression Analysis of the Formin Gene Fa... | *Pyropia, Neopyropia* | 엽체 생리 · 생활사 · 사상체 | [원문보기](https://doi.org/10.3390/genes17091089) |
 | Seasonal dynamics and natural detachment of epiphytic green.... | *Pyropia, Neopyropia* | 엽체 생리 · 생활사 · 사상체 | [원문보기](https://doi.org/10.1016/j.marenvres.2026.108245) |
-| Comparative plastome analyses and genomic resource developme... | *Neoporphyra, Pyropia, Neopyropia, Porphyra* | 엽체 생리 · 생활사 · 사상체 | [원문보기](https://doi.org/10.1111/jpy.70205) |
+| Comparative plastome analyses and genomic resource developme... | *Pyropia, Neopyropia, Neoporphyra, Porphyra* | 엽체 생리 · 생활사 · 사상체 | [원문보기](https://doi.org/10.1111/jpy.70205) |
 | Sex-related osmotic adjustment strategies underpin desiccati... | *Neoporphyra, Porphyra* | 육종 · 분자생물학 · 병해 | [원문보기](https://doi.org/10.1016/j.plaphy.2026.111781) |
-| Genome-Guided and De Novo Transcriptome Analysis of a Newly.... | *Neoporphyra, Pyropia, Neopyropia, Porphyra* | 엽체 생리 · 생활사 · 사상체 | [원문보기](https://doi.org/10.1155/ijog/9130170) |
+| Genome-Guided and De Novo Transcriptome Analysis of a Newly.... | *Pyropia, Neopyropia, Neoporphyra, Porphyra* | 엽체 생리 · 생활사 · 사상체 | [원문보기](https://doi.org/10.1155/ijog/9130170) |
 | Sex-related differences in photosynthesis, energy metabolism... | *Neoporphyra, Porphyra* | 엽체 생리 · 생활사 · 사상체 | [원문보기](https://doi.org/10.1016/j.ecoenv.2025.119117) |
 | Systems metabolic engineering of | *Neoporphyra, Porphyra* | 엽체 생리 · 생활사 · 사상체 | [원문보기](https://doi.org/10.3389/fpls.2025.1640158) |
 | From sea to farm: Repurposing invasive macroalgae into bioci... | *Asparagopsis* | 엽체 생리 · 생활사 · 사상체 | [원문보기](https://doi.org/10.1016/j.plantsci.2026.113445) |
