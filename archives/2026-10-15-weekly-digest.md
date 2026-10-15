@@ -4,7 +4,7 @@ date: "2026-10-15"
 version: "3.0"
 total_papers: 29
 sources: ["PubMed", "Crossref/KCI"]
-taxa_covered: ["Asparagopsis", "Neoporphyra", "Pyropia/Porphyra complex", "Porphyra", "Neopyropia", "Pyropia"]
+taxa_covered: ["Pyropia", "Asparagopsis", "Pyropia/Porphyra complex", "Porphyra", "Neoporphyra", "Neopyropia"]
 categories: ["breeding_molecular_pathology", "thallus_lifecycle_conchocelis", "smart_aquaculture_mass_culture", "blue_carbon_feed_methane"]
 tags: ["Phyco", "BlueCarbon", "Seaweed", "Crossref", "KCI", "PubMed"]
 ---
@@ -12,7 +12,7 @@ tags: ["Phyco", "BlueCarbon", "Seaweed", "Crossref", "KCI", "PubMed"]
 # 🌊 김/바다고리풀속 및 블루카본 연구 주간 매거진 (2026-10-15)
 
 > **발행일**: 2026-10-15 | **총 수록 논문**: 29편 (초록 검증 완료) | **수집 소스**: PubMed, Crossref/KCI  
-> **대상 생물군**: Asparagopsis, Neoporphyra, Pyropia/Porphyra complex, Porphyra, Neopyropia, Pyropia
+> **대상 생물군**: Pyropia, Asparagopsis, Pyropia/Porphyra complex, Porphyra, Neoporphyra, Neopyropia
 
 ---
 
@@ -64,7 +64,7 @@ Expression of the alkaline phosphatase gene in Pyropia yezoensis is transcriptio
 - **원문 제목**: Comparative plastome analyses and genomic resource development for five Neoporphyra haitanensis and two Neopyropia yezoensis cultivars based on genome skimming data
 - **저자**: Zhang C, Gao Z, Wang H, Zhou W et al.
 - **저널**: *Journal of phycology* (2026) | **출처**: 🌐 해외 PubMed | **원문 열람**: [10.1111/jpy.70205](https://doi.org/10.1111/jpy.70205)
-- **대상 생물군**: `Neoporphyra, Porphyra, Neopyropia, Pyropia`
+- **대상 생물군**: `Neopyropia, Pyropia, Porphyra, Neoporphyra`
 - **대표 이미지**: ![](https://images.unsplash.com/photo-1581093588401-fbb62a02f120?auto=format&fit=crop&w=800&q=80&sig=98271&paper=9510)
 
 #### 📌 핵심 요약 포인트 (Key Takeaways)
@@ -124,7 +124,7 @@ Background/Objectives:Neopyropia yezoensis is an economically important intertid
 - **원문 제목**: The complete mitochondrial genome of
 - **저자**: Ceballos G, Muñiz-Salazar R, León-Cisneros K, Serviere-Zaragoza E et al.
 - **저널**: *Mitochondrial DNA. Part B, Resources* (2026) | **출처**: 🌐 해외 PubMed | **원문 열람**: [10.1080/23802359.2026.2743397](https://doi.org/10.1080/23802359.2026.2743397)
-- **대상 생물군**: `Neoporphyra, Porphyra`
+- **대상 생물군**: `Porphyra, Neoporphyra`
 - **대표 이미지**: ![](https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80&sig=28715&paper=8767)
 
 #### 📌 핵심 요약 포인트 (Key Takeaways)
@@ -144,7 +144,7 @@ Neoporphyra hollenbergii is an endemic red alga from the Gulf of California, a r
 - **원문 제목**: Sex-related osmotic adjustment strategies underpin desiccation tolerance in the intertidal seaweed Neoporphyra haitanensis
 - **저자**: Xue S, Chen J, Xiao J, Xin J et al.
 - **저널**: *Plant physiology and biochemistry : PPB* (2026) | **출처**: 🌐 해외 PubMed | **원문 열람**: [10.1016/j.plaphy.2026.111781](https://doi.org/10.1016/j.plaphy.2026.111781)
-- **대상 생물군**: `Neoporphyra, Porphyra`
+- **대상 생물군**: `Porphyra, Neoporphyra`
 - **대표 이미지**: ![](https://images.unsplash.com/photo-1484557052118-f32bd25b45b5?auto=format&fit=crop&w=800&q=80&sig=28045&paper=9317)
 
 #### 📌 핵심 요약 포인트 (Key Takeaways)
@@ -164,7 +164,7 @@ Desiccation stress constitutes a significant environmental challenge for macroal
 - **원문 제목**: Genome-Guided and De Novo Transcriptome Analysis of a Newly Isolated
 - **저자**: Choi J, Kim J
 - **저널**: *International journal of genomics* (2025) | **출처**: 🌐 해외 PubMed | **원문 열람**: [10.1155/ijog/9130170](https://doi.org/10.1155/ijog/9130170)
-- **대상 생물군**: `Neoporphyra, Porphyra, Neopyropia, Pyropia`
+- **대상 생물군**: `Neopyropia, Pyropia, Porphyra, Neoporphyra`
 - **대표 이미지**: ![](https://images.unsplash.com/photo-1581093450021-4a7360e9a6b5?auto=format&fit=crop&w=800&q=80&sig=70262&paper=729)
 
 #### 📌 핵심 요약 포인트 (Key Takeaways)
@@ -388,7 +388,7 @@ This study investigated non-volatile metabolites in laver (Neopyropia yezoensis)
 - **원문 제목**: Sex-related differences in photosynthesis, energy metabolism, and antioxidant regulation of Neoporphyra haitanensis to ultraviolet-B stress
 - **저자**: Xue S, Chen J, Xin J, Liang S et al.
 - **저널**: *Ecotoxicology and environmental safety* (2025) | **출처**: 🌐 해외 PubMed | **원문 열람**: [10.1016/j.ecoenv.2025.119117](https://doi.org/10.1016/j.ecoenv.2025.119117)
-- **대상 생물군**: `Neoporphyra, Porphyra`
+- **대상 생물군**: `Porphyra, Neoporphyra`
 - **대표 이미지**: ![](https://images.unsplash.com/photo-1614728894747-a83421789f10?auto=format&fit=crop&w=800&q=80&sig=67283&paper=8319)
 
 #### 📌 핵심 요약 포인트 (Key Takeaways)
@@ -408,7 +408,7 @@ Increased ultraviolet-B (UVB) radiation due to human activities poses a consider
 - **원문 제목**: Systems metabolic engineering of
 - **저자**: Li S, Lu C, Zang X, Duan D et al.
 - **저널**: *Frontiers in plant science* (2025) | **출처**: 🌐 해외 PubMed | **원문 열람**: [10.3389/fpls.2025.1640158](https://doi.org/10.3389/fpls.2025.1640158)
-- **대상 생물군**: `Neoporphyra, Porphyra`
+- **대상 생물군**: `Porphyra, Neoporphyra`
 - **대표 이미지**: ![](https://images.unsplash.com/photo-1544551763-77ef2d0cf967?auto=format&fit=crop&w=800&q=80&sig=83918&paper=5136)
 
 #### 📌 핵심 요약 포인트 (Key Takeaways)
@@ -627,17 +627,17 @@ Seaweeds have become a global industrial source material in food and cosmetic ar
 | Machine learning-assisted discovery of AdMysD fo… | *Porphyra* | 엽체 생리 · 생활사 · 사상체 | 🌐 PubMed | [열람](https://doi.org/10.1016/j.bioorg.2026.110312) |
 | Field-deployable, lyophilized cell-free biosenso… | *Porphyra* | 엽체 생리 · 생활사 · 사상체 | 🌐 PubMed | [열람](https://doi.org/10.1016/j.foodres.2026.119766) |
 | Physicochemical characterization, antioxidant an… | *Porphyra* | 엽체 생리 · 생활사 · 사상체 | 🌐 PubMed | [열람](https://doi.org/10.1016/j.foodchem.2026.150543) |
-| Comparative plastome analyses and genomic resour… | *Neoporphyra, Porphyra, Neopyropia, Pyropia* | 육종 · 분자생물학 · 병해 | 🌐 PubMed | [열람](https://doi.org/10.1111/jpy.70205) |
+| Comparative plastome analyses and genomic resour… | *Neopyropia, Pyropia, Porphyra, Neoporphyra* | 육종 · 분자생물학 · 병해 | 🌐 PubMed | [열람](https://doi.org/10.1111/jpy.70205) |
 | Navigating the potential of algal peptides: heal… | *Neopyropia, Pyropia* | 블루카본 및 산업적 응용 | 🌐 PubMed | [열람](https://doi.org/10.1080/07853890.2026.2637282) |
 | Marine-derived lactic acid bacteria fermentation… | *Neopyropia, Pyropia* | 육종 · 분자생물학 · 병해 | 🌐 PubMed | [열람](https://doi.org/10.1016/j.foodres.2026.120522) |
 | Roasting-induced changes in the metabolite profi… | *Neopyropia, Pyropia* | 엽체 생리 · 생활사 · 사상체 | 🌐 PubMed | [열람](https://doi.org/10.1016/j.fochx.2026.104450) |
 | Identification and Expression Analysis of the Fo… | *Neopyropia, Pyropia* | 육종 · 분자생물학 · 병해 | 🌐 PubMed | [열람](https://doi.org/10.3390/genes17091089) |
 | Seasonal dynamics and natural detachment of epip… | *Neopyropia, Pyropia* | 스마트 양식 및 대량 배양 기술 | 🌐 PubMed | [열람](https://doi.org/10.1016/j.marenvres.2026.108245) |
-| The complete mitochondrial genome of | *Neoporphyra, Porphyra* | 육종 · 분자생물학 · 병해 | 🌐 PubMed | [열람](https://doi.org/10.1080/23802359.2026.2743397) |
-| Sex-related osmotic adjustment strategies underp… | *Neoporphyra, Porphyra* | 육종 · 분자생물학 · 병해 | 🌐 PubMed | [열람](https://doi.org/10.1016/j.plaphy.2026.111781) |
-| Genome-Guided and De Novo Transcriptome Analysis… | *Neoporphyra, Porphyra, Neopyropia, Pyropia* | 육종 · 분자생물학 · 병해 | 🌐 PubMed | [열람](https://doi.org/10.1155/ijog/9130170) |
-| Sex-related differences in photosynthesis, energ… | *Neoporphyra, Porphyra* | 엽체 생리 · 생활사 · 사상체 | 🌐 PubMed | [열람](https://doi.org/10.1016/j.ecoenv.2025.119117) |
-| Systems metabolic engineering of | *Neoporphyra, Porphyra* | 엽체 생리 · 생활사 · 사상체 | 🌐 PubMed | [열람](https://doi.org/10.3389/fpls.2025.1640158) |
+| The complete mitochondrial genome of | *Porphyra, Neoporphyra* | 육종 · 분자생물학 · 병해 | 🌐 PubMed | [열람](https://doi.org/10.1080/23802359.2026.2743397) |
+| Sex-related osmotic adjustment strategies underp… | *Porphyra, Neoporphyra* | 육종 · 분자생물학 · 병해 | 🌐 PubMed | [열람](https://doi.org/10.1016/j.plaphy.2026.111781) |
+| Genome-Guided and De Novo Transcriptome Analysis… | *Neopyropia, Pyropia, Porphyra, Neoporphyra* | 육종 · 분자생물학 · 병해 | 🌐 PubMed | [열람](https://doi.org/10.1155/ijog/9130170) |
+| Sex-related differences in photosynthesis, energ… | *Porphyra, Neoporphyra* | 엽체 생리 · 생활사 · 사상체 | 🌐 PubMed | [열람](https://doi.org/10.1016/j.ecoenv.2025.119117) |
+| Systems metabolic engineering of | *Porphyra, Neoporphyra* | 엽체 생리 · 생활사 · 사상체 | 🌐 PubMed | [열람](https://doi.org/10.3389/fpls.2025.1640158) |
 | From sea to farm: Repurposing invasive macroalga… | *Asparagopsis* | 육종 · 분자생물학 · 병해 | 🌐 PubMed | [열람](https://doi.org/10.1016/j.plantsci.2026.113445) |
 | Comparative metataxonomic analysis of total, via… | *Asparagopsis* | 육종 · 분자생물학 · 병해 | 🌐 PubMed | [열람](https://doi.org/10.1186/s40793-026-00963-y) |
 | Challenges and sustainable solutions in multispe… | *Asparagopsis* | 블루카본 및 산업적 응용 | 🌐 PubMed | [열람](https://doi.org/10.1007/s11250-026-05313-1) |

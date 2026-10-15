@@ -7,12 +7,12 @@
     "Crossref/KCI"
   ],
   "taxa": [
+    "Pyropia",
     "Asparagopsis",
-    "Neoporphyra",
     "Pyropia/Porphyra complex",
     "Porphyra",
-    "Neopyropia",
-    "Pyropia"
+    "Neoporphyra",
+    "Neopyropia"
   ],
   "articles": [
     {
@@ -318,10 +318,10 @@
       "doi": "10.1111/jpy.70205",
       "url": "https://doi.org/10.1111/jpy.70205",
       "taxa": [
-        "Neoporphyra",
-        "Porphyra",
         "Neopyropia",
-        "Pyropia"
+        "Pyropia",
+        "Porphyra",
+        "Neoporphyra"
       ],
       "category": "breeding_molecular_pathology",
       "category_name": "육종 · 분자생물학 · 병해",
@@ -482,8 +482,8 @@
       "doi": "10.1080/23802359.2026.2743397",
       "url": "https://doi.org/10.1080/23802359.2026.2743397",
       "taxa": [
-        "Neoporphyra",
-        "Porphyra"
+        "Porphyra",
+        "Neoporphyra"
       ],
       "category": "breeding_molecular_pathology",
       "category_name": "육종 · 분자생물학 · 병해",
@@ -509,8 +509,8 @@
       "doi": "10.1016/j.plaphy.2026.111781",
       "url": "https://doi.org/10.1016/j.plaphy.2026.111781",
       "taxa": [
-        "Neoporphyra",
-        "Porphyra"
+        "Porphyra",
+        "Neoporphyra"
       ],
       "category": "breeding_molecular_pathology",
       "category_name": "육종 · 분자생물학 · 병해",
@@ -536,10 +536,10 @@
       "doi": "10.1155/ijog/9130170",
       "url": "https://doi.org/10.1155/ijog/9130170",
       "taxa": [
-        "Neoporphyra",
-        "Porphyra",
         "Neopyropia",
-        "Pyropia"
+        "Pyropia",
+        "Porphyra",
+        "Neoporphyra"
       ],
       "category": "breeding_molecular_pathology",
       "category_name": "육종 · 분자생물학 · 병해",
@@ -565,8 +565,8 @@
       "doi": "10.1016/j.ecoenv.2025.119117",
       "url": "https://doi.org/10.1016/j.ecoenv.2025.119117",
       "taxa": [
-        "Neoporphyra",
-        "Porphyra"
+        "Porphyra",
+        "Neoporphyra"
       ],
       "category": "thallus_lifecycle_conchocelis",
       "category_name": "엽체 생리 · 생활사 · 사상체",
@@ -592,8 +592,8 @@
       "doi": "10.3389/fpls.2025.1640158",
       "url": "https://doi.org/10.3389/fpls.2025.1640158",
       "taxa": [
-        "Neoporphyra",
-        "Porphyra"
+        "Porphyra",
+        "Neoporphyra"
       ],
       "category": "thallus_lifecycle_conchocelis",
       "category_name": "엽체 생리 · 생활사 · 사상체",

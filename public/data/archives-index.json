@@ -5,12 +5,12 @@
     "date": "2026-10-15",
     "total_papers": 29,
     "taxa_covered": [
+      "Pyropia",
       "Asparagopsis",
-      "Neoporphyra",
       "Pyropia/Porphyra complex",
       "Porphyra",
-      "Neopyropia",
-      "Pyropia"
+      "Neoporphyra",
+      "Neopyropia"
     ],
     "categories": [
       "breeding_molecular_pathology",
@@ -88,10 +88,10 @@
         "journal": "Journal of phycology (2026)",
         "url": "https://doi.org/10.1111/jpy.70205",
         "taxa": [
-          "Neoporphyra",
-          "Porphyra",
           "Neopyropia",
-          "Pyropia"
+          "Pyropia",
+          "Porphyra",
+          "Neoporphyra"
         ],
         "category": "breeding_molecular_pathology",
         "category_name": "육종 · 분자생물학 · 병해",
@@ -153,8 +153,8 @@
         "journal": "Mitochondrial DNA. Part B, Resources (2026)",
         "url": "https://doi.org/10.1080/23802359.2026.2743397",
         "taxa": [
-          "Neoporphyra",
-          "Porphyra"
+          "Porphyra",
+          "Neoporphyra"
         ],
         "category": "breeding_molecular_pathology",
         "category_name": "육종 · 분자생물학 · 병해",
@@ -174,8 +174,8 @@
         "journal": "Plant physiology and biochemistry : PPB (2026)",
         "url": "https://doi.org/10.1016/j.plaphy.2026.111781",
         "taxa": [
-          "Neoporphyra",
-          "Porphyra"
+          "Porphyra",
+          "Neoporphyra"
         ],
         "category": "breeding_molecular_pathology",
         "category_name": "육종 · 분자생물학 · 병해",
@@ -195,10 +195,10 @@
         "journal": "International journal of genomics (2025)",
         "url": "https://doi.org/10.1155/ijog/9130170",
         "taxa": [
-          "Neoporphyra",
-          "Porphyra",
           "Neopyropia",
-          "Pyropia"
+          "Pyropia",
+          "Porphyra",
+          "Neoporphyra"
         ],
         "category": "breeding_molecular_pathology",
         "category_name": "육종 · 분자생물학 · 병해",
@@ -419,8 +419,8 @@
         "journal": "Ecotoxicology and environmental safety (2025)",
         "url": "https://doi.org/10.1016/j.ecoenv.2025.119117",
         "taxa": [
-          "Neoporphyra",
-          "Porphyra"
+          "Porphyra",
+          "Neoporphyra"
         ],
         "category": "thallus_lifecycle_conchocelis",
         "category_name": "엽체 생리 · 생활사 · 사상체",
@@ -440,8 +440,8 @@
         "journal": "Frontiers in plant science (2025)",
         "url": "https://doi.org/10.3389/fpls.2025.1640158",
         "taxa": [
-          "Neoporphyra",
-          "Porphyra"
+          "Porphyra",
+          "Neoporphyra"
         ],
         "category": "thallus_lifecycle_conchocelis",
         "category_name": "엽체 생리 · 생활사 · 사상체",
