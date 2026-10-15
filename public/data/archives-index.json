@@ -5,12 +5,12 @@
     "date": "2026-10-15",
     "total_papers": 29,
     "taxa_covered": [
+      "Asparagopsis",
       "Neoporphyra",
-      "Neopyropia",
-      "Pyropia",
-      "Porphyra",
       "Pyropia/Porphyra complex",
-      "Asparagopsis"
+      "Porphyra",
+      "Neopyropia",
+      "Pyropia"
     ],
     "categories": [
       "breeding_molecular_pathology",
@@ -88,10 +88,10 @@
         "journal": "Journal of phycology (2026)",
         "url": "https://doi.org/10.1111/jpy.70205",
         "taxa": [
-          "Pyropia",
-          "Porphyra",
           "Neoporphyra",
-          "Neopyropia"
+          "Porphyra",
+          "Neopyropia",
+          "Pyropia"
         ],
         "category": "breeding_molecular_pathology",
         "category_name": "육종 · 분자생물학 · 병해",
@@ -111,8 +111,8 @@
         "journal": "Food research international (Ottawa, Ont.) (2026)",
         "url": "https://doi.org/10.1016/j.foodres.2026.120522",
         "taxa": [
-          "Pyropia",
-          "Neopyropia"
+          "Neopyropia",
+          "Pyropia"
         ],
         "category": "breeding_molecular_pathology",
         "category_name": "육종 · 분자생물학 · 병해",
@@ -132,8 +132,8 @@
         "journal": "Genes (2026)",
         "url": "https://doi.org/10.3390/genes17091089",
         "taxa": [
-          "Pyropia",
-          "Neopyropia"
+          "Neopyropia",
+          "Pyropia"
         ],
         "category": "breeding_molecular_pathology",
         "category_name": "육종 · 분자생물학 · 병해",
@@ -195,10 +195,10 @@
         "journal": "International journal of genomics (2025)",
         "url": "https://doi.org/10.1155/ijog/9130170",
         "taxa": [
-          "Pyropia",
-          "Porphyra",
           "Neoporphyra",
-          "Neopyropia"
+          "Porphyra",
+          "Neopyropia",
+          "Pyropia"
         ],
         "category": "breeding_molecular_pathology",
         "category_name": "육종 · 분자생물학 · 병해",
@@ -398,8 +398,8 @@
         "journal": "Food chemistry: X (2026)",
         "url": "https://doi.org/10.1016/j.fochx.2026.104450",
         "taxa": [
-          "Pyropia",
-          "Neopyropia"
+          "Neopyropia",
+          "Pyropia"
         ],
         "category": "thallus_lifecycle_conchocelis",
         "category_name": "엽체 생리 · 생활사 · 사상체",
@@ -521,8 +521,8 @@
         "journal": "Marine environmental research (2026)",
         "url": "https://doi.org/10.1016/j.marenvres.2026.108245",
         "taxa": [
-          "Pyropia",
-          "Neopyropia"
+          "Neopyropia",
+          "Pyropia"
         ],
         "category": "smart_aquaculture_mass_culture",
         "category_name": "스마트 양식 및 대량 배양 기술",
@@ -562,8 +562,8 @@
         "journal": "Annals of medicine (2026)",
         "url": "https://doi.org/10.1080/07853890.2026.2637282",
         "taxa": [
-          "Pyropia",
-          "Neopyropia"
+          "Neopyropia",
+          "Pyropia"
         ],
         "category": "blue_carbon_feed_methane",
         "category_name": "블루카본 및 산업적 응용",
