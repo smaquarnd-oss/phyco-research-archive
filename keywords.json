@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "project": "Phyco & Blue Carbon Research Magazine",
-  "version": "2.0.0",
-  "description": "김/바다고리풀속 및 블루카본 연구 아카이브 키워드 설정 파일 (4분할 섹션 체제)",
+  "version": "2.1.0",
+  "description": "김/바다고리풀속 및 블루카본 연구 아카이브 키워드 설정 파일 (4분할 섹션 + KCI 국내 학술 연동)",
   "target_taxa": {
     "title": "주요 연구 대상 생물군 (Target Taxa)",
     "description": "학명 개정과 신분류 체계를 반영한 홍조류 김 및 바다고리풀속",
@@ -11,36 +11,42 @@
         "name": "Pyropia",
         "common_name": "김속 (기존 광의의 김/참김류)",
         "aliases": ["Pyropia yezoensis", "Pyropia tenera", "Pyropia haitanensis"],
+        "korean_names": ["참김", "방사무늬김", "둥근돌김"],
         "enabled": true
       },
       {
         "name": "Porphyra",
         "common_name": "전통 김속 (온대/한대성 원형 김속)",
         "aliases": ["Porphyra umbilicalis", "Porphyra linearis", "Porphyra dioica"],
+        "korean_names": ["돌김", "원형 김"],
         "enabled": true
       },
       {
         "name": "Neopyropia",
         "common_name": "신김속 (신분류 체계 반영 방사무늬김 등)",
         "aliases": ["Neopyropia yezoensis", "Neopyropia tenera"],
+        "korean_names": ["방사무늬김", "잇바디돌김"],
         "enabled": true
       },
       {
         "name": "Neoporphyra",
         "common_name": "신포르피라속 (모무늬돌김 등 아열대/난대성)",
         "aliases": ["Neoporphyra haitanensis", "Neoporphyra dentata"],
+        "korean_names": ["모무늬돌김", "잇바디돌김"],
         "enabled": true
       },
       {
         "name": "Phycocalidia",
         "common_name": "피코칼리디아속 (열대/아열대성 엽상 홍조류)",
         "aliases": ["Phycocalidia suborbiculata", "Phycocalidia vietnamensis"],
+        "korean_names": ["피코칼리디아"],
         "enabled": true
       },
       {
         "name": "Asparagopsis",
         "common_name": "바다고리풀속 (저메탄 가축 사료 핵심 소재)",
         "aliases": ["Asparagopsis taxiformis", "Asparagopsis armata", "Falkenbergia rufolanosa"],
+        "korean_names": ["바다고리풀", "아스파라곱시스"],
         "enabled": true
       }
     ]
@@ -85,6 +91,28 @@
         "gene expression",
         "transcription factor",
         "proteomics"
+      ],
+      "keywords_ko": [
+        "품종개량",
+        "육종",
+        "분자마커",
+        "유전체",
+        "전사체",
+        "후성유전",
+        "SNP 분석",
+        "유전자 발현",
+        "DNA 바코딩",
+        "계통분류",
+        "붉은갯병",
+        "녹반병",
+        "병해",
+        "병원균",
+        "내병성",
+        "항병성",
+        "CRISPR",
+        "단백질체",
+        "유전 다양성",
+        "분자생물학"
       ]
     },
     "thallus_lifecycle_conchocelis": {
@@ -123,6 +151,28 @@
         "phycocyanin",
         "thallus morphology",
         "cell cycle"
+      ],
+      "keywords_ko": [
+        "엽체",
+        "사상체",
+        "각포자",
+        "과포자",
+        "포자 방출",
+        "생활사",
+        "생활환",
+        "광주기",
+        "배우체",
+        "포자체",
+        "수정란",
+        "발아",
+        "온도 적응",
+        "열충격",
+        "광합성",
+        "색소",
+        "피코에리스린",
+        "엽체 형태",
+        "세포 주기",
+        "질소 동화"
       ]
     },
     "smart_aquaculture_mass_culture": {
@@ -158,6 +208,28 @@
         "harvesting",
         "yield optimization",
         "production efficiency"
+      ],
+      "keywords_ko": [
+        "대량 배양",
+        "자유사상체",
+        "채묘",
+        "채묘망",
+        "육상 양식",
+        "양식 공학",
+        "생물반응기",
+        "바이오리액터",
+        "스마트 양식",
+        "종묘 생산",
+        "수질 관리",
+        "LED 조명",
+        "실내 배양",
+        "수확",
+        "생산 효율",
+        "환경 제어",
+        "양식장",
+        "해조류 양식",
+        "패각",
+        "종사"
       ]
     },
     "blue_carbon_feed_methane": {
@@ -196,6 +268,28 @@
         "cosmetics",
         "nutraceutical",
         "food industry"
+      ],
+      "keywords_ko": [
+        "블루카본",
+        "탄소격리",
+        "탄소저장",
+        "해양 탄소",
+        "탄소 중립",
+        "메탄 저감",
+        "장내 메탄",
+        "반추동물 사료",
+        "사료 첨가제",
+        "온실가스",
+        "기후변화",
+        "해조류 탄소",
+        "바이오연료",
+        "한천",
+        "카라기난",
+        "기능성 식품",
+        "화장품",
+        "탄소발자국",
+        "RDOC",
+        "탄소 배출권"
       ]
     }
   },
@@ -205,16 +299,30 @@
     "data_sources": [
       {
         "name": "PubMed",
+        "language": "en",
         "enabled": true,
-        "endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils"
+        "endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils",
+        "api_key_env": null,
+        "note": "영문 글로벌 생명과학 DB. API 키 없이 사용 가능 (속도 제한 있음)"
       },
       {
         "name": "Europe PMC",
+        "language": "en",
         "enabled": true,
-        "endpoint": "https://www.ebi.ac.uk/europepmc/webservices/rest/search"
+        "endpoint": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+        "api_key_env": null,
+        "note": "영문 유럽 생명과학 오픈액세스 DB"
+      },
+      {
+        "name": "KCI",
+        "language": "ko",
+        "enabled": true,
+        "endpoint": "https://open.kci.go.kr/po/openapi/openApiSearch.kci",
+        "api_key_env": "KCI_API_KEY",
+        "note": "한국학술지인용색인 Open API. KCI_API_KEY 환경변수 필요. 인증키 신청: https://open.kci.go.kr"
       }
     ],
-    "language": "ko",
+    "language": "multilingual",
     "generate_ai_summary": true,
     "gemini_model": "gemini-2.5-flash"
   }
