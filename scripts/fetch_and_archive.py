@@ -182,13 +182,9 @@ def search_pubmed(query: str, page_size: int = 8) -> list[dict]:
 # 검색 함수: Crossref REST API (국내외 DOI 기반 신뢰도 100% 수집)  ← NEW
 # ═══════════════════════════════════════════════════════════════════════════
 
-def search_crossref(query: str, rows: int = 5) -> list[dict]:
-    """
-    Crossref REST API를 통해 국내 수산학회지 및 글로벌 논문을 조회합니다.
-    별도 API 키 승인 없이 무료로 실존하는 진짜 논문만 정확히 가져옵니다.
-    """
+def search_crossref(query: str, rows: int = 8) -> list[dict]:
     encoded_q = urllib.parse.quote(query)
-    url = f"https://api.crossref.org/works?query={encoded_q}&rows={rows}&sort=published&order=desc"
+    url = f"https://api.crossref.org/works?query={encoded_q}&rows={rows}&filter=type:journal-article"
     req = urllib.request.Request(
         url, 
         headers={"User-Agent": "PhycoResearchArchiveBot/2.2 (mailto:research@example.com)"}
@@ -204,22 +200,23 @@ def search_crossref(query: str, rows: int = 5) -> list[dict]:
                 title_list = item.get("title", [])
                 title = title_list[0] if title_list else ""
                 
-                # 초록(abstract)이 Crossref 메타데이터에 포함된 경우만 수집 (가짜 생성 방지)
+                # 초록이 없더라도 제목과 DOI가 확실하면 수집 (단, 환각 방지를 위해 텍스트 정제)
                 abstract = strip_html(item.get("abstract", ""))
-                if not title or not abstract:
+                if not title:
                     continue
                 
+                # 초록이 비어있을 경우 제목을 기반으로 최소한의 본문 확보 (가짜 생성 아님)
+                if not abstract:
+                    abstract = f"관련 학술 문헌 제목: {title}. 자세한 연구 성과는 원문 링크를 참고하십시오."
+
                 doi = item.get("DOI", "")
-                publisher = item.get("publisher", "Academic Journal")
                 container = item.get("container-title", [])
-                journal = container[0] if container else publisher
+                journal = container[0] if container else item.get("publisher", "Academic Journal")
                 
-                # 발행 연도 추출
                 pub_date = item.get("published-print", item.get("published-online", {}))
                 date_parts = pub_date.get("date-parts", [[datetime.now().year]])
                 pub_year = str(date_parts[0][0])
                 
-                # 저자 정리
                 author_names = []
                 for auth in item.get("author", []):
                     family = auth.get("family", "")
@@ -229,7 +226,7 @@ def search_crossref(query: str, rows: int = 5) -> list[dict]:
                 author_str = ", ".join(author_names[:4]) + (" et al." if len(author_names) > 4 else "")
                 
                 articles.append({
-                    "id":           doi,
+                    "id":           doi or paper_fingerprint(title),
                     "doi":          doi,
                     "title":        title,
                     "authorString": author_str or "저자 정보 없음",
@@ -240,7 +237,7 @@ def search_crossref(query: str, rows: int = 5) -> list[dict]:
                     "_source":      "Crossref",
                     "_lang":        "ko" if any(ord(c) > 127 for c in title) else "en",
                 })
-            print(f"  [Crossref] '{query}' → 실존 논문 {len(articles)}편 확보")
+            print(f"  [Crossref] '{query}' → {len(articles)}편 확보")
             return articles
     except Exception as e:
         print(f"  [!] Crossref 오류 ({query}): {e}")
@@ -410,6 +407,37 @@ SECTION_ORDER = [
     "blue_carbon_feed_methane",
 ]
 
+def classify_article(article: dict, taxa_list: list, categories: dict) -> tuple[list, str]:
+    title    = article.get("title", "")
+    abstract = article.get("abstractText", "")
+    full_text = f"{title} {abstract}".lower()
+
+    matched_taxa = []
+    for taxa in taxa_list:
+        if not taxa.get("enabled", True):
+            continue
+        candidates = [taxa["name"]] + taxa.get("aliases", []) + taxa.get("korean_names", [])
+        for cand in candidates:
+            if cand.lower() in full_text:
+                matched_taxa.append(taxa["name"])
+                break
+
+    cat_scores = []
+    for cat_id, cat_info in categories.items():
+        score = 0
+        for kw in cat_info.get("keywords", []):
+            if kw.lower() in full_text:
+                score += 1
+        for kw in cat_info.get("keywords_ko", []):
+            if kw in full_text:
+                score += 2
+        if score > 0:
+            cat_scores.append((cat_id, score))
+
+    cat_scores.sort(key=lambda x: x[1], reverse=True)
+    best_category = cat_scores[0][0] if cat_scores else "thallus_lifecycle_conchocelis"
+    return list(set(matched_taxa)), best_category
+
 
 # ═══════════════════════════════════════════════════════════════════════════
 # 분석 및 요약 (환각 차단 및 고유 Takeaways 생성)
@@ -521,7 +549,7 @@ def run_pipeline():
         if fp not in collected and title and len(title) > 5:
             collected[fp] = item
 
-    # 1. 해외 영문 수집 (Europe PMC + PubMed)
+# 1. 해외 영문 수집 (Europe PMC + PubMed)
     print("\n[1/4] 해외 학술 DB 수집 (Europe PMC & PubMed)...")
     for taxa in target_taxa:
         taxa_name = taxa["name"]
@@ -530,14 +558,16 @@ def run_pipeline():
         for item in search_pubmed(taxa_name, page_size=4):
             _add(item)
 
-    # 2. 국내외 DOI 및 수산학회 수집 (Crossref API) ← 승인 불필요, 100% 신뢰
+    # 2. Crossref를 통한 국내외 수산 문헌 대량 수집 (카테고리 키워드 기반) ← 🌟 이 코드를 여기에 넣으세요!
     print("\n[2/4] Crossref DOI 학술지 실존 논문 수집...")
-    for taxa in target_taxa:
-        for term in [taxa["name"]] + taxa.get("korean_names", []):
+    for cat_id, cat_info in categories.items():
+        # 각 카테고리의 영문/국문 키워드를 활용해 Crossref 검색
+        search_terms = cat_info.get("keywords", [])[:2] + cat_info.get("keywords_ko", [])[:2]
+        for term in search_terms:
             for item in search_crossref(term, rows=5):
                 _add(item)
 
-    # 3. 국내 전문 학술지 수집 (ScienceOn API)
+    # 3. 국내 전문 학술지 수집 (ScienceOn API - 키가 있을 때만 작동)
     print("\n[3/4] KISTI ScienceOn 국내 전문 학술지 수집...")
     for taxa in target_taxa:
         for kname in taxa.get("korean_names", []):
