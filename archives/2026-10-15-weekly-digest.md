@@ -1,568 +1,650 @@
+---
+title: "김·바다고리풀속 및 블루카본 연구 주간 다이제스트 (2026-10-15)"
+date: "2026-10-15"
+version: "3.0"
+total_papers: 29
+sources: ["PubMed", "Crossref/KCI"]
+taxa_covered: ["Pyropia/Porphyra complex", "Pyropia", "Neopyropia", "Neoporphyra", "Porphyra", "Asparagopsis"]
+categories: ["breeding_molecular_pathology", "thallus_lifecycle_conchocelis", "smart_aquaculture_mass_culture", "blue_carbon_feed_methane"]
+tags: ["Phyco", "BlueCarbon", "Seaweed", "Crossref", "KCI", "PubMed"]
+---
+
 # 🌊 김/바다고리풀속 및 블루카본 연구 주간 매거진 (2026-10-15)
 
-> **발행일**: 2026-10-15 | **총 논문**: 26편 | **수집 소스**: Crossref, PubMed
+> **발행일**: 2026-10-15 | **총 수록 논문**: 29편 (초록 검증 완료) | **수집 소스**: PubMed, Crossref/KCI  
+> **대상 생물군**: Pyropia/Porphyra complex, Pyropia, Neopyropia, Neoporphyra, Porphyra, Asparagopsis
+
 ---
 
-## 🔬 SECTION 01: 육종 · 분자생물학 · 병해
+## 🔬 SECTION 01: 육종 · 분자생물학 · 병해 (Breeding & Pathology)
 
-> 💡 **Editor's Insight: 기후 온난화 대응 내열성 분자마커와 병해 방어 전사체 분석 고도화**
-> 해수 온도 상승에 따른 내열성 메커니즘 규명과 병원체 대응 유전자원 선발 연구가 활발합니다.
+> 💡 **Weekly Research Briefing**: 본 섹션에서는 육종 · 분자생물학 · 병해 분야의 최신 연구 성과 10편을 엄선하여 브리핑합니다.
 
-### 1. Development of a multiplex PCR assay for the authentication of…
+### 1. rbcL 유전자 기반 멀티플렉스 PCR로 고가 장비 없이 상용 김 6종 정확히 판별
 - **원문 제목**: Development of a multiplex PCR assay for the authentication of six commercial
 - **저자**: Noh E, Dong C, Park H, Jung H et al.
-- **저널**: *Food chemistry. Molecular sciences* (2026) | **출처**: PubMed | **원문**: [10.1016/j.fochms.2026.100458](#)
+- **저널**: *Food chemistry. Molecular sciences* (2026) | **출처**: 🌐 해외 PubMed | **원문 열람**: [10.1016/j.fochms.2026.100458](https://doi.org/10.1016/j.fochms.2026.100458)
 - **대상 생물군**: `Pyropia`
-- **대표 이미지**: ![](https://images.unsplash.com/photo-1484557052118-f32bd25b45b5?auto=format&fit=crop&w=800&q=80)
+- **대표 이미지**: ![](https://images.unsplash.com/photo-1530497610245-94d3c16cda28?auto=format&fit=crop&w=800&q=80&sig=97851&paper=8460)
 
-#### 📌 핵심 성과 (Key Takeaways)
-1. The global expansion of the Pyropia (laver) market requires reliable methods to authenticate species and prevent economically motivated adulteration (EMA).
-2. The optimized assay (annealing temperature of 54 °C) generated a step-wise pattern of amplicons ranging from 172 to 781 bp, which were resolvable on a conventional 1.5% agarose gel.
-3. These findings support our hypothesis that mismatch-engineered multiplex PCR effectively discriminates target species in complex matrices, providing an accessible and practical tool for verifying composition during routine quality control.
+#### 📌 핵심 요약 포인트 (Key Takeaways)
+1. 김 유통 시장 확대로 인한 경제적 위변조를 막기 위해 고가 특수 장비 없이도 근연종을 구분할 수 있는 표준 분자 진단법이 요구되고 있다.
+2. 162개의 rbcL 유전자 서열에서 종 특이적 SNP를 발굴하고 미스매치 프라이머를 설계하여, 54 °C 조건에서 172~781 bp 크기의 증폭 산물을 1.5% 아가로스 겔 상에서 10 ng/μL 민감도로 확인했다.
+3. 방사무늬김·모무늬돌김 등 주요 6종에 대한 교차 반응 없는 종 특이성을 확보하였으며 시판 김 20종의 다지점 검증을 통해 단일 종 구성 여부를 성공적으로 감별했다.
 
-#### 💡 연구자 시사점
-본 연구는 Pyropia의 육종 · 분자생물학 · 병해 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.
+#### 💡 연구자 시사점 (Researcher's Takeaway)
+고가 분석 장비가 없는 표준 실험실에서도 일반 겔 전기영동만으로 가공 김의 품종 혼입이나 위변조를 10 ng/μL 수준까지 판별할 수 있어 유통 투명성과 품질 관리 현장에 즉각 적용 가능하다.
 
-#### 📄 초록 (Abstract)
-The global expansion of the Pyropia (laver) market requires reliable methods to authenticate species and prevent economically motivated adulteration (EMA). While automated molecular techniques exist, their reliance on specialized instrumentation limits routine application in standard laboratories. We hypothesized that pairing species-specific SNPs within the rbcL gene with mismatch-engineered primers enables the discrimination of closely related Pyropia species without advanced instrumentation. In this study, we developed a multiplex PCR assay targeting the rbcL gene to differentiate six Pyropia species (P. yezoensis, P. tenera, P. dentata, P. haitanensis, P. seriata, and P. suborbiculata). By analyzing 162 rbcL sequences, we identified conserved species-specific SNPs. We designed a primer set comprising six forward primers with intentional mismatches to improve specificity, paired with a single common reverse primer. The optimized assay (annealing temperature of 54 °C) generated a step-wise pattern of amplicons ranging from 172 to 781 bp, which were resolvable on a conventional 1.5% agarose gel. The assay demonstrated species specificity with no cross-reactivity and exhibited an analytical sensitivity of 10 ng/μL of genomic DNA. To validate the method, we tested 20 commercial laver products using a multi-point sampling strategy. The assay authenticated single-species compositions and identified multi-species blends. These results indicate that analyzing multiple regions per sheet is necessary to determine the true composition of commercial products. These findings support our hypothesis that mismatch-engineered multiplex PCR effectively discriminates target species in complex matrices, providing an accessible and practical tool for verifying composition during routine quality control.
-
----
-
-### 2. Marine-derived lactic acid bacteria fermentation enhances the…
-- **원문 제목**: Marine-derived lactic acid bacteria fermentation enhances the bioactivity of Neopyropia haitanensis by improving intestinal homeostasis
-- **저자**: Liu Z, Chen J, Xu J, Yi H et al.
-- **저널**: *Food research international (Ottawa, Ont.)* (2026) | **출처**: PubMed | **원문**: [10.1016/j.foodres.2026.120522](#)
-- **대상 생물군**: `Neopyropia, Pyropia`
-- **대표 이미지**: ![](https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&fit=crop&w=800&q=80)
-
-#### 📌 핵심 성과 (Key Takeaways)
-1. This study investigated the functional fermentation of Neopyropia haitanensis using marine-derived lactic acid bacteria (LAB), aiming to develop effective strategies to improve the bioactivity and functionality of seaweed-based foods.
-2. Colon tissues showed decreased malondialdehyde and increased superoxide dismutase and catalase activities.
-3. haitanensis, providing new insights into the development of seaweed-based functional foods, especially for gut health.
-
-#### 💡 연구자 시사점
-본 연구는 Neopyropia, Pyropia의 육종 · 분자생물학 · 병해 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.
-
-#### 📄 초록 (Abstract)
-This study investigated the functional fermentation of Neopyropia haitanensis using marine-derived lactic acid bacteria (LAB), aiming to develop effective strategies to improve the bioactivity and functionality of seaweed-based foods. Fifteen LAB strains were isolated from marine sources, among which three strains, namely Pediococcus pentosaceus HYZ2-1, Limosilactobacillus reuteri HYS1-1, and Ligilactobacillus salivarius HYD1-1 with superior fermentation performance, were selected. In vitro cellular assays indicated that the fermented products exhibited antioxidant, anti-inflammatory, and intestinal barrier-enhancing effects. Furthermore, in colitis mice, the fermented products alleviated symptoms such as weight loss, hematochezia, and colon shortening, and significantly reduced serum interleukin (IL)-6 levels while increasing IL-10 levels, compared with the unfermented samples. Colon tissues showed decreased malondialdehyde and increased superoxide dismutase and catalase activities. The gene expressions of tight junctions and mucin 2 were upregulated. Metabolomic analysis revealed consistent upregulation of specific bioactive metabolites across all fermented groups, and these metabolites were strongly correlated with the observed improvements in antioxidant capacity, immune modulation, and intestinal barrier integrity. Overall, this study demonstrates the functional advantages of marine-derived LAB in enhancing the bioactivity of N. haitanensis, providing new insights into the development of seaweed-based functional foods, especially for gut health.
+#### 📄 논문 초록 전문 (Abstract)
+The global expansion of the Pyropia (laver) market requires reliable methods to authenticate species and prevent economically motivated adulteration (EMA). While automated molecular techniques exist, their reliance on specialized instrumentation limits routine application in standard laboratories. We hypothesized that pairing species-specific SNPs within the rbcL gene with mismatch-engineered primers enables the discrimination of closely related Pyropia species without advanced instrumentation. In this study, we developed a multiplex PCR assay targeting the rbcL gene to differentiate six Pyropia species (P. yezoensis, P. tenera, P. dentata, P. haitanensis, P. seriata, and P. suborbiculata). By analyzing 162 rbcL sequences, we identified conserved species-specific SNPs. We designed a primer set comprising six forward primers with intentional mismatches to improve specificity, paired with a single common reverse primer. The optimized assay (annealing temperature of 54 °C) generated a step-wise pattern of amplicons ranging from 172 to 781 bp, which were resolvable on a conventional 1.5% agarose gel. The assay demonstrated species specificity with no cross-reactivity and exhibited an analytical sensitivity of 10 ng/μL of genomic DNA. To validate the method, we tested 20 commercial laver products using a multi-point sampling strategy. The assay authenticated single-species compositions and identified multi-species blends. These results indicate that analyzing multiple regions per sheet is necessary to determine the true composition of commercial products. These findings support our hypothesis that mismatch-engineered multiplex PCR effectively discriminates target species in complex matrices, providing an accessible and practical tool for verifying composition during routine quality control.
 
 ---
 
-### 3. Succinylated nori protein-alginate complex particles prepared…
-- **원문 제목**: Succinylated nori protein-alginate complex particles prepared using temperature-controlled ultrasonication for the formation of high internal phase Pickering emulsion gels as plant-based fat analogues
-- **저자**: Si X, Li Z, Chen Y, Li B et al.
-- **저널**: *Ultrasonics sonochemistry* (2026) | **출처**: PubMed | **원문**: [10.1016/j.ultsonch.2026.108029](#)
-- **대상 생물군**: `Pyropia/Porphyra complex`
-- **대표 이미지**: ![](https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=800&q=80)
-
-#### 📌 핵심 성과 (Key Takeaways)
-1. In this study, succinylated nori protein (SNP), sodium alginate (SA), and flaxseed oil were used to develop novel high-internal-phase Pickering emulsion (HIPPE) gels with potential application as plant-based fat analogues.
-2. These structural improvements were associated with enhanced adsorption kinetics and wettability, with a contact angle approaching 90°, indicating optimal amphiphilicity.
-3. Overall, the proposed material provides an environmentally friendly and healthy strategy for developing fat analogues from marine-derived protein resources and flaxseed oil, while mimicking animal fat tissue in terms of texture, microstructure, thermal behavior, and sensory properties.
-
-#### 💡 연구자 시사점
-본 연구는 Pyropia/Porphyra complex의 육종 · 분자생물학 · 병해 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.
-
-#### 📄 초록 (Abstract)
-In this study, succinylated nori protein (SNP), sodium alginate (SA), and flaxseed oil were used to develop novel high-internal-phase Pickering emulsion (HIPPE) gels with potential application as plant-based fat analogues. Stable composite particles were successfully fabricated through ultrasonication combined with temperature control. The ultrasonic treatment condition was identified as 450 W for 30 min, under which the Pickering particles exhibited the smallest particle size and superior emulsifying ability. The optimal formulation parameters were identified as an SNP-to-SA ratio of 1:5, an SNP-SA complex particle concentration of 3%, and an oil-phase fraction of 75%, which resulted in optimal oil retention and emulsion stability. Confocal laser scanning microscopy and cryo-scanning electron microscopy revealed that the SNP-based emulsion produced smaller droplets (23.08 ± 0.09 μm) and a more compact core-shell interfacial structure than the emulsion prepared with native nori protein. These structural improvements were associated with enhanced adsorption kinetics and wettability, with a contact angle approaching 90°, indicating optimal amphiphilicity. Rheological analysis further demonstrated that the emulsion exhibited more solid-like viscoelastic behavior, with a greater difference between G' and G″ than that prepared with native nori protein. Moreover, microscopic observations showed that the dense packing of lipid droplets within the gel network resembled the cellular architecture of animal fat tissue. The thermal behavior of the HIPPE gels in the range of 200-500 °C was similar to the two downward endothermic peaks observed for pork fat during cooking. Sensory and texture analyses of meat patties revealed that 25% and 50% fat substitution levels could closely mimic full-fat meat patties. Overall, the proposed material provides an environmentally friendly and healthy strategy for developing fat analogues from marine-derived protein resources and flaxseed oil, while mimicking animal fat tissue in terms of texture, microstructure, thermal behavior, and sensory properties.
-
----
-
-### 4. Sex-related osmotic adjustment strategies underpin desiccation…
-- **원문 제목**: Sex-related osmotic adjustment strategies underpin desiccation tolerance in the intertidal seaweed Neoporphyra haitanensis
-- **저자**: Xue S, Chen J, Xiao J, Xin J et al.
-- **저널**: *Plant physiology and biochemistry : PPB* (2026) | **출처**: PubMed | **원문**: [10.1016/j.plaphy.2026.111781](#)
-- **대상 생물군**: `Neoporphyra, Porphyra`
-- **대표 이미지**: ![](https://images.unsplash.com/photo-1563674407-b5de7db5ccb0?auto=format&fit=crop&w=800&q=80)
-
-#### 📌 핵심 성과 (Key Takeaways)
-1. Desiccation stress constitutes a significant environmental challenge for macroalgae inhabiting the intertidal zone, in which recurrent tidal cycles shape their physiological tolerance.
-2. Males displayed higher trehalose levels with up-regulated expression of trehalose-6-phosphate synthase, the key enzyme in trehalose synthesis.
-3. This study provides new insights into the sex-related adaptive mechanisms of macroalgae and has valuable implications for understanding population dynamics under environmental stresses and for guiding strain selection in mariculture.
-
-#### 💡 연구자 시사점
-본 연구는 Neoporphyra, Porphyra의 육종 · 분자생물학 · 병해 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.
-
-#### 📄 초록 (Abstract)
-Desiccation stress constitutes a significant environmental challenge for macroalgae inhabiting the intertidal zone, in which recurrent tidal cycles shape their physiological tolerance. However, sex-related responses to desiccation in macroalgae remain largely unexplored. In this study, we integrated physiological measurements with transcriptomic and metabolomic analyses to investigate sex-related responses of Neoporphyra haitanensis to desiccation stress. Physiological results revealed that males possessed a stronger osmotic adjustment capacity than females under desiccation. Consistently, non-invasive micro-test results confirmed that males exhibited superior Na+ and Ca2+ extrusion abilities, while maintaining a higher K+ level. Multi-omics further uncovered sex-based molecular strategies to cope with desiccation stress. Males displayed higher trehalose levels with up-regulated expression of trehalose-6-phosphate synthase, the key enzyme in trehalose synthesis. In contrast, females displayed higher proteasome gene expression and greater amino acid accumulation levels, suggesting a reliance on amino acid accumulation driven by protein degradation for osmotic protection. Moreover, males displayed higher transcript levels of ion transport-related genes, including genes encoding sodium/hydrogen exchangers (NHXs) and K+-stimulated pyrophosphate-energized sodium pumps (HppAs), which facilitated toxic ion exclusion and stable K+ retention. Overall, these findings revealed the critical role of sex-specific osmotic adjustment strategies in desiccation tolerance of N. haitanensis, driven by osmotic adjustment strategies integrating organic osmolyte synthesis and inorganic ion transport. This study provides new insights into the sex-related adaptive mechanisms of macroalgae and has valuable implications for understanding population dynamics under environmental stresses and for guiding strain selection in mariculture.
-
----
-
-### 5. Selection and characterization of an improved strain produced by…
-- **원문 제목**: Selection and characterization of an improved strain produced by inter-species hybridization between Pyropia sp. from India and Pyropia haitanensis from China
-- **저자**: Ding H, Lv F, Wu H, Yan X
-- **저널**: *Aquaculture* (2018) | **출처**: Crossref | **원문**: [10.1016/j.aquaculture.2018.03.015](https://doi.org/10.1016/j.aquaculture.2018.03.015)
+### 2. 인 결핍에 맞서는 방사무늬김의 생존 전략, 세포 주변질 알칼리 포스파타아제의 인 흡수 기작 규명
+- **원문 제목**: Functional characterization and periplasmic localization of a phosphorus starvation-induced alkaline phosphatase involved in phosphate acquisition in Pyropia yezoensis
+- **저자**: Yoshimizu M, Yamagishi Y, Kuwano K, Miwa Y
+- **저널**: *Bioscience, biotechnology, and biochemistry* (2026) | **출처**: 🌐 해외 PubMed | **원문 열람**: [10.1093/bbb/zbag114](https://doi.org/10.1093/bbb/zbag114)
 - **대상 생물군**: `Pyropia`
-- **대표 이미지**: ![](https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80)
+- **대표 이미지**: ![](https://images.unsplash.com/photo-1582719471384-894fbb16e074?auto=format&fit=crop&w=800&q=80&sig=35721&paper=7044)
 
-#### 📌 핵심 성과 (Key Takeaways)
-1. 관련 학술 문헌 제목: Selection and characterization of an improved strain produced by inter-species hybridization between Pyropia sp.
-2. from India and Pyropia haitanensis from China.
-3. 자세한 연구 성과는 원문 링크를 참고하십시오.
+#### 📌 핵심 요약 포인트 (Key Takeaways)
+1. 방사무늬김은 환경 내 인이 고갈되면 전사 수준에서 알칼리 포스파타아제 유전자 발현을 유도하여 결핍 상태에 대응한다.
+2. 자연 해수 농도의 Na+, Ca2+, Mg2+ 이온 조건에서 활성화되는 76-kDa 크기의 이 효소는 인트론이 없는 유전자에서 발현되며, 글리세로인산·당인산·뉴클레오시드 인산 등 다양한 유기태 인 기질을 효과적으로 분해한다.
+3. N-당화 및 분비 시그널을 지닌 성숙 효소가 엽체의 세포 주변질에 국재화됨으로써 외부 유기태 인을 신속히 무기인산으로 전환·흡수하는 방어 기작이 작동함을 입증했다.
 
-#### 💡 연구자 시사점
-본 연구는 Pyropia의 육종 · 분자생물학 · 병해 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.
+#### 💡 연구자 시사점 (Researcher's Takeaway)
+연안의 무기 인 영양염 고갈 시기에도 김이 유기 인을 흡수해 황백화 등의 영양 스트레스를 견딜 수 있는 생리적 근거를 제시하므로, 어장 내 유기태 인 농도 모니터링 및 양식 품종의 영양 흡수 효율 평가 지표로 활용할 수 있다.
 
-#### 📄 초록 (Abstract)
-관련 학술 문헌 제목: Selection and characterization of an improved strain produced by inter-species hybridization between Pyropia sp. from India and Pyropia haitanensis from China. 자세한 연구 성과는 원문 링크를 참고하십시오.
-
----
-
-## 🔬 SECTION 02: 엽체 생리 · 생활사 · 사상체
-
-> 💡 **Editor's Insight: 사상체 각포자 방출 메커니즘과 엽체 생리 환경 적응 전략**
-> 광주기 및 수온 변동에 따른 각포자 방출 제어 기전과 분자 마커가 주목받고 있습니다.
-
-### 1. Mechanistic insights into deodorization of Pyropia haitanensis…
-- **원문 제목**: Mechanistic insights into deodorization of Pyropia haitanensis by ultrasound-assisted Lactiplantibacillus plantarum fermentation: Linking key odorants with amino acid metabolism
-- **저자**: Wang D, Zhang Y, Xu X, Wei B et al.
-- **저널**: *Food chemistry* (2026) | **출처**: PubMed | **원문**: [10.1016/j.foodchem.2026.151510](#)
-- **대상 생물군**: `Pyropia`
-- **대표 이미지**: ![](https://images.unsplash.com/photo-1614728894747-a83421789f10?auto=format&fit=crop&w=800&q=80)
-
-#### 📌 핵심 성과 (Key Takeaways)
-1. The fishy odor of Pyropia haitanensis limits its sensory acceptance and industrial utilization.
-2. Furthermore, gas chromatography-tandem mass spectrometry (GC-MS/MS) combined with flavor omission and recombination experiments identified six key flavor compounds associated with odor reduction.
-3. Overall, this study provides new mechanistic insights into UAF-mediated deodorization and supports the high-value utilization of P.
-
-#### 💡 연구자 시사점
-본 연구는 Pyropia의 엽체 생리 · 생활사 · 사상체 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.
-
-#### 📄 초록 (Abstract)
-The fishy odor of Pyropia haitanensis limits its sensory acceptance and industrial utilization. In this study, ultrasound-assisted fermentation (UAF) combined with Lactiplantibacillus plantarum was employed to investigate the molecular mechanism underlying deodorization of P. haitanensis. Gas chromatography-olfactometry-mass spectrometry (GC-O-MS) identified nonanal, 1-octen-3-ol, and trans-β-ionone as the major contributors to the fishy odor. UAF effectively reduced the fishy odor intensity. Furthermore, gas chromatography-tandem mass spectrometry (GC-MS/MS) combined with flavor omission and recombination experiments identified six key flavor compounds associated with odor reduction. Metabolomic analysis revealed significant enrichment of amino acid metabolism during UAF, with L-3-phenyllactic acid showing the greatest increase (17.61-fold). Correlation analysis and metabolite addition experiments demonstrated that UAF activated aromatic amino acid metabolism, promoted the accumulation of pleasant flavor metabolites, and masked undesirable odors. Overall, this study provides new mechanistic insights into UAF-mediated deodorization and supports the high-value utilization of P. haitanensis.
+#### 📄 논문 초록 전문 (Abstract)
+Expression of the alkaline phosphatase gene in Pyropia yezoensis is transcriptionally induced under phosphorus deprivation. To elucidate its physiological role in phosphate acquisition, we purified the enzyme to homogeneity from phosphorus-starved thalli and characterized its biochemical properties. The alkaline phosphatase exhibited broad substrate specificity toward glycerophosphate, sugar phosphates, and nucleoside phosphates, and its activity was enhanced by Na+, Ca2+, and Mg2+ at concentrations comparable to those in natural seawater. Genomic analyses, together with biochemical characterization, revealed that the gene lacks introns and encodes an N-glycosylated phosphatase with a signal peptide. Immunological and biochemical analyses suggested that the mature 76-kDa enzyme is localized to the periplasm of phosphate-starved thalli. These findings suggest that P. yezoensis acquires phosphate under phosphorus-deficient conditions through a periplasmic alkaline phosphatase-mediated phosphate acquisition system.
 
 ---
 
-### 2. Structural, color, and stability properties of hydrogen…
-- **원문 제목**: Structural, color, and stability properties of hydrogen peroxide-treated phycoerythrin-based colorant proteins from dried laver (
-- **저자**: Lee J, Kim M, Kim S, An J et al.
-- **저널**: *Food chemistry: X* (2026) | **출처**: PubMed | **원문**: [10.1016/j.fochx.2026.104500](#)
-- **대상 생물군**: `Pyropia`
-- **대표 이미지**: ![](https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=800&q=80)
-
-#### 📌 핵심 성과 (Key Takeaways)
-1. This study aimed to develop a strategy for use of the water-soluble protein fraction extracted from laver biomass to establish a seaweed biorefinery system.
-2. The protein content (3.48 mg/mL) of the PBCP was approximately 1.5-fold to 2-fold greater than that of PE obtained through ammonium sulfate precipitation and ion-exchange chromatography.
-3. These findings establish PBCP as a stable, seaweed-derived protein pigment for food applications.
-
-#### 💡 연구자 시사점
-본 연구는 Pyropia의 엽체 생리 · 생활사 · 사상체 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.
-
-#### 📄 초록 (Abstract)
-This study aimed to develop a strategy for use of the water-soluble protein fraction extracted from laver biomass to establish a seaweed biorefinery system. By leveraging the oxidative reactivity differences of hydrogen peroxide (H₂O₂), a phycoerythrin (PE)-based colorant protein (PBCP) was produced from the water-soluble proteins of dried laver (Pyropia yezoensis). The highest a* value and PE/PC ratio (13.85) for PBCP were achieved after a 1.5 h treatment with 4.5 mol/L H₂O₂. The protein content (3.48 mg/mL) of the PBCP was approximately 1.5-fold to 2-fold greater than that of PE obtained through ammonium sulfate precipitation and ion-exchange chromatography. H₂O₂ treatment induced interactions between proteins and saccharides in the water-soluble protein, causing aggregation through β-structures primarily stabilized by disulfide bonds. These structural changes led to enhanced emulsifying properties and color stability under various temperature, light, and pH conditions. These findings establish PBCP as a stable, seaweed-derived protein pigment for food applications.
-
----
-
-### 3. In vitro protein digestibility assessment in edible seaweeds:…
-- **원문 제목**: In vitro protein digestibility assessment in edible seaweeds: Methodological approach and species comparison
-- **저자**: Díaz-Piñero L, Correa Y, Bojorges H, Martínez J et al.
-- **저널**: *Food research international (Ottawa, Ont.)* (2026) | **출처**: PubMed | **원문**: [10.1016/j.foodres.2026.120458](#)
-- **대상 생물군**: `Porphyra`
-- **대표 이미지**: ![](https://images.unsplash.com/photo-1509563768818-dafe9ad27b4e?auto=format&fit=crop&w=800&q=80)
-
-#### 📌 핵심 성과 (Key Takeaways)
-1. Seaweeds are promising sustainable alternative protein sources, however, their complex cell wall structures may limit protein bioaccessibility.
-2. Protein digestibility differed significantly among species, with Porphyra dioica showing the highest values (45-60%), followed by Saccharina latissima (20-35%) and Ulva lacinulata (10-30%).
-3. Overall, this work provides new insights into the relationship between seaweed composition and structure, and protein bioaccessibility, contributing to a more accurate evaluation of seaweeds as alternative protein sources and supporting the development of tailored processing strategies to enhance their nutritional value.
-
-#### 💡 연구자 시사점
-본 연구는 Porphyra의 엽체 생리 · 생활사 · 사상체 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.
-
-#### 📄 초록 (Abstract)
-Seaweeds are promising sustainable alternative protein sources, however, their complex cell wall structures may limit protein bioaccessibility. This study evaluated the in vitro protein digestibility of three seaweeds, Ulva lacinulata (green), Porphyra dioica (red), and Saccharina latissima (brown), applying the INFOGEST protocol specifically adapted for seaweed matrices. The influence of preservation methods (freezing vs freeze-drying) was also assessed. Compositional and multi-scale structural characterization of the seaweeds before and after digestion was performed to understand their digestive behaviour. Protein digestibility differed significantly among species, with Porphyra dioica showing the highest values (45-60%), followed by Saccharina latissima (20-35%) and Ulva lacinulata (10-30%). These differences were linked to variations in polysaccharide composition and cell wall architecture, which influenced enzyme accessibility. Freeze-drying generally reduced digestibility, likely due to processing-induced structural changes that may reduce protein accessibility. Additionally, digestibility values were strongly affected by the formulation of the protein-free blanks, highlighting the importance of matrix-specific controls in the in vitro protocol. Overall, this work provides new insights into the relationship between seaweed composition and structure, and protein bioaccessibility, contributing to a more accurate evaluation of seaweeds as alternative protein sources and supporting the development of tailored processing strategies to enhance their nutritional value.
-
----
-
-### 4. Machine learning-assisted discovery of AdMysD for enhanced…
-- **원문 제목**: Machine learning-assisted discovery of AdMysD for enhanced porphyra-334 biosynthesis
-- **저자**: Yuan L, Feng S, Xie S, Liu Q et al.
-- **저널**: *Bioorganic chemistry* (2026) | **출처**: PubMed | **원문**: [10.1016/j.bioorg.2026.110312](#)
-- **대상 생물군**: `Porphyra`
-- **대표 이미지**: ![](https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80)
-
-#### 📌 핵심 성과 (Key Takeaways)
-1. Mycosporine-like amino acids (MAAs) are functional secondary metabolites renowned for their exceptional UV protection, antioxidant properties, and environmental resilience.
-2. In this study, we developed an integrated, data-driven screening framework combining Sequence Similarity Networks (SSN), deep representation learning (UniRep), and Positive-Unlabeled Bagging (PU Bagging) to explore the MysD functional landscape.
-3. Our findings provide a biocatalytic tool for the efficient production of MAAs and demonstrate the potential of a PU-learning-based prioritization strategy for identifying rare enzyme families with sparse functional annotations.
-
-#### 💡 연구자 시사점
-본 연구는 Porphyra의 엽체 생리 · 생활사 · 사상체 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.
-
-#### 📄 초록 (Abstract)
-Mycosporine-like amino acids (MAAs) are functional secondary metabolites renowned for their exceptional UV protection, antioxidant properties, and environmental resilience. In the MAA biosynthetic pathway, MysD is the pivotal enzyme mediating the chemical transition of the cyclohexenone core into a cyclohexenimine-type scaffold. This MysD-catalyzed secondary amino acid modification not only dictates the chemical diversity of MAAs but also facilitates a crucial bathochromic shift, moving the UV absorption maximum from the UVB range into the high-penetration UVA region. Despite its significance, MysD remains the rate-limiting step in the biosynthesis of iminomycosporine-like amino acids. To date, only eight MysD enzymes have been heterologously validated, with even fewer subjected to biochemical characterization, which severely restricts the use of conventional supervised machine learning for enzyme discovery. In this study, we developed an integrated, data-driven screening framework combining Sequence Similarity Networks (SSN), deep representation learning (UniRep), and Positive-Unlabeled Bagging (PU Bagging) to explore the MysD functional landscape. This pipeline effectively compressed the search space from approximately 951 unannotated homologues to a prioritized 42 candidates. Experimental validation led to the discovery of AdMysD from Aphanothece hegewaldii, which exhibited a 3-fold increase in catalytic efficiency for porphyra-334 production relative to the previously established benchmark, NlMysD. Notably, while demonstrating a primary preference for l-Thr, AdMysD displayed significant substrate promiscuity by accepting l-Ser, l-Ala, and l-Cys to produce iminomycosporine derivatives. Our findings provide a biocatalytic tool for the efficient production of MAAs and demonstrate the potential of a PU-learning-based prioritization strategy for identifying rare enzyme families with sparse functional annotations.
-
----
-
-### 5. Roasting-induced changes in the metabolite profile of laver (
-- **원문 제목**: Roasting-induced changes in the metabolite profile of laver (
-- **저자**: Song S, Chae S, Cho S, Kim H et al.
-- **저널**: *Food chemistry: X* (2026) | **출처**: PubMed | **원문**: [10.1016/j.fochx.2026.104450](#)
-- **대상 생물군**: `Neopyropia, Pyropia`
-- **대표 이미지**: ![](https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80)
-
-#### 📌 핵심 성과 (Key Takeaways)
-1. This study investigated non-volatile metabolites in laver (Neopyropia yezoensis) roasted under different temperature/time conditions.
-2. Antioxidant activity increased, with ABTS+ radical scavenging activity and FRAP exhibiting maximum increases of 4.55- and 4.18-fold, respectively.
-3. These findings provide insight into metabolite and antioxidant activity changes during roasting and offer fundamental data for optimizing roasting conditions.
-
-#### 💡 연구자 시사점
-본 연구는 Neopyropia, Pyropia의 엽체 생리 · 생활사 · 사상체 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.
-
-#### 📄 초록 (Abstract)
-This study investigated non-volatile metabolites in laver (Neopyropia yezoensis) roasted under different temperature/time conditions. Ultra-performance liquid chromatography-quadrupole time-of-flight mass spectrometry-based metabolomics identified 69 metabolites, including mycosporine-like amino acids (MAAs) and their dehydrated derivatives. Multivariate analysis showed that dehydrated MAAs were among the key roasting-responsive metabolites. As roasting intensity increased, MAAs decreased to 0.08-fold of the initial value, while dehydrated MAAs increased 1.22- to 13.61-fold. Antioxidant activity increased, with ABTS+ radical scavenging activity and FRAP exhibiting maximum increases of 4.55- and 4.18-fold, respectively. Pearson's correlation analysis revealed strong positive associations (r > 0.93) between dehydrated MAAs and antioxidant activity. This pattern is consistent with the extended conjugation and enhanced electron delocalization of dehydrated MAAs, which may facilitate radical stabilization. These findings provide insight into metabolite and antioxidant activity changes during roasting and offer fundamental data for optimizing roasting conditions.
-
----
-
-### 6. The complete mitochondrial genome of
-- **원문 제목**: The complete mitochondrial genome of
-- **저자**: Ceballos G, Muñiz-Salazar R, León-Cisneros K, Serviere-Zaragoza E et al.
-- **저널**: *Mitochondrial DNA. Part B, Resources* (2026) | **출처**: PubMed | **원문**: [10.1080/23802359.2026.2743397](#)
-- **대상 생물군**: `Neoporphyra, Porphyra`
-- **대표 이미지**: ![](https://images.unsplash.com/photo-1559827260-dc66d52bef19?auto=format&fit=crop&w=800&q=80)
-
-#### 📌 핵심 성과 (Key Takeaways)
-1. Neoporphyra hollenbergii is an endemic red alga from the Gulf of California, a region with notable cryptic diversity.
-2. The cox1 and rnl genes contain introns, reflecting red algal mitogenome complexity, while gene organization is conserved across Neoporphyra.
-3. perforata, clarifying regional Bangiales mitochondrial evolution.
-
-#### 💡 연구자 시사점
-본 연구는 Neoporphyra, Porphyra의 엽체 생리 · 생활사 · 사상체 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.
-
-#### 📄 초록 (Abstract)
-Neoporphyra hollenbergii is an endemic red alga from the Gulf of California, a region with notable cryptic diversity. We report its first complete mitochondrial genome and the first Bangiales mitogenome from the region. The circular mitogenome measures 31,565 bp (30.6% GC) and contains 50 genes, including 22 protein-coding genes, two rRNA genes, 24 tRNA genes, tatC, and orf813. The cox1 and rnl genes contain introns, reflecting red algal mitogenome complexity, while gene organization is conserved across Neoporphyra. Phylogenetic analyses place N. hollenbergii sister to N. perforata, clarifying regional Bangiales mitochondrial evolution.
-
----
-
-### 7. Comparative plastome analyses and genomic resource development…
+### 3. Comparative plastome analyses and genomic resource development…
 - **원문 제목**: Comparative plastome analyses and genomic resource development for five Neoporphyra haitanensis and two Neopyropia yezoensis cultivars based on genome skimming data
 - **저자**: Zhang C, Gao Z, Wang H, Zhou W et al.
-- **저널**: *Journal of phycology* (2026) | **출처**: PubMed | **원문**: [10.1111/jpy.70205](#)
-- **대상 생물군**: `Porphyra, Neoporphyra, Pyropia, Neopyropia`
-- **대표 이미지**: ![](https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80)
+- **저널**: *Journal of phycology* (2026) | **출처**: 🌐 해외 PubMed | **원문 열람**: [10.1111/jpy.70205](https://doi.org/10.1111/jpy.70205)
+- **대상 생물군**: `Neoporphyra, Neopyropia, Pyropia, Porphyra`
+- **대표 이미지**: ![](https://images.unsplash.com/photo-1581093588401-fbb62a02f120?auto=format&fit=crop&w=800&q=80&sig=98271&paper=9510)
 
-#### 📌 핵심 성과 (Key Takeaways)
+#### 📌 핵심 요약 포인트 (Key Takeaways)
 1. Neoporphyra haitanensis and Neopyropia yezoensis are two economically important seaweeds in Asia, yet their germplasm identification is often hindered by high phenotypic plasticity and limited molecular resources.
 2. haitanensis and 256 in Ny.
 3. This study provides comprehensive genomic resources-including complete plastomes, hypervariable regions, and polymorphic SSR markers-that will facilitate germplasm identification, phylogenetic studies, and molecular breeding in Porphyra sensu lato.
 
-#### 💡 연구자 시사점
-본 연구는 Porphyra, Neoporphyra, Pyropia, Neopyropia의 엽체 생리 · 생활사 · 사상체 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.
+#### 💡 연구자 시사점 (Researcher's Takeaway)
+This study provides comprehensive genomic resources-including complete plastomes, hypervariable regions, and polymorphic SSR markers-that will facilitate germplasm identification, phylogenetic studies, and molecular breeding in Porphyra sensu lato.
 
-#### 📄 초록 (Abstract)
-Neoporphyra haitanensis and Neopyropia yezoensis are two economically important seaweeds in Asia, yet their germplasm identification is often hindered by high phenotypic plasticity and limited molecular resources. To address this, we utilized a genome skimming strategy on five No. haitanensis and two Ny. yezoensis cultivars to retrieve their plastome information (including whole plastome sequences, plastome-divergent hotspots, and plastome-derived SSRs) and to identify genome-wide polymorphic nuclear SSRs. The plastomes of No. haitanensis (201,110-201,310 bp) were markedly larger than those of Ny. yezoensis (191,974 bp), a difference largely driven by expansions in intergenic regions. Gene annotation identified 253 genes in No. haitanensis and 256 in Ny. yezoensis, with the latter uniquely containing two additional hypothetical ORFs (ORF33 and ORF35) and an extra rRNA gene (rrfB). Further comparative analysis revealed seven hypervariable regions (π > 0.1), five of which-apcE-tatC, psbW-trnR, psbX-accD, trnW-rpl11, and ycf32-rpl32-are intergenic spacers with strong potential as species-discriminatory barcodes. We also characterized 26-30 chloroplast-derived SSRs and identified notable interspecific variations in their repeat-type profiles. Importantly, we developed 230 and 505 high-quality polymorphic nuclear SSRs for No. haitanensis and Ny. yezoensis, respectively, predominantly trinucleotide repeats, offering a robust toolset for fine-scale genetic analyses. Phylogenetic reconstruction using 201 shared plastid protein-coding genes clearly separated the two species into distinct clades, supporting their independent evolutionary trajectories, and further revealed intraspecific genetic differentiation, particularly with the cultivar ZD-1 forming a distinct branch within No. haitanensis. This study provides comprehensive genomic resources-including complete plastomes, hypervariable regions, and polymorphic SSR markers-that will facilitate germplasm identification, phylogenetic studies, and molecular breeding in Porphyra sensu lato.
+#### 📄 논문 초록 전문 (Abstract)
+Neoporphyra haitanensis and Neopyropia yezoensis are two economically important seaweeds in Asia, yet their germplasm identification is often hindered by high phenotypic plasticity and limited molecular resources. To address this, we utilized a genome skimming strategy on five No. haitanensis and two Ny. yezoensis cultivars to retrieve their plastome information (including whole plastome sequences, plastome-divergent hotspots, and plastome-derived SSRs) and to identify genome-wide polymorphic nuclear SSRs. The plastomes of No. haitanensis (201,110-201,310 bp) were markedly larger than those of Ny. yezoensis (191,974 bp), a difference largely driven by expansions in intergenic regions. Gene annotation identified 253 genes in No. haitanensis and 256 in Ny. yezoensis, with the latter uniquely containing two additional hypothetical ORFs (ORF33 and ORF35) and an extra rRNA gene (rrfB). Further comparative analysis revealed seven hypervariable regions (π > 0.1), five of which-apcE-tatC, psbW-trnR, psbX-accD, trnW-rpl11, and ycf32-rpl32-are intergenic spacers with strong potential as species-discriminatory barcodes. We also characterized 26-30 chloroplast-derived SSRs and identified notable interspecific variations in their repeat-type profiles. Importantly, we developed 230 and 505 high-quality polymorphic nuclear SSRs for No. haitanensis and Ny. yezoensis, respectively, predominantly trinucleotide repeats, offering a robust toolset for fine-scale genetic analyses. Phylogenetic reconstruction using 201 shared plastid protein-coding genes clearly separated the two species into distinct clades, supporting their independent evolutionary trajectories, and further revealed intraspecific genetic differentiation, particularly with the cultivar ZD-1 forming a distinct branch within No. haitanensis. This study provides comprehensive genomic resources-including complete plastomes, hypervariable regions, and polymorphic SSR markers-that will facilitate germplasm identification, phylogenetic studies, and molecular breeding in Porphyra sensu lato.
 
 ---
 
-### 8. Genome-Guided and De Novo Transcriptome Analysis of a Newly…
+### 4. 해양 유산균 발효 김 추출물, 장내 항상성 회복과 대장염 완화 효능 입증
+- **원문 제목**: Marine-derived lactic acid bacteria fermentation enhances the bioactivity of Neopyropia haitanensis by improving intestinal homeostasis
+- **저자**: Liu Z, Chen J, Xu J, Yi H et al.
+- **저널**: *Food research international (Ottawa, Ont.)* (2026) | **출처**: 🌐 해외 PubMed | **원문 열람**: [10.1016/j.foodres.2026.120522](https://doi.org/10.1016/j.foodres.2026.120522)
+- **대상 생물군**: `Neopyropia, Pyropia`
+- **대표 이미지**: ![](https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=800&q=80&sig=48218&paper=9112)
+
+#### 📌 핵심 요약 포인트 (Key Takeaways)
+1. 해양에서 분리한 유산균 15종 중 발효능이 탁월한 Pediococcus pentosaceus HYZ2-1 등 3개 균주를 선발해 해단김(Neopyropia haitanensis)의 기능성 강화 발효 전략을 구축했습니다.
+2. 발효산물은 대장염 마우스의 결장 단축과 혈변을 줄이고, 혈청 IL-6 억제 및 IL-10 촉진과 더불어 SOD·카탈라아제 활성화 및 뮤신 2·밀착연접 유전자 발현을 크게 높였습니다.
+3. 대사체 분석 결과 발효 전 과정에서 항산화 및 면역 조절과 직결되는 특정 기능성 대사물질의 생성이 일관되게 증가하여 장벽 보호 효과를 극대화하는 것으로 확인되었습니다.
+
+#### 💡 연구자 시사점 (Researcher's Takeaway)
+단순 건조 및 원물 소비에 편중된 김 가공 산업에서 해양 미생물 발효 공정을 접목하면 장 질환 개선용 고부가가치 메디푸드 및 헬스케어 소재로의 제품 다각화가 가능합니다.
+
+#### 📄 논문 초록 전문 (Abstract)
+This study investigated the functional fermentation of Neopyropia haitanensis using marine-derived lactic acid bacteria (LAB), aiming to develop effective strategies to improve the bioactivity and functionality of seaweed-based foods. Fifteen LAB strains were isolated from marine sources, among which three strains, namely Pediococcus pentosaceus HYZ2-1, Limosilactobacillus reuteri HYS1-1, and Ligilactobacillus salivarius HYD1-1 with superior fermentation performance, were selected. In vitro cellular assays indicated that the fermented products exhibited antioxidant, anti-inflammatory, and intestinal barrier-enhancing effects. Furthermore, in colitis mice, the fermented products alleviated symptoms such as weight loss, hematochezia, and colon shortening, and significantly reduced serum interleukin (IL)-6 levels while increasing IL-10 levels, compared with the unfermented samples. Colon tissues showed decreased malondialdehyde and increased superoxide dismutase and catalase activities. The gene expressions of tight junctions and mucin 2 were upregulated. Metabolomic analysis revealed consistent upregulation of specific bioactive metabolites across all fermented groups, and these metabolites were strongly correlated with the observed improvements in antioxidant capacity, immune modulation, and intestinal barrier integrity. Overall, this study demonstrates the functional advantages of marine-derived LAB in enhancing the bioactivity of N. haitanensis, providing new insights into the development of seaweed-based functional foods, especially for gut health.
+
+---
+
+### 5. 방사무늬김의 환경 스트레스 대응 세포골격 조절자 NpyFormin 유전자군 3종 발굴
+- **원문 제목**: Identification and Expression Analysis of the Formin Gene Family in
+- **저자**: Ye S, Ji H, Chen L, Qi J et al.
+- **저널**: *Genes* (2026) | **출처**: 🌐 해외 PubMed | **원문 열람**: [10.3390/genes17091089](https://doi.org/10.3390/genes17091089)
+- **대상 생물군**: `Neopyropia, Pyropia`
+- **대표 이미지**: ![](https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=800&q=80&sig=65846&paper=5862)
+
+#### 📌 핵심 요약 포인트 (Key Takeaways)
+1. 조간대 환경에서 극심한 온도, 광량 및 수분 변화를 겪는 방사무늬김(Neopyropia yezoensis)에서 액틴 세포골격 역학을 조절하는 포민(Formin) 유전자군의 기능 분석이 시도되었다.
+2. 유전체 분석을 통해 FH2 보존 도메인을 지닌 3종의 유전자 NpyFormin01~03을 동정하였으며, 온도(4·10·24 °C), 조도(20·60·100 μmol photons m⁻² s⁻¹), 건조 및 재수화 조건에 따른 발현 양상을 정량화했다.
+3. 발굴된 3개 NpyFormin 유전자는 공통 도메인을 유지하면서도 단백질 구조와 모티프 구성에서 분화를 보여 복합 환경 스트레스에 각각 특화된 세포골격 재구성 역할을 수행함을 규명했다.
+
+#### 💡 연구자 시사점 (Researcher's Takeaway)
+조간대 김 양식 환경의 수온 급변과 노출 건조 스트레스에 대응하는 세포 수준의 조절 유전자를 확인함으로써, 기후변화에 저항성을 갖는 내재해성 김 신품종 분자 육종의 핵심 타깃 마커로 활용될 수 있다.
+
+#### 📄 논문 초록 전문 (Abstract)
+Background/Objectives:Neopyropia yezoensis is an economically important intertidal red alga that frequently experiences fluctuations in temperature, light intensity, and water availability. Formins are key regulators of actin nucleation and cytoskeletal dynamics, but their functions and stress-responsive roles in red algae remain poorly understood. This study aimed to systematically identify and characterize the Formin gene family in N. yezoensis and investigate their expression responses to different environmental stresses. Methods: Formin family members were identified from the N. yezoensis genome using HMMER and BLAST (2.17.0) searches based on the conserved FH2 domain, followed by domain validation. Gene structures, conserved motifs, physicochemical properties, predicted subcellular localization, protein structures, chromosomal distribution, phylogenetic relationships, and cis-acting elements in the upstream regions were analyzed. The expression patterns of the identified Formin genes were further examined by qRT-PCR under different temperature (4, 10, and 24 °C), light intensity (20, 60, and 100 μmol photons m-2 s-1), and desiccation/rehydration conditions. Results: Three Formin genes, designated NpyFormin01-03, were identified in N. yezoensis. All three encoded proteins contained the conserved FH2 domain but differed in motif composition, domain architecture, predicted subcellular localization, and structural features. NpyFormin01 contained additional PTEN_C2 and PTP_DSP_cys domains, whereas NpyFormin02 and NpyFormin03 contained only the FH2 domain. Phylogenetic analysis showed that the N. yezoensis Formins clustered with Formins from other red algae. Promoter analysis identified multiple predicted cis-acting elements associated with light, temperature, environmental, and phytohormone responses. Expression analysis revealed distinct responses among the three genes under the tested environmental conditions. Notably, NpyFormin01 was significantly upregulated under high-temperature treatment (24 °C), whereas NpyFormin02 and NpyFormin03 showed no statistically significant expression changes under the tested conditions. Conclusions: This study provides a systematic characterization of the Formin gene family in N. yezoensis. The differences in protein architecture, structural features, promoter cis-acting elements, and environmental-responsive expression patterns suggest potential functional divergence among NpyFormins. In particular, NpyFormin01 represents a potential heat-responsive candidate gene and may contribute to cytoskeletal regulation during environmental stress adaptation in N. yezoensis. These findings provide a basis for further investigation of the molecular functions of Formins in red algae.
+
+---
+
+### 6. 캘리포니아 만 고유 홍조류 네오포르피라의 첫 미토콘드리아 유전체 완전 해독
+- **원문 제목**: The complete mitochondrial genome of
+- **저자**: Ceballos G, Muñiz-Salazar R, León-Cisneros K, Serviere-Zaragoza E et al.
+- **저널**: *Mitochondrial DNA. Part B, Resources* (2026) | **출처**: 🌐 해외 PubMed | **원문 열람**: [10.1080/23802359.2026.2743397](https://doi.org/10.1080/23802359.2026.2743397)
+- **대상 생물군**: `Neoporphyra, Porphyra`
+- **대표 이미지**: ![](https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80&sig=28715&paper=8767)
+
+#### 📌 핵심 요약 포인트 (Key Takeaways)
+1. 은폐 다양성이 높은 캘리포니아 만 고유종 Neoporphyra hollenbergii를 대상으로 해당 해역 김파래목(Bangiales) 최초의 완전 미토콘드리아 유전체를 완성했다.
+2. 원형 유전체는 31,565 bp 크기에 30.6%의 GC 함량을 보이며, 22개 단백질 암호화 유전자와 tatC, orf813을 포함한 50개 유전자 및 cox1·rnl 인트론 구조를 지녔다.
+3. 유전자 배열은 Neoporphyra 속 내에서 고도로 보존되어 있었으며, 계통 분석에서 N. perforata의 자매군으로 확인되어 지역 고유종의 진화적 분화를 규명했다.
+
+#### 💡 연구자 시사점 (Researcher's Takeaway)
+형태학적으로 구분이 어려운 김파래목 은폐종을 정확히 식별할 분자 마커를 제공하며, 극한 환경에 적응한 야생 유전자원을 활용한 김 육종 전략 및 지역 유전체 보전 체계 구축에 기준 데이터를 제시한다.
+
+#### 📄 논문 초록 전문 (Abstract)
+Neoporphyra hollenbergii is an endemic red alga from the Gulf of California, a region with notable cryptic diversity. We report its first complete mitochondrial genome and the first Bangiales mitogenome from the region. The circular mitogenome measures 31,565 bp (30.6% GC) and contains 50 genes, including 22 protein-coding genes, two rRNA genes, 24 tRNA genes, tatC, and orf813. The cox1 and rnl genes contain introns, reflecting red algal mitogenome complexity, while gene organization is conserved across Neoporphyra. Phylogenetic analyses place N. hollenbergii sister to N. perforata, clarifying regional Bangiales mitochondrial evolution.
+
+---
+
+### 7. Sex-related osmotic adjustment strategies underpin desiccation…
+- **원문 제목**: Sex-related osmotic adjustment strategies underpin desiccation tolerance in the intertidal seaweed Neoporphyra haitanensis
+- **저자**: Xue S, Chen J, Xiao J, Xin J et al.
+- **저널**: *Plant physiology and biochemistry : PPB* (2026) | **출처**: 🌐 해외 PubMed | **원문 열람**: [10.1016/j.plaphy.2026.111781](https://doi.org/10.1016/j.plaphy.2026.111781)
+- **대상 생물군**: `Neoporphyra, Porphyra`
+- **대표 이미지**: ![](https://images.unsplash.com/photo-1484557052118-f32bd25b45b5?auto=format&fit=crop&w=800&q=80&sig=28045&paper=9317)
+
+#### 📌 핵심 요약 포인트 (Key Takeaways)
+1. Desiccation stress constitutes a significant environmental challenge for macroalgae inhabiting the intertidal zone, in which recurrent tidal cycles shape their physiological tolerance.
+2. Physiological results revealed that males possessed a stronger osmotic adjustment capacity than females under desiccation.
+3. This study provides new insights into the sex-related adaptive mechanisms of macroalgae and has valuable implications for understanding population dynamics under environmental stresses and for guiding strain selection in mariculture.
+
+#### 💡 연구자 시사점 (Researcher's Takeaway)
+This study provides new insights into the sex-related adaptive mechanisms of macroalgae and has valuable implications for understanding population dynamics under environmental stresses and for guiding strain selection in mariculture.
+
+#### 📄 논문 초록 전문 (Abstract)
+Desiccation stress constitutes a significant environmental challenge for macroalgae inhabiting the intertidal zone, in which recurrent tidal cycles shape their physiological tolerance. However, sex-related responses to desiccation in macroalgae remain largely unexplored. In this study, we integrated physiological measurements with transcriptomic and metabolomic analyses to investigate sex-related responses of Neoporphyra haitanensis to desiccation stress. Physiological results revealed that males possessed a stronger osmotic adjustment capacity than females under desiccation. Consistently, non-invasive micro-test results confirmed that males exhibited superior Na+ and Ca2+ extrusion abilities, while maintaining a higher K+ level. Multi-omics further uncovered sex-based molecular strategies to cope with desiccation stress. Males displayed higher trehalose levels with up-regulated expression of trehalose-6-phosphate synthase, the key enzyme in trehalose synthesis. In contrast, females displayed higher proteasome gene expression and greater amino acid accumulation levels, suggesting a reliance on amino acid accumulation driven by protein degradation for osmotic protection. Moreover, males displayed higher transcript levels of ion transport-related genes, including genes encoding sodium/hydrogen exchangers (NHXs) and K+-stimulated pyrophosphate-energized sodium pumps (HppAs), which facilitated toxic ion exclusion and stable K+ retention. Overall, these findings revealed the critical role of sex-specific osmotic adjustment strategies in desiccation tolerance of N. haitanensis, driven by osmotic adjustment strategies integrating organic osmolyte synthesis and inorganic ion transport. This study provides new insights into the sex-related adaptive mechanisms of macroalgae and has valuable implications for understanding population dynamics under environmental stresses and for guiding strain selection in mariculture.
+
+---
+
+### 8. 대부도산 방사무늬김의 전사체 분석을 통한 고온 내성 대사 경로 규명
 - **원문 제목**: Genome-Guided and De Novo Transcriptome Analysis of a Newly Isolated
 - **저자**: Choi J, Kim J
-- **저널**: *International journal of genomics* (2025) | **출처**: PubMed | **원문**: [10.1155/ijog/9130170](#)
-- **대상 생물군**: `Porphyra, Neoporphyra, Pyropia, Neopyropia`
-- **대표 이미지**: ![](https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80)
+- **저널**: *International journal of genomics* (2025) | **출처**: 🌐 해외 PubMed | **원문 열람**: [10.1155/ijog/9130170](https://doi.org/10.1155/ijog/9130170)
+- **대상 생물군**: `Neoporphyra, Neopyropia, Pyropia, Porphyra`
+- **대표 이미지**: ![](https://images.unsplash.com/photo-1581093450021-4a7360e9a6b5?auto=format&fit=crop&w=800&q=80&sig=70262&paper=729)
 
-#### 📌 핵심 성과 (Key Takeaways)
-1. [BACKGROUND] The escalating threats of global warming and the increasing demand for sustainable resources have driven research towards identifying resilient organisms capable of thriving under changing environmental conditions.
-2. The transcripts were annotated using homologous sequences from the Swiss-Prot, NCBI NR, Pfam, SignalP, and KEGG databases.
-3. This information can be applied to the development of new cultivars with enhanced growth and heat tolerance, supporting sustainable aquaculture in the face of climate change.
+#### 📌 핵심 요약 포인트 (Key Takeaways)
+1. 지구온난화에 대응하여 고온 조건에서도 안정적으로 생장하는 대부도 유래 방사무늬김 신규 계통의 분자적 적응 기작을 규명하기 위해 다양한 온도 조건에서 전사체 분석을 수행했다.
+2. 참조 유전체 정렬을 통해 45,089개의 전사체를, 비정렬 리드의 de novo 조립으로 105,750개의 전사체를 확보하고 단백질 데이터베이스 기반 주석 작업과 차등발현유전자(DEG) 분석을 완료했다.
+3. 고온에 노출되었을 때 해당작용 및 광합성과 연관된 핵심 대사 경로 유전자들의 발현이 상향 조절되면서 고수온 스트레스 속에서도 생육을 유지하는 기전이 확인되었다.
 
-#### 💡 연구자 시사점
-본 연구는 Porphyra, Neoporphyra, Pyropia, Neopyropia의 엽체 생리 · 생활사 · 사상체 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.
+#### 💡 연구자 시사점 (Researcher's Takeaway)
+고수온으로 인한 김 양식 피해가 심화되는 상황에서 대부도 계통의 광합성 및 에너지 대사 조절 유전체 정보는 기후적응형 신품종 선발과 분자 육종 체계 구축을 앞당기는 핵심 지표로 활용될 수 있다.
 
-#### 📄 초록 (Abstract)
-[BACKGROUND] The escalating threats of global warming and the increasing demand for sustainable resources have driven research towards identifying resilient organisms capable of thriving under changing environmental conditions. A recently identified strain of Neopyropia yezoensis from Daebudo has demonstrated the ability to grow even under elevated temperatures. Understanding the genetic and molecular mechanisms underlying this resilience is crucial for the development of heat-tolerant cultivars.
-
-[METHODS] This study investigates the characteristics of the newly isolated strain N. yezoensis (Daebudo) through comprehensive transcriptome analysis on samples cultivated at various temperatures. Transcript reads were aligned to the genome sequences of N. yezoensis (susabi-nori) and Neoporphyra haitanensis. Aligned and unaligned reads were assembled separately, generating 45,089 transcripts and 105,750 transcripts, respectively. The transcripts were annotated using homologous sequences from the Swiss-Prot, NCBI NR, Pfam, SignalP, and KEGG databases. Differentially expressed gene (DEG) analysis was performed, and gene function classification (Gene Ontology) was conducted using BLASTX and BLASTP results from the Swiss-Prot database.
-
-[RESULTS] Some transcripts that were upregulated under higher temperatures were found to be involved in key metabolic pathways such as glycolysis or photosynthesis. Also, several DEGs, including heat shock proteins and elongation factor 1 alpha, were identified as potential contributors to high-temperature tolerance. These DEGs are likely involved in cellular stress response and protein synthesis, facilitating growth under elevated temperatures.
-
-[CONCLUSION] The findings provide new molecular-level insights into the growth mechanisms of N. yezoensis under heat stress. This information can be applied to the development of new cultivars with enhanced growth and heat tolerance, supporting sustainable aquaculture in the face of climate change.
+#### 📄 논문 초록 전문 (Abstract)
+The escalating threats of global warming and the increasing demand for sustainable resources have driven research towards identifying resilient organisms capable of thriving under changing environmental conditions. A recently identified strain of Neopyropia yezoensis from Daebudo has demonstrated the ability to grow even under elevated temperatures. Understanding the genetic and molecular mechanisms underlying this resilience is crucial for the development of heat-tolerant cultivars. This study investigates the characteristics of the newly isolated strain N. yezoensis (Daebudo) through comprehensive transcriptome analysis on samples cultivated at various temperatures. Transcript reads were aligned to the genome sequences of N. yezoensis (susabi-nori) and Neoporphyra haitanensis. Aligned and unaligned reads were assembled separately, generating 45,089 transcripts and 105,750 transcripts, respectively. The transcripts were annotated using homologous sequences from the Swiss-Prot, NCBI NR, Pfam, SignalP, and KEGG databases. Differentially expressed gene (DEG) analysis was performed, and gene function classification (Gene Ontology) was conducted using BLASTX and BLASTP results from the Swiss-Prot database. Some transcripts that were upregulated under higher temperatures were found to be involved in key metabolic pathways such as glycolysis or photosynthesis. Also, several DEGs, including heat shock proteins and elongation factor 1 alpha, were identified as potential contributors to high-temperature tolerance. These DEGs are likely involved in cellular stress response and protein synthesis, facilitating growth under elevated temperatures. The findings provide new molecular-level insights into the growth mechanisms of N. yezoensis under heat stress. This information can be applied to the development of new cultivars with enhanced growth and heat tolerance, supporting sustainable aquaculture in the face of climate change.
 
 ---
 
-### 9. From sea to farm: Repurposing invasive macroalgae into biocidal…
+### 9. 침입성 해조류 갈고리풀과 괭생이모자반 추출물, 토마토 역병 억제 및 식물 방어 기전 활성화 규명
 - **원문 제목**: From sea to farm: Repurposing invasive macroalgae into biocidal and defense-enhancing tools against tomato late blight (Phytophthora infestans)
 - **저자**: Laureano G, Fonseca B, Carreiras J, Felix C et al.
-- **저널**: *Plant science : an international journal of experimental plant biology* (2026) | **출처**: PubMed | **원문**: [10.1016/j.plantsci.2026.113445](#)
+- **저널**: *Plant science : an international journal of experimental plant biology* (2026) | **출처**: 🌐 해외 PubMed | **원문 열람**: [10.1016/j.plantsci.2026.113445](https://doi.org/10.1016/j.plantsci.2026.113445)
 - **대상 생물군**: `Asparagopsis`
-- **대표 이미지**: ![](https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80)
+- **대표 이미지**: ![](https://images.unsplash.com/photo-1576086476234-1103be98f096?auto=format&fit=crop&w=800&q=80&sig=92852&paper=3861)
 
-#### 📌 핵심 성과 (Key Takeaways)
-1. Marine seaweeds are increasingly recognized as sources of bioactive compounds with potential applications in sustainable agriculture, including as biocontrol agents.
-2. Asparagopsis armata elicited particularly strong responses, whereas S.
-3. muticum in this context presents a resource-efficient biocontrol strategy that links plant adjuvant defense enhancer effect with the valorization of underexploited marine biomass, reinforcing their potential within sustainable agricultural systems.
+#### 📌 핵심 요약 포인트 (Key Takeaways)
+1. 해양 생태계를 교란하는 침입성 대형 갈조류와 홍조류 바이오매스를 지속가능한 농업용 생물학적 방제 자원으로 전환하는 연구가 주목받고 있습니다.
+2. 갈고리풀(Asparagopsis armata)과 괭생이모자반(Sargassum muticum) 조추출물은 토마토의 광화학 에너지 분배, 막 지질 조성, 산화환원 균형 및 2차 대사를 조절하여 감자역병균(Phytophthora infestans)에 대한 저항성을 크게 끌어올렸으며, 특히 갈고리풀이 강력한 방어 유도 효과를 나타냈습니다.
+3. 두 해조류 추출물은 병원균 활성을 직접 억제함과 동시에 기주 식물의 복합 방어 기전을 가동해 감염 중 식물 회복력을 높이는 친환경 방제제로서의 잠재력을 입증했습니다.
 
-#### 💡 연구자 시사점
-본 연구는 Asparagopsis의 엽체 생리 · 생활사 · 사상체 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.
+#### 💡 연구자 시사점 (Researcher's Takeaway)
+연안 생태계를 위협하는 유해 침입 해조류 수거 바이오매스를 고부가가치 농작물 병해 방제제 및 면역 증강제로 자원화함으로써 해양 환경 정화와 친환경 농업 자재 개발을 잇는 지속가능한 순환 경제 모델 구축이 가능해집니다.
 
-#### 📄 초록 (Abstract)
+#### 📄 논문 초록 전문 (Abstract)
 Marine seaweeds are increasingly recognized as sources of bioactive compounds with potential applications in sustainable agriculture, including as biocontrol agents. The selection of invasive species such as Asparagopsis armata and Sargassum muticum offers a dual benefit: obtaining bioactive metabolites from a low-cost resource while simultaneously mitigating their ecological impacts using this harmful biomass. In the present study, crude extracts from A. armata and S. muticum were applied to tomato plants and were effective as biocontrol agents against Phytophthora infestans. Treatments modulated key physiological and metabolic processes, including photochemical energy distribution, membrane lipid composition, redox balance, and secondary metabolism, effectively eliciting plants for enhanced defense. Asparagopsis armata elicited particularly strong responses, whereas S. muticum induced moderate but consistent effects across multiple pathways. These changes were correlated with the pathogen inoculation outcome and improved plant resilience during infection. These findings provide physiological insights into how these macroalgae can suppress pathogen activity while enhancing host defenses, highlighting their potential as sustainable biocontrol agents. Exploiting A. armata and S. muticum in this context presents a resource-efficient biocontrol strategy that links plant adjuvant defense enhancer effect with the valorization of underexploited marine biomass, reinforcing their potential within sustainable agricultural systems.
 
 ---
 
-### 10. Comparative metataxonomic analysis of total, viable, and active…
+### 10. 바다나물 첨가 시 반추위 미생물의 생존성과 활성 메타분류학적 특성 규명
 - **원문 제목**: Comparative metataxonomic analysis of total, viable, and active rumen microbial communities under methane-mitigated conditions
 - **저자**: Lee W, Kim G, Li W, Park T
-- **저널**: *Environmental microbiome* (2026) | **출처**: PubMed | **원문**: [10.1186/s40793-026-00963-y](#)
+- **저널**: *Environmental microbiome* (2026) | **출처**: 🌐 해외 PubMed | **원문 열람**: [10.1186/s40793-026-00963-y](https://doi.org/10.1186/s40793-026-00963-y)
 - **대상 생물군**: `Asparagopsis`
-- **대표 이미지**: ![](https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80)
+- **대표 이미지**: ![](https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=800&q=80&sig=30855&paper=1758)
 
-#### 📌 핵심 성과 (Key Takeaways)
-1. [BACKGROUND] The rumen microbiota play a central role in digestion and methane production, thereby influencing ruminant productivity.
-2. RNA-derived profiles exhibited the lowest alpha diversity, with vDNA profiles falling between those of RNA and tDNA.
-3. Thus, vDNA may serve as a practical additional approach when RNA analysis is technically constrained.
+#### 📌 핵심 요약 포인트 (Key Takeaways)
+1. 반추동물의 메탄 저감 전략을 정밀하게 평가하기 위해 사멸 세포를 배제하는 PMA 처리 DNA(vDNA)와 전사 활성을 반영하는 RNA, 총 DNA(tDNA)의 메타분류학적 분석을 대조군과 비교하였다.
+2. 모넨신(MON)이 발효 특성과 미생물 군집을 가장 크게 변화시킨 반면, 바다나물속(Asparagopsis sp.) 처리군은 3-NOP 처리군과 유사한 발효 양상을 보였으며 RNA 프로파일에서 가장 낮은 알파 다양성을 기록했다.
+3. 미생물 군집 유사도 분석 결과 브레이-커티스 거리에서는 tDNA와 RNA가 유사했으나 자카드 거리 기반 분류에서는 생존 세포를 대변하는 vDNA와 RNA 간의 일치도가 더 높게 나타났다.
 
-#### 💡 연구자 시사점
-본 연구는 Asparagopsis의 엽체 생리 · 생활사 · 사상체 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.
+#### 💡 연구자 시사점 (Researcher's Takeaway)
+바다나물 공급에 따른 반추위 메탄 저감 메커니즘을 규명할 때 사멸 미생물로 인한 DNA 분석 왜곡을 방지하고 실제 활성·생존 균총을 구별할 수 있는 분자 모니터링 기준을 제시한다.
 
-#### 📄 초록 (Abstract)
-[BACKGROUND] The rumen microbiota play a central role in digestion and methane production, thereby influencing ruminant productivity. Evaluating methane mitigation strategies requires consideration of both microbial viability and activity. DNA-based methods may include signals from dead or damaged cells, whereas RNA-based approaches may underrepresent viable populations with low transcriptional activity. Propidium monoazide (PMA) reduces DNA signals from membrane-compromised cells, providing an indirect, membrane-integrity-based assessment of microbial viability. This study compared taxonomic and predicted functional profiles obtained by 16S rRNA gene amplicon sequencing of total DNA (tDNA), PMA-treated DNA (vDNA), and RNA-derived cDNA (RNA) from rumen samples subjected to three in vitro methane mitigation treatments: 3-nitrooxypropanol (NOP), monensin (MON), and Asparagopsis sp. (ASP).
-
-[RESULTS] MON treatment induced the most pronounced changes in fermentation parameters and microbial composition, whereas the NOP and ASP groups exhibited similar fermentation outcomes. RNA-derived profiles exhibited the lowest alpha diversity, with vDNA profiles falling between those of RNA and tDNA. Procrustes analysis revealed metric-dependent similarities among sample types; Bray-Curtis distances showed closer alignment between tDNA and RNA, whereas Jaccard distances showed greater similarity between vDNA and RNA. Parabacteroides exhibited significantly higher relative abundance in vDNA than in tDNA or RNA. Notably, Succiniclasticum showed opposing correlations with the acetate-to-propionate ratio between tDNA and RNA under MON treatment, whereas no significant correlation was detected in vDNA. Differential analysis of PICRUSt2-predicted methanogenesis-related KEGG modules revealed sample type- and treatment-specific patterns.
-
-[CONCLUSIONS] PMA-treated DNA provided a distinct perspective on the rumen microbiota by reducing signals from membrane-compromised cells and revealing populations that were differently represented in tDNA and RNA-derived profiles, including membrane-intact populations with low RNA representation. Thus, vDNA may serve as a practical additional approach when RNA analysis is technically constrained.
+#### 📄 논문 초록 전문 (Abstract)
+The rumen microbiota play a central role in digestion and methane production, thereby influencing ruminant productivity. Evaluating methane mitigation strategies requires consideration of both microbial viability and activity. DNA-based methods may include signals from dead or damaged cells, whereas RNA-based approaches may underrepresent viable populations with low transcriptional activity. Propidium monoazide (PMA) reduces DNA signals from membrane-compromised cells, providing an indirect, membrane-integrity-based assessment of microbial viability. This study compared taxonomic and predicted functional profiles obtained by 16S rRNA gene amplicon sequencing of total DNA (tDNA), PMA-treated DNA (vDNA), and RNA-derived cDNA (RNA) from rumen samples subjected to three in vitro methane mitigation treatments: 3-nitrooxypropanol (NOP), monensin (MON), and Asparagopsis sp. (ASP). MON treatment induced the most pronounced changes in fermentation parameters and microbial composition, whereas the NOP and ASP groups exhibited similar fermentation outcomes. RNA-derived profiles exhibited the lowest alpha diversity, with vDNA profiles falling between those of RNA and tDNA. Procrustes analysis revealed metric-dependent similarities among sample types; Bray-Curtis distances showed closer alignment between tDNA and RNA, whereas Jaccard distances showed greater similarity between vDNA and RNA. Parabacteroides exhibited significantly higher relative abundance in vDNA than in tDNA or RNA. Notably, Succiniclasticum showed opposing correlations with the acetate-to-propionate ratio between tDNA and RNA under MON treatment, whereas no significant correlation was detected in vDNA. Differential analysis of PICRUSt2-predicted methanogenesis-related KEGG modules revealed sample type- and treatment-specific patterns. PMA-treated DNA provided a distinct perspective on the rumen microbiota by reducing signals from membrane-compromised cells and revealing populations that were differently represented in tDNA and RNA-derived profiles, including membrane-intact populations with low RNA representation. Thus, vDNA may serve as a practical additional approach when RNA analysis is technically constrained.
 
 ---
 
-### 11. Challenges and sustainable solutions in multispecies extensive…
-- **원문 제목**: Challenges and sustainable solutions in multispecies extensive livestock production systems across India's agroclimatic zones
-- **저자**: Yadav D, Maletha D, Puniya A, Mojjada S et al.
-- **저널**: *Tropical animal health and production* (2026) | **출처**: PubMed | **원문**: [10.1007/s11250-026-05313-1](#)
-- **대상 생물군**: `Asparagopsis`
-- **대표 이미지**: ![](https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80)
+## 🔬 SECTION 02: 엽체 생리 · 생활사 · 사상체 (Thallus & Life Cycle)
 
-#### 📌 핵심 성과 (Key Takeaways)
-1. Extensive livestock production systems support over 70 million rural households across India's 15 agroclimatic zones, yet face interconnected challenges of feed scarcity (national deficits of approximately 11-32% for green fodder, 23% for dry fodder, and 29-40% for concentrates, with localized winter shortages reaching ~ 68% in some humid zones), water stress (intensifying under climate change), inadequate veterinary coverage, and welfare compromises.
-2. Dietary additives reduce enteric methane by 17-98%, ranging from tannin-rich forages (~ 17-20%) to Asparagopsis seaweed (up to ~ 98% under in vitro/in vivo conditions) in small ruminants and cattle (Verma and Kumar Verma 2025; Mwangi et al.
-3. Our integrated framework enables evidence-based resource allocation and supports India's climate commitments while enhancing rural livelihoods.
+> 💡 **Weekly Research Briefing**: 본 섹션에서는 엽체 생리 · 생활사 · 사상체 분야의 최신 연구 성과 12편을 엄선하여 브리핑합니다.
 
-#### 💡 연구자 시사점
-본 연구는 Asparagopsis의 엽체 생리 · 생활사 · 사상체 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.
+### 1. 초음파 보조 유산균 발효로 김 비린내 억제… 아미노산 풍미 대사체 17.6배 증가 규명
+- **원문 제목**: Mechanistic insights into deodorization of Pyropia haitanensis by ultrasound-assisted Lactiplantibacillus plantarum fermentation: Linking key odorants with amino acid metabolism
+- **저자**: Wang D, Zhang Y, Xu X, Wei B et al.
+- **저널**: *Food chemistry* (2026) | **출처**: 🌐 해외 PubMed | **원문 열람**: [10.1016/j.foodchem.2026.151510](https://doi.org/10.1016/j.foodchem.2026.151510)
+- **대상 생물군**: `Pyropia`
+- **대표 이미지**: ![](https://images.unsplash.com/photo-1559827260-dc66d52bef19?auto=format&fit=crop&w=800&q=80&sig=72719&paper=3586)
 
-#### 📄 초록 (Abstract)
-Extensive livestock production systems support over 70 million rural households across India's 15 agroclimatic zones, yet face interconnected challenges of feed scarcity (national deficits of approximately 11-32% for green fodder, 23% for dry fodder, and 29-40% for concentrates, with localized winter shortages reaching ~ 68% in some humid zones), water stress (intensifying under climate change), inadequate veterinary coverage, and welfare compromises. This review adopts a systems analysis approach to examine feed-water-health-welfare-climate interactions across multiple species (cattle, buffalo, sheep, goat, camel) in ecologically diverse production environments.
+#### 📌 핵심 요약 포인트 (Key Takeaways)
+1. 김(Pyropia haitanensis)의 산업적 가공을 저해하는 특유의 비린내는 nonanal, 1-octen-3-ol, trans-β-ionone이 주도적인 원인 물질로 확인되었다.
+2. 초음파 보조 유산균(Lactiplantibacillus plantarum) 발효 시 방향족 아미노산 대사가 집중 활성화되면서 유익한 풍미 물질인 L-3-phenyllactic acid가 17.61배 급증했다.
+3. 발효 대사 과정에서 새롭게 축적된 6가지 핵심 풍미 화합물이 기존 불쾌취를 효과적으로 마스킹하여 비린내 강도를 크게 낮추는 분자적 기전이 규명되었다.
 
-[METHODS] We synthesized evidence from approximately 350 sources and field innovations to develop an integrated framework mapping resource flows, constraint interactions, and adaptive capacity across zones. We synthesized reported trade-offs between productivity enhancement, emissions mitigation, and welfare improvement based on evidence reported across studies.
+#### 💡 연구자 시사점 (Researcher's Takeaway)
+원초 김의 불쾌한 이취를 친환경 생물공정으로 제어할 수 있는 대사적 근거를 제시함으로써, 김을 원료로 한 고부가가치 식품 및 바이오 기능성 소재화의 상용화 적용 범위를 크게 확장할 수 있다.
 
-[KEY SYSTEMS FINDINGS] Literature consistently reports that feed and water constraints interact non-additively in zones with > 30% feed deficit with several studies reporting approximately 1.5-2-fold amplification of drought impacts on productivity. These values represent reported ranges synthesized conceptually rather than a pooled statistical estimate. Indigenous innovations (Johads, chauka systems, ethno-veterinary practices) yield 30-40% gains in resource efficiency when integrated with modern inputs in arid/semi-arid cattle-goat systems (Pankaj et al. 2023; Kanwal et al. 2020). Species-zone matching shows thermal-tolerant breeds maintain 15-20% higher productivity (Kankrej cattle, Barbari goats) than crossbreeds under heat stress (> 35 °C) (Sarang et al. 2024; Sejian et al. 2019; Das 2017). Dietary additives reduce enteric methane by 17-98%, ranging from tannin-rich forages (~ 17-20%) to Asparagopsis seaweed (up to ~ 98% under in vitro/in vivo conditions) in small ruminants and cattle (Verma and Kumar Verma 2025; Mwangi et al. 2023; Amad and Zentek 2023).
-
-[SYSTEMS INTEGRATION FRAMEWORK] We propose a conceptual decision-support matrix integrating breed selection, feed management, water harvesting, and veterinary delivery across 15 zones, identifying optimal intervention packages. Zone-specific vulnerability indices highlight critical thresholds based on synthesized evidence from the literature. Arid zones (13-14) are reported to experience compounding welfare and productivity decline when summer temperatures exceed approximately 42 °C for extended periods (in the order of 90 days), consistent with heat-stress thresholds documented in the literature (Sejian et al. 2019; Mishra et al. 2024).
-
-[IMPLICATIONS] Sustainable transformation requires synergistic implementation of traditional knowledge and technological innovation, gender-inclusive extension (women provide 50% plus labor) and policy frameworks addressing cross-scale interactions. Research gaps include empirical validation of welfare indicators, emission baselines for indigenous breeds, and community-based institutional models. Our integrated framework enables evidence-based resource allocation and supports India's climate commitments while enhancing rural livelihoods.
+#### 📄 논문 초록 전문 (Abstract)
+The fishy odor of Pyropia haitanensis limits its sensory acceptance and industrial utilization. In this study, ultrasound-assisted fermentation (UAF) combined with Lactiplantibacillus plantarum was employed to investigate the molecular mechanism underlying deodorization of P. haitanensis. Gas chromatography-olfactometry-mass spectrometry (GC-O-MS) identified nonanal, 1-octen-3-ol, and trans-β-ionone as the major contributors to the fishy odor. UAF effectively reduced the fishy odor intensity. Furthermore, gas chromatography-tandem mass spectrometry (GC-MS/MS) combined with flavor omission and recombination experiments identified six key flavor compounds associated with odor reduction. Metabolomic analysis revealed significant enrichment of amino acid metabolism during UAF, with L-3-phenyllactic acid showing the greatest increase (17.61-fold). Correlation analysis and metabolite addition experiments demonstrated that UAF activated aromatic amino acid metabolism, promoted the accumulation of pleasant flavor metabolites, and masked undesirable odors. Overall, this study provides new mechanistic insights into UAF-mediated deodorization and supports the high-value utilization of P. haitanensis.
 
 ---
 
-### 12. Diseases of the red seaweed Pyropia (= Porphyra) in Korean sea…
-- **원문 제목**: Diseases of the red seaweed Pyropia (= Porphyra) in Korean sea farms
-- **저자**: Klochkova T, Kim G
-- **저널**: *Bulletin оf Kamchatka State Technical University* (2015) | **출처**: Crossref | **원문**: [10.17217/2079-0333-2015-32-48-52](https://doi.org/10.17217/2079-0333-2015-32-48-52)
-- **대상 생물군**: `Porphyra, Pyropia`
-- **대표 이미지**: ![](https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80)
+### 2. 방사무늬김 수용성 단백질의 산화 반응 제어로 고안정성 천연 피코에리트린 색소 구현
+- **원문 제목**: Structural, color, and stability properties of hydrogen peroxide-treated phycoerythrin-based colorant proteins from dried laver (
+- **저자**: Lee J, Kim M, Kim S, An J et al.
+- **저널**: *Food chemistry: X* (2026) | **출처**: 🌐 해외 PubMed | **원문 열람**: [10.1016/j.fochx.2026.104500](https://doi.org/10.1016/j.fochx.2026.104500)
+- **대상 생물군**: `Pyropia`
+- **대표 이미지**: ![](https://images.unsplash.com/photo-1682687220063-4742bd7fd538?auto=format&fit=crop&w=800&q=80&sig=59393&paper=89)
 
-#### 📌 핵심 성과 (Key Takeaways)
-1. 관련 학술 문헌 제목: Diseases of the red seaweed Pyropia (= Porphyra) in Korean sea farms.
-2. 자세한 연구 성과는 원문 링크를 참고하십시오.
-3. 대상 분류군(Porphyra, Pyropia) 실증 분석.
+#### 📌 핵심 요약 포인트 (Key Takeaways)
+1. 해조류 바이오리파이너리 구축을 목표로 건조 방사무늬김(Pyropia yezoensis)의 수용성 단백질에 과산화수소 산화 반응을 적용하여 피코에리트린 기반 기능성 색소 단백질을 성공적으로 추출했다.
+2. 4.5 mol/L 농도의 과산화수소로 1.5시간 처리했을 때 가장 높은 적색도(a*)와 13.85의 PE/PC 비율을 달성했으며, 단백질 함량은 3.48 mg/mL로 기존 크로마토그래피 정제 대비 1.5~2배 향상되었다.
+3. 산화 처리 과정에서 이황화 결합으로 안정화된 단백질-당류 복합 β-구조가 형성되면서 다양한 온도와 빛, pH 조건에서도 우수한 유화 특성과 색상 안정성을 유지하는 식품용 천연 색소 단백질을 확보했다.
 
-#### 💡 연구자 시사점
-본 연구는 Porphyra, Pyropia의 엽체 생리 · 생활사 · 사상체 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.
+#### 💡 연구자 시사점 (Researcher's Takeaway)
+복잡한 크로마토그래피 공정 없이 단순 산화 처리만으로 고안정성 피코에리트린을 회수할 수 있어, 김 가공 부산물의 고부가가치 식품 소재화와 해조류 바이오리파이너리 상용화에 직접적인 기술 기반을 제공한다.
 
-#### 📄 초록 (Abstract)
-관련 학술 문헌 제목: Diseases of the red seaweed Pyropia (= Porphyra) in Korean sea farms. 자세한 연구 성과는 원문 링크를 참고하십시오.
-
----
-
-### 13. Estimation for Seaweed Biomass Using Regression: A…
-- **원문 제목**: Estimation for Seaweed Biomass Using Regression: A Methodological Approach
-- **저자**: Ko Y, Sung G, Kim J
-- **저널**: *ALGAE* (2008) | **출처**: Crossref | **원문**: [10.4490/algae.2008.23.4.289](https://doi.org/10.4490/algae.2008.23.4.289)
-- **대상 생물군**: `Pyropia/Porphyra complex`
-- **대표 이미지**: ![](https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80)
-
-#### 📌 핵심 성과 (Key Takeaways)
-1. 관련 학술 문헌 제목: Estimation for Seaweed Biomass Using Regression: A Methodological Approach.
-2. 자세한 연구 성과는 원문 링크를 참고하십시오.
-3. 대상 분류군(Pyropia/Porphyra complex) 실증 분석.
-
-#### 💡 연구자 시사점
-본 연구는 Pyropia/Porphyra complex의 엽체 생리 · 생활사 · 사상체 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.
-
-#### 📄 초록 (Abstract)
-관련 학술 문헌 제목: Estimation for Seaweed Biomass Using Regression: A Methodological Approach. 자세한 연구 성과는 원문 링크를 참고하십시오.
+#### 📄 논문 초록 전문 (Abstract)
+This study aimed to develop a strategy for use of the water-soluble protein fraction extracted from laver biomass to establish a seaweed biorefinery system. By leveraging the oxidative reactivity differences of hydrogen peroxide (H₂O₂), a phycoerythrin (PE)-based colorant protein (PBCP) was produced from the water-soluble proteins of dried laver (Pyropia yezoensis). The highest a* value and PE/PC ratio (13.85) for PBCP were achieved after a 1.5 h treatment with 4.5 mol/L H₂O₂. The protein content (3.48 mg/mL) of the PBCP was approximately 1.5-fold to 2-fold greater than that of PE obtained through ammonium sulfate precipitation and ion-exchange chromatography. H₂O₂ treatment induced interactions between proteins and saccharides in the water-soluble protein, causing aggregation through β-structures primarily stabilized by disulfide bonds. These structural changes led to enhanced emulsifying properties and color stability under various temperature, light, and pH conditions. These findings establish PBCP as a stable, seaweed-derived protein pigment for food applications.
 
 ---
 
-### 14. A revaluation of algal diseases in Korean Pyropia (Porphyra) sea…
-- **원문 제목**: A revaluation of algal diseases in Korean Pyropia (Porphyra) sea farms and their economic impact
-- **저자**: Kim G, Moon K, Kim J, Shim J et al.
-- **저널**: *ALGAE* (2014) | **출처**: Crossref | **원문**: [10.4490/algae.2014.29.4.249](https://doi.org/10.4490/algae.2014.29.4.249)
-- **대상 생물군**: `Porphyra, Pyropia`
-- **대표 이미지**: ![](https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80)
+### 3. 남극 해조류 피로피아 추출물, 결핵균 억제와 항염증 면역 조절 활성 입증
+- **원문 제목**: Antimycobacterial Activity and Nitric Oxide Production Inhibition of Antarctic Seaweeds
+- **저자**: Rosas Fernández C, Simão T, Lasunskaia E, Borges R et al.
+- **저널**: *ACS omega* (2026) | **출처**: 🌐 해외 PubMed | **원문 열람**: [10.1021/acsomega.6c01332](https://doi.org/10.1021/acsomega.6c01332)
+- **대상 생물군**: `Pyropia`
+- **대표 이미지**: ![](https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=800&q=80&sig=45416&paper=6940)
 
-#### 📌 핵심 성과 (Key Takeaways)
-1. 관련 학술 문헌 제목: A revaluation of algal diseases in Korean Pyropia (Porphyra) sea farms and their economic impact.
-2. 자세한 연구 성과는 원문 링크를 참고하십시오.
-3. 대상 분류군(Porphyra, Pyropia) 실증 분석.
+#### 📌 핵심 요약 포인트 (Key Takeaways)
+1. 다제내성 결핵균의 출현으로 새로운 항균 물질과 숙주 유도 치료제 발굴이 시급해진 가운데 극한 환경에 서식하는 남극 해조류가 유망한 천연물 보고로 주목받고 있다.
+2. 분석 대상 29개 지질 친화성 추출물 중 72.4%가 결핵균 H37Rv 균주에 대해 25 μg/mL 미만의 MIC50을 보였으며, 특히 피로피아 엔디비이폴리아(Pyropia endiviifolia)는 표준균주 및 고독성 M299 균주에 대해 각각 2.1 μg/mL와 3.2 μg/mL의 매우 뛰어난 최소억제농도를 기록했다.
+3. 전체 시료의 93.1%가 iNOS 발현 억제를 통해 일산화질소 생성을 차단하였으며, 피로피아를 포함한 5개 속 추출물은 높은 선택성 지수와 함께 항결핵 및 면역 조절의 이중 활성을 나타냈다.
 
-#### 💡 연구자 시사점
-본 연구는 Porphyra, Pyropia의 엽체 생리 · 생활사 · 사상체 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.
+#### 💡 연구자 시사점 (Researcher's Takeaway)
+극한지 서식 김속(Pyropia) 해조류가 지닌 강력한 항균·항염 지질 대사체 특성은 바이오의약 소재화 가능성을 보여주며, 고부가가치 해조류 자원의 기능성 품종 육종 및 생리활성 물질 양산 체계 수립에 중요한 기반을 제공한다.
 
-#### 📄 초록 (Abstract)
-관련 학술 문헌 제목: A revaluation of algal diseases in Korean Pyropia (Porphyra) sea farms and their economic impact. 자세한 연구 성과는 원문 링크를 참고하십시오.
-
----
-
-### 15. Temporal Variation of Seaweed Biomass in Korean Coasts: Yokjido,…
-- **원문 제목**: Temporal Variation of Seaweed Biomass in Korean Coasts: Yokjido, Gyeongnam Province
-- **저자**: Choi C, Kim J, Chung I
-- **저널**: *ALGAE* (2008) | **출처**: Crossref | **원문**: [10.4490/algae.2008.23.4.311](https://doi.org/10.4490/algae.2008.23.4.311)
-- **대상 생물군**: `Pyropia/Porphyra complex`
-- **대표 이미지**: ![](https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80)
-
-#### 📌 핵심 성과 (Key Takeaways)
-1. 관련 학술 문헌 제목: Temporal Variation of Seaweed Biomass in Korean Coasts: Yokjido, Gyeongnam Province.
-2. 자세한 연구 성과는 원문 링크를 참고하십시오.
-3. 대상 분류군(Pyropia/Porphyra complex) 실증 분석.
-
-#### 💡 연구자 시사점
-본 연구는 Pyropia/Porphyra complex의 엽체 생리 · 생활사 · 사상체 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.
-
-#### 📄 초록 (Abstract)
-관련 학술 문헌 제목: Temporal Variation of Seaweed Biomass in Korean Coasts: Yokjido, Gyeongnam Province. 자세한 연구 성과는 원문 링크를 참고하십시오.
+#### 📄 논문 초록 전문 (Abstract)
+The emergence of increasingly resistant strains of Mycobacterium tuberculosis (Mtb) makes the search for new antimycobacterial and host-directed therapies essential to help combat this disease. Antarctica extreme environmental conditions make seaweeds an important source for the discovery of bioactive compounds with the potential to treat various diseases caused by microorganisms. In this study, 29 lipophilic extracts of Antarctic seaweeds were evaluated for their potential as antituberculosis drug sources. The antimycobacterial and immunomodulatory activities (based initially on NO inhibition), as well as the chemical profiles of the algae were studied. Of all the extracts, 21 (72.4%) showed antimycobacterial activity with MIC50 values lower than 25 μg/mL against Mtb H37Rv. And, 9 (31%) showed activity also against the hypervirulent strain Mtb M299. Regarding immunomodulation, 27 seaweed extracts (93.1%) inhibited NO production by suppressing iNOS expression with IC50 values lower than 25 μg/mL. Six samples of the genera Desmarestia, Sarcopeltis, Iridaea, Pyropia, and Curdiea with dual activity and a selectivity index higher than ten were selected as promising, with Pyropia endiviifolia extract standing out against Mtb H37Rv and Mtb M299 (MIC50 2.1 ± 0.2 and 3.2 ± 0.7 μg/mL, respectively). GC-MS-based Molecular Networking indicated pentadecanoic acid, hexadecanoic acid, and cholesterol as the major known components of the promising samples. Our study demonstrates for the first time the potential of the secondary metabolites from Antarctic seaweeds against Mtb and encourages further investigation to characterize novel antitubercular agents from these extremophilic organisms.
 
 ---
 
-### 16. Temporal Variations of Seaweed Biomass in Korean Coasts: Daejin,…
-- **원문 제목**: Temporal Variations of Seaweed Biomass in Korean Coasts: Daejin, Gangwondo
-- **저자**: Shin J, Ahn J, Kim Y, Lee S et al.
-- **저널**: *ALGAE* (2008) | **출처**: Crossref | **원문**: [10.4490/algae.2008.23.4.327](https://doi.org/10.4490/algae.2008.23.4.327)
-- **대상 생물군**: `Pyropia/Porphyra complex`
-- **대표 이미지**: ![](https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80)
-
-#### 📌 핵심 성과 (Key Takeaways)
-1. 관련 학술 문헌 제목: Temporal Variations of Seaweed Biomass in Korean Coasts: Daejin, Gangwondo.
-2. 자세한 연구 성과는 원문 링크를 참고하십시오.
-3. 대상 분류군(Pyropia/Porphyra complex) 실증 분석.
-
-#### 💡 연구자 시사점
-본 연구는 Pyropia/Porphyra complex의 엽체 생리 · 생활사 · 사상체 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.
-
-#### 📄 초록 (Abstract)
-관련 학술 문헌 제목: Temporal Variations of Seaweed Biomass in Korean Coasts: Daejin, Gangwondo. 자세한 연구 성과는 원문 링크를 참고하십시오.
-
----
-
-### 17. Effects of Six Antibiotics on the Activity of the Photosynthetic…
-- **원문 제목**: Effects of Six Antibiotics on the Activity of the Photosynthetic Apparatus and Ammonium Uptake of Thallus of Porphyra yezoensis
-- **저자**: Oh M, Kang Y, Lee C, Chung I
-- **저널**: *ALGAE* (2005) | **출처**: Crossref | **원문**: [10.4490/algae.2005.20.2.121](https://doi.org/10.4490/algae.2005.20.2.121)
+### 4. 복잡한 세포벽 뚫고 증명된 김의 우수성, 홍조류 단백질 소화율 최대 60% 기록
+- **원문 제목**: In vitro protein digestibility assessment in edible seaweeds: Methodological approach and species comparison
+- **저자**: Díaz-Piñero L, Correa Y, Bojorges H, Martínez J et al.
+- **저널**: *Food research international (Ottawa, Ont.)* (2026) | **출처**: 🌐 해외 PubMed | **원문 열람**: [10.1016/j.foodres.2026.120458](https://doi.org/10.1016/j.foodres.2026.120458)
 - **대상 생물군**: `Porphyra`
-- **대표 이미지**: ![](https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80)
+- **대표 이미지**: ![](https://images.unsplash.com/photo-1509563768818-dafe9ad27b4e?auto=format&fit=crop&w=800&q=80&sig=72199&paper=2746)
 
-#### 📌 핵심 성과 (Key Takeaways)
-1. 관련 학술 문헌 제목: Effects of Six Antibiotics on the Activity of the Photosynthetic Apparatus and Ammonium Uptake of Thallus of Porphyra yezoensis.
-2. 자세한 연구 성과는 원문 링크를 참고하십시오.
-3. 대상 분류군(Porphyra) 실증 분석.
+#### 📌 핵심 요약 포인트 (Key Takeaways)
+1. 복잡한 세포벽 다당류 구조가 단백질의 생체접근성을 가로막는 한계를 규명하기 위해 해조류 맞춤형 INFOGEST 프로토콜을 적용한 소화율 분석이 진행되었다.
+2. 종별 단백질 소화율은 Porphyra dioica가 45~60%로 가장 높았으며, Saccharina latissima(20~35%)와 Ulva lacinulata(10~30%)가 뒤를 이었고, 동결건조 처리는 구조 변형을 유발해 소화율을 전반적으로 떨어뜨렸다.
+3. 해조류의 세포벽 미세 구조와 다당류 조성이 소화 효소의 침투를 결정짓는 핵심 인자이며, 정밀한 소화율 산출을 위해서는 기질 맞춤형 무단백 블랭크 표준화가 필수적이다.
 
-#### 💡 연구자 시사점
-본 연구는 Porphyra의 엽체 생리 · 생활사 · 사상체 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.
+#### 💡 연구자 시사점 (Researcher's Takeaway)
+김을 고부가가치 대체 단백질 소재로 가공할 때는 단백질 소화율을 저하시키는 동결건조 방식 대신 세포벽 구조 손상을 최소화하는 가공 공정 도입이 요구된다.
 
-#### 📄 초록 (Abstract)
-관련 학술 문헌 제목: Effects of Six Antibiotics on the Activity of the Photosynthetic Apparatus and Ammonium Uptake of Thallus of Porphyra yezoensis. 자세한 연구 성과는 원문 링크를 참고하십시오.
+#### 📄 논문 초록 전문 (Abstract)
+Seaweeds are promising sustainable alternative protein sources, however, their complex cell wall structures may limit protein bioaccessibility. This study evaluated the in vitro protein digestibility of three seaweeds, Ulva lacinulata (green), Porphyra dioica (red), and Saccharina latissima (brown), applying the INFOGEST protocol specifically adapted for seaweed matrices. The influence of preservation methods (freezing vs freeze-drying) was also assessed. Compositional and multi-scale structural characterization of the seaweeds before and after digestion was performed to understand their digestive behaviour. Protein digestibility differed significantly among species, with Porphyra dioica showing the highest values (45-60%), followed by Saccharina latissima (20-35%) and Ulva lacinulata (10-30%). These differences were linked to variations in polysaccharide composition and cell wall architecture, which influenced enzyme accessibility. Freeze-drying generally reduced digestibility, likely due to processing-induced structural changes that may reduce protein accessibility. Additionally, digestibility values were strongly affected by the formulation of the protein-free blanks, highlighting the importance of matrix-specific controls in the in vitro protocol. Overall, this work provides new insights into the relationship between seaweed composition and structure, and protein bioaccessibility, contributing to a more accurate evaluation of seaweeds as alternative protein sources and supporting the development of tailored processing strategies to enhance their nutritional value.
 
 ---
 
-### 18. Large-scale batch algae cultivation: comparison of two seawater…
-- **원문 제목**: Large-scale batch algae cultivation: comparison of two seawater sterilization techniques
-- **저자**: Rhodes M, Sedlacek C, Marcus N
-- **저널**: *Aquaculture Research* (2008) | **출처**: Crossref | **원문**: [10.1111/j.1365-2109.2008.01970.x](https://doi.org/10.1111/j.1365-2109.2008.01970.x)
+### 5. 머신러닝 기반 효소 탐색으로 김의 자외선 차단 물질 포르피라-334 합성 장벽 뚫었다
+- **원문 제목**: Machine learning-assisted discovery of AdMysD for enhanced porphyra-334 biosynthesis
+- **저자**: Yuan L, Feng S, Xie S, Liu Q et al.
+- **저널**: *Bioorganic chemistry* (2026) | **출처**: 🌐 해외 PubMed | **원문 열람**: [10.1016/j.bioorg.2026.110312](https://doi.org/10.1016/j.bioorg.2026.110312)
+- **대상 생물군**: `Porphyra`
+- **대표 이미지**: ![](https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80&sig=33307&paper=3570)
+
+#### 📌 핵심 요약 포인트 (Key Takeaways)
+1. 마이코스포린 유사 아미노산 합성의 율속 효소인 MysD는 자외선 흡수를 UVA 영역으로 전환하는 핵심 역할을 하지만, 기존에 검증된 효소가 8개에 불과해 데이터 기반 탐색에 큰 제약이 있었다.
+2. 서열 유사성 네트워크(SSN)와 딥러닝 UniRep 표현학습, PU 배깅 기법을 통합 구축해 951개의 미주석 효소 후보군을 단 42개 우선순위 후보군으로 압축 선별했다.
+3. 압축된 후보군에 대한 실험적 검증을 거쳐 아파노테케 헤게발디(Aphanothece hegewaldii) 유래 신규 효소 AdMysD를 발굴함으로써 포르피라-334의 고효율 생합성 경로를 확보했다.
+
+#### 💡 연구자 시사점 (Researcher's Takeaway)
+고수온과 강한 일사량에 노출되는 해조류 양식 환경에서 유용 자외선 흡수 물질인 포르피라-334의 생합성 효율을 극대화해 환경 스트레스 저항성 품종 개발 및 고부가가치 해양 바이오 소재 대량 생산 체계로 연결될 수 있다.
+
+#### 📄 논문 초록 전문 (Abstract)
+Mycosporine-like amino acids (MAAs) are functional secondary metabolites renowned for their exceptional UV protection, antioxidant properties, and environmental resilience. In the MAA biosynthetic pathway, MysD is the pivotal enzyme mediating the chemical transition of the cyclohexenone core into a cyclohexenimine-type scaffold. This MysD-catalyzed secondary amino acid modification not only dictates the chemical diversity of MAAs but also facilitates a crucial bathochromic shift, moving the UV absorption maximum from the UVB range into the high-penetration UVA region. Despite its significance, MysD remains the rate-limiting step in the biosynthesis of iminomycosporine-like amino acids. To date, only eight MysD enzymes have been heterologously validated, with even fewer subjected to biochemical characterization, which severely restricts the use of conventional supervised machine learning for enzyme discovery. In this study, we developed an integrated, data-driven screening framework combining Sequence Similarity Networks (SSN), deep representation learning (UniRep), and Positive-Unlabeled Bagging (PU Bagging) to explore the MysD functional landscape. This pipeline effectively compressed the search space from approximately 951 unannotated homologues to a prioritized 42 candidates. Experimental validation led to the discovery of AdMysD from Aphanothece hegewaldii, which exhibited a 3-fold increase in catalytic efficiency for porphyra-334 production relative to the previously established benchmark, NlMysD. Notably, while demonstrating a primary preference for l-Thr, AdMysD displayed significant substrate promiscuity by accepting l-Ser, l-Ala, and l-Cys to produce iminomycosporine derivatives. Our findings provide a biocatalytic tool for the efficient production of MAAs and demonstrate the potential of a PU-learning-based prioritization strategy for identifying rare enzyme families with sparse functional annotations.
+
+---
+
+### 6. Field-deployable, lyophilized cell-free biosensor for robust and…
+- **원문 제목**: Field-deployable, lyophilized cell-free biosensor for robust and selective detection of inorganic arsenic in complex seaweed matrices
+- **저자**: Jeong D, Kim T, Cha M, Lee H et al.
+- **저널**: *Food research international (Ottawa, Ont.)* (2026) | **출처**: 🌐 해외 PubMed | **원문 열람**: [10.1016/j.foodres.2026.119766](https://doi.org/10.1016/j.foodres.2026.119766)
+- **대상 생물군**: `Porphyra`
+- **대표 이미지**: ![](https://images.unsplash.com/photo-1528183429752-a97d0bf99b5a?auto=format&fit=crop&w=800&q=80&sig=7235&paper=8005)
+
+#### 📌 핵심 요약 포인트 (Key Takeaways)
+1. Current on-site arsenic monitoring is hindered by cold-chain dependence and biosafety risks.
+2. A tailored lyophilization strategy eliminated the need for ultra-low temperature storage, retaining ∼70% activity over four weeks at room temperature.
+3. Validated through spike-and-recovery tests in real seaweed extracts, this cold-chain-free, highly sensitive platform represents a significant advancement for decentralized food safety monitoring and environmental screening.
+
+#### 💡 연구자 시사점 (Researcher's Takeaway)
+Validated through spike-and-recovery tests in real seaweed extracts, this cold-chain-free, highly sensitive platform represents a significant advancement for decentralized food safety monitoring and environmental screening.
+
+#### 📄 논문 초록 전문 (Abstract)
+Current on-site arsenic monitoring is hindered by cold-chain dependence and biosafety risks. We developed a field-deployable cell-free protein synthesis (CFPS) biosensor for the rapid, selective detection of toxic inorganic arsenic in seaweed matrices (Sargassum fusiforme and Porphyra sp.). An ArsR-regulated genetic circuit enables effective discrimination between inorganic and organic arsenic species. A tailored lyophilization strategy eliminated the need for ultra-low temperature storage, retaining ∼70% activity over four weeks at room temperature. Notably, freeze-drying serendipitously suppressed leaky expression, reducing background noise by 8-fold compared to liquid controls. Validated through spike-and-recovery tests in real seaweed extracts, this cold-chain-free, highly sensitive platform represents a significant advancement for decentralized food safety monitoring and environmental screening.
+
+---
+
+### 7. 모자반·김 다당류의 황산기 함량이 세포 동결 생존율을 82.2%까지 끌어올리다
+- **원문 제목**: Physicochemical characterization, antioxidant and antifreeze properties of Porphyra haitanensis polysaccharide fractions
+- **저자**: Liu Y, Wang Y, Han L, Peng X et al.
+- **저널**: *Food chemistry* (2026) | **출처**: 🌐 해외 PubMed | **원문 열람**: [10.1016/j.foodchem.2026.150543](https://doi.org/10.1016/j.foodchem.2026.150543)
+- **대상 생물군**: `Porphyra`
+- **대표 이미지**: ![](https://images.unsplash.com/photo-1498084393753-b411b2d26b34?auto=format&fit=crop&w=800&q=80&sig=3266&paper=4106)
+
+#### 📌 핵심 요약 포인트 (Key Takeaways)
+1. 방사무늬김(Porphyra haitanensis) 다당류 분획의 화학적 조성 차이가 항동결 보호 능력 및 항산화 활성에 미치는 메커니즘을 심층 규명했다.
+2. 알코올 침전 농도를 75%에서 45%로 낮출수록 황산기 함량이 높아져, 동결 효모 세포의 생존율이 4.38%에서 82.20%로 급증하고 발효력 또한 1.92 cm에서 2.53 cm로 향상되었다.
+3. 분자 동역학 분석 결과 황산기가 풍부한 다당류는 계면의 물 분자 배열을 재구성해 얼음 결정을 억제함으로써 세포와 식품을 지키는 천연 동결보호제로서의 가치를 입증했다.
+
+#### 💡 연구자 시사점 (Researcher's Takeaway)
+김 가공 부산물이나 추출 다당류의 황산기 조성을 조절함으로써 고부가가치 천연 바이오 동결보호제 및 냉동식품 보존 소재로 상용화할 수 있는 산업적 경로를 제시한다.
+
+#### 📄 논문 초록 전문 (Abstract)
+This study aims to reveal the antifreeze and antioxidant properties of Porphyra haitanensis polysaccharide (PHP) fractions, and to elucidate their relationship with the chemical composition of PHP. With the decrease of alcohol precipitation concentration (75%-45%), the content of sulfate groups (SG) in PHP fractions increased, and their antifreeze effect increased. Specifically, the frozen yeast cells viability increased from 4.38% to 82.20%, and the fermentation capacity of frozen yeast cells increased from 1.92 cm to 2.53 cm. Through correlation analysis, it was found that SG was positively correlated with antifreeze properties, but not with antioxidant activity. Additionally, molecular dynamics simulations showed that polysaccharides with higher SG content enhanced ice crystal inhibition and antifreeze activity by changing the arrangement of the polysaccharide water interface. These results illustrate that the composition of PHP fractions is related to their antifreeze protection effect, and they have potential as cell and food antifreeze agents.
+
+---
+
+### 8. 김 로스팅 과정서 탈수 MAAs 최대 13.6배 급증하며 항산화 활성 4.5배 강화
+- **원문 제목**: Roasting-induced changes in the metabolite profile of laver (
+- **저자**: Song S, Chae S, Cho S, Kim H et al.
+- **저널**: *Food chemistry: X* (2026) | **출처**: 🌐 해외 PubMed | **원문 열람**: [10.1016/j.fochx.2026.104450](https://doi.org/10.1016/j.fochx.2026.104450)
+- **대상 생물군**: `Neopyropia, Pyropia`
+- **대표 이미지**: ![](https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=800&q=80&sig=10637&paper=738)
+
+#### 📌 핵심 요약 포인트 (Key Takeaways)
+1. 온도와 시간 조건을 달리한 방사무늬김 로스팅 과정에서 UPLC-Q-TOF-MS 대사체학 분석을 적용해 마이코스포린 유사 아미노산(MAAs) 및 탈수 유도체를 포함한 총 69종의 비휘발성 대사체를 동정했다.
+2. 가열 강도가 높아짐에 따라 기존 MAAs 함량은 0.08배로 급감한 반면 탈수 MAAs는 1.22~13.61배까지 증가했으며, 이와 맞물려 ABTS+ 라디칼 소거능과 FRAP 항산화 지표가 각각 최대 4.55배, 4.18배 향상되었다.
+3. 탈수 MAAs의 확장된 공액 구조와 전자 비편재화 특성이 라디칼 안정화를 유도해 항산화 활성과 매우 강한 양의 상관관계(r > 0.93)를 나타냄을 확인했다.
+
+#### 💡 연구자 시사점 (Researcher's Takeaway)
+가열 조건 조절을 통해 김 가공품의 항산화 기능성 성분을 극대화할 수 있음을 규명함으로써, 단순 건조김을 넘어 고부가가치 기능성 가공 김 제품 개발을 위한 정밀 열처리 공정 표준화에 실질적인 지침을 제시한다.
+
+#### 📄 논문 초록 전문 (Abstract)
+This study investigated non-volatile metabolites in laver (Neopyropia yezoensis) roasted under different temperature/time conditions. Ultra-performance liquid chromatography-quadrupole time-of-flight mass spectrometry-based metabolomics identified 69 metabolites, including mycosporine-like amino acids (MAAs) and their dehydrated derivatives. Multivariate analysis showed that dehydrated MAAs were among the key roasting-responsive metabolites. As roasting intensity increased, MAAs decreased to 0.08-fold of the initial value, while dehydrated MAAs increased 1.22- to 13.61-fold. Antioxidant activity increased, with ABTS+ radical scavenging activity and FRAP exhibiting maximum increases of 4.55- and 4.18-fold, respectively. Pearson's correlation analysis revealed strong positive associations (r > 0.93) between dehydrated MAAs and antioxidant activity. This pattern is consistent with the extended conjugation and enhanced electron delocalization of dehydrated MAAs, which may facilitate radical stabilization. These findings provide insight into metabolite and antioxidant activity changes during roasting and offer fundamental data for optimizing roasting conditions.
+
+---
+
+### 9. 자외선B 스트레스에 취약한 김 암컷과 항산화·광합성 회복력이 뛰어난 수컷의 성별 생리 차이 규명
+- **원문 제목**: Sex-related differences in photosynthesis, energy metabolism, and antioxidant regulation of Neoporphyra haitanensis to ultraviolet-B stress
+- **저자**: Xue S, Chen J, Xin J, Liang S et al.
+- **저널**: *Ecotoxicology and environmental safety* (2025) | **출처**: 🌐 해외 PubMed | **원문 열람**: [10.1016/j.ecoenv.2025.119117](https://doi.org/10.1016/j.ecoenv.2025.119117)
+- **대상 생물군**: `Neoporphyra, Porphyra`
+- **대표 이미지**: ![](https://images.unsplash.com/photo-1614728894747-a83421789f10?auto=format&fit=crop&w=800&q=80&sig=67283&paper=8319)
+
+#### 📌 핵심 요약 포인트 (Key Takeaways)
+1. 인간 활동으로 증가한 자외선B(UVB) 복사선이 해양 생물을 위협하는 가운데 대형 해조류인 모무늬돌김(Neoporphyra haitanensis)의 암수 간 환경 스트레스 반응 차이를 규명했다.
+2. UVB 노출 시 암컷은 광합성 색소와 활성이 크게 억제되어 활성산소(ROS) 및 말론디알데하이드(MDA) 축적이 심화된 반면, 수컷은 항산화 효소 활성을 높여 산화 스트레스를 효과적으로 완화했다.
+3. 전사체 분석 결과 암컷은 색소 합성과 탄소 고정에 관여하는 ChlM, PE, GAPDH 등의 유전자 발현이 크게 억제되었으나, 수컷은 광합성 관련 유전자를 신속히 상향 조절하여 뛰어난 광합성 회복력을 발휘했다.
+
+#### 💡 연구자 시사점 (Researcher's Takeaway)
+자외선 노출 위험이 높은 연안 김 양식 현장에서 스트레스 내성과 회복력이 우수한 수컷 배우체 계통을 선발·육종함으로써 기후변화에 대응한 고품질 김 생산 안정성을 높일 수 있다.
+
+#### 📄 논문 초록 전문 (Abstract)
+Increased ultraviolet-B (UVB) radiation due to human activities poses a considerable threat to all exposed organisms. While sex-related differences in stress responses have been observed in many plant species, little is known about whether such differences exist in macroalgae. In this study, we investigated the physiological, transcriptomic, and metabolomic responses of male and female Neoporphyra haitanensis under UVB stress and subsequent recovery. The physiological results indicated that UVB stress strongly inhibited the photosynthetic pigment content and activity in females compared to those in males. Consequently, females exhibited higher levels of reactive oxygen species (ROS) and malondialdehyde (MDA) production under UVB stress and recovery. In contrast, males exhibited stronger antioxidant enzyme activity to alleviate the oxidative stress under UVB stress. Transcriptomic analysis revealed that UVB caused a greater downregulation of genes related to pigment synthesis, photosystems, and carbon fixation in females, including genes encoding magnesium protoporphyrin IX methyltransferase (ChlM), phycoerythrin (PE), and glyceraldehyde-3-phosphate dehydrogenase (GAPDH). Furthermore, males possessed a stronger photosynthetic recovery capacity, as a greater number of photosynthesis-related genes were significantly upregulated in males after recovery. Under UVB stress, the expression of genes encoding key enzymes involved in glycolysis, the pentose phosphate pathway, and the tricarboxylic acid cycle was higher in males than in females, indicating a stronger energy metabolism capacity in males. Metabolomic data emphasized the protective role of nonenzymatic antioxidants, particularly flavonoids, with females accumulating more methylated flavonoids and flavonoid glycosides after recovery than males. Overall, these findings highlight sex-related differences in photosynthesis, energy metabolism, and antioxidant regulation in N. haitanensis under UVB stress and recovery. These results contribute to our understanding of how sex differences in macroalgae influence their population survival under increased UVB radiation and provide insights into their potential adaptive responses to ongoing climate change.
+
+---
+
+### 10. 둥근돌김 유래 색소 합성 유전자의 특성 규명과 대장균 기반 피코빌린 생합성 경로 검증
+- **원문 제목**: Systems metabolic engineering of
+- **저자**: Li S, Lu C, Zang X, Duan D et al.
+- **저널**: *Frontiers in plant science* (2025) | **출처**: 🌐 해외 PubMed | **원문 열람**: [10.3389/fpls.2025.1640158](https://doi.org/10.3389/fpls.2025.1640158)
+- **대상 생물군**: `Neoporphyra, Porphyra`
+- **대표 이미지**: ![](https://images.unsplash.com/photo-1544551763-77ef2d0cf967?auto=format&fit=crop&w=800&q=80&sig=83918&paper=5136)
+
+#### 📌 핵심 요약 포인트 (Key Takeaways)
+1. 피코에리트린 함량이 높은 경제성 홍조류 둥근돌김(Neoporphyra haitanensis)에서 광합성 보조 색소 합성에 관여하는 핵심 효소 유전자 NhHO1, NhPebA, NhPebB를 최초로 분리해 서열 특성을 분석했습니다.
+2. 둥근돌김 유래 효소들은 필수 모티프 결실로 인해 활성을 나타내지 못했으나, 대조군인 스피룰리나 유래 ApHO1과 파지 P-SSM2 유래 PebS를 대장균(E. coli)에 도입하여 빌리베르딘 IXα와 피코에리트로빌린의 성공적인 이종 합성을 확인했습니다.
+3. 둥근돌김 피코에리트린 합성 유전자의 기능적 한계를 밝히는 동시에 미생물 기반의 친환경 피코빌린 대량 생산 플랫폼 구축을 위한 실증적 기반을 마련했습니다.
+
+#### 💡 연구자 시사점 (Researcher's Takeaway)
+김 양식 품종의 고부가가치 색소 유전자원에 대한 기능적 한계를 명확히 규명함으로써 향후 해조류 분자육종 시 유전체 선별 기준을 정립하고, 바이오매스 직접 추출 대신 미생물 대사공학을 통한 친환경 고순도 색소 상용화 공정으로의 전환을 시사합니다.
+
+#### 📄 논문 초록 전문 (Abstract)
+Phycobiliprotein is an important co-pigment in photosynthesis, which is composed of the covalent combination of apoprotein and phycobilin. Biliverdin IXα and phycoerythrobilin are both important substances in the phycobiliprotein biosynthesis pathway. As an economic red seaweed, Neoporphyra haitanensis has a high content of phycoerythrin. Therefore, in this study, we explored new enzyme resources for the heterologous biosynthesis of biliverdin and phycoerythrobilin. Specifically, we identified and isolated the genes encoding NhHO1, NhPebA and NhPebB from N. haitanensis, which are integral components of its phycoerythrin biosynthetic pathway. Additionally, ApHO1 from Arthrospira platensis and PebS from Prochlorococcus phage P-SSM2 were selected for comparative analysis. The results showed that genes from N. haitanensis did not encode active enzymes, which might be ascribed to the absence of crucial motifs. However, the transformation of ApHO1 and PebS into Escherichia coli could lead to the synthesis of biliverdin and phycoerythrobilin. This is the first report of sequence analysis and enzyme activity verification of phycoerythrin synthesis genes from N. haitanensis, providing a foundation for future explorations into its potential genetic resources. The successful production of biliverdin and phycoerythrobilin lay a foundation for the environmentally friendly preparation of phycobiliprotein.
+
+---
+
+### 11. When thermal shifts reshape function in intertidal seaweeds…
+- **원문 제목**: When thermal shifts reshape function in intertidal seaweeds communities
+- **저자**: Martins M, Arenas F, Lindegren M, Vale C et al.
+- **저널**: *Marine environmental research* (2026) | **출처**: 🌐 해외 PubMed | **원문 열람**: [10.1016/j.marenvres.2026.108330](https://doi.org/10.1016/j.marenvres.2026.108330)
+- **대상 생물군**: `Asparagopsis`
+- **대표 이미지**: ![](https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80&sig=33467&paper=4340)
+
+#### 📌 핵심 요약 포인트 (Key Takeaways)
+1. Climate-driven changes are reshaping marine communities worldwide, yet its functional consequences for intertidal macroalgae remain poorly resolved.
+2. Analyses of functional redundancy and originality showed that foundation species disproportionately shape community functional structure.
+3. Conserving functionally original and habitat-forming species is therefore critical for maintaining ecosystem resilience in the face of climate change.
+
+#### 💡 연구자 시사점 (Researcher's Takeaway)
+Together, these results indicate that, despite apparent thermal stability, intertidal macroalgae communities are undergoing functional reorganization, with potential consequences for productivity, habitat complexity, and blue carbon capacity.
+
+#### 📄 논문 초록 전문 (Abstract)
+Climate-driven changes are reshaping marine communities worldwide, yet its functional consequences for intertidal macroalgae remain poorly resolved. We investigated temporal trends in community thermal affinity and functional trait composition of low intertidal macroalgae assemblages along the northern Portuguese coast over seven years spanning more than one decade (2006-2008, 2021-2024). Although mean Community Temperature Index (CTI) remained relatively stable, substantial community turnover occurred. This pattern was primarily driven by changes in the abundance of cold-affinity species, with deborealization and borealization contributing to observed shifts in thermal composition. Furthermore, we demonstrate pronounced temporal shifts in functional traits, including pigmentation, morphology, reproductive mode and structural complexity. Analyses of functional redundancy and originality showed that foundation species disproportionately shape community functional structure. More specifically, Laminaria ochroleuca exhibited high functional originality but low redundancy, indicating potential vulnerability to abundance declines. Community turnover, including the emergence of invasive species like Asparagopsis armata, further illustrates dynamic restructuring of functional space. Together, these results indicate that, despite apparent thermal stability, intertidal macroalgae communities are undergoing functional reorganization, with potential consequences for productivity, habitat complexity, and blue carbon capacity. Conserving functionally original and habitat-forming species is therefore critical for maintaining ecosystem resilience in the face of climate change.
+
+---
+
+### 12. The of Tot Seaweed Gathering Custom and Aspects of Consumption…
+- **원문 제목**: The of Tot Seaweed Gathering Custom and Aspects of Consumption in Jeju Island: Focusing on the case of Jocheon-eup district
+- **저자**: Society for Jeju Studies, Kang Soo-Kyoung
+- **저널**: *Society for Jeju Studies* (2022) | **출처**: 🌐 해외 Crossref/KCI | **원문 열람**: [10.47520/jjs.2022.58.245](https://doi.org/10.47520/jjs.2022.58.245)
 - **대상 생물군**: `Pyropia/Porphyra complex`
-- **대표 이미지**: ![](https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80)
+- **대표 이미지**: ![](https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=800&q=80&sig=34300&paper=4793)
 
-#### 📌 핵심 성과 (Key Takeaways)
-1. 관련 학술 문헌 제목: Large-scale batch algae cultivation: comparison of two seawater sterilization techniques.
-2. 자세한 연구 성과는 원문 링크를 참고하십시오.
-3. 대상 분류군(Pyropia/Porphyra complex) 실증 분석.
+#### 📌 핵심 요약 포인트 (Key Takeaways)
+1. This work aims to study tot (seaweed) gathering customs and aspects of consumption among the other seaweeds of Jeju.
+2. Lastly, the tot habitat and the gathering period are considered as functioning as the foundation for the tot food culture on Jeju.
+3. Therefore, it is necessary to analyze how haenyeo communities adapt to environmental change alongside aspects of transmission for livelihood community cultures.
 
-#### 💡 연구자 시사점
-본 연구는 Pyropia/Porphyra complex의 엽체 생리 · 생활사 · 사상체 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.
+#### 💡 연구자 시사점 (Researcher's Takeaway)
+Therefore, it is necessary to analyze how haenyeo communities adapt to environmental change alongside aspects of transmission for livelihood community cultures.
 
-#### 📄 초록 (Abstract)
-관련 학술 문헌 제목: Large-scale batch algae cultivation: comparison of two seawater sterilization techniques. 자세한 연구 성과는 원문 링크를 참고하십시오.
+#### 📄 논문 초록 전문 (Abstract)
+This work aims to study tot (seaweed) gathering customs and aspects of consumption among the other seaweeds of Jeju. This writing covers tot-gathering customs and focuses on how the gathering customs are practiced depending on changes in conditions such as marine resources and ecological environments, residential conditions, and others. In addition, there is a brief examination of how the collected tot is consumed. Haenyeo (women divers) have recognized the ecological properties of seaweeds, fishing grounds, tides, winds, and more. They have undertaken diving based on their knowledge and wisdom of the haenyeo community and following environmental changes. Tot-gathering customs are examined in terms of the operation of the fishing grounds, collection methods, and principles of distribution. Haenyeo have used the fishing grounds depending on the operating rules of the ocheongye (village fishing cooperative), while the areas are managed through cleaning activities known as gatdaggi. Seaweeds are gathered differently according to ecological conditions, and tot is communally collected and distributed. Lastly, the tot habitat and the gathering period are considered as functioning as the foundation for the tot food culture on Jeju. Traditional fishery culture is a motive to pass down community spirit and traditional culture. Therefore, it is necessary to analyze how haenyeo communities adapt to environmental change alongside aspects of transmission for livelihood community cultures.
 
 ---
 
-## 🔬 SECTION 03: 스마트 양식 및 대량 배양 기술
+## 🔬 SECTION 03: 스마트 양식 및 대량 배양 기술 (Smart Aquaculture & Mass Culture)
 
-> 💡 **Editor's Insight: 자유사상체 대량 배양과 스마트 채묘 시스템 경제성 최적화**
-> 액체 배양 조건 최적화와 IoT 기반 실시간 수질 제어형 채묘 시스템 개발이 핵심입니다.
+> 💡 **Weekly Research Briefing**: 본 섹션에서는 스마트 양식 및 대량 배양 기술 분야의 최신 연구 성과 2편을 엄선하여 브리핑합니다.
 
 ### 1. Long-term spatiotemporal variability and drivers of…
 - **원문 제목**: Long-term spatiotemporal variability and drivers of chlorophyll-a in Haizhou Bay using Sentinel-3 OLCI and multi-source data
 - **저자**: Xie K, Qiao W, Wu L, Zhang S et al.
-- **저널**: *Marine pollution bulletin* (2026) | **출처**: PubMed | **원문**: [10.1016/j.marpolbul.2026.120414](#)
+- **저널**: *Marine pollution bulletin* (2026) | **출처**: 🌐 해외 PubMed | **원문 열람**: [10.1016/j.marpolbul.2026.120414](https://doi.org/10.1016/j.marpolbul.2026.120414)
 - **대상 생물군**: `Pyropia`
-- **대표 이미지**: ![](https://images.unsplash.com/photo-1530541930197-ff16ac917b0e?auto=format&fit=crop&w=800&q=80)
+- **대표 이미지**: ![](https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&w=800&q=80&sig=28254&paper=9346)
 
-#### 📌 핵심 성과 (Key Takeaways)
+#### 📌 핵심 요약 포인트 (Key Takeaways)
 1. Global climate change is intensifying pressure on marine ecosystems, particularly coastal bays affected by natural variability and anthropogenic disturbances.
-2. The principal contribution is the construction of this continuous dataset and its integration with environmental records to assess associations with mariculture activities, nearshore nutrient pressure, and episodic green-tide disturbances.
+2. Among the evaluated models, random forest showed the best overall performance and stability, outperforming support vector regression, extreme gradient boosting, and European Space Agency operational algorithms, with a coefficient of determination of 0.72 and a root mean square error of 0.66 in the logarithmic domain.
 3. These findings provide a long-term evidence base for eutrophication control, mariculture management, and refined coastal management.
 
-#### 💡 연구자 시사점
-본 연구는 Pyropia의 스마트 양식 및 대량 배양 기술 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.
+#### 💡 연구자 시사점 (Researcher's Takeaway)
+These findings provide a long-term evidence base for eutrophication control, mariculture management, and refined coastal management.
 
-#### 📄 초록 (Abstract)
-Global climate change is intensifying pressure on marine ecosystems, particularly coastal bays affected by natural variability and anthropogenic disturbances. Chlorophyll-a (Chl-a) is a key indicator of phytoplankton biomass and eutrophication status. This study investigated the spatiotemporal variability and potential drivers of Chl-a in Haizhou Bay during 2016-2025 by integrating Sentinel-3 Ocean and Land Colour Instrument (OLCI) imagery, in situ measurements, and multi-source ancillary data. Among the evaluated models, random forest showed the best overall performance and stability, outperforming support vector regression, extreme gradient boosting, and European Space Agency operational algorithms, with a coefficient of determination of 0.72 and a root mean square error of 0.66 in the logarithmic domain. The retrieved Chl-a fields were reconstructed into a spatiotemporally continuous 2016-2025 dataset for analyzing long-term dynamics and potential drivers. The principal contribution is the construction of this continuous dataset and its integration with environmental records to assess associations with mariculture activities, nearshore nutrient pressure, and episodic green-tide disturbances. Annual mean Chl-a initially increased, declined after 2019, and rebounded slightly in 2025, while remaining consistently higher nearshore than offshore. Chl-a peaked in May-June, and seasonal variability was associated with Pyropia cultivation, nutrient dynamics, and episodic green tides. Annual mean Chl-a was correlated with Pyropia cultivation area (r = 0.81, p < 0.01), whereas the areal proportion of high-Chl-a waters showed a positive but non-significant correlation with the eutrophication index (r = 0.63, p > 0.05). These findings provide a long-term evidence base for eutrophication control, mariculture management, and refined coastal management.
+#### 📄 논문 초록 전문 (Abstract)
+Global climate change is intensifying pressure on marine ecosystems, particularly coastal bays affected by natural variability and anthropogenic disturbances. Chlorophyll-a (Chl-a) is a key indicator of phytoplankton biomass and eutrophication status. This study investigated the spatiotemporal variability and potential drivers of Chl-a in Haizhou Bay during 2016-2025 by integrating Sentinel-3 Ocean and Land Colour Instrument (OLCI) imagery, in situ measurements, and multi-source ancillary data. Among the evaluated models, random forest showed the best overall performance and stability, outperforming support vector regression, extreme gradient boosting, and European Space Agency operational algorithms, with a coefficient of determination of 0.72 and a root mean square error of 0.66 in the logarithmic domain. The retrieved Chl-a fields were reconstructed into a spatiotemporally continuous 2016-2025 dataset for analyzing long-term dynamics and potential drivers. The principal contribution is the construction of this continuous dataset and its integration with environmental records to assess associations with mariculture activities, nearshore nutrient pressure, and episodic green-tide disturbances. Annual mean Chl-a initially increased, declined after 2019, and rebounded slightly in 2025, while remaining consistently higher nearshore than offshore. Chl-a peaked in May-June, and seasonal variability was associated with Pyropia cultivation, nutrient dynamics, and episodic green tides. Annual mean Chl-a was correlated with Pyropia cultivation area (r = 0.81, p 0.05). These findings provide a long-term evidence base for eutrophication control, mariculture management, and refined coastal management.
 
 ---
 
-## 🔬 SECTION 04: 블루카본 및 산업적 응용
+### 2. Seasonal dynamics and natural detachment of epiphytic green…
+- **원문 제목**: Seasonal dynamics and natural detachment of epiphytic green algae on aquaculture rafts in the Subei Shoal, China: Implications for early green tide formation
+- **저자**: Pan J, Lv H, Yao L, Wang Y et al.
+- **저널**: *Marine environmental research* (2026) | **출처**: 🌐 해외 PubMed | **원문 열람**: [10.1016/j.marenvres.2026.108245](https://doi.org/10.1016/j.marenvres.2026.108245)
+- **대상 생물군**: `Neopyropia, Pyropia`
+- **대표 이미지**: ![](https://images.unsplash.com/photo-1516216628859-9bcceabb84ca?auto=format&fit=crop&w=800&q=80&sig=25873&paper=6235)
 
-> 💡 **Editor's Insight: 해조류 기반 메탄 감축 실증과 RDOC 블루카본 탄소 격리 플럭스 표준화**
-> 반추위 메탄 저감 효과 검증과 탄소배출권 공인을 위한 정량적 방법론 연구가 급물살을 타고 있습니다.
+#### 📌 핵심 요약 포인트 (Key Takeaways)
+1. Green tides have become a recurring ecological problem in the Yellow Sea, yet early-stage processes governing algal biomass supply remain poorly understood.
+2. Epiphytic communities exhibited a clear and repeatable successional pattern, shifting from dominance by cold-tolerant taxa in early spring to increased prevalence of Ulva prolifera by April, a transition closely associated with rising water temperatures.
+3. Incorporating epiphytic algal dynamics into monitoring, early warning, and management frameworks may improve prediction and mitigation of green tide development in aquaculture-dominated coastal systems.
+
+#### 💡 연구자 시사점 (Researcher's Takeaway)
+Together, these findings provide field-based evidence that aquaculture-associated epiphytic algae represent a sustained early-season source of algal input to coastal waters.
+
+#### 📄 논문 초록 전문 (Abstract)
+Green tides have become a recurring ecological problem in the Yellow Sea, yet early-stage processes governing algal biomass supply remain poorly understood. Here, two years of continuous field observations (2023-2024) were conducted in the Neopyropia yezoensis aquaculture area of the Subei Shoal, China, to examine the seasonal succession of epiphytic green algal communities and their natural detachment during spring. Epiphytic communities exhibited a clear and repeatable successional pattern, shifting from dominance by cold-tolerant taxa in early spring to increased prevalence of Ulva prolifera by April, a transition closely associated with rising water temperatures. Natural detachment occurred continuously throughout the cultivation period, rather than being confined to the harvest stage. Detached biomass increased in concert with attached biomass, indicating a stable and persistent coupling between biomass accumulation and natural detachment in late spring. Spatial extrapolation suggested that natural detachment reached approximately 327.14 t and 656.96 t (wet weight) in April 2023 and 2024, respectively. Although these amounts are smaller than peak floating biomass during summer green tides, their seasonal timing coincides with the initial phase of bloom formation and may contribute to the background supply of floating algal material. Together, these findings provide field-based evidence that aquaculture-associated epiphytic algae represent a sustained early-season source of algal input to coastal waters. Incorporating epiphytic algal dynamics into monitoring, early warning, and management frameworks may improve prediction and mitigation of green tide development in aquaculture-dominated coastal systems.
+
+---
+
+## 🔬 SECTION 04: 블루카본 및 산업적 응용 (Blue Carbon & Applications)
+
+> 💡 **Weekly Research Briefing**: 본 섹션에서는 블루카본 및 산업적 응용 분야의 최신 연구 성과 5편을 엄선하여 브리핑합니다.
 
 ### 1. Safety Assessment of Red Algae-Derived Ingredients as Used in…
 - **원문 제목**: Safety Assessment of Red Algae-Derived Ingredients as Used in Cosmetics
 - **저자**: Ferguson P, Bergfeld W, Belsito D, Cohen D et al.
-- **저널**: *International journal of toxicology* (2026) | **출처**: PubMed | **원문**: [10.1177/10915818261474837](#)
+- **저널**: *International journal of toxicology* (2026) | **출처**: 🌐 해외 PubMed | **원문 열람**: [10.1177/10915818261474837](https://doi.org/10.1177/10915818261474837)
 - **대상 생물군**: `Pyropia/Porphyra complex`
-- **대표 이미지**: ![](https://images.unsplash.com/photo-1682687220063-4742bd7fd538?auto=format&fit=crop&w=800&q=80)
+- **대표 이미지**: ![](https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=800&q=80&sig=130&paper=1360)
 
-#### 📌 핵심 성과 (Key Takeaways)
+#### 📌 핵심 요약 포인트 (Key Takeaways)
 1. The Expert Panel for Cosmetic Ingredient Safety (Panel) assessed the safety of red algae-derived ingredients.
-2. Impurities, particularly arsenic, heavy metals, and pesticides, may be present in these ingredients; industry should continue to use good manufacturing practices to monitor and limit these possible impurities.
+2. Sixty red algae-derived ingredients were found in the International Cosmetic Ingredient Dictionary (Dictionary); however, several of these ingredients may be equivalent according to accepted scientific names.
 3. The Panel also concluded that the data are insufficient to make a determination of safety that the remaining 44 ingredients are safe under the intended conditions of use in cosmetic formulations.
 
-#### 💡 연구자 시사점
-본 연구는 Pyropia/Porphyra complex의 블루카본 및 산업적 응용 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.
+#### 💡 연구자 시사점 (Researcher's Takeaway)
+The Panel also concluded that the data are insufficient to make a determination of safety that the remaining 44 ingredients are safe under the intended conditions of use in cosmetic formulations.
 
-#### 📄 초록 (Abstract)
+#### 📄 논문 초록 전문 (Abstract)
 The Expert Panel for Cosmetic Ingredient Safety (Panel) assessed the safety of red algae-derived ingredients. Sixty red algae-derived ingredients were found in the International Cosmetic Ingredient Dictionary (Dictionary); however, several of these ingredients may be equivalent according to accepted scientific names. These ingredients are mostly reported to function in cosmetics as skin-conditioning agents. Impurities, particularly arsenic, heavy metals, and pesticides, may be present in these ingredients; industry should continue to use good manufacturing practices to monitor and limit these possible impurities. The Panel considered the available data and concluded that 16 red algae-derived ingredients are safe in cosmetics in the present practices of use and concentration described in this safety assessment. The Panel also concluded that the data are insufficient to make a determination of safety that the remaining 44 ingredients are safe under the intended conditions of use in cosmetic formulations.
 
 ---
 
-### 2. Navigating the potential of algal peptides: health effects,…
+### 2. 해조류 유래 펩타이드, 대사질환 억제 메커니즘과 지속가능한 기능성 단백질 가치 입증
 - **원문 제목**: Navigating the potential of algal peptides: health effects, market applications, and scientific challenges
 - **저자**: Khaliq M, Noor Z, Moazzam M, Saeed F et al.
-- **저널**: *Annals of medicine* (2026) | **출처**: PubMed | **원문**: [10.1080/07853890.2026.2637282](#)
+- **저널**: *Annals of medicine* (2026) | **출처**: 🌐 해외 PubMed | **원문 열람**: [10.1080/07853890.2026.2637282](https://doi.org/10.1080/07853890.2026.2637282)
 - **대상 생물군**: `Neopyropia, Pyropia`
-- **대표 이미지**: ![](https://images.unsplash.com/photo-1498084393753-b411b2d26b34?auto=format&fit=crop&w=800&q=80)
+- **대표 이미지**: ![](https://images.unsplash.com/photo-1552728089-57bdde30beb3?auto=format&fit=crop&w=800&q=80&sig=84983&paper=5751)
 
-#### 📌 핵심 성과 (Key Takeaways)
-1. [INTRODUCTION] Algae-derived bioactive peptides are gaining recognition as functional ingredients offering health benefits and sustainability advantages over conventional proteins.
-2. Frequently studied sources included Limnospira, Chlorella, Auxenochlorella, Nannochloropsis, Undaria, Palmaria, Ulva, and Neopyropia.
-3. Standardized production methods, improved delivery strategies, comprehensive safety assessments, and well-designed clinical studies are essential to support their application in functional foods and nutraceuticals.
+#### 📌 핵심 요약 포인트 (Key Takeaways)
+1. 기존 단백질원을 대체할 지속가능한 기능성 소재로서 미세조류와 대형 해조류 유래 펩타이드의 영양학적·임상적 가치가 주목받고 있다.
+2. 김(Neopyropia)과 미역(Undaria) 등에서 추출한 펩타이드는 ACE 및 레닌 활성을 억제하고 α-아밀라아제, α-글루코시다아제, DPP-IV 억제를 통해 혈당과 지질 대사를 유의미하게 조절했다.
+3. 초기 인체 적용 시험에서도 혈압 강하, 혈당 개선, 지질 프로필 안정화 및 체중 관리 측면의 실질적인 임상 효능이 확인되었다.
 
-#### 💡 연구자 시사점
-본 연구는 Neopyropia, Pyropia의 블루카본 및 산업적 응용 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.
+#### 💡 연구자 시사점 (Researcher's Takeaway)
+김(Neopyropia) 양식 산업은 단순 식용 소비를 넘어 항고혈압·항당뇨 고부가가치 바이오 펩타이드 추출 원료로의 산업 다각화 전략을 마련해야 하며, 탄소흡수원으로서의 해조류 가치와 고기능성 메디푸드 원료 산업을 연계한 블루카본 정책 지원이 요구된다.
 
-#### 📄 초록 (Abstract)
-[INTRODUCTION] Algae-derived bioactive peptides are gaining recognition as functional ingredients offering health benefits and sustainability advantages over conventional proteins. This review aimed to evaluate the current evidence on algal peptides, focusing on their nutritional content, mechanistic actions, health effects, potential for sustainability, and translational challenges.
-
-[MATERIALS AND METHODS] A comprehensive literature search was conducted across PubMed, Scopus, ScienceDirect, Springer, Elsevier, and Google Scholar. Peer-reviewed studies reporting bioactive peptides derived from microalgae, macroalgae, or Cyanophyceae were included. In vitro, animal, and human intervention studies evaluating molecular mechanisms, metabolic outcomes, or clinical relevance were considered.
-
-[RESULTS] Available evidence shows that algal peptides exert multifunctional bioactivities, including inhibition of angiotensin-converting enzyme and renin, antioxidant and anti-inflammatory effects, modulation of glucose metabolism via α-amylase, α-glucosidase, and DPP-IV inhibition, and regulation of lipid metabolism and adipogenesis. Frequently studied sources included Limnospira, Chlorella, Auxenochlorella, Nannochloropsis, Undaria, Palmaria, Ulva, and Neopyropia. Limited human trials suggest modest but clinically relevant improvements in blood pressure, glycemic control, lipid profiles, and body-weight-related outcomes, primarily using whole algal biomass or extracts. Life-cycle assessments highlight favorable land-use efficiency and carbon sequestration potential, although economic feasibility is constrained by energy-intensive downstream processing.
-
-[CONCLUSION] Algal-derived peptides demonstrate promising health-promoting effects and align with sustainable nutrition goals. However, their clinical translation is limited by variability in peptide characterization, uncertain bioavailability, and lack of robust human trials. Standardized production methods, improved delivery strategies, comprehensive safety assessments, and well-designed clinical studies are essential to support their application in functional foods and nutraceuticals.
+#### 📄 논문 초록 전문 (Abstract)
+Algae-derived bioactive peptides are gaining recognition as functional ingredients offering health benefits and sustainability advantages over conventional proteins. This review aimed to evaluate the current evidence on algal peptides, focusing on their nutritional content, mechanistic actions, health effects, potential for sustainability, and translational challenges. A comprehensive literature search was conducted across PubMed, Scopus, ScienceDirect, Springer, Elsevier, and Google Scholar. Peer-reviewed studies reporting bioactive peptides derived from microalgae, macroalgae, or Cyanophyceae were included. In vitro, animal, and human intervention studies evaluating molecular mechanisms, metabolic outcomes, or clinical relevance were considered. Available evidence shows that algal peptides exert multifunctional bioactivities, including inhibition of angiotensin-converting enzyme and renin, antioxidant and anti-inflammatory effects, modulation of glucose metabolism via α-amylase, α-glucosidase, and DPP-IV inhibition, and regulation of lipid metabolism and adipogenesis. Frequently studied sources included Limnospira, Chlorella, Auxenochlorella, Nannochloropsis, Undaria, Palmaria, Ulva, and Neopyropia. Limited human trials suggest modest but clinically relevant improvements in blood pressure, glycemic control, lipid profiles, and body-weight-related outcomes, primarily using whole algal biomass or extracts. Life-cycle assessments highlight favorable land-use efficiency and carbon sequestration potential, although economic feasibility is constrained by energy-intensive downstream processing. Algal-derived peptides demonstrate promising health-promoting effects and align with sustainable nutrition goals. However, their clinical translation is limited by variability in peptide characterization, uncertain bioavailability, and lack of robust human trials. Standardized production methods, improved delivery strategies, comprehensive safety assessments, and well-designed clinical studies are essential to support their application in functional foods and nutraceuticals.
 
 ---
+
+### 3. 인도 15개 농업기후대 축산 시스템의 사료·용수 복합 위기와 기후 적응형 생산성 절충 분석
+- **원문 제목**: Challenges and sustainable solutions in multispecies extensive livestock production systems across India's agroclimatic zones
+- **저자**: Yadav D, Maletha D, Puniya A, Mojjada S et al.
+- **저널**: *Tropical animal health and production* (2026) | **출처**: 🌐 해외 PubMed | **원문 열람**: [10.1007/s11250-026-05313-1](https://doi.org/10.1007/s11250-026-05313-1)
+- **대상 생물군**: `Asparagopsis`
+- **대표 이미지**: ![](https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80&sig=10604&paper=1355)
+
+#### 📌 핵심 요약 포인트 (Key Takeaways)
+1. 인도 15개 농업기후대의 7천만 농가를 지탱하는 방목 축산 시스템이 청예사료 11~32%, 농후사료 29~40%의 결핍과 국지적 겨울철 사료 부족(최대 68%)으로 심각한 위기에 직면해 있다.
+2. 약 350개 문헌 분석 결과 사료 부족률이 30%를 넘는 지역에서는 용수 스트레스와 결합하여 가뭄으로 인한 가축 생산성 저하 피해가 1.5~2배까지 증폭되는 것으로 확인되었다.
+3. 소, 물소, 양, 염소, 낙타 등 복합 가축 생태계 전반에서 생산성 증대와 온실가스 배출 저감, 동물 복지 간의 복합적 상충 관계를 포괄적으로 규명했다.
+
+#### 💡 연구자 시사점 (Researcher's Takeaway)
+가뭄 충격이 증폭되는 사료 결핍 30% 초과 지역에서는 단순 급여 확대보다 전통 수자원 관리 기법(Johad 등)과 친환경 저메탄 사료 전략을 융합한 자원 순환형 생산 체계 설계가 우선되어야 한다.
+
+#### 📄 논문 초록 전문 (Abstract)
+Extensive livestock production systems support over 70 million rural households across India's 15 agroclimatic zones, yet face interconnected challenges of feed scarcity (national deficits of approximately 11-32% for green fodder, 23% for dry fodder, and 29-40% for concentrates, with localized winter shortages reaching ~ 68% in some humid zones), water stress (intensifying under climate change), inadequate veterinary coverage, and welfare compromises. This review adopts a systems analysis approach to examine feed-water-health-welfare-climate interactions across multiple species (cattle, buffalo, sheep, goat, camel) in ecologically diverse production environments. We synthesized evidence from approximately 350 sources and field innovations to develop an integrated framework mapping resource flows, constraint interactions, and adaptive capacity across zones. We synthesized reported trade-offs between productivity enhancement, emissions mitigation, and welfare improvement based on evidence reported across studies. Literature consistently reports that feed and water constraints interact non-additively in zones with > 30% feed deficit with several studies reporting approximately 1.5-2-fold amplification of drought impacts on productivity. These values represent reported ranges synthesized conceptually rather than a pooled statistical estimate. Indigenous innovations (Johads, chauka systems, ethno-veterinary practices) yield 30-40% gains in resource efficiency when integrated with modern inputs in arid/semi-arid cattle-goat systems (Pankaj et al. 2023; Kanwal et al. 2020). Species-zone matching shows thermal-tolerant breeds maintain 15-20% higher productivity (Kankrej cattle, Barbari goats) than crossbreeds under heat stress (> 35 °C) (Sarang et al. 2024; Sejian et al. 2019; Das 2017). Dietary additives reduce enteric methane by 17-98%, ranging from tannin-rich forages (~ 17-20%) to Asparagopsis seaweed (up to ~ 98% under in vitro/in vivo conditions) in small ruminants and cattle (Verma and Kumar Verma 2025; Mwangi et al. 2023; Amad and Zentek 2023). We propose a conceptual decision-support matrix integrating breed selection, feed management, water harvesting, and veterinary delivery across 15 zones, identifying optimal intervention packages. Zone-specific vulnerability indices highlight critical thresholds based on synthesized evidence from the literature. Arid zones (13-14) are reported to experience compounding welfare and productivity decline when summer temperatures exceed approximately 42 °C for extended periods (in the order of 90 days), consistent with heat-stress thresholds documented in the literature (Sejian et al. 2019; Mishra et al. 2024). Sustainable transformation requires synergistic implementation of traditional knowledge and technological innovation, gender-inclusive extension (women provide 50% plus labor) and policy frameworks addressing cross-scale interactions. Research gaps include empirical validation of welfare indicators, emission baselines for indigenous breeds, and community-based institutional models. Our integrated framework enables evidence-based resource allocation and supports India's climate commitments while enhancing rural livelihoods.
+
+---
+
+### 4. Review: Challenges and opportunities for mitigation of…
+- **원문 제목**: Review: Challenges and opportunities for mitigation of greenhouse gas emissions from ruminant livestock in the context of sustainable production in Asia
+- **저자**: Asif S, Ma T, Liu Y, Wang W et al.
+- **저널**: *Animal : an international journal of animal bioscience* (2026) | **출처**: 🌐 해외 PubMed | **원문 열람**: [10.1016/j.animal.2026.101931](https://doi.org/10.1016/j.animal.2026.101931)
+- **대상 생물군**: `Asparagopsis`
+- **대표 이미지**: ![](https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=800&q=80&sig=5032&paper=6002)
+
+#### 📌 핵심 요약 포인트 (Key Takeaways)
+1. Asia is the largest producer of cattle, buffalo, sheep, and goats in the world, and these species are integral to smallholder livestock production systems, contributing significantly to food security, rural livelihoods, and greenhouse gas (GHG), especially methane (CH4), across the region.
+2. Livestock production in the region has increased rapidly due to population growth and shifts in diet towards animal products.
+3. In order to achieve low-emission livestock production in Asia, more investment, policy assistance, and regional cooperation are crucial.
+
+#### 💡 연구자 시사점 (Researcher's Takeaway)
+Plant extracts, direct-fed microbials and red seaweed (Asparagopsis taxiformis) have demonstrated promising outcomes in CH4 reduction through feed-based interventions.
+
+#### 📄 논문 초록 전문 (Abstract)
+Asia is the largest producer of cattle, buffalo, sheep, and goats in the world, and these species are integral to smallholder livestock production systems, contributing significantly to food security, rural livelihoods, and greenhouse gas (GHG), especially methane (CH4), across the region. Livestock production in the region has increased rapidly due to population growth and shifts in diet towards animal products. This review outlines the latest information on ruminant GHG emissions and mitigation policies across diverse regions of Asia. Livestock production is dominated by China and India, which make a significant contribution to global CH4 emissions. Extensive grazing systems dominate in Central Asia. National policies, including the Methane Emissions Control Action Plan (2023), which is part of the national policies in China, the National Livestock Mission in India, and the 2030 reduction strategy in South Korea, aim at reducing CH4 by enhancing feeding and manure management, as well as digital technologies. Improving animal husbandry practices represents a fundamental and effective approach to reducing methane emissions while enhancing overall productivity. Strengthening feeding strategies, animal health management, and production efficiency can lower emission intensity and improve system sustainability. Plant extracts, direct-fed microbials and red seaweed (Asparagopsis taxiformis) have demonstrated promising outcomes in CH4 reduction through feed-based interventions. Despite technological developments, there are obstacles due to low-quality feed, indigenous breeds, and a lack of modernisation. In order to achieve low-emission livestock production in Asia, more investment, policy assistance, and regional cooperation are crucial.
+
+---
+
+### 5. Comparative Analysis of Bacterial Communities and Diversity in…
+- **원문 제목**: Comparative Analysis of Bacterial Communities and Diversity in Seaweeds by Exposure Duration to Seashore in Jeju Island
+- **저자**: Society for Jeju Studies, Hyun Ho-Bong, Kim Sung-Chun, Ham Young-Min 외
+- **저널**: *Society for Jeju Studies* (2023) | **출처**: 🌐 해외 Crossref/KCI | **원문 열람**: [10.47520/jjs.2023.59.403](https://doi.org/10.47520/jjs.2023.59.403)
+- **대상 생물군**: `Pyropia/Porphyra complex`
+- **대표 이미지**: ![](https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80&sig=84617&paper=5485)
+
+#### 📌 핵심 요약 포인트 (Key Takeaways)
+1. Seaweeds have become a global industrial source material in food and cosmetic area.
+2. Bacterial diversity in Ulva pertusa is increased along with distances from seashore while that of Sargassum horneri are similar.
+3. To understand the functional roles of associated bacteria in seaweeds, combined further studies should be performed coping with biochemical, physiological and microbiological approach.
+
+#### 💡 연구자 시사점 (Researcher's Takeaway)
+To understand the functional roles of associated bacteria in seaweeds, combined further studies should be performed coping with biochemical, physiological and microbiological approach.
+
+#### 📄 논문 초록 전문 (Abstract)
+Seaweeds have become a global industrial source material in food and cosmetic area. In recent reports, seaweed-associated bacteria play a vital role in nutrient shifts with secondary metabolites in direct and/or indirect ways. Here, we investigated the shift of bacterial communities in two different seaweed samples along with incubation and exposure duration to seashore using 16S rRNA gene-based amplicon sequencing. Bacterial communities belonging to the phyla Proteobacteria and Bacteroidetes are the most abundant on seaweeds surface. Bacterial diversity in Ulva pertusa is increased along with distances from seashore while that of Sargassum horneri are similar. Remarkably, Cobetia sp. having alginate-degrading activity represent with high proportion about 80% in. Also, the abundance of Agar-Degrading Bacteria(ADB) are fluctuated with incubation periods in mesocosm experiment, ADB predominantly present after 7 days incubation while ADB are reduced their portion after 18 days. These features would be consequences of seaweed importance to proper periods reached land. To understand the functional roles of associated bacteria in seaweeds, combined further studies should be performed coping with biochemical, physiological and microbiological approach.
+
+---
+
+## 📊 이번 주 수록 논문 메타데이터 한눈에 보기
+
+| 헤드라인 | 생물군 | 섹션 | 소스 | 원문 링크 |
+|:---|:---|:---|:---:|:---:|
+| rbcL 유전자 기반 멀티플렉스 PCR로 고가 장비 없이 상용 김 6종 정확히 판별 | *Pyropia* | 육종 · 분자생물학 · 병해 | 🌐 PubMed | [열람](https://doi.org/10.1016/j.fochms.2026.100458) |
+| 초음파 보조 유산균 발효로 김 비린내 억제… 아미노산 풍미 대사체 17.6배 증가 규명 | *Pyropia* | 엽체 생리 · 생활사 · 사상체 | 🌐 PubMed | [열람](https://doi.org/10.1016/j.foodchem.2026.151510) |
+| 방사무늬김 수용성 단백질의 산화 반응 제어로 고안정성 천연 피코에리트린 색소 구현 | *Pyropia* | 엽체 생리 · 생활사 · 사상체 | 🌐 PubMed | [열람](https://doi.org/10.1016/j.fochx.2026.104500) |
+| Long-term spatiotemporal variability and drivers… | *Pyropia* | 스마트 양식 및 대량 배양 기술 | 🌐 PubMed | [열람](https://doi.org/10.1016/j.marpolbul.2026.120414) |
+| 인 결핍에 맞서는 방사무늬김의 생존 전략, 세포 주변질 알칼리 포스파타아제의 인 흡수 … | *Pyropia* | 육종 · 분자생물학 · 병해 | 🌐 PubMed | [열람](https://doi.org/10.1093/bbb/zbag114) |
+| 남극 해조류 피로피아 추출물, 결핵균 억제와 항염증 면역 조절 활성 입증 | *Pyropia* | 엽체 생리 · 생활사 · 사상체 | 🌐 PubMed | [열람](https://doi.org/10.1021/acsomega.6c01332) |
+| 복잡한 세포벽 뚫고 증명된 김의 우수성, 홍조류 단백질 소화율 최대 60% 기록 | *Porphyra* | 엽체 생리 · 생활사 · 사상체 | 🌐 PubMed | [열람](https://doi.org/10.1016/j.foodres.2026.120458) |
+| Safety Assessment of Red Algae-Derived Ingredien… | *Pyropia/Porphyra complex* | 블루카본 및 산업적 응용 | 🌐 PubMed | [열람](https://doi.org/10.1177/10915818261474837) |
+| 머신러닝 기반 효소 탐색으로 김의 자외선 차단 물질 포르피라-334 합성 장벽 뚫었다 | *Porphyra* | 엽체 생리 · 생활사 · 사상체 | 🌐 PubMed | [열람](https://doi.org/10.1016/j.bioorg.2026.110312) |
+| Field-deployable, lyophilized cell-free biosenso… | *Porphyra* | 엽체 생리 · 생활사 · 사상체 | 🌐 PubMed | [열람](https://doi.org/10.1016/j.foodres.2026.119766) |
+| 모자반·김 다당류의 황산기 함량이 세포 동결 생존율을 82.2%까지 끌어올리다 | *Porphyra* | 엽체 생리 · 생활사 · 사상체 | 🌐 PubMed | [열람](https://doi.org/10.1016/j.foodchem.2026.150543) |
+| Comparative plastome analyses and genomic resour… | *Neoporphyra, Neopyropia, Pyropia, Porphyra* | 육종 · 분자생물학 · 병해 | 🌐 PubMed | [열람](https://doi.org/10.1111/jpy.70205) |
+| 해조류 유래 펩타이드, 대사질환 억제 메커니즘과 지속가능한 기능성 단백질 가치 입증 | *Neopyropia, Pyropia* | 블루카본 및 산업적 응용 | 🌐 PubMed | [열람](https://doi.org/10.1080/07853890.2026.2637282) |
+| 해양 유산균 발효 김 추출물, 장내 항상성 회복과 대장염 완화 효능 입증 | *Neopyropia, Pyropia* | 육종 · 분자생물학 · 병해 | 🌐 PubMed | [열람](https://doi.org/10.1016/j.foodres.2026.120522) |
+| 김 로스팅 과정서 탈수 MAAs 최대 13.6배 급증하며 항산화 활성 4.5배 강화 | *Neopyropia, Pyropia* | 엽체 생리 · 생활사 · 사상체 | 🌐 PubMed | [열람](https://doi.org/10.1016/j.fochx.2026.104450) |
+| 방사무늬김의 환경 스트레스 대응 세포골격 조절자 NpyFormin 유전자군 3종 발굴 | *Neopyropia, Pyropia* | 육종 · 분자생물학 · 병해 | 🌐 PubMed | [열람](https://doi.org/10.3390/genes17091089) |
+| Seasonal dynamics and natural detachment of epip… | *Neopyropia, Pyropia* | 스마트 양식 및 대량 배양 기술 | 🌐 PubMed | [열람](https://doi.org/10.1016/j.marenvres.2026.108245) |
+| 캘리포니아 만 고유 홍조류 네오포르피라의 첫 미토콘드리아 유전체 완전 해독 | *Neoporphyra, Porphyra* | 육종 · 분자생물학 · 병해 | 🌐 PubMed | [열람](https://doi.org/10.1080/23802359.2026.2743397) |
+| Sex-related osmotic adjustment strategies underp… | *Neoporphyra, Porphyra* | 육종 · 분자생물학 · 병해 | 🌐 PubMed | [열람](https://doi.org/10.1016/j.plaphy.2026.111781) |
+| 대부도산 방사무늬김의 전사체 분석을 통한 고온 내성 대사 경로 규명 | *Neoporphyra, Neopyropia, Pyropia, Porphyra* | 육종 · 분자생물학 · 병해 | 🌐 PubMed | [열람](https://doi.org/10.1155/ijog/9130170) |
+| 자외선B 스트레스에 취약한 김 암컷과 항산화·광합성 회복력이 뛰어난 수컷의 성별 생리 … | *Neoporphyra, Porphyra* | 엽체 생리 · 생활사 · 사상체 | 🌐 PubMed | [열람](https://doi.org/10.1016/j.ecoenv.2025.119117) |
+| 둥근돌김 유래 색소 합성 유전자의 특성 규명과 대장균 기반 피코빌린 생합성 경로 검증 | *Neoporphyra, Porphyra* | 엽체 생리 · 생활사 · 사상체 | 🌐 PubMed | [열람](https://doi.org/10.3389/fpls.2025.1640158) |
+| 침입성 해조류 갈고리풀과 괭생이모자반 추출물, 토마토 역병 억제 및 식물 방어 기전 활… | *Asparagopsis* | 육종 · 분자생물학 · 병해 | 🌐 PubMed | [열람](https://doi.org/10.1016/j.plantsci.2026.113445) |
+| 바다나물 첨가 시 반추위 미생물의 생존성과 활성 메타분류학적 특성 규명 | *Asparagopsis* | 육종 · 분자생물학 · 병해 | 🌐 PubMed | [열람](https://doi.org/10.1186/s40793-026-00963-y) |
+| 인도 15개 농업기후대 축산 시스템의 사료·용수 복합 위기와 기후 적응형 생산성 절충 … | *Asparagopsis* | 블루카본 및 산업적 응용 | 🌐 PubMed | [열람](https://doi.org/10.1007/s11250-026-05313-1) |
+| When thermal shifts reshape function in intertid… | *Asparagopsis* | 엽체 생리 · 생활사 · 사상체 | 🌐 PubMed | [열람](https://doi.org/10.1016/j.marenvres.2026.108330) |
+| Review: Challenges and opportunities for mitigat… | *Asparagopsis* | 블루카본 및 산업적 응용 | 🌐 PubMed | [열람](https://doi.org/10.1016/j.animal.2026.101931) |
+| Comparative Analysis of Bacterial Communities an… | *Pyropia/Porphyra complex* | 블루카본 및 산업적 응용 | 🌐 Crossref/KCI | [열람](https://doi.org/10.47520/jjs.2023.59.403) |
+| The of Tot Seaweed Gathering Custom and Aspects … | *Pyropia/Porphyra complex* | 엽체 생리 · 생활사 · 사상체 | 🌐 Crossref/KCI | [열람](https://doi.org/10.47520/jjs.2022.58.245) |
+
+---
+*Phyco & Blue Carbon Research Archive Pipeline v3.0*
