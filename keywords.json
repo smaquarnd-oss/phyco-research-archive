@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "project": "Phyco & Blue Carbon Research Magazine",
-  "version": "2.1.0",
-  "description": "김/바다고리풀속 및 블루카본 연구 아카이브 키워드 설정 파일 (4분할 섹션 + KCI 국내 학술 연동)",
+  "version": "2.2.0",
+  "description": "김/바다고리풀속 및 블루카본 연구 아카이브 키워드 설정 파일 (4분할 섹션 + KCI 국내 학술 정밀 연동)",
   "target_taxa": {
     "title": "주요 연구 대상 생물군 (Target Taxa)",
     "description": "학명 개정과 신분류 체계를 반영한 홍조류 김 및 바다고리풀속",
@@ -11,42 +11,42 @@
         "name": "Pyropia",
         "common_name": "김속 (기존 광의의 김/참김류)",
         "aliases": ["Pyropia yezoensis", "Pyropia tenera", "Pyropia haitanensis"],
-        "korean_names": ["참김", "방사무늬김", "둥근돌김"],
+        "korean_names": ["참김", "방사무늬김", "둥근돌김", "김"],
         "enabled": true
       },
       {
         "name": "Porphyra",
         "common_name": "전통 김속 (온대/한대성 원형 김속)",
         "aliases": ["Porphyra umbilicalis", "Porphyra linearis", "Porphyra dioica"],
-        "korean_names": ["돌김", "원형 김"],
+        "korean_names": ["돌김", "원형 김", "포르피라"],
         "enabled": true
       },
       {
         "name": "Neopyropia",
         "common_name": "신김속 (신분류 체계 반영 방사무늬김 등)",
         "aliases": ["Neopyropia yezoensis", "Neopyropia tenera"],
-        "korean_names": ["방사무늬김", "잇바디돌김"],
+        "korean_names": ["방사무늬김", "잇바디돌김", "참김", "신김"],
         "enabled": true
       },
       {
         "name": "Neoporphyra",
         "common_name": "신포르피라속 (모무늬돌김 등 아열대/난대성)",
         "aliases": ["Neoporphyra haitanensis", "Neoporphyra dentata"],
-        "korean_names": ["모무늬돌김", "잇바디돌김"],
+        "korean_names": ["모무늬돌김", "잇바디돌김", "돌김"],
         "enabled": true
       },
       {
         "name": "Phycocalidia",
         "common_name": "피코칼리디아속 (열대/아열대성 엽상 홍조류)",
         "aliases": ["Phycocalidia suborbiculata", "Phycocalidia vietnamensis"],
-        "korean_names": ["피코칼리디아"],
+        "korean_names": ["피코칼리디아", "둥근돌김"],
         "enabled": true
       },
       {
         "name": "Asparagopsis",
         "common_name": "바다고리풀속 (저메탄 가축 사료 핵심 소재)",
         "aliases": ["Asparagopsis taxiformis", "Asparagopsis armata", "Falkenbergia rufolanosa"],
-        "korean_names": ["바다고리풀", "아스파라곱시스"],
+        "korean_names": ["바다고리풀", "아스파라곱시스", "갈고리풀"],
         "enabled": true
       }
     ]
@@ -95,6 +95,7 @@
       "keywords_ko": [
         "품종개량",
         "육종",
+        "선발육종",
         "분자마커",
         "유전체",
         "전사체",
@@ -109,10 +110,11 @@
         "병원균",
         "내병성",
         "항병성",
-        "CRISPR",
-        "단백질체",
+        "원형질체",
         "유전 다양성",
-        "분자생물학"
+        "분자생물학",
+        "방사무늬김 육종",
+        "잇바디돌김 품종"
       ]
     },
     "thallus_lifecycle_conchocelis": {
@@ -157,13 +159,13 @@
         "사상체",
         "각포자",
         "과포자",
+        "단포자",
         "포자 방출",
         "생활사",
         "생활환",
         "광주기",
         "배우체",
         "포자체",
-        "수정란",
         "발아",
         "온도 적응",
         "열충격",
@@ -171,8 +173,10 @@
         "색소",
         "피코에리스린",
         "엽체 형태",
-        "세포 주기",
-        "질소 동화"
+        "사상체 성숙",
+        "질소 동화",
+        "잇바디돌김 사상체",
+        "김 생활사"
       ]
     },
     "smart_aquaculture_mass_culture": {
@@ -214,6 +218,7 @@
         "자유사상체",
         "채묘",
         "채묘망",
+        "인공채묘",
         "육상 양식",
         "양식 공학",
         "생물반응기",
@@ -223,13 +228,13 @@
         "수질 관리",
         "LED 조명",
         "실내 배양",
-        "수확",
+        "수확량",
         "생산 효율",
         "환경 제어",
-        "양식장",
+        "김 양식장",
         "해조류 양식",
-        "패각",
-        "종사"
+        "패각 배양",
+        "종사 배양"
       ]
     },
     "blue_carbon_feed_methane": {
@@ -279,15 +284,16 @@
         "장내 메탄",
         "반추동물 사료",
         "사료 첨가제",
-        "온실가스",
-        "기후변화",
+        "온실가스 감축",
+        "기후변화 대응",
         "해조류 탄소",
-        "바이오연료",
+        "바다고리풀 메탄",
+        "브로모폼",
+        "바이오리파이너리",
         "한천",
         "카라기난",
         "기능성 식품",
-        "화장품",
-        "탄소발자국",
+        "화장품 소재",
         "RDOC",
         "탄소 배출권"
       ]
@@ -296,6 +302,7 @@
   "search_settings": {
     "days_lookback": 7,
     "max_results_per_query": 15,
+    "kci_search_fields": ["keyword", "title"],
     "data_sources": [
       {
         "name": "PubMed",
@@ -319,6 +326,7 @@
         "enabled": true,
         "endpoint": "https://open.kci.go.kr/po/openapi/openApiSearch.kci",
         "api_key_env": "KCI_API_KEY",
+        "search_fields": ["keyword", "title"],
         "note": "한국학술지인용색인 Open API. KCI_API_KEY 환경변수 필요. 인증키 신청: https://open.kci.go.kr"
       }
     ],
