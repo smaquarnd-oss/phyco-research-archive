@@ -1,6 +1,6 @@
 # 🌊 김/바다고리풀속 및 블루카본 연구 주간 매거진 (2026-10-15)
 
-> **발행일**: 2026-10-15 | **총 논문**: 33편 | **수집 소스**: PubMed, Crossref
+> **발행일**: 2026-10-15 | **총 논문**: 31편 | **수집 소스**: PubMed, Crossref
 ---
 
 ## 🔬 SECTION 01: 육종 · 분자생물학 · 병해
@@ -13,7 +13,7 @@
 - **저자**: Noh E, Dong C, Park H, Jung H et al.
 - **저널**: *Food chemistry. Molecular sciences* (2026) | **출처**: PubMed | **원문**: [10.1016/j.fochms.2026.100458](#)
 - **대상 생물군**: `Pyropia`
-- **대표 이미지**: ![](https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=800&q=80)
+- **대표 이미지**: ![](https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=800&q=80)
 
 #### 📌 핵심 성과 (Key Takeaways)
 1. The global expansion of the Pyropia (laver) market requires reliable methods to authenticate species and prevent economically motivated adulteration (EMA).
@@ -32,7 +32,7 @@ The global expansion of the Pyropia (laver) market requires reliable methods to 
 - **원문 제목**: Marine-derived lactic acid bacteria fermentation enhances the bioactivity of Neopyropia haitanensis by improving intestinal homeostasis
 - **저자**: Liu Z, Chen J, Xu J, Yi H et al.
 - **저널**: *Food research international (Ottawa, Ont.)* (2026) | **출처**: PubMed | **원문**: [10.1016/j.foodres.2026.120522](#)
-- **대상 생물군**: `Pyropia, Neopyropia`
+- **대상 생물군**: `Neopyropia, Pyropia`
 - **대표 이미지**: ![](https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80)
 
 #### 📌 핵심 성과 (Key Takeaways)
@@ -41,7 +41,7 @@ The global expansion of the Pyropia (laver) market requires reliable methods to 
 3. haitanensis, providing new insights into the development of seaweed-based functional foods, especially for gut health.
 
 #### 💡 연구자 시사점
-본 연구는 Pyropia, Neopyropia의 육종 · 분자생물학 · 병해 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.
+본 연구는 Neopyropia, Pyropia의 육종 · 분자생물학 · 병해 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.
 
 #### 📄 초록 (Abstract)
 This study investigated the functional fermentation of Neopyropia haitanensis using marine-derived lactic acid bacteria (LAB), aiming to develop effective strategies to improve the bioactivity and functionality of seaweed-based foods. Fifteen LAB strains were isolated from marine sources, among which three strains, namely Pediococcus pentosaceus HYZ2-1, Limosilactobacillus reuteri HYS1-1, and Ligilactobacillus salivarius HYD1-1 with superior fermentation performance, were selected. In vitro cellular assays indicated that the fermented products exhibited antioxidant, anti-inflammatory, and intestinal barrier-enhancing effects. Furthermore, in colitis mice, the fermented products alleviated symptoms such as weight loss, hematochezia, and colon shortening, and significantly reduced serum interleukin (IL)-6 levels while increasing IL-10 levels, compared with the unfermented samples. Colon tissues showed decreased malondialdehyde and increased superoxide dismutase and catalase activities. The gene expressions of tight junctions and mucin 2 were upregulated. Metabolomic analysis revealed consistent upregulation of specific bioactive metabolites across all fermented groups, and these metabolites were strongly correlated with the observed improvements in antioxidant capacity, immune modulation, and intestinal barrier integrity. Overall, this study demonstrates the functional advantages of marine-derived LAB in enhancing the bioactivity of N. haitanensis, providing new insights into the development of seaweed-based functional foods, especially for gut health.
@@ -53,7 +53,7 @@ This study investigated the functional fermentation of Neopyropia haitanensis us
 - **저자**: Si X, Li Z, Chen Y, Li B et al.
 - **저널**: *Ultrasonics sonochemistry* (2026) | **출처**: PubMed | **원문**: [10.1016/j.ultsonch.2026.108029](#)
 - **대상 생물군**: `Pyropia/Porphyra complex`
-- **대표 이미지**: ![](https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&fit=crop&w=800&q=80)
+- **대표 이미지**: ![](https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=800&q=80)
 
 #### 📌 핵심 성과 (Key Takeaways)
 1. In this study, succinylated nori protein (SNP), sodium alginate (SA), and flaxseed oil were used to develop novel high-internal-phase Pickering emulsion (HIPPE) gels with potential application as plant-based fat analogues.
@@ -73,7 +73,7 @@ In this study, succinylated nori protein (SNP), sodium alginate (SA), and flaxse
 - **저자**: Xue S, Chen J, Xiao J, Xin J et al.
 - **저널**: *Plant physiology and biochemistry : PPB* (2026) | **출처**: PubMed | **원문**: [10.1016/j.plaphy.2026.111781](#)
 - **대상 생물군**: `Neoporphyra, Porphyra`
-- **대표 이미지**: ![](https://images.unsplash.com/photo-1484557052118-f32bd25b45b5?auto=format&fit=crop&w=800&q=80)
+- **대표 이미지**: ![](https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&fit=crop&w=800&q=80)
 
 #### 📌 핵심 성과 (Key Takeaways)
 1. Desiccation stress constitutes a significant environmental challenge for macroalgae inhabiting the intertidal zone, in which recurrent tidal cycles shape their physiological tolerance.
@@ -88,66 +88,6 @@ Desiccation stress constitutes a significant environmental challenge for macroal
 
 ---
 
-### 5. Testing options for the commercialization of abalone selective…
-- **원문 제목**: Testing options for the commercialization of abalone selective breeding using bioeconomic simulation modelling
-- **저자**: Robinson N, Li X, Hayes B
-- **저널**: *Aquaculture Research* (2010) | **출처**: Crossref | **원문**: [10.1111/j.1365-2109.2010.02528.x](https://doi.org/10.1111/j.1365-2109.2010.02528.x)
-- **대상 생물군**: `Pyropia/Porphyra complex`
-- **대표 이미지**: ![](https://images.unsplash.com/photo-1563674407-b5de7db5ccb0?auto=format&fit=crop&w=800&q=80)
-
-#### 📌 핵심 성과 (Key Takeaways)
-1. 관련 학술 문헌 제목: Testing options for the commercialization of abalone selective breeding using bioeconomic simulation modelling.
-2. 자세한 연구 성과는 원문 링크를 참고하십시오.
-3. 대상 분류군(Pyropia/Porphyra complex) 실증 분석.
-
-#### 💡 연구자 시사점
-본 연구는 Pyropia/Porphyra complex의 육종 · 분자생물학 · 병해 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.
-
-#### 📄 초록 (Abstract)
-관련 학술 문헌 제목: Testing options for the commercialization of abalone selective breeding using bioeconomic simulation modelling. 자세한 연구 성과는 원문 링크를 참고하십시오.
-
----
-
-### 6. Modelling selective breeding in protandrous, batch-reared Asian…
-- **원문 제목**: Modelling selective breeding in protandrous, batch-reared Asian sea bass (Lates calcarifer, Bloch) using walkback selection
-- **저자**: Robinson N, Schipp G, Bosmans J, Jerry D
-- **저널**: *Aquaculture Research* (2010) | **출처**: Crossref | **원문**: [10.1111/j.1365-2109.2010.02584.x](https://doi.org/10.1111/j.1365-2109.2010.02584.x)
-- **대상 생물군**: `Pyropia/Porphyra complex`
-- **대표 이미지**: ![](https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=800&q=80)
-
-#### 📌 핵심 성과 (Key Takeaways)
-1. 관련 학술 문헌 제목: Modelling selective breeding in protandrous, batch-reared Asian sea bass (Lates calcarifer, Bloch) using walkback selection.
-2. 자세한 연구 성과는 원문 링크를 참고하십시오.
-3. 대상 분류군(Pyropia/Porphyra complex) 실증 분석.
-
-#### 💡 연구자 시사점
-본 연구는 Pyropia/Porphyra complex의 육종 · 분자생물학 · 병해 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.
-
-#### 📄 초록 (Abstract)
-관련 학술 문헌 제목: Modelling selective breeding in protandrous, batch-reared Asian sea bass (Lates calcarifer, Bloch) using walkback selection. 자세한 연구 성과는 원문 링크를 참고하십시오.
-
----
-
-### 7. Using marker data in conventional breeding programmes: A case of…
-- **원문 제목**: Using marker data in conventional breeding programmes: A case of study in selective breeding programs of scallops
-- **저자**: Martinez V
-- **저널**: *Aquaculture* (2007) | **출처**: Crossref | **원문**: [10.1016/j.aquaculture.2007.07.130](https://doi.org/10.1016/j.aquaculture.2007.07.130)
-- **대상 생물군**: `Pyropia/Porphyra complex`
-- **대표 이미지**: ![](https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=800&q=80)
-
-#### 📌 핵심 성과 (Key Takeaways)
-1. 관련 학술 문헌 제목: Using marker data in conventional breeding programmes: A case of study in selective breeding programs of scallops.
-2. 자세한 연구 성과는 원문 링크를 참고하십시오.
-3. 대상 분류군(Pyropia/Porphyra complex) 실증 분석.
-
-#### 💡 연구자 시사점
-본 연구는 Pyropia/Porphyra complex의 육종 · 분자생물학 · 병해 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.
-
-#### 📄 초록 (Abstract)
-관련 학술 문헌 제목: Using marker data in conventional breeding programmes: A case of study in selective breeding programs of scallops. 자세한 연구 성과는 원문 링크를 참고하십시오.
-
----
-
 ## 🔬 SECTION 02: 엽체 생리 · 생활사 · 사상체
 
 > 💡 **Editor's Insight: 사상체 각포자 방출 메커니즘과 엽체 생리 환경 적응 전략**
@@ -158,7 +98,7 @@ Desiccation stress constitutes a significant environmental challenge for macroal
 - **저자**: Wang D, Zhang Y, Xu X, Wei B et al.
 - **저널**: *Food chemistry* (2026) | **출처**: PubMed | **원문**: [10.1016/j.foodchem.2026.151510](#)
 - **대상 생물군**: `Pyropia`
-- **대표 이미지**: ![](https://images.unsplash.com/photo-1614728894747-a83421789f10?auto=format&fit=crop&w=800&q=80)
+- **대표 이미지**: ![](https://images.unsplash.com/photo-1559827260-dc66d52bef19?auto=format&fit=crop&w=800&q=80)
 
 #### 📌 핵심 성과 (Key Takeaways)
 1. The fishy odor of Pyropia haitanensis limits its sensory acceptance and industrial utilization.
@@ -198,7 +138,7 @@ This study aimed to develop a strategy for use of the water-soluble protein frac
 - **저자**: Díaz-Piñero L, Correa Y, Bojorges H, Martínez J et al.
 - **저널**: *Food research international (Ottawa, Ont.)* (2026) | **출처**: PubMed | **원문**: [10.1016/j.foodres.2026.120458](#)
 - **대상 생물군**: `Porphyra`
-- **대표 이미지**: ![](https://images.unsplash.com/photo-1559827260-dc66d52bef19?auto=format&fit=crop&w=800&q=80)
+- **대표 이미지**: ![](https://images.unsplash.com/photo-1509563768818-dafe9ad27b4e?auto=format&fit=crop&w=800&q=80)
 
 #### 📌 핵심 성과 (Key Takeaways)
 1. Seaweeds are promising sustainable alternative protein sources, however, their complex cell wall structures may limit protein bioaccessibility.
@@ -218,7 +158,7 @@ Seaweeds are promising sustainable alternative protein sources, however, their c
 - **저자**: Yuan L, Feng S, Xie S, Liu Q et al.
 - **저널**: *Bioorganic chemistry* (2026) | **출처**: PubMed | **원문**: [10.1016/j.bioorg.2026.110312](#)
 - **대상 생물군**: `Porphyra`
-- **대표 이미지**: ![](https://images.unsplash.com/photo-1509563768818-dafe9ad27b4e?auto=format&fit=crop&w=800&q=80)
+- **대표 이미지**: ![](https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80)
 
 #### 📌 핵심 성과 (Key Takeaways)
 1. Mycosporine-like amino acids (MAAs) are functional secondary metabolites renowned for their exceptional UV protection, antioxidant properties, and environmental resilience.
@@ -237,8 +177,8 @@ Mycosporine-like amino acids (MAAs) are functional secondary metabolites renowne
 - **원문 제목**: Roasting-induced changes in the metabolite profile of laver (
 - **저자**: Song S, Chae S, Cho S, Kim H et al.
 - **저널**: *Food chemistry: X* (2026) | **출처**: PubMed | **원문**: [10.1016/j.fochx.2026.104450](#)
-- **대상 생물군**: `Pyropia, Neopyropia`
-- **대표 이미지**: ![](https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=800&q=80)
+- **대상 생물군**: `Neopyropia, Pyropia`
+- **대표 이미지**: ![](https://images.unsplash.com/photo-1614728894747-a83421789f10?auto=format&fit=crop&w=800&q=80)
 
 #### 📌 핵심 성과 (Key Takeaways)
 1. This study investigated non-volatile metabolites in laver (Neopyropia yezoensis) roasted under different temperature/time conditions.
@@ -246,7 +186,7 @@ Mycosporine-like amino acids (MAAs) are functional secondary metabolites renowne
 3. These findings provide insight into metabolite and antioxidant activity changes during roasting and offer fundamental data for optimizing roasting conditions.
 
 #### 💡 연구자 시사점
-본 연구는 Pyropia, Neopyropia의 엽체 생리 · 생활사 · 사상체 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.
+본 연구는 Neopyropia, Pyropia의 엽체 생리 · 생활사 · 사상체 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.
 
 #### 📄 초록 (Abstract)
 This study investigated non-volatile metabolites in laver (Neopyropia yezoensis) roasted under different temperature/time conditions. Ultra-performance liquid chromatography-quadrupole time-of-flight mass spectrometry-based metabolomics identified 69 metabolites, including mycosporine-like amino acids (MAAs) and their dehydrated derivatives. Multivariate analysis showed that dehydrated MAAs were among the key roasting-responsive metabolites. As roasting intensity increased, MAAs decreased to 0.08-fold of the initial value, while dehydrated MAAs increased 1.22- to 13.61-fold. Antioxidant activity increased, with ABTS+ radical scavenging activity and FRAP exhibiting maximum increases of 4.55- and 4.18-fold, respectively. Pearson's correlation analysis revealed strong positive associations (r > 0.93) between dehydrated MAAs and antioxidant activity. This pattern is consistent with the extended conjugation and enhanced electron delocalization of dehydrated MAAs, which may facilitate radical stabilization. These findings provide insight into metabolite and antioxidant activity changes during roasting and offer fundamental data for optimizing roasting conditions.
@@ -258,7 +198,7 @@ This study investigated non-volatile metabolites in laver (Neopyropia yezoensis)
 - **저자**: Ceballos G, Muñiz-Salazar R, León-Cisneros K, Serviere-Zaragoza E et al.
 - **저널**: *Mitochondrial DNA. Part B, Resources* (2026) | **출처**: PubMed | **원문**: [10.1080/23802359.2026.2743397](#)
 - **대상 생물군**: `Neoporphyra, Porphyra`
-- **대표 이미지**: ![](https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80)
+- **대표 이미지**: ![](https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=800&q=80)
 
 #### 📌 핵심 성과 (Key Takeaways)
 1. Neoporphyra hollenbergii is an endemic red alga from the Gulf of California, a region with notable cryptic diversity.
@@ -277,7 +217,7 @@ Neoporphyra hollenbergii is an endemic red alga from the Gulf of California, a r
 - **원문 제목**: Comparative plastome analyses and genomic resource development for five Neoporphyra haitanensis and two Neopyropia yezoensis cultivars based on genome skimming data
 - **저자**: Zhang C, Gao Z, Wang H, Zhou W et al.
 - **저널**: *Journal of phycology* (2026) | **출처**: PubMed | **원문**: [10.1111/jpy.70205](#)
-- **대상 생물군**: `Pyropia, Neoporphyra, Neopyropia, Porphyra`
+- **대상 생물군**: `Neoporphyra, Neopyropia, Porphyra, Pyropia`
 - **대표 이미지**: ![](https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80)
 
 #### 📌 핵심 성과 (Key Takeaways)
@@ -286,7 +226,7 @@ Neoporphyra hollenbergii is an endemic red alga from the Gulf of California, a r
 3. This study provides comprehensive genomic resources-including complete plastomes, hypervariable regions, and polymorphic SSR markers-that will facilitate germplasm identification, phylogenetic studies, and molecular breeding in Porphyra sensu lato.
 
 #### 💡 연구자 시사점
-본 연구는 Pyropia, Neoporphyra, Neopyropia, Porphyra의 엽체 생리 · 생활사 · 사상체 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.
+본 연구는 Neoporphyra, Neopyropia, Porphyra, Pyropia의 엽체 생리 · 생활사 · 사상체 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.
 
 #### 📄 초록 (Abstract)
 Neoporphyra haitanensis and Neopyropia yezoensis are two economically important seaweeds in Asia, yet their germplasm identification is often hindered by high phenotypic plasticity and limited molecular resources. To address this, we utilized a genome skimming strategy on five No. haitanensis and two Ny. yezoensis cultivars to retrieve their plastome information (including whole plastome sequences, plastome-divergent hotspots, and plastome-derived SSRs) and to identify genome-wide polymorphic nuclear SSRs. The plastomes of No. haitanensis (201,110-201,310 bp) were markedly larger than those of Ny. yezoensis (191,974 bp), a difference largely driven by expansions in intergenic regions. Gene annotation identified 253 genes in No. haitanensis and 256 in Ny. yezoensis, with the latter uniquely containing two additional hypothetical ORFs (ORF33 and ORF35) and an extra rRNA gene (rrfB). Further comparative analysis revealed seven hypervariable regions (π > 0.1), five of which-apcE-tatC, psbW-trnR, psbX-accD, trnW-rpl11, and ycf32-rpl32-are intergenic spacers with strong potential as species-discriminatory barcodes. We also characterized 26-30 chloroplast-derived SSRs and identified notable interspecific variations in their repeat-type profiles. Importantly, we developed 230 and 505 high-quality polymorphic nuclear SSRs for No. haitanensis and Ny. yezoensis, respectively, predominantly trinucleotide repeats, offering a robust toolset for fine-scale genetic analyses. Phylogenetic reconstruction using 201 shared plastid protein-coding genes clearly separated the two species into distinct clades, supporting their independent evolutionary trajectories, and further revealed intraspecific genetic differentiation, particularly with the cultivar ZD-1 forming a distinct branch within No. haitanensis. This study provides comprehensive genomic resources-including complete plastomes, hypervariable regions, and polymorphic SSR markers-that will facilitate germplasm identification, phylogenetic studies, and molecular breeding in Porphyra sensu lato.
@@ -297,7 +237,7 @@ Neoporphyra haitanensis and Neopyropia yezoensis are two economically important 
 - **원문 제목**: Genome-Guided and De Novo Transcriptome Analysis of a Newly Isolated
 - **저자**: Choi J, Kim J
 - **저널**: *International journal of genomics* (2025) | **출처**: PubMed | **원문**: [10.1155/ijog/9130170](#)
-- **대상 생물군**: `Pyropia, Neoporphyra, Neopyropia, Porphyra`
+- **대상 생물군**: `Neoporphyra, Neopyropia, Porphyra, Pyropia`
 - **대표 이미지**: ![](https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80)
 
 #### 📌 핵심 성과 (Key Takeaways)
@@ -306,7 +246,7 @@ Neoporphyra haitanensis and Neopyropia yezoensis are two economically important 
 3. This information can be applied to the development of new cultivars with enhanced growth and heat tolerance, supporting sustainable aquaculture in the face of climate change.
 
 #### 💡 연구자 시사점
-본 연구는 Pyropia, Neoporphyra, Neopyropia, Porphyra의 엽체 생리 · 생활사 · 사상체 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.
+본 연구는 Neoporphyra, Neopyropia, Porphyra, Pyropia의 엽체 생리 · 생활사 · 사상체 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.
 
 #### 📄 초록 (Abstract)
 [BACKGROUND] The escalating threats of global warming and the increasing demand for sustainable resources have driven research towards identifying resilient organisms capable of thriving under changing environmental conditions. A recently identified strain of Neopyropia yezoensis from Daebudo has demonstrated the ability to grow even under elevated temperatures. Understanding the genetic and molecular mechanisms underlying this resilience is crucial for the development of heat-tolerant cultivars.
@@ -391,35 +331,75 @@ Extensive livestock production systems support over 70 million rural households
 
 ---
 
-### 12. Selective fertilization in plants in relation to plant breeding.…
-- **원문 제목**: Selective fertilization in plants in relation to plant breeding. I. Chinese cabbage (Brassica pekinensis RUPR.). 2. Mechanisms involved in selective fertilization
-- **저자**: MURAKAMI K
-- **저널**: *Japanese Journal of Breeding* (1964) | **출처**: Crossref | **원문**: [10.1270/jsbbs1951.14.238](https://doi.org/10.1270/jsbbs1951.14.238)
+### 12. Fermentation of a Potential Biocontrol Agent, Bacillus…
+- **원문 제목**: Fermentation of a Potential Biocontrol Agent, Bacillus amyloliquefaciens SKU-78 Strain
+- **저자**: Kim S, Cho H
+- **저널**: *The Korean Journal of Microbiology* (2014) | **출처**: Crossref | **원문**: [10.7845/kjm.2014.3062](https://doi.org/10.7845/kjm.2014.3062)
 - **대상 생물군**: `Pyropia/Porphyra complex`
 - **대표 이미지**: ![](https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80)
 
 #### 📌 핵심 성과 (Key Takeaways)
-1. 관련 학술 문헌 제목: Selective fertilization in plants in relation to plant breeding.
-2. Mechanisms involved in selective fertilization..
+1. 관련 학술 문헌 제목: Fermentation of a Potential Biocontrol Agent, Bacillus amyloliquefaciens SKU-78 Strain.
+2. 자세한 연구 성과는 원문 링크를 참고하십시오.
+3. 대상 분류군(Pyropia/Porphyra complex) 실증 분석.
+
+#### 💡 연구자 시사점
+본 연구는 Pyropia/Porphyra complex의 엽체 생리 · 생활사 · 사상체 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.
+
+#### 📄 초록 (Abstract)
+관련 학술 문헌 제목: Fermentation of a Potential Biocontrol Agent, Bacillus amyloliquefaciens SKU-78 Strain. 자세한 연구 성과는 원문 링크를 참고하십시오.
+
+---
+
+### 13. Culture Conditions for Glutathione Maximum Production by…
+- **원문 제목**: Culture Conditions for Glutathione Maximum Production by Saccharomyces cerevisiae FF-8 in Bioreactor
+- **저자**: Cha J, Park S, Heo J, Park B et al.
+- **저널**: *Journal of Life Science* (2008) | **출처**: Crossref | **원문**: [10.5352/jls.2008.18.5.620](https://doi.org/10.5352/jls.2008.18.5.620)
+- **대상 생물군**: `Pyropia/Porphyra complex`
+- **대표 이미지**: ![](https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80)
+
+#### 📌 핵심 성과 (Key Takeaways)
+1. 관련 학술 문헌 제목: Culture Conditions for Glutathione Maximum Production by Saccharomyces cerevisiae FF-8 in Bioreactor.
+2. 자세한 연구 성과는 원문 링크를 참고하십시오.
+3. 대상 분류군(Pyropia/Porphyra complex) 실증 분석.
+
+#### 💡 연구자 시사점
+본 연구는 Pyropia/Porphyra complex의 엽체 생리 · 생활사 · 사상체 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.
+
+#### 📄 초록 (Abstract)
+관련 학술 문헌 제목: Culture Conditions for Glutathione Maximum Production by Saccharomyces cerevisiae FF-8 in Bioreactor. 자세한 연구 성과는 원문 링크를 참고하십시오.
+
+---
+
+### 14. Mass Cultivation of Rhodococcus sp. 3-2, a Carbendazim-Degrading…
+- **원문 제목**: Mass Cultivation of Rhodococcus sp. 3-2, a Carbendazim-Degrading Microorganism, and Development of Microbial Agents
+- **저자**: Park J, Im S, Kim J, Ji J et al.
+- **저널**: *Korean Journal of Environmental Agriculture* (2023) | **출처**: Crossref | **원문**: [10.5338/kjea.2023.42.4.30](https://doi.org/10.5338/kjea.2023.42.4.30)
+- **대상 생물군**: `Pyropia/Porphyra complex`
+- **대표 이미지**: ![](https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80)
+
+#### 📌 핵심 성과 (Key Takeaways)
+1. 관련 학술 문헌 제목: Mass Cultivation of Rhodococcus sp.
+2. 3-2, a Carbendazim-Degrading Microorganism, and Development of Microbial Agents.
 3. 자세한 연구 성과는 원문 링크를 참고하십시오.
 
 #### 💡 연구자 시사점
 본 연구는 Pyropia/Porphyra complex의 엽체 생리 · 생활사 · 사상체 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.
 
 #### 📄 초록 (Abstract)
-관련 학술 문헌 제목: Selective fertilization in plants in relation to plant breeding. I. Chinese cabbage (Brassica pekinensis RUPR.). 2. Mechanisms involved in selective fertilization.. 자세한 연구 성과는 원문 링크를 참고하십시오.
+관련 학술 문헌 제목: Mass Cultivation of Rhodococcus sp. 3-2, a Carbendazim-Degrading Microorganism, and Development of Microbial Agents. 자세한 연구 성과는 원문 링크를 참고하십시오.
 
 ---
 
-### 13. A selection system for transgenic plants based on galactose as…
-- **원문 제목**: A selection system for transgenic plants based on galactose as selective agent and a UDP-glucose:galactose-1-phosphate uridyltransferase gene as selective gene
-- **저자**: Joersbo M, Jørgensen K, Brunstedt J
-- **저널**: *Molecular Breeding* (2003) | **출처**: Crossref | **원문**: [10.1023/a:1023402424215](https://doi.org/10.1023/a:1023402424215)
+### 15. 인공지능 시대의 저작물 대량 디지털화에 관한 소고
+- **원문 제목**: 인공지능 시대의 저작물 대량 디지털화에 관한 소고
+- **저자**: Shin, Chang-Hwan
+- **저널**: *SungKyunKwan Law Review* (2019) | **출처**: Crossref | **원문**: [10.17008/skklr.2019.31.1.005](https://doi.org/10.17008/skklr.2019.31.1.005)
 - **대상 생물군**: `Pyropia/Porphyra complex`
 - **대표 이미지**: ![](https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80)
 
 #### 📌 핵심 성과 (Key Takeaways)
-1. 관련 학술 문헌 제목: A selection system for transgenic plants based on galactose as selective agent and a UDP-glucose:galactose-1-phosphate uridyltransferase gene as selective gene.
+1. 관련 학술 문헌 제목: 인공지능 시대의 저작물 대량 디지털화에 관한 소고.
 2. 자세한 연구 성과는 원문 링크를 참고하십시오.
 3. 대상 분류군(Pyropia/Porphyra complex) 실증 분석.
 
@@ -427,19 +407,19 @@ Extensive livestock production systems support over 70 million rural households
 본 연구는 Pyropia/Porphyra complex의 엽체 생리 · 생활사 · 사상체 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.
 
 #### 📄 초록 (Abstract)
-관련 학술 문헌 제목: A selection system for transgenic plants based on galactose as selective agent and a UDP-glucose:galactose-1-phosphate uridyltransferase gene as selective gene. 자세한 연구 성과는 원문 링크를 참고하십시오.
+관련 학술 문헌 제목: 인공지능 시대의 저작물 대량 디지털화에 관한 소고. 자세한 연구 성과는 원문 링크를 참고하십시오.
 
 ---
 
-### 14. Aragonite Formation by Conchocelis; The Sites of Primary…
-- **원문 제목**: Aragonite Formation by Conchocelis; The Sites of Primary Biomineralization
-- **저자**: Boney A
-- **저널**: *Nova Hedwigia* (1984) | **출처**: Crossref | **원문**: [10.1127/nova.hedwigia/39/1984/259](https://doi.org/10.1127/nova.hedwigia/39/1984/259)
+### 16. 배양 속도를 향상시킨 바이오 셀 솔레노이드 시스템
+- **원문 제목**: 배양 속도를 향상시킨 바이오 셀 솔레노이드 시스템
+- **저자**: Hwang Yoon Cheol
+- **저널**: *Journal of Knowledge Information Technology and Systems* (2019) | **출처**: Crossref | **원문**: [10.34163/jkits.2019.14.1.003](https://doi.org/10.34163/jkits.2019.14.1.003)
 - **대상 생물군**: `Pyropia/Porphyra complex`
 - **대표 이미지**: ![](https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80)
 
 #### 📌 핵심 성과 (Key Takeaways)
-1. 관련 학술 문헌 제목: Aragonite Formation by Conchocelis; The Sites of Primary Biomineralization.
+1. 관련 학술 문헌 제목: 배양 속도를 향상시킨 바이오 셀 솔레노이드 시스템.
 2. 자세한 연구 성과는 원문 링크를 참고하십시오.
 3. 대상 분류군(Pyropia/Porphyra complex) 실증 분석.
 
@@ -447,107 +427,27 @@ Extensive livestock production systems support over 70 million rural households
 본 연구는 Pyropia/Porphyra complex의 엽체 생리 · 생활사 · 사상체 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.
 
 #### 📄 초록 (Abstract)
-관련 학술 문헌 제목: Aragonite Formation by Conchocelis; The Sites of Primary Biomineralization. 자세한 연구 성과는 원문 링크를 참고하십시오.
+관련 학술 문헌 제목: 배양 속도를 향상시킨 바이오 셀 솔레노이드 시스템. 자세한 연구 성과는 원문 링크를 참고하십시오.
 
 ---
 
-### 15. Crecimiento in vitro de Conchocelis, Pyropia sp. sobre sustrato…
-- **원문 제목**: Crecimiento in vitro de Conchocelis, Pyropia sp. sobre sustrato artificial con diferentes fertilizantes comerciales
-- **저자**: GERONIMO MALDONADO G, ADVINCULA ZEBALLOS O, BALDEON W
-- **저널**: *Manglar* (2022) | **출처**: Crossref | **원문**: [10.57188/manglar.2022.047](https://doi.org/10.57188/manglar.2022.047)
-- **대상 생물군**: `Pyropia`
-- **대표 이미지**: ![](https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80)
-
-#### 📌 핵심 성과 (Key Takeaways)
-1. Aquaculture industries have grown recently, but there is still a lack of information on culture techniques for the early life stages of Pyropia sp.
-2. Likewise, the results obtained were the maximum Nitrate uptake with Bayfolan® fertilizer and La Molina Hydroponic Solution with 0.1465 mM and 1.369 mM and Phosphate presenting a maximum uptake 0.0312 mM and 0.053 mM, respectively.
-3. Leaving as evidence that the growth of "Conchocelis" is cultivated in vitro with commercial fertilizers, a strategy for a sustainable industry of "nori" in Peru.
-
-#### 💡 연구자 시사점
-본 연구는 Pyropia의 엽체 생리 · 생활사 · 사상체 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.
-
-#### 📄 초록 (Abstract)
-Aquaculture industries have grown recently, but there is still a lack of information on culture techniques for the early life stages of Pyropia sp. (Rhodophyta). This research aimed to determine the optimum concentration of Bayfolan® brand commercial sources of essential nutrients and La Molina® A and B hydroponic solution, for the growth and development of the "conchocelis" stage of Pyropia. The phase was investigated under conditions of temperature 15.03 ±0.31 °C, salinity 36.05 ±0.23 PSU, electrical conductivity 55.95 ± 0.14 mS/cm, irradiance 15.93 ±0.03 µmol m-2 s-1 and subjected to different treatments and control with Bayfolan® fertilizers and hydroponic solution A and B La Molina. Likewise, the results obtained were the maximum Nitrate uptake with Bayfolan® fertilizer and La Molina Hydroponic Solution with 0.1465 mM and 1.369 mM and Phosphate presenting a maximum uptake 0.0312 mM and 0.053 mM, respectively. The experiments were evaluated in a LED germination chamber (TE-4020 Tecnal) programmed for a time interval of 800 hours of settlement of Cigotospora for its growth to conchocelis; in addition, the comparison of means was performed by a Tukey test with a value of p ≥ 0.05, obtaining a growth on the substrate of 4.15 mm2 with the La Molina solution and 1.54 mm2 with the Bayfolan® Solution, but with different coverage of conchocelis on the substrate 49.75% y 63.09%. Leaving as evidence that the growth of "Conchocelis" is cultivated in vitro with commercial fertilizers, a strategy for a sustainable industry of "nori" in Peru.
-
----
-
-### 16. Cryoconservation du conchocelis de Porphyra linearis…
-- **원문 제목**: Cryoconservation du conchocelis de Porphyra linearis (Rhodophyceae)
-- **저자**: Arbault S, Delanoue G
-- **저널**: *Cryptogamie. Algologie* (1994) | **출처**: Crossref | **원문**: [10.5962/p.309392](https://doi.org/10.5962/p.309392)
-- **대상 생물군**: `Porphyra`
-- **대표 이미지**: ![](https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80)
-
-#### 📌 핵심 성과 (Key Takeaways)
-1. 관련 학술 문헌 제목: Cryoconservation du conchocelis de Porphyra linearis (Rhodophyceae).
-2. 자세한 연구 성과는 원문 링크를 참고하십시오.
-3. 대상 분류군(Porphyra) 실증 분석.
-
-#### 💡 연구자 시사점
-본 연구는 Porphyra의 엽체 생리 · 생활사 · 사상체 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.
-
-#### 📄 초록 (Abstract)
-관련 학술 문헌 제목: Cryoconservation du conchocelis de Porphyra linearis (Rhodophyceae). 자세한 연구 성과는 원문 링크를 참고하십시오.
-
----
-
-### 17. On the Shedding of Spores from “Conchocelis-Phase” of Porphyra…
-- **원문 제목**: On the Shedding of Spores from “Conchocelis-Phase” of Porphyra tenera Cultured in Shells of Bivalves
-- **저자**: SUTO S, MARUYAMA T, UMEBAYASHI O
-- **저널**: *NIPPON SUISAN GAKKAISHI* (1954) | **출처**: Crossref | **원문**: [10.2331/suisan.20.490](https://doi.org/10.2331/suisan.20.490)
-- **대상 생물군**: `Porphyra`
-- **대표 이미지**: ![](https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80)
-
-#### 📌 핵심 성과 (Key Takeaways)
-1. 관련 학술 문헌 제목: On the Shedding of Spores from “Conchocelis-Phase” of Porphyra tenera Cultured in Shells of Bivalves.
-2. 자세한 연구 성과는 원문 링크를 참고하십시오.
-3. 대상 분류군(Porphyra) 실증 분석.
-
-#### 💡 연구자 시사점
-본 연구는 Porphyra의 엽체 생리 · 생활사 · 사상체 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.
-
-#### 📄 초록 (Abstract)
-관련 학술 문헌 제목: On the Shedding of Spores from “Conchocelis-Phase” of Porphyra tenera Cultured in Shells of Bivalves. 자세한 연구 성과는 원문 링크를 참고하십시오.
-
----
-
-### 18. Free amino acid contents of the gametophytic blades from the…
-- **원문 제목**: Free amino acid contents of the gametophytic blades from the green mutant conchocelis and the heterozygous conchocelis in Porphyra yezoensis Ueda (Bangiales, Rhodophyta)
-- **저자**: Niwa K, Furuita H, Aruga Y
-- **저널**: *Journal of Applied Phycology* (2003) | **출처**: Crossref | **원문**: [10.1023/a:1026087316190](https://doi.org/10.1023/a:1026087316190)
-- **대상 생물군**: `Porphyra`
-- **대표 이미지**: ![](https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80)
-
-#### 📌 핵심 성과 (Key Takeaways)
-1. 관련 학술 문헌 제목: Free amino acid contents of the gametophytic blades from the green mutant conchocelis and the heterozygous conchocelis in Porphyra yezoensis Ueda (Bangiales, Rhodophyta).
-2. 자세한 연구 성과는 원문 링크를 참고하십시오.
-3. 대상 분류군(Porphyra) 실증 분석.
-
-#### 💡 연구자 시사점
-본 연구는 Porphyra의 엽체 생리 · 생활사 · 사상체 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.
-
-#### 📄 초록 (Abstract)
-관련 학술 문헌 제목: Free amino acid contents of the gametophytic blades from the green mutant conchocelis and the heterozygous conchocelis in Porphyra yezoensis Ueda (Bangiales, Rhodophyta). 자세한 연구 성과는 원문 링크를 참고하십시오.
-
----
-
-### 19. Mass imagineering, mass customization and mass production:…
-- **원문 제목**: Mass imagineering, mass customization and mass production: Complementary cultures for creativity, choice and convenience
-- **저자**: Fox S
-- **저널**: *Journal of Consumer Culture* (2019) | **출처**: Crossref | **원문**: [10.1177/1469540517705945](https://doi.org/10.1177/1469540517705945)
+### 17. Adsorption of Dyes Reactive Blue 221, N Blue RGB and Acid Blue…
+- **원문 제목**: Adsorption of Dyes Reactive Blue 221, N Blue RGB and Acid Blue MTR on Two Different Samples of Activated Carbon
+- **저자**: Kant R, Rattan V
+- **저널**: *Carbon letters* (2010) | **출처**: Crossref | **원문**: [10.5714/cl.2010.11.3.206](https://doi.org/10.5714/cl.2010.11.3.206)
 - **대상 생물군**: `Pyropia/Porphyra complex`
 - **대표 이미지**: ![](https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80)
 
 #### 📌 핵심 성과 (Key Takeaways)
-1. Do-it-yourself trends, such as self-broadcasting, music self-publishing and personal manufacturing, involve combining human imagination and automated engineering.
-2. It has been claimed that this new potential for individuals to create what they imagine will bring revolutionary disruption to existing paradigms for production and consumption, which will benefit individuals greatly.
-3. Rather, it can facilitate their enrichment for the benefit of both organizations and individuals by better enabling complementary cultures for creativity, choice and convenience.
+1. 관련 학술 문헌 제목: Adsorption of Dyes Reactive Blue 221, N Blue RGB and Acid Blue MTR on Two Different Samples of Activated Carbon.
+2. 자세한 연구 성과는 원문 링크를 참고하십시오.
+3. 대상 분류군(Pyropia/Porphyra complex) 실증 분석.
 
 #### 💡 연구자 시사점
 본 연구는 Pyropia/Porphyra complex의 엽체 생리 · 생활사 · 사상체 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.
 
 #### 📄 초록 (Abstract)
-Do-it-yourself trends, such as self-broadcasting, music self-publishing and personal manufacturing, involve combining human imagination and automated engineering. In particular, automated engineering enabled by artificial intelligence algorithms is used for pattern recognition and other highly complex tasks across physical, virtual and social media. Together, multiple do-it-yourself trends driven by human imagination combined with automated engineering bring mass imagineering. It has been claimed that this new potential for individuals to create what they imagine will bring revolutionary disruption to existing paradigms for production and consumption, which will benefit individuals greatly. Conversely, others have claimed that whatever change occurs will advance organizations within existing paradigms at the expense of individuals. In this article, it is explained that mass imagineering has limited potential to bring revolutionary disruption to mass production and mass customization. Rather, it can facilitate their enrichment for the benefit of both organizations and individuals by better enabling complementary cultures for creativity, choice and convenience.
+관련 학술 문헌 제목: Adsorption of Dyes Reactive Blue 221, N Blue RGB and Acid Blue MTR on Two Different Samples of Activated Carbon. 자세한 연구 성과는 원문 링크를 참고하십시오.
 
 ---
 
@@ -561,7 +461,7 @@ Do-it-yourself trends, such as self-broadcasting, music self-publishing and pers
 - **저자**: Xie K, Qiao W, Wu L, Zhang S et al.
 - **저널**: *Marine pollution bulletin* (2026) | **출처**: PubMed | **원문**: [10.1016/j.marpolbul.2026.120414](#)
 - **대상 생물군**: `Pyropia`
-- **대표 이미지**: ![](https://images.unsplash.com/photo-1581093458791-9f3c3900df4b?auto=format&fit=crop&w=800&q=80)
+- **대표 이미지**: ![](https://images.unsplash.com/photo-1594122230689-45899d9e6f69?auto=format&fit=crop&w=800&q=80)
 
 #### 📌 핵심 성과 (Key Takeaways)
 1. Global climate change is intensifying pressure on marine ecosystems, particularly coastal bays affected by natural variability and anthropogenic disturbances.
@@ -576,89 +476,6 @@ Global climate change is intensifying pressure on marine ecosystems, particularl
 
 ---
 
-### 2. Features of Modern Mass Media Influence on the Formation and…
-- **원문 제목**: Features of Modern Mass Media Influence on the Formation and Development of Mass Speech Culture
-- **저자**: Solomenko L
-- **저널**: *Almanac "Culture and Contemporaneity"* (2022) | **출처**: Crossref | **원문**: [10.32461/2226-0285.2.2022.270543](https://doi.org/10.32461/2226-0285.2.2022.270543)
-- **대상 생물군**: `Pyropia/Porphyra complex`
-- **대표 이미지**: ![](https://images.unsplash.com/photo-1594122230689-45899d9e6f69?auto=format&fit=crop&w=800&q=80)
-
-#### 📌 핵심 성과 (Key Takeaways)
-1. The purpose of the article is to reveal the peculiarities of the development of mass broadcasting culture in the context of the specifics of modern mass media (the case study of television and print media).
-2. Peculiarities of the influence of the latest foreign language borrowings in the context of the specifics of the development of modern mass media have been considered.
-3. Key words: mass broadcasting culture, mass media, traditional media, television.
-
-#### 💡 연구자 시사점
-본 연구는 Pyropia/Porphyra complex의 스마트 양식 및 대량 배양 기술 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.
-
-#### 📄 초록 (Abstract)
-The purpose of the article is to reveal the peculiarities of the development of mass broadcasting culture in the context of the specifics of modern mass media (the case study of television and print media). Research methodology. The methods of analysis and synthesis, the method of structuring, and the system method have been used to understand the peculiarities of mass media influence on the process of developing mass speech culture. The typological method enabled revealing the peculiarities of conventional and modern media in the context of the transformation of mass broadcasting culture. The abstract-logical method has contributed to the generalisation of the development trends of broadcasting culture and the role of mass media in their formation. Scientific novelty. The impact of modern mass media on the process of formation and development of mass broadcasting culture has been studied. The concepts of "speech culture" and "mass speech culture" have been clarified and supplemented. Typical for the beginning of the XXI century positive and negative trends in the influence of mass media on speech culture have been revealed. Peculiarities of the influence of the latest foreign language borrowings in the context of the specifics of the development of modern mass media have been considered. Conclusions. At the current stage, in relation to Ukrainian-language communication and verbal code, we can talk about the phenomena of mass culture at the level of psychological, political, etc. culture. Mass speech culture is formed as a certain popular way of communication used by the majority in society regardless of status and social roles in public and everyday communication. Mass media – traditional and new media – play an important role in this, as they are the ones who broadcast and reproduce the patterns of speech behaviour characteristic of modern society (for example, words, expressions, and speech phrases relevant to this socio-cultural space, quotes from characters, and speech memes). The study revealed that the influence of traditional mass media (television and print publications) on the formation of mass media culture at the present stage has increased due to the development of information and communication technologies, which has created the prerequisites for access unlimited by time and space parameters. Despite the presence of negative factors of the influence of traditional media on mass speech culture, due to changes in their system and functions as a result of globalisation processes, which is manifested in the appearance of a huge number of lexical borrowings, language simplifications on the one hand and the spread of specific regional practices (slang, dialect, sociolect), on the other hand, there is definitely a positive experience of creating a media text characterised by a high level of speech behaviour. Important in the context of raising the level of mass broadcasting culture, in our opinion, is the maintenance of a high level of the language of mass media.
-Key words: mass broadcasting culture, mass media, traditional media, television.
-
----
-
-### 3. A Study on Dance Culture in Mass Society based on Donald…
-- **원문 제목**: A Study on Dance Culture in Mass Society based on Donald Dodson’s Discussion on Popular Culture and Mass Culture
-- **저자**: 임수진, EuiSook Chung
-- **저널**: *The Korean Journal of Dance Studies* (2015) | **출처**: Crossref | **원문**: [10.16877/kjds.55.4.201507.111](https://doi.org/10.16877/kjds.55.4.201507.111)
-- **대상 생물군**: `Pyropia/Porphyra complex`
-- **대표 이미지**: ![](https://images.unsplash.com/photo-1608408891571-89c4aa18ef7c?auto=format&fit=crop&w=800&q=80)
-
-#### 📌 핵심 성과 (Key Takeaways)
-1. 관련 학술 문헌 제목: A Study on Dance Culture in Mass Society based on Donald Dodson’s Discussion on Popular Culture and Mass Culture.
-2. 자세한 연구 성과는 원문 링크를 참고하십시오.
-3. 대상 분류군(Pyropia/Porphyra complex) 실증 분석.
-
-#### 💡 연구자 시사점
-본 연구는 Pyropia/Porphyra complex의 스마트 양식 및 대량 배양 기술 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.
-
-#### 📄 초록 (Abstract)
-관련 학술 문헌 제목: A Study on Dance Culture in Mass Society based on Donald Dodson’s Discussion on Popular Culture and Mass Culture. 자세한 연구 성과는 원문 링크를 참고하십시오.
-
----
-
-### 4. Krzysztof Wielecki, Kultura versus kultura masowa [Culture…
-- **원문 제목**: Krzysztof Wielecki, Kultura versus kultura masowa [Culture versus Mass Culture]. Warszawa: Narodowe Cenrum Kultury, 2024, 662 pages
-- **저자**: Dancák P
-- **저널**: *Philosophy and Canon Law* (2024) | **출처**: Crossref | **원문**: [10.31261/pacl.2024.10.1.07](https://doi.org/10.31261/pacl.2024.10.1.07)
-- **대상 생물군**: `Pyropia/Porphyra complex`
-- **대표 이미지**: ![](https://images.unsplash.com/photo-1530541930197-ff16ac917b0e?auto=format&fit=crop&w=800&q=80)
-
-#### 📌 핵심 성과 (Key Takeaways)
-1. Krzysztof Wielecki, Kultura versus kultura masowa, 662 pp.
-2. Warszawa: Narodowe Cenrum Kultury, 2024
-3. 대상 분류군(Pyropia/Porphyra complex) 실증 분석.
-
-#### 💡 연구자 시사점
-본 연구는 Pyropia/Porphyra complex의 스마트 양식 및 대량 배양 기술 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.
-
-#### 📄 초록 (Abstract)
-Krzysztof Wielecki, Kultura versus kultura masowa, 662 pp.
-Warszawa: Narodowe Cenrum Kultury, 2024
-
----
-
-### 5. Leisure industries as a phenomenon mass culture
-- **원문 제목**: Leisure industries as a phenomenon mass culture
-- **저자**: Didenko N
-- **저널**: *Almanac "Culture and Contemporaneity"* (2022) | **출처**: Crossref | **원문**: [10.32461/2226-0285.1.2022.262576](https://doi.org/10.32461/2226-0285.1.2022.262576)
-- **대상 생물군**: `Pyropia/Porphyra complex`
-- **대표 이미지**: ![](https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&w=800&q=80)
-
-#### 📌 핵심 성과 (Key Takeaways)
-1. The purpose of the work is to investigate the peculiarities of the emergence and development of modern cultural industries, which are the product of mass culture.
-2. As a result of the study, it was found that the socio-cultural space of modern Ukrainian society, which due to information and communication networks is part of the global information space, reflects global trends in the leisure industry, the main features of which are multimedia, interactivity, and virtuality.
-3. Key words: mass culture, leisure practices, socio-cultural space, leisure industry, information technologies, media space.
-
-#### 💡 연구자 시사점
-본 연구는 Pyropia/Porphyra complex의 스마트 양식 및 대량 배양 기술 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.
-
-#### 📄 초록 (Abstract)
-The purpose of the work is to investigate the peculiarities of the emergence and development of modern cultural industries, which are the product of mass culture. The research methodology combines a systematic approach with structural methods - to identify the role and place of mass culture in the general system and structure of culture, as well as to clarify the structure of cultural leisure industries mediated by technological substrate and mass culture as a set of technologies and communications. Culturological and semantic methods led to the definition of the study of the cultural-semantic field of mass culture and its influence on the phenomena produced by it. The scientific novelty of the work is to expand the understanding of the system of cultural leisure industries as a phenomenon of mass culture, which increases their potential through a modern communicative and information environment. Conclusions. As a result of the study, it was found that the socio-cultural space of modern Ukrainian society, which due to information and communication networks is part of the global information space, reflects global trends in the leisure industry, the main features of which are multimedia, interactivity, and virtuality. Considering the socio-cultural space in which the modern Ukrainian is, it is necessary to note the full integration of his cultural and spiritual life into the world entertainment industry in its highest technological manifestation - the media space. Leisure needs are met mainly through the consumption of information and entertainment content, which is currently a social problem on a global scale. Ukraine is integrated into the world mass culture and, accordingly, into the media space, hence the multidimensionality of cultural needs caused by the multilayered society, which looks like a heterogeneous system that includes people of different ages, different levels of education, different interests and values.
-Key words: mass culture, leisure practices, socio-cultural space, leisure industry, information technologies, media space.
-
----
-
 ## 🔬 SECTION 04: 블루카본 및 산업적 응용
 
 > 💡 **Editor's Insight: 해조류 기반 메탄 감축 실증과 RDOC 블루카본 탄소 격리 플럭스 표준화**
@@ -669,7 +486,7 @@ Key words: mass culture, leisure practices, socio-cultural space, leisure indust
 - **저자**: Ferguson P, Bergfeld W, Belsito D, Cohen D et al.
 - **저널**: *International journal of toxicology* (2026) | **출처**: PubMed | **원문**: [10.1177/10915818261474837](#)
 - **대상 생물군**: `Pyropia/Porphyra complex`
-- **대표 이미지**: ![](https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=800&q=80)
+- **대표 이미지**: ![](https://images.unsplash.com/photo-1682687220199-d0124f48f95b?auto=format&fit=crop&w=800&q=80)
 
 #### 📌 핵심 성과 (Key Takeaways)
 1. The Expert Panel for Cosmetic Ingredient Safety (Panel) assessed the safety of red algae-derived ingredients.
@@ -688,8 +505,8 @@ The Expert Panel for Cosmetic Ingredient Safety (Panel) assessed the safety of r
 - **원문 제목**: Navigating the potential of algal peptides: health effects, market applications, and scientific challenges
 - **저자**: Khaliq M, Noor Z, Moazzam M, Saeed F et al.
 - **저널**: *Annals of medicine* (2026) | **출처**: PubMed | **원문**: [10.1080/07853890.2026.2637282](#)
-- **대상 생물군**: `Pyropia, Neopyropia`
-- **대표 이미지**: ![](https://images.unsplash.com/photo-1498084393753-b411b2d26b34?auto=format&fit=crop&w=800&q=80)
+- **대상 생물군**: `Neopyropia, Pyropia`
+- **대표 이미지**: ![](https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=800&q=80)
 
 #### 📌 핵심 성과 (Key Takeaways)
 1. [INTRODUCTION] Algae-derived bioactive peptides are gaining recognition as functional ingredients offering health benefits and sustainability advantages over conventional proteins.
@@ -697,7 +514,7 @@ The Expert Panel for Cosmetic Ingredient Safety (Panel) assessed the safety of r
 3. Standardized production methods, improved delivery strategies, comprehensive safety assessments, and well-designed clinical studies are essential to support their application in functional foods and nutraceuticals.
 
 #### 💡 연구자 시사점
-본 연구는 Pyropia, Neopyropia의 블루카본 및 산업적 응용 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.
+본 연구는 Neopyropia, Pyropia의 블루카본 및 산업적 응용 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.
 
 #### 📄 초록 (Abstract)
 [INTRODUCTION] Algae-derived bioactive peptides are gaining recognition as functional ingredients offering health benefits and sustainability advantages over conventional proteins. This review aimed to evaluate the current evidence on algal peptides, focusing on their nutritional content, mechanistic actions, health effects, potential for sustainability, and translational challenges.
@@ -707,5 +524,145 @@ The Expert Panel for Cosmetic Ingredient Safety (Panel) assessed the safety of r
 [RESULTS] Available evidence shows that algal peptides exert multifunctional bioactivities, including inhibition of angiotensin-converting enzyme and renin, antioxidant and anti-inflammatory effects, modulation of glucose metabolism via α-amylase, α-glucosidase, and DPP-IV inhibition, and regulation of lipid metabolism and adipogenesis. Frequently studied sources included Limnospira, Chlorella, Auxenochlorella, Nannochloropsis, Undaria, Palmaria, Ulva, and Neopyropia. Limited human trials suggest modest but clinically relevant improvements in blood pressure, glycemic control, lipid profiles, and body-weight-related outcomes, primarily using whole algal biomass or extracts. Life-cycle assessments highlight favorable land-use efficiency and carbon sequestration potential, although economic feasibility is constrained by energy-intensive downstream processing.
 
 [CONCLUSION] Algal-derived peptides demonstrate promising health-promoting effects and align with sustainable nutrition goals. However, their clinical translation is limited by variability in peptide characterization, uncertain bioavailability, and lack of robust human trials. Standardized production methods, improved delivery strategies, comprehensive safety assessments, and well-designed clinical studies are essential to support their application in functional foods and nutraceuticals.
+
+---
+
+### 3. How blue carbon financing can sustain blue carbon ecosystems…
+- **원문 제목**: How blue carbon financing can sustain blue carbon ecosystems protection and restoration: A proposed conceptual framework for the blue carbon financing mechanism
+- **저자**: Li P, Liu D
+- **저널**: *Ocean &amp; Coastal Management* (2025) | **출처**: Crossref | **원문**: [10.1016/j.ocecoaman.2025.107644](https://doi.org/10.1016/j.ocecoaman.2025.107644)
+- **대상 생물군**: `Pyropia/Porphyra complex`
+- **대표 이미지**: ![](https://images.unsplash.com/photo-1682687220063-4742bd7fd538?auto=format&fit=crop&w=800&q=80)
+
+#### 📌 핵심 성과 (Key Takeaways)
+1. 관련 학술 문헌 제목: How blue carbon financing can sustain blue carbon ecosystems protection and restoration: A proposed conceptual framework for the blue carbon financing mechanism.
+2. 자세한 연구 성과는 원문 링크를 참고하십시오.
+3. 대상 분류군(Pyropia/Porphyra complex) 실증 분석.
+
+#### 💡 연구자 시사점
+본 연구는 Pyropia/Porphyra complex의 블루카본 및 산업적 응용 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.
+
+#### 📄 초록 (Abstract)
+관련 학술 문헌 제목: How blue carbon financing can sustain blue carbon ecosystems protection and restoration: A proposed conceptual framework for the blue carbon financing mechanism. 자세한 연구 성과는 원문 링크를 참고하십시오.
+
+---
+
+### 4. Blue carbon accounting to monitor coastal blue carbon ecosystems
+- **원문 제목**: Blue carbon accounting to monitor coastal blue carbon ecosystems
+- **저자**: Liu J, Failler P, Ramrattan D
+- **저널**: *Journal of Environmental Management* (2024) | **출처**: Crossref | **원문**: [10.1016/j.jenvman.2023.120008](https://doi.org/10.1016/j.jenvman.2023.120008)
+- **대상 생물군**: `Pyropia/Porphyra complex`
+- **대표 이미지**: ![](https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=800&q=80)
+
+#### 📌 핵심 성과 (Key Takeaways)
+1. 관련 학술 문헌 제목: Blue carbon accounting to monitor coastal blue carbon ecosystems.
+2. 자세한 연구 성과는 원문 링크를 참고하십시오.
+3. 대상 분류군(Pyropia/Porphyra complex) 실증 분석.
+
+#### 💡 연구자 시사점
+본 연구는 Pyropia/Porphyra complex의 블루카본 및 산업적 응용 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.
+
+#### 📄 초록 (Abstract)
+관련 학술 문헌 제목: Blue carbon accounting to monitor coastal blue carbon ecosystems. 자세한 연구 성과는 원문 링크를 참고하십시오.
+
+---
+
+### 5. Blue Carbon PH: An R-based web platform for databasing and…
+- **원문 제목**: Blue Carbon PH: An R-based web platform for databasing and computing blue carbon in the Philippines
+- **저자**: Corcino R, Salmo S
+- **저널**: *SciEnggJ* (2025) | **출처**: Crossref | **원문**: [10.54645/2025182fht-51](https://doi.org/10.54645/2025182fht-51)
+- **대상 생물군**: `Pyropia/Porphyra complex`
+- **대표 이미지**: ![](https://images.unsplash.com/photo-1498084393753-b411b2d26b34?auto=format&fit=crop&w=800&q=80)
+
+#### 📌 핵심 성과 (Key Takeaways)
+1. Blue carbon ecosystems (BCEs) such as mangrove forests and seagrass beds significantly contribute to climate change adaptation and mitigation.
+2. We present Blue Carbon PH, a R-based online data analytic platform (DAP) for collating, computing and sharing BCS data in the country.
+3. Further development and implementation of Blue Carbon PH is crucial to guide local BCE conservation efforts, to monitor greenhouse gas emissions and potential carbon credits, and to advance BCE research in the Philippines.
+
+#### 💡 연구자 시사점
+본 연구는 Pyropia/Porphyra complex의 블루카본 및 산업적 응용 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.
+
+#### 📄 초록 (Abstract)
+Blue carbon ecosystems (BCEs) such as mangrove forests and seagrass beds significantly contribute to climate change adaptation and mitigation. They are important carbon sinks, storing &gt;50% of the ocean’s sediment carbon stock. Effective BCE conservation requires accessible, accurate, and sufficient blue carbon stock (BCS) data. In the Philippines, a country known for high BCE cover, BCS data continues to increase but consolidation efforts are limited. We present Blue Carbon PH, a R-based online data analytic platform (DAP) for collating, computing and sharing BCS data in the country. It has three modules to compute BCS from either environmental data (using Module 1 - Compute Total Carbon Stock from Environmental Data) or mangrove vegetation data (using Module 2 - Compute Biomass Carbon Stock from Raw Data), and share BCS values from published or unpublished studies (using Module 3 - Upload Existing Carbon Stock Data). Only mangrove biomass BCS is currently catered by the DAP, needing further development to integrate mangrove sediment and seagrass BCS. It also faces challenges on sustainability, data quality checks, and data sharing policies. Further development and implementation of Blue Carbon PH is crucial to guide local BCE conservation efforts, to monitor greenhouse gas emissions and potential carbon credits, and to advance BCE research in the Philippines.
+
+---
+
+### 6. CO2 Sequestration in “Blue Carbon” Systems: Research Progress on…
+- **원문 제목**: CO2 Sequestration in “Blue Carbon” Systems: Research Progress on the Synergy between Ocean CO2 Storage and Coastal Blue Carbon
+- **저자**: Lai C
+- **저널**: *Advances in Engineering Technology Research* (2025) | **출처**: Crossref | **원문**: [10.56028/aetr.15.1.1334.2025](https://doi.org/10.56028/aetr.15.1.1334.2025)
+- **대상 생물군**: `Pyropia/Porphyra complex`
+- **대표 이미지**: ![](https://images.unsplash.com/photo-1552728089-57bdde30beb3?auto=format&fit=crop&w=800&q=80)
+
+#### 📌 핵심 성과 (Key Takeaways)
+1. The carbon dioxide content in our atmosphere is increasing rapidly.
+2. In contrast, nature itself offers a powerful solution through the blue carbon ecosystem.
+3. This discovery provides a new idea for improving the carbon sequestration effect.
+
+#### 💡 연구자 시사점
+본 연구는 Pyropia/Porphyra complex의 블루카본 및 산업적 응용 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.
+
+#### 📄 초록 (Abstract)
+The carbon dioxide content in our atmosphere is increasing rapidly. This means that we need better methods to capture and store carbon, and these solutions can work effectively for many years and can be scaled up to a larger scale. Among the various technologies that can be used to reduce carbon emissions, traditional carbon capture and storage methods show promising potential. These methods can reduce carbon emissions by billions of tons every year. However, we need to understand their limitations. These systems require large amounts of energy to operate, and the safety of long term carbon storage remains questionable. In contrast, nature itself offers a powerful solution through the blue carbon ecosystem. Coastal environments such as mangroves, salt marshes, and seagrass meadows have demonstrated extraordinary capabilities in capturing and storing carbon. This work explores how carbon capture systems and natural blue carbon environments can work effectively together. Marine carbon sequestration solutions represented by seabed carbon dioxide storage and Marine alkalization enhancement technologies can achieve the goal of rapid and large-scale carbon removal. Meanwhile, the unique anoxic sedimentary environment and vigorous biological activities in the blue carbon ecological zone jointly enhance the stability of carbon storage, effectively reduces the possibility of leakage, and improves the ecosystem's resilience to environmental pressure. The experimental research results further confirm that in an environment with moderate increased carbon dioxide concentration, the primary productivity of ecosystems such as seagrass beds and mangroves has been significantly enhanced. This discovery provides a new idea for improving the carbon sequestration effect.
+
+---
+
+### 7. Trend of Evaluation Standard Change for the Carbon Sequestration…
+- **원문 제목**: Trend of Evaluation Standard Change for the Carbon Sequestration of Harvested Wood Products
+- **저자**: Chung W
+- **저널**: *Trends in Agriculture &amp; Life Sciences* (2017) | **출처**: Crossref | **원문**: [10.29335/tals.2017.55.9](https://doi.org/10.29335/tals.2017.55.9)
+- **대상 생물군**: `Pyropia/Porphyra complex`
+- **대표 이미지**: ![](https://images.unsplash.com/photo-1682687220063-4742bd7fd538?auto=format&fit=crop&w=800&q=80)
+
+#### 📌 핵심 성과 (Key Takeaways)
+1. 관련 학술 문헌 제목: Trend of Evaluation Standard Change for the Carbon Sequestration of Harvested Wood Products.
+2. 자세한 연구 성과는 원문 링크를 참고하십시오.
+3. 대상 분류군(Pyropia/Porphyra complex) 실증 분석.
+
+#### 💡 연구자 시사점
+본 연구는 Pyropia/Porphyra complex의 블루카본 및 산업적 응용 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.
+
+#### 📄 초록 (Abstract)
+관련 학술 문헌 제목: Trend of Evaluation Standard Change for the Carbon Sequestration of Harvested Wood Products. 자세한 연구 성과는 원문 링크를 참고하십시오.
+
+---
+
+### 8. Evaluation of Agro- Environmental Effect and Soil Carbon…
+- **원문 제목**: Evaluation of Agro- Environmental Effect and Soil Carbon Sequestration to different Application Ratios of Supplemented Biochar Pellet in the Paddy during Rice Cultivation
+- **저자**: Shin J, Park D, Kim H, Lee S et al.
+- **저널**: *Korean Journal of Environmental Agriculture* (2020) | **출처**: Crossref | **원문**: [10.5338/kjea.2020.39.2.15](https://doi.org/10.5338/kjea.2020.39.2.15)
+- **대상 생물군**: `Pyropia/Porphyra complex`
+- **대표 이미지**: ![](https://images.unsplash.com/photo-1682687220063-4742bd7fd538?auto=format&fit=crop&w=800&q=80)
+
+#### 📌 핵심 성과 (Key Takeaways)
+1. 관련 학술 문헌 제목: Evaluation of Agro- Environmental Effect and Soil Carbon Sequestration to different Application Ratios of Supplemented Biochar Pellet in the Paddy during Rice Cultivation.
+2. 자세한 연구 성과는 원문 링크를 참고하십시오.
+3. 대상 분류군(Pyropia/Porphyra complex) 실증 분석.
+
+#### 💡 연구자 시사점
+본 연구는 Pyropia/Porphyra complex의 블루카본 및 산업적 응용 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.
+
+#### 📄 초록 (Abstract)
+관련 학술 문헌 제목: Evaluation of Agro- Environmental Effect and Soil Carbon Sequestration to different Application Ratios of Supplemented Biochar Pellet in the Paddy during Rice Cultivation. 자세한 연구 성과는 원문 링크를 참고하십시오.
+
+---
+
+### 9. Analysis of Urban Forest Carbon Sequestration and Corporate…
+- **원문 제목**: Analysis of Urban Forest Carbon Sequestration and Corporate Greenhouse Gas Offsetting Using i-Tree Eco† - Assessment of TCFD Integration Potential: A Case Study of Seonjeongneung -
+- **저자**: Ye-Jin K, Young-Hye S, Jae-Young L, Tae-Han K
+- **저널**: *Journal of the Korean Institute of Landscape Architecture* (2026) | **출처**: Crossref | **원문**: [10.9715/kila.2026.54.1.054](https://doi.org/10.9715/kila.2026.54.1.054)
+- **대상 생물군**: `Pyropia/Porphyra complex`
+- **대표 이미지**: ![](https://images.unsplash.com/photo-1682687220063-4742bd7fd538?auto=format&fit=crop&w=800&q=80)
+
+#### 📌 핵심 성과 (Key Takeaways)
+1. 관련 학술 문헌 제목: Analysis of Urban Forest Carbon Sequestration and Corporate Greenhouse Gas Offsetting Using i-Tree Eco† - Assessment of TCFD Integration Potential: A Case Study of Seonjeongneung -.
+2. 자세한 연구 성과는 원문 링크를 참고하십시오.
+3. 대상 분류군(Pyropia/Porphyra complex) 실증 분석.
+
+#### 💡 연구자 시사점
+본 연구는 Pyropia/Porphyra complex의 블루카본 및 산업적 응용 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.
+
+#### 📄 초록 (Abstract)
+관련 학술 문헌 제목: Analysis of Urban Forest Carbon Sequestration and Corporate Greenhouse Gas Offsetting Using i-Tree Eco† - Assessment of TCFD Integration Potential: A Case Study of Seonjeongneung -. 자세한 연구 성과는 원문 링크를 참고하십시오.
 
 ---
