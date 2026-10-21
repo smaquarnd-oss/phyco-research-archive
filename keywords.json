@@ -307,6 +307,7 @@
     "kci_max_pages": 400,
     "max_papers_per_issue": 60,
     "max_related_per_issue": 10,
+    "site_issue_count": 3,
     "crossref_domestic_issns": ["1226-2617"],
     "max_results_per_query": 15,
     "kci_search_fields": ["keyword", "title"],

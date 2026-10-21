@@ -11,7 +11,10 @@ Phyco & Blue Carbon Magazine Static Site Builder v2.0
 
 import sys
 import re
+import html
 import json
+import os
+import subprocess
 from pathlib import Path
 
 # Windows 콘솔 및 다국어 지원을 위한 UTF-8 강제 설정
@@ -170,6 +173,13 @@ def extract_articles_from_markdown(body: str) -> list:
             if m_jour:
                 journal = m_jour.group(1).strip().replace("*", "")
 
+            # 출처: "🇰🇷 국내 KCI" / "🌐 해외 PubMed"
+            source, is_domestic = "", False
+            m_src = re.search(r"\*\*출처\*\*:\s*(🇰🇷\s*국내|🌐\s*해외)?\s*([^|\n]+)", sub_text)
+            if m_src:
+                is_domestic = bool(m_src.group(1) and "국내" in m_src.group(1))
+                source = m_src.group(2).strip()
+
             year = ""
             m_year = re.search(r"\((\d{4})\)", journal)
             if m_year:
@@ -249,10 +259,33 @@ def extract_articles_from_markdown(body: str) -> list:
                 "thumbnail_url": thumbnail_url,
                 "takeaways": takeaways,
                 "implications": implications,
-                "abstract": abstract_text
+                "abstract": abstract_text,
+                "source": source,
+                "is_domestic": is_domestic,
             })
 
     return articles
+
+
+def get_settings() -> dict:
+    try:
+        return json.loads((BASE_DIR / "keywords.json").read_text(encoding="utf-8")).get("search_settings", {})
+    except (OSError, json.JSONDecodeError):
+        return {}
+
+
+def get_repo_url() -> str:
+    """GitHub 저장소 주소. Actions 에서는 GITHUB_REPOSITORY, 로컬에서는 git remote 에서 읽습니다."""
+    repo = os.environ.get("GITHUB_REPOSITORY", "")
+    if not repo:
+        try:
+            remote = subprocess.run(["git", "remote", "get-url", "origin"], cwd=BASE_DIR,
+                                    capture_output=True, text=True, timeout=10).stdout.strip()
+            m = re.search(r"github\.com[:/](.+?)(?:\.git)?$", remote)
+            repo = m.group(1) if m else ""
+        except (OSError, subprocess.SubprocessError):
+            repo = ""
+    return f"https://github.com/{repo}" if repo else ""
 
 
 def build_site():
@@ -266,10 +299,15 @@ def build_site():
         print("[-] 빌드할 아카이브 파일(*.md)이 없습니다.")
         return
 
+    # 사이트에는 최근 N개 호만 싣습니다 (index.html 크기 고정). 이전 호는 GitHub archives/ 에 그대로 남습니다.
+    site_issue_count = int(get_settings().get("site_issue_count", 3))
+    md_files.sort(key=lambda p: p.name, reverse=True)
+
     archives_index = []
-    latest_archive = None
 
     for md_path in md_files:
+        if len(archives_index) >= site_issue_count:
+            break
         content = md_path.read_text(encoding="utf-8")
         meta, body = parse_frontmatter(content)
 
@@ -292,6 +330,10 @@ def build_site():
             m_date = re.search(r"\d{4}-\d{2}-\d{2}", md_path.name)
             file_date = m_date.group(0) if m_date else "2026-10-07"
 
+        if not articles:
+            print(f"  - {md_path.name}: 논문 0편 → 건너뜀")
+            continue
+
         title = meta.get("title", f"연구 주간 다이제스트 ({file_date})")
         archive_entry = {
             "filename": md_path.name,
@@ -307,25 +349,32 @@ def build_site():
 
     # 날짜 기준 최신순. 첫 화면은 논문이 있는 가장 최근 호.
     archives_index.sort(key=lambda a: a["date"], reverse=True)
-    latest_archive = next((a for a in archives_index if a["articles"]), archives_index[0])
+    if not archives_index:
+        print("[-] 논문이 있는 호가 없어 빌드를 건너뜁니다.")
+        return
+    latest_archive = archives_index[0]
+    older_count = len(md_files) - len(archives_index)
 
     with open(PUBLIC_DATA_DIR / "archives-index.json", "w", encoding="utf-8") as f:
         json.dump(archives_index, f, ensure_ascii=False, indent=2)
-    print(f" => 아카이브 색인 생성 완료 ({len(archives_index)}개 아카이브)")
+    print(f" => 사이트 수록: 최근 {len(archives_index)}개 호 {[a['date'] for a in archives_index]} "
+          f"(그 밖의 {max(older_count, 0)}개 호는 GitHub archives/ 에만 보관)")
 
-    html_content = generate_magazine_html(latest_archive, archives_index)
+    html_content = generate_magazine_html(latest_archive, archives_index, get_repo_url())
     index_file = PUBLIC_DIR / "index.html"
     index_file.write_text(html_content, encoding="utf-8")
     print(f" => 4분할 학술 매거진 빌드 완료: {index_file}")
 
 
-def generate_magazine_html(latest_archive, archives_index):
+def generate_magazine_html(latest_archive, archives_index, repo_url=""):
     """
     4분할 전문 학술 매거진 스타일 싱글 페이지 정적 HTML 템플릿을 생성합니다.
     주의: Python f-string이므로 JS 중괄호는 모두 {{ }} 로 이스케이프.
     """
     latest_json_str = json.dumps(latest_archive, ensure_ascii=False).replace("</", r"<\/")
     index_json_str = json.dumps(archives_index, ensure_ascii=False).replace("</", r"<\/")
+    repo_href = html.escape(repo_url or "https://github.com", quote=True)
+    archives_href = html.escape(f"{repo_url}/tree/main/archives" if repo_url else "https://github.com", quote=True)
 
     return f"""<!DOCTYPE html>
 <html lang="ko" class="scroll-smooth">
@@ -649,16 +698,18 @@ def generate_magazine_html(latest_archive, archives_index):
       <div class="flex items-center justify-between pb-3 border-b border-slate-200 dark:border-slate-800">
         <div class="flex items-center gap-2">
           <i data-lucide="archive" class="w-5 h-5 text-ocean-600"></i>
-          <h2 class="text-lg font-bold text-slate-900 dark:text-white">주차별 아카이브 호수 목록</h2>
+          <h2 class="text-lg font-bold text-slate-900 dark:text-white">지난 호수 목록</h2>
         </div>
         <button id="close-modal" class="p-1 rounded-lg text-slate-400 hover:text-slate-600 dark:hover:text-slate-200">
           <i data-lucide="x" class="w-5 h-5"></i>
         </button>
       </div>
-      <p class="text-xs text-slate-500">매주 수요일마다 자동 아카이빙된 주간 연구 다이제스트입니다.</p>
+      <p class="text-xs text-slate-500">사이트에는 최근 {len(archives_index)}개 호만 싣습니다. 이전 호는 아래 GitHub 아카이브에서 마크다운으로 볼 수 있습니다.</p>
       <div id="archive-list" class="space-y-2 overflow-y-auto pr-1 flex-1"><!-- JS 동적 생성 --></div>
       <div class="pt-3 border-t border-slate-200 dark:border-slate-800 text-xs text-slate-400">
-        저장소: <code class="text-ocean-600 dark:text-ocean-400">/archives/*.md</code>
+        <a href="{archives_href}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 font-bold text-ocean-600 dark:text-ocean-400 hover:underline">
+          <i data-lucide="github" class="w-3.5 h-3.5"></i> 전체 아카이브 보기 (GitHub archives/) →
+        </a>
       </div>
     </div>
   </div>
@@ -673,7 +724,7 @@ def generate_magazine_html(latest_archive, archives_index):
         <p class="mt-0.5 text-slate-400 text-[11px]">4-Section System: Breeding/Molecular · Thallus/Life Cycle · Smart Aquaculture · Blue Carbon</p>
       </div>
       <div class="flex items-center space-x-4">
-        <a href="https://github.com" target="_blank" class="hover:text-ocean-600 dark:hover:text-ocean-400 transition flex items-center gap-1 font-medium">
+        <a href="{repo_href}" target="_blank" rel="noopener noreferrer" class="hover:text-ocean-600 dark:hover:text-ocean-400 transition flex items-center gap-1 font-medium">
           <i data-lucide="github" class="w-4 h-4"></i> GitHub Repository
         </a>
         <span>•</span>
