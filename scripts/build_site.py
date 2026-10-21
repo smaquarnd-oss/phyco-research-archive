@@ -34,35 +34,6 @@ PUBLIC_DATA_DIR = PUBLIC_DIR / "data"
 PUBLIC_DIR.mkdir(parents=True, exist_ok=True)
 PUBLIC_DATA_DIR.mkdir(parents=True, exist_ok=True)
 
-# 4개 섹션 기본 에디터 인사이트
-DEFAULT_INSIGHTS = {
-    "breeding_molecular_pathology": {
-        "title": "기후 온난화 대응 내열성 분자마커와 붉은갯병 감염 초기 전사체 분석의 고도화",
-        "content": "이번 호 육종 및 병해 연구 트렌드는 해수 온도 상승에 따른 내삼투압/열충격 단백질(HSP) 발현 메커니즘 규명과 더불어, 주요 병원체(Pythium porphyrae)에 대응하는 방어 전사인자(bZIP, MYB) 동정이 두드러집니다. DNA 바코딩 기반 신분류체계 확립과 다중 오믹스 분석을 통한 유용 유전자원 선발이 양식장 현장 품종 개량의 핵심 열쇠로 자리잡고 있습니다."
-    },
-    "thallus_lifecycle_conchocelis": {
-        "title": "사상체(Conchocelis) 각포자 방출 메커니즘과 엽체 생리 환경 적응 전략",
-        "content": "엽체 생리 및 생활사 연구 분야에서는 광주기·수온 변동에 의한 각포자(conchospore) 대량 방출 제어 기전과 엽상체 기조직 발달 초기 단계 분자 마커가 주목받고 있습니다. 특히 Neopyropia / Neoporphyra 신분류군의 색소체 구조 및 사상체 분기점 비교 연구가 활발히 진행 중입니다."
-    },
-    "smart_aquaculture_mass_culture": {
-        "title": "자유사상체 대량 배양과 스마트 채묘 시스템의 경제성 최적화",
-        "content": "스마트 양식 및 대량 배양 분야는 굴패각 의존도를 제로화하는 자유사상체(free-living conchocelis) 액체 배양 조건 최적화와 LED 파장별 성장률 비교, 그리고 IoT 기반 실시간 수질 제어형 채묘 시스템 개발이 핵심 성과로 보고되었습니다. 배양 공학적 접근을 통한 단위 면적당 수확량 극대화가 산업 현장의 핵심 과제로 부각되고 있습니다."
-    },
-    "blue_carbon_feed_methane": {
-        "title": "바다고리풀 브로모포름 메탄 감축 실증과 RDOC 기반 블루카본 탄소 격리 플럭스 표준화",
-        "content": "블루카본 및 산업 응용 분야는 Asparagopsis taxiformis의 장기 급여를 통한 반추위 장내 메탄 70~80% 억제 효과와 조직 내 브로모포름 잔류 안전성 검증이 핵심 성과로 보고되었습니다. 아울러 대형 홍조류의 연간 침적 불용성 유기탄소(RDOC/POC)를 탄소배출권(mCDR)으로 공인받기 위한 정량적 방법론 연구가 급물살을 타고 있습니다."
-    },
-    "related_research": {
-        "title": "김·바다고리풀 밖으로 넓힌 해조류 연구",
-        "content": "핵심 대상 생물군(김속·바다고리풀)은 아니지만 해조류 자원·생태·소재 연구 가운데 양식 현장과 정책에 참고할 만한 논문을 함께 소개합니다."
-    },
-    # 레거시
-    "thallus_lifecycle_cultivation": {
-        "title": "패각 대체 스마트 사상체 배양과 인산·질소 영양염 대사 적응 전략",
-        "content": "엽체 생리 및 양식 기술 분야에서는 기존 굴패각 배양의 한계를 뛰어넘는 액체 통기 자유사상체 배양 조건과 연안 영양염(N, P) 결핍에 대응하는 periplasmic alkaline phosphatase 등의 효소 기전이 집중 조명되었습니다."
-    },
-}
-
 # 카테고리 표시명 및 섹션 번호
 CATEGORY_META = {
     "breeding_molecular_pathology":    {"no": "01", "name_ko": "육종 · 분자생물학 · 병해",    "name_en": "Breeding & Molecular Pathology",        "color": "rose",    "icon": "🧬"},
@@ -313,8 +284,12 @@ def build_site():
 
         # fetch_and_archive.py 가 함께 저장한 JSON 이 있으면 그대로 사용 (마크다운 재파싱 손실 없음)
         json_path = md_path.with_suffix(".json")
+        editor_insights = {}
         if json_path.exists():
-            articles = json.loads(json_path.read_text(encoding="utf-8")).get("articles", [])
+            issue_data = json.loads(json_path.read_text(encoding="utf-8"))
+            articles = issue_data.get("articles", [])
+            # 섹션별 Editor's Insight: 그 호 논문으로 생성된 것만 사용 (없으면 사이트에서 상자를 숨김)
+            editor_insights = issue_data.get("editor_insights") or {}
             for art in articles:
                 art["takeaways"], art["implications"] = clean_summary(
                     art.get("takeaways", []), art.get("implications", ""), art.get("abstract", "")
@@ -344,7 +319,7 @@ def build_site():
             "total_papers": len(articles) if articles else meta.get("total_papers", 0),
             "taxa_covered": meta.get("taxa_covered", ["Pyropia", "Asparagopsis"]),
             "categories": meta.get("categories", []),
-            "editor_insights": DEFAULT_INSIGHTS,
+            "editor_insights": editor_insights,
             "articles": articles
         }
         archives_index.append(archive_entry)
@@ -373,7 +348,6 @@ def generate_magazine_html(latest_archive, archives_index, repo_url=""):
     4분할 전문 학술 매거진 스타일 싱글 페이지 정적 HTML 템플릿을 생성합니다.
     주의: Python f-string이므로 JS 중괄호는 모두 {{ }} 로 이스케이프.
     """
-    latest_json_str = json.dumps(latest_archive, ensure_ascii=False).replace("</", r"<\/")
     index_json_str = json.dumps(archives_index, ensure_ascii=False).replace("</", r"<\/")
     repo_href = html.escape(repo_url or "https://github.com", quote=True)
     archives_href = html.escape(f"{repo_url}/tree/main/archives" if repo_url else "https://github.com", quote=True)
@@ -575,11 +549,9 @@ def generate_magazine_html(latest_archive, archives_index, repo_url=""):
       <div class="rounded-2xl bg-gradient-to-r from-rose-500/10 via-rose-500/5 to-transparent border border-rose-200 dark:border-rose-900/60 p-5 mb-8 shadow-sm">
         <div class="flex items-center gap-2 text-rose-800 dark:text-rose-300 font-bold text-sm mb-2">
           <i data-lucide="feather" class="w-4 h-4 text-rose-600"></i>
-          <span>Editor's Insight: <span id="insight-title-breeding" class="font-extrabold">기후 온난화 대응 내열성 분자마커와 병해 전사체 고도화</span></span>
+          <span>Editor's Insight: <span id="insight-title-breeding" class="font-extrabold"></span></span>
         </div>
-        <p id="insight-content-breeding" class="text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
-          이번 호 육종 및 병해 연구 트렌드는 해수 온도 상승에 따른 내삼투압/열충격 단백질(HSP) 발현 메커니즘 규명과 더불어, 주요 병원체(Pythium porphyrae)에 대응하는 방어 전사인자(bZIP, MYB) 동정이 두드러집니다.
-        </p>
+        <p id="insight-content-breeding" class="text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed"></p>
       </div>
       <div id="grid-breeding" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"><!-- JS 주입 --></div>
     </section>
@@ -599,11 +571,9 @@ def generate_magazine_html(latest_archive, archives_index, repo_url=""):
       <div class="rounded-2xl bg-gradient-to-r from-emerald-500/10 via-emerald-500/5 to-transparent border border-emerald-200 dark:border-emerald-900/60 p-5 mb-8 shadow-sm">
         <div class="flex items-center gap-2 text-emerald-800 dark:text-emerald-300 font-bold text-sm mb-2">
           <i data-lucide="feather" class="w-4 h-4 text-emerald-600"></i>
-          <span>Editor's Insight: <span id="insight-title-conchocelis" class="font-extrabold">사상체 각포자 방출 메커니즘과 엽체 생리 환경 적응</span></span>
+          <span>Editor's Insight: <span id="insight-title-conchocelis" class="font-extrabold"></span></span>
         </div>
-        <p id="insight-content-conchocelis" class="text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
-          엽체 생리 및 생활사 연구 분야에서는 광주기·수온 변동에 의한 각포자(conchospore) 대량 방출 제어 기전과 엽상체 기조직 발달 초기 단계 분자 마커가 주목받고 있습니다.
-        </p>
+        <p id="insight-content-conchocelis" class="text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed"></p>
       </div>
       <div id="grid-conchocelis" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"><!-- JS 주입 --></div>
     </section>
@@ -623,11 +593,9 @@ def generate_magazine_html(latest_archive, archives_index, repo_url=""):
       <div class="rounded-2xl bg-gradient-to-r from-violet-500/10 via-violet-500/5 to-transparent border border-violet-200 dark:border-violet-900/60 p-5 mb-8 shadow-sm">
         <div class="flex items-center gap-2 text-violet-800 dark:text-violet-300 font-bold text-sm mb-2">
           <i data-lucide="feather" class="w-4 h-4 text-violet-600"></i>
-          <span>Editor's Insight: <span id="insight-title-aquaculture" class="font-extrabold">자유사상체 대량 배양과 스마트 채묘 시스템의 경제성 최적화</span></span>
+          <span>Editor's Insight: <span id="insight-title-aquaculture" class="font-extrabold"></span></span>
         </div>
-        <p id="insight-content-aquaculture" class="text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
-          스마트 양식 및 대량 배양 분야는 굴패각 의존도를 제로화하는 자유사상체(free-living conchocelis) 액체 배양 조건 최적화와 LED 파장별 성장률 비교, IoT 기반 실시간 수질 제어형 채묘 시스템 개발이 핵심 성과로 보고되었습니다.
-        </p>
+        <p id="insight-content-aquaculture" class="text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed"></p>
       </div>
       <div id="grid-aquaculture" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"><!-- JS 주입 --></div>
     </section>
@@ -647,11 +615,9 @@ def generate_magazine_html(latest_archive, archives_index, repo_url=""):
       <div class="rounded-2xl bg-gradient-to-r from-cyan-500/10 via-cyan-500/5 to-transparent border border-cyan-200 dark:border-cyan-900/60 p-5 mb-8 shadow-sm">
         <div class="flex items-center gap-2 text-cyan-800 dark:text-cyan-300 font-bold text-sm mb-2">
           <i data-lucide="feather" class="w-4 h-4 text-cyan-600"></i>
-          <span>Editor's Insight: <span id="insight-title-bluecarbon" class="font-extrabold">바다고리풀 메탄 감축 실증과 RDOC 기반 블루카본 표준화</span></span>
+          <span>Editor's Insight: <span id="insight-title-bluecarbon" class="font-extrabold"></span></span>
         </div>
-        <p id="insight-content-bluecarbon" class="text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
-          블루카본 및 산업 응용 분야는 Asparagopsis taxiformis의 장기 급여를 통한 반추위 장내 메탄 70~80% 억제 효과와 조직 내 브로모포름 잔류 안전성 검증이 핵심 성과로 보고되었습니다.
-        </p>
+        <p id="insight-content-bluecarbon" class="text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed"></p>
       </div>
       <div id="grid-bluecarbon" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"><!-- JS 주입 --></div>
     </section>
@@ -671,11 +637,9 @@ def generate_magazine_html(latest_archive, archives_index, repo_url=""):
       <div class="rounded-2xl bg-gradient-to-r from-amber-500/10 via-amber-500/5 to-transparent border border-amber-200 dark:border-amber-900/60 p-5 mb-8 shadow-sm">
         <div class="flex items-center gap-2 text-amber-800 dark:text-amber-300 font-bold text-sm mb-2">
           <i data-lucide="feather" class="w-4 h-4 text-amber-600"></i>
-          <span>Editor's Note: <span id="insight-title-related" class="font-extrabold">김·바다고리풀 밖으로 넓힌 해조류 연구</span></span>
+          <span>Editor's Note: <span id="insight-title-related" class="font-extrabold"></span></span>
         </div>
-        <p id="insight-content-related" class="text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
-          핵심 대상 생물군은 아니지만 참고할 만한 해조류 연구를 함께 소개합니다.
-        </p>
+        <p id="insight-content-related" class="text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed"></p>
       </div>
       <div id="grid-related" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"><!-- JS 주입 --></div>
     </section>
@@ -737,8 +701,8 @@ def generate_magazine_html(latest_archive, archives_index, repo_url=""):
 
   <!-- 클라이언트 로직 및 데이터 주입 -->
   <script>
-    const INITIAL_ARCHIVE = {latest_json_str};
     const ALL_ARCHIVES = {index_json_str};
+    const INITIAL_ARCHIVE = ALL_ARCHIVES[0];  // 최신 호 (중복으로 넣지 않음)
 
     let currentArchive = INITIAL_ARCHIVE;
     let selectedTaxa = 'all';
@@ -955,9 +919,11 @@ def generate_magazine_html(latest_archive, archives_index, repo_url=""):
       }};
       Object.entries(insightDomMap).forEach(([cat, [titleId, contentId]]) => {{
         const ins = insights[cat];
+        const tEl = document.getElementById(titleId);
+        const cEl = document.getElementById(contentId);
+        const box = tEl ? tEl.closest('.rounded-2xl') : null;
+        if (box) box.classList.toggle('hidden', !(ins && ins.content));
         if (ins) {{
-          const tEl = document.getElementById(titleId);
-          const cEl = document.getElementById(contentId);
           if (tEl) tEl.innerText = ins.title || '';
           if (cEl) cEl.innerText = ins.content || '';
         }}

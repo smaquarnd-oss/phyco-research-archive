@@ -1029,6 +1029,61 @@ def generate_natural_summary(
     }
 
 
+def generate_section_insights(papers: List[dict]) -> Dict[str, dict]:
+    """
+    섹션별 Editor's Insight: 그 호·그 섹션에 실제로 실린 논문들의 헤드라인과 핵심 결과만으로
+    공통 흐름을 2~3문장으로 요약합니다. (예전에는 매 호 같은 고정 문구였음)
+    AI 를 못 쓰면 실린 논문 헤드라인을 나열하는 짧은 문장으로 대체합니다.
+    """
+    by_cat: Dict[str, List[dict]] = {}
+    for p in papers:
+        by_cat.setdefault(p["category"], []).append(p)
+
+    insights: Dict[str, dict] = {}
+    for cat_id, items in by_cat.items():
+        cat_name = CATEGORY_NAME_MAP.get(cat_id, ("", cat_id, "", ""))[1]
+        lines = []
+        for i, p in enumerate(items[:20], 1):
+            key = p["takeaways"][1] if len(p.get("takeaways", [])) > 1 else (p.get("takeaways") or [""])[0]
+            lines.append(f"{i}. {p.get('headline') or p['title']} — {key}")
+        prompt = f"""당신은 해조류 학술 매거진 편집장입니다. 아래는 이번 호 '{cat_name}' 섹션에 실린 논문 {len(items)}편의
+헤드라인과 핵심 결과입니다. 이 목록에 있는 내용만으로 섹션 도입부 'Editor's Insight'를 한국어로 쓰세요.
+
+지침:
+- 개별 논문을 하나씩 나열하지 말고, 여러 논문에 걸친 공통 흐름·대비되는 결과를 묶어 서술하세요.
+- 목록에 없는 생물·수치·기술을 지어내지 마세요.
+- 논문이 1~2편뿐이면 그 논문들의 의미를 간결하게 정리하세요.
+
+[논문 목록]
+{chr(10).join(lines)}
+
+[출력 - 순수 JSON]
+{{"title": "섹션 흐름을 압축한 25~45자 제목", "content": "2~3문장 요약"}}"""
+
+        result = None
+        for source, caller in _ai_callers():
+            try:
+                parsed = caller(prompt)
+            except Exception as e:
+                print(f"  [-] {source} 인사이트 생성 실패 ({cat_name}): {e}")
+                continue
+            if parsed and parsed.get("title") and parsed.get("content"):
+                result = {"title": str(parsed["title"]).strip(), "content": str(parsed["content"]).strip(),
+                          "source": source}
+                break
+        if result is None:
+            heads = [f"「{p.get('headline') or p['title']}」" for p in items[:3]]
+            more = f" 등 {len(items)}편" if len(items) > 3 else ""
+            result = {"title": f"이번 호 {cat_name} {len(items)}편",
+                      "content": f"이번 호에는 {', '.join(heads)}{more}을 실었습니다.",
+                      "source": "headline_list"}
+        else:
+            time.sleep(4.5)
+        insights[cat_id] = result
+        print(f"  [인사이트] {cat_name}: {result['title']} ({result['source']})")
+    return insights
+
+
 # ═══════════════════════════════════════════════════════════════════════════
 # 8. 메인 파이프라인
 # ═══════════════════════════════════════════════════════════════════════════
@@ -1224,6 +1279,9 @@ def run_pipeline() -> None:
 
     assign_unique_thumbnails(processed_papers)
 
+    print("  섹션별 Editor's Insight 생성 중...")
+    editor_insights = generate_section_insights(processed_papers)
+
     # ──────────────────────────────────────────────────────────────────
     # STEP 4: 영구 마크다운 아카이브 생성 및 저장
     # ──────────────────────────────────────────────────────────────────
@@ -1266,7 +1324,9 @@ def run_pipeline() -> None:
             continue
 
         md_body.append(f"## 🔬 SECTION {cat_no}: {cat_name_ko} ({cat_name_en})\n")
-        md_body.append(f"> 💡 **Research Briefing**: 본 섹션에서는 {cat_name_ko} 분야의 최신 연구 성과 {len(papers_in_cat)}편을 엄선하여 브리핑합니다.\n")
+        ins = editor_insights.get(cat_id, {})
+        md_body.append(f"> 💡 **Editor's Insight — {ins.get('title', cat_name_ko)}**  ")
+        md_body.append(f"> {ins.get('content', '')} ({len(papers_in_cat)}편 수록)\n")
 
         for pidx, paper in enumerate(papers_in_cat, 1):
             lang_tag = "🇰🇷 국내" if paper.get("is_domestic") else "🌐 해외"
@@ -1311,6 +1371,7 @@ def run_pipeline() -> None:
         "total_papers": len(processed_papers),
         "sources_used": sources_used,
         "taxa": taxa_all_set,
+        "editor_insights": editor_insights,
         "articles": processed_papers,
     }
     # build_site.py 는 이 JSON 을 우선 읽습니다 (마크다운 재파싱으로 요약이 깨지는 문제 방지).

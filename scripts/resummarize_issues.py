@@ -30,11 +30,23 @@ def main() -> None:
     parser.add_argument("--issues", type=int, default=int(build_site.get_settings().get("site_issue_count", 3)))
     parser.add_argument("--force", action="store_true", help="이미 .json 이 있는 호도 다시 요약")
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument("--insights-only", action="store_true",
+                        help="논문 요약은 그대로 두고 섹션별 Editor's Insight 만 (다시) 생성")
     args = parser.parse_args()
 
     md_files = sorted(fa.ARCHIVES_DIR.glob("*.md"), key=lambda p: p.name, reverse=True)[: args.issues]
     for md_path in md_files:
         json_path = md_path.with_suffix(".json")
+        if args.insights_only:
+            if not json_path.exists():
+                print(f"- {md_path.name}: JSON 없음 → 먼저 재요약이 필요합니다")
+                continue
+            data = json.loads(json_path.read_text(encoding="utf-8"))
+            print(f"\n▶ {md_path.name}: Editor's Insight 생성")
+            if not args.dry_run:
+                data["editor_insights"] = fa.generate_section_insights(data.get("articles", []))
+                json_path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+            continue
         if json_path.exists() and not args.force:
             print(f"- {md_path.name}: 이미 JSON 있음 → 건너뜀 (--force 로 다시 만들기)")
             continue
@@ -83,8 +95,10 @@ def main() -> None:
             if summary.get("is_ai") and not summary.get("is_cached"):
                 time.sleep(4.5)  # Gemini 무료 티어 분당 한도
 
+        insights = fa.generate_section_insights(articles)
         json_path.write_text(
-            json.dumps({"date": meta.get("date", ""), "articles": articles, "resummarized": True},
+            json.dumps({"date": meta.get("date", ""), "editor_insights": insights,
+                        "articles": articles, "resummarized": True},
                        ensure_ascii=False, indent=2),
             encoding="utf-8",
         )

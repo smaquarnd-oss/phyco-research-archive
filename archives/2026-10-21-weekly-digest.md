@@ -18,7 +18,8 @@ tags: ["Phyco", "BlueCarbon", "Seaweed", "Crossref", "KCI", "PubMed"]
 
 ## 🔬 SECTION 01: 육종 · 분자생물학 · 병해 (Breeding & Pathology)
 
-> 💡 **Research Briefing**: 본 섹션에서는 육종 · 분자생물학 · 병해 분야의 최신 연구 성과 4편을 엄선하여 브리핑합니다.
+> 💡 **Editor's Insight — 분자 육종부터 병해 관리까지 김 연구의 최전선**  
+> 이번 호에서는 오르가넬라 게놈 분석과 계통 연구를 통한 한국산 곱창김의 신종 규명부터 분자적 조절 기전을 밝힌 포자체 발달 연구까지 다양한 육종 및 분자생물학 성과가 다뤄졌습니다. 아울러 탈수와 동결 처리가 병해 저항성을 높인다는 현장 적용 결과는 양식 안정성 확보에 기여할 것입니다. (4편 수록)
 
 ### 1. 한국산 양식 김 '곱창김'의 신종 규명과 분류학적 재정립
 - **원문 제목**: Resolving the taxonomic identity of commercially cultivated Korean Pyropia dentata (Bangiophyceae, Rhodophyta): genomic, molecular, morphological, and biogeographic evidence for Pyropia eudentata sp. nov
@@ -102,7 +103,8 @@ Background/Objectives: Abdominal obesity is a major risk factor for metabolic di
 
 ## 🔬 SECTION 02: 엽체 생리 · 생활사 · 사상체 (Thallus & Life Cycle)
 
-> 💡 **Research Briefing**: 본 섹션에서는 엽체 생리 · 생활사 · 사상체 분야의 최신 연구 성과 18편을 엄선하여 브리핑합니다.
+> 💡 **Editor's Insight — 엽체 생리와 환경 스트레스 대응 및 유전체 연구**  
+> 본 섹션은 김을 비롯한 홍조류의 엽체 생리와 스트레스 대응 기전, 사상체 성숙 및 포자 발달을 조절하는 유전자 메커니즘을 다룬 연구들을 조명합니다. 특히 지질 대사, 폴리아민 생합성, 그리고 광합성 관련 효소와 유전자 교정 기반의 품종 개량 및 생리 활성 분석 결과들이 유기적으로 연결되어 제시됩니다. (18편 수록)
 
 ### 1. 근적외분광분석법을 활용한 마른김의 주요 무기질 신속 정량 모델 개발
 - **원문 제목**: 마른김의 무기질 신속 측정을 위한 FT-NIR 측정 조건
@@ -466,7 +468,8 @@ Neopyropia yezoensis, an important economic macroalga, is cultivated in the coas
 
 ## 🔬 SECTION 03: 스마트 양식 및 대량 배양 기술 (Smart Aquaculture & Mass Culture)
 
-> 💡 **Research Briefing**: 본 섹션에서는 스마트 양식 및 대량 배양 기술 분야의 최신 연구 성과 2편을 엄선하여 브리핑합니다.
+> 💡 **Editor's Insight — 지역별 양식 성과의 요인 분석과 미세플라스틱 영향**  
+> 이번 섹션에서는 지역별 김 양식 성과의 공간적 결정요인과 노화 미세플라스틱이 김의 생리·대사에 미치는 영향을 다룹니다. 연구 결과에 따라 지역별로 생산기반 혹은 가공 및 수출 요인이 성과를 좌우하며, 노출된 미세플라스틱 종류에 따라 김에서 서로 다른 대사 반응과 저해 효과가 유발됨을 확인했습니다. (2편 수록)
 
 ### 1. 지리가중회귀모형으로 규명한 지역별 김 양식 성과의 공간적 결정요인
 - **원문 제목**: 지리가중회귀모형(GWR)을 이용한 김 양식 성과의 공간적 결정요인 분석
@@ -510,7 +513,8 @@ Plastic aquaculture equipment can release microplastics into seaweed mariculture
 
 ## 🔬 SECTION 04: 블루카본 및 산업적 응용 (Blue Carbon & Applications)
 
-> 💡 **Research Briefing**: 본 섹션에서는 블루카본 및 산업적 응용 분야의 최신 연구 성과 5편을 엄선하여 브리핑합니다.
+> 💡 **Editor's Insight — 해조류의 블루카본 잠재력과 산업적 활용의 명암**  
+> 본 섹션에서는 해조류를 활용한 가축 메탄 감축 및 고단백 소재화 등 산업적 응용 가능성을 조명하는 동시에, 김 양식과 가공 폐수가 연안 탄소 순환 및 생태계에 미치는 영향에 대한 실증적 분석 결과를 함께 다룹니다. 특히 집약적 양식이나 침입종 확산이 장기적인 탄소 매립이나 생물다양성 증가로 직결되지 않는다는 연구는 해조류 자원화 과정에서 환경적 영향을 면밀히 평가해야 할 필요성을 시사합니다. (5편 수록)
 
 ### 1. 아스파라고프시스 홍조류 사료 첨가로 반추동물 메탄 배출 95% 감축
 - **원문 제목**: Asparagopsis cultivation in Asia-Pacific areas for reducing methane emission from agriculture: Potentials and challenges
@@ -614,7 +618,8 @@ Marine invasions are rapidly transforming coastal ecosystems, while their ecolog
 
 ## 🔬 SECTION 05: 연관 연구 (Related Research)
 
-> 💡 **Research Briefing**: 본 섹션에서는 연관 연구 분야의 최신 연구 성과 10편을 엄선하여 브리핑합니다.
+> 💡 **Editor's Insight — 해조류의 생태 변화부터 신소재·바이오 활용까지**  
+> 이번 호는 완도와 인도네시아 등 연안의 생태 환경 및 형태적 다양성 연구와 함께, 구멍갈파래·큰수염붉은실·잘록이고리매·감태 등 해조류 유래 추출물의 항산화 및 피부·인지 개선 효능을 다룹니다. 나아가 탈모 치료, 반려동물 사료, 가축 메탄 저감 등 산업적·친환경적 활용 가능성을 확장하는 다채로운 연구 결과들을 조명합니다. (10편 수록)
 
 ### 1. 완도 정도리 해조류 군집 조사 결과, 열대화 및 환경 교란 뚜렷
 - **원문 제목**: Annual variation of seaweed flora and community structure in Jeongdo-ri, Wando, Korea
