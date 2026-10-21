@@ -10,43 +10,89 @@
       {
         "name": "Pyropia",
         "common_name": "김속 (기존 광의의 김/참김류)",
-        "aliases": ["Pyropia yezoensis", "Pyropia tenera", "Pyropia haitanensis"],
-        "korean_names": ["참김", "방사무늬김", "둥근돌김", "김"],
+        "aliases": [
+          "Pyropia yezoensis",
+          "Pyropia tenera",
+          "Pyropia haitanensis"
+        ],
+        "korean_names": [
+          "참김",
+          "방사무늬김",
+          "둥근돌김",
+          "김"
+        ],
         "enabled": true
       },
       {
         "name": "Porphyra",
         "common_name": "전통 김속 (온대/한대성 원형 김속)",
-        "aliases": ["Porphyra umbilicalis", "Porphyra linearis", "Porphyra dioica"],
-        "korean_names": ["돌김", "원형 김", "포르피라"],
+        "aliases": [
+          "Porphyra umbilicalis",
+          "Porphyra linearis",
+          "Porphyra dioica"
+        ],
+        "korean_names": [
+          "돌김",
+          "원형 김",
+          "포르피라"
+        ],
         "enabled": true
       },
       {
         "name": "Neopyropia",
         "common_name": "신김속 (신분류 체계 반영 방사무늬김 등)",
-        "aliases": ["Neopyropia yezoensis", "Neopyropia tenera"],
-        "korean_names": ["방사무늬김", "잇바디돌김", "참김", "신김"],
+        "aliases": [
+          "Neopyropia yezoensis",
+          "Neopyropia tenera"
+        ],
+        "korean_names": [
+          "방사무늬김",
+          "잇바디돌김",
+          "참김",
+          "신김"
+        ],
         "enabled": true
       },
       {
         "name": "Neoporphyra",
         "common_name": "신포르피라속 (모무늬돌김 등 아열대/난대성)",
-        "aliases": ["Neoporphyra haitanensis", "Neoporphyra dentata"],
-        "korean_names": ["모무늬돌김", "잇바디돌김", "돌김"],
+        "aliases": [
+          "Neoporphyra haitanensis",
+          "Neoporphyra dentata"
+        ],
+        "korean_names": [
+          "모무늬돌김",
+          "잇바디돌김",
+          "돌김"
+        ],
         "enabled": true
       },
       {
         "name": "Phycocalidia",
         "common_name": "피코칼리디아속 (열대/아열대성 엽상 홍조류)",
-        "aliases": ["Phycocalidia suborbiculata", "Phycocalidia vietnamensis"],
-        "korean_names": ["피코칼리디아", "둥근돌김"],
+        "aliases": [
+          "Phycocalidia suborbiculata",
+          "Phycocalidia vietnamensis"
+        ],
+        "korean_names": [
+          "피코칼리디아",
+          "둥근돌김"
+        ],
         "enabled": true
       },
       {
         "name": "Asparagopsis",
         "common_name": "바다고리풀속 (저메탄 가축 사료 핵심 소재)",
-        "aliases": ["Asparagopsis taxiformis", "Asparagopsis armata", "Falkenbergia rufolanosa"],
-        "korean_names": ["바다고리풀", "아스파라곱시스", "갈고리풀"],
+        "aliases": [
+          "Asparagopsis taxiformis",
+          "Asparagopsis armata",
+          "Falkenbergia rufolanosa"
+        ],
+        "korean_names": [
+          "바다고리풀",
+          "아스파라곱시스",
+          "갈고리풀"
+        ],
         "enabled": true
       }
     ]
@@ -55,11 +101,11 @@
     "breeding_molecular_pathology": {
       "id": "breeding_molecular_pathology",
       "section_no": "01",
-      "name_ko": "육종 · 분자생물학 · 병해",
-      "name_en": "Breeding, Molecular Genetics & Pathology",
+      "name_ko": "육종 · 유전체 · 병해",
+      "name_en": "Breeding, Genomics & Disease",
       "badge_color": "rose",
       "icon": "dna",
-      "description": "품종 개량, 유전체 분석, 전사체, 후성유전학 및 붉은갯병/녹반병 등 병원균 감염 기전",
+      "description": "품종 개량·신품종/돌연변이주 형질 평가, 유전체·전사체·분자마커·계통분류, 해조류 자체의 병해(붉은갯병 등)",
       "keywords": [
         "selective breeding",
         "strain selection",
@@ -120,11 +166,11 @@
     "thallus_lifecycle_conchocelis": {
       "id": "thallus_lifecycle_conchocelis",
       "section_no": "02",
-      "name_ko": "엽체 생리 · 생활사 · 사상체",
-      "name_en": "Thallus Physiology, Life Cycle & Conchocelis",
+      "name_ko": "엽체 생리 · 생활사",
+      "name_en": "Physiology & Life Cycle",
       "badge_color": "emerald",
       "icon": "sprout",
-      "description": "사상체(Conchocelis) 생리, 엽상체 발달, 포자 방출(각포자/과포자), 생활사 조절, 광주기 및 온도 적응",
+      "description": "광합성·색소·스트레스 반응 등 엽체 생리, 사상체·포자·생식 등 생활사 조절",
       "keywords": [
         "thallus",
         "conchocelis",
@@ -182,11 +228,11 @@
     "smart_aquaculture_mass_culture": {
       "id": "smart_aquaculture_mass_culture",
       "section_no": "03",
-      "name_ko": "스마트 양식 및 대량 배양 기술",
-      "name_en": "Smart Aquaculture & Mass Culture Technology",
+      "name_ko": "양식 · 배양 기술",
+      "name_en": "Cultivation & Farming",
       "badge_color": "violet",
       "icon": "factory",
-      "description": "사상체 대량 배양(자유사상체), 스마트 채묘(seeding), 육상 배양 공학(bioreactor), 양식장 환경 제어 시스템",
+      "description": "양식장 환경·생산성 분석, 채묘, 대량 배양, 스마트 양식 기술",
       "keywords": [
         "mass culture",
         "large-scale cultivation",
@@ -237,14 +283,98 @@
         "종사 배양"
       ]
     },
+    "processing_materials_market": {
+      "id": "processing_materials_market",
+      "section_no": "04",
+      "name_ko": "가공 · 소재 · 시장",
+      "name_en": "Processing, Materials & Market",
+      "badge_color": "orange",
+      "icon": "🏷️",
+      "description": "김·해조류 식품 가공과 품질 측정, 성분·영양 분석, 기능성 소재·추출물(다당류·펩타이드·색소단백질 등), 수출·유통·시장",
+      "keywords": [
+        "biomass valorization",
+        "biorefinery",
+        "biofuel",
+        "agar",
+        "carrageenan",
+        "phycocolloid",
+        "cosmetics",
+        "nutraceutical",
+        "food industry",
+        "food processing",
+        "processing",
+        "quality",
+        "shelf life",
+        "fermentation",
+        "deodorization",
+        "nutritional",
+        "nutrient composition",
+        "mineral content",
+        "fatty acid",
+        "amino acid",
+        "polysaccharide",
+        "porphyran",
+        "peptide",
+        "phycobiliprotein",
+        "phycoerythrin extraction",
+        "antioxidant",
+        "anti-inflammatory",
+        "bioactive",
+        "extract",
+        "functional food",
+        "mycosporine",
+        "heavy metal",
+        "food safety",
+        "export",
+        "market",
+        "trade",
+        "consumer",
+        "supply chain",
+        "NIR",
+        "spectroscopy"
+      ],
+      "keywords_ko": [
+        "바이오리파이너리",
+        "한천",
+        "카라기난",
+        "기능성 식품",
+        "화장품 소재",
+        "가공",
+        "마른김",
+        "조미김",
+        "품질",
+        "저장성",
+        "발효",
+        "탈취",
+        "성분",
+        "영양",
+        "무기질",
+        "지방산",
+        "아미노산",
+        "다당류",
+        "포피란",
+        "펩타이드",
+        "항산화",
+        "항염",
+        "추출물",
+        "기능성",
+        "중금속",
+        "식품 안전",
+        "수출",
+        "시장",
+        "유통",
+        "소비자",
+        "무역"
+      ]
+    },
     "blue_carbon_feed_methane": {
       "id": "blue_carbon_feed_methane",
-      "section_no": "04",
-      "name_ko": "블루카본 및 산업적 응용",
-      "name_en": "Blue Carbon & Industrial Applications",
+      "section_no": "05",
+      "name_ko": "블루카본 · 메탄 저감 · 환경",
+      "name_en": "Blue Carbon, Methane & Environment",
       "badge_color": "cyan",
       "icon": "leaf",
-      "description": "해조류 기반 해양 탄소격리, 온실가스 저감, 반추동물 장내 메탄 저감 사료 첨가제, RDOC, 산업적 응용",
+      "description": "해조류 기반 해양 탄소격리, 반추동물 장내 메탄 저감(바다고리풀), 양식이 연안 환경·생태에 미치는 영향",
       "keywords": [
         "blue carbon",
         "carbon sequestration",
@@ -261,18 +391,13 @@
         "haloforms",
         "climate change mitigation",
         "macroalgal carbon flux",
-        "biomass valorization",
         "sustainable aquaculture",
         "carbon footprint",
         "seaweed afforestation",
-        "biorefinery",
-        "biofuel",
-        "agar",
-        "carrageenan",
-        "phycocolloid",
-        "cosmetics",
-        "nutraceutical",
-        "food industry"
+        "coastal ecosystem",
+        "nutrient removal",
+        "bioremediation",
+        "eutrophication"
       ],
       "keywords_ko": [
         "블루카본",
@@ -289,13 +414,12 @@
         "해조류 탄소",
         "바다고리풀 메탄",
         "브로모폼",
-        "바이오리파이너리",
-        "한천",
-        "카라기난",
-        "기능성 식품",
-        "화장품 소재",
         "RDOC",
-        "탄소 배출권"
+        "탄소 배출권",
+        "연안 생태",
+        "영양염 제거",
+        "부영양화",
+        "수질 정화"
       ]
     }
   },
@@ -308,9 +432,14 @@
     "max_papers_per_issue": 60,
     "max_related_per_issue": 10,
     "site_issue_count": 3,
-    "crossref_domestic_issns": ["1226-2617"],
+    "crossref_domestic_issns": [
+      "1226-2617"
+    ],
     "max_results_per_query": 15,
-    "kci_search_fields": ["keyword", "title"],
+    "kci_search_fields": [
+      "keyword",
+      "title"
+    ],
     "data_sources": [
       {
         "name": "PubMed",
@@ -334,7 +463,10 @@
         "enabled": true,
         "endpoint": "https://open.kci.go.kr/po/openapi/openApiSearch.kci",
         "api_key_env": "KCI_API_KEY",
-        "search_fields": ["keyword", "title"],
+        "search_fields": [
+          "keyword",
+          "title"
+        ],
         "note": "한국학술지인용색인 Open API. KCI_API_KEY 환경변수 필요. 인증키 신청: https://open.kci.go.kr"
       }
     ],

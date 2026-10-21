@@ -278,6 +278,8 @@ def _keyword_hit(kw: str, text: str) -> bool:
     """영문 키워드는 단어 시작 경계를 요구(laver ≠ slavery, nori ≠ minority), 한글은 부분 일치."""
     kw = kw.lower()
     if kw.isascii():
+        if len(kw) <= 5:
+            return re.search(r"\b" + re.escape(kw) + r"s?\b", text) is not None
         return re.search(r"\b" + re.escape(kw), text) is not None
     if kw == "사상체":
         return re.search(r"사상체(?!질)", text) is not None
@@ -421,7 +423,13 @@ def search_pubmed(query: str, page_size: int = 8) -> List[dict]:
             if art is None:
                 continue
 
-            title = strip_html(art.findtext(".//ArticleTitle", default=""))
+            title_el = art.find(".//ArticleTitle")
+            title = strip_html("".join(title_el.itertext())) if title_el is not None else ""
+            if not title:
+                vt = art.find(".//VernacularTitle")
+                title = strip_html("".join(vt.itertext())) if vt is not None else ""
+            if not title:
+                continue
             parts = []
             for ab in art.findall(".//AbstractText"):
                 txt = "".join(ab.itertext()).strip()
@@ -737,20 +745,40 @@ CATEGORY_ORDER = [
     "breeding_molecular_pathology",
     "thallus_lifecycle_conchocelis",
     "smart_aquaculture_mass_culture",
-    "blue_carbon_feed_methane"
+    "processing_materials_market",
+    "blue_carbon_feed_methane",
 ]
 
 RELATED_CATEGORY = "related_research"
 
 CATEGORY_NAME_MAP = {
-    "breeding_molecular_pathology": ("01", "육종 · 분자생물학 · 병해", "Breeding & Pathology", "rose"),
-    "thallus_lifecycle_conchocelis": ("02", "엽체 생리 · 생활사 · 사상체", "Thallus & Life Cycle", "emerald"),
-    "smart_aquaculture_mass_culture": ("03", "스마트 양식 및 대량 배양 기술", "Smart Aquaculture & Mass Culture", "violet"),
-    "blue_carbon_feed_methane": ("04", "블루카본 및 산업적 응용", "Blue Carbon & Applications", "cyan"),
-    RELATED_CATEGORY: ("05", "연관 연구", "Related Research", "amber"),
+    "breeding_molecular_pathology": ("01", "육종 · 유전체 · 병해", "Breeding, Genomics & Disease", "rose"),
+    "thallus_lifecycle_conchocelis": ("02", "엽체 생리 · 생활사", "Physiology & Life Cycle", "emerald"),
+    "smart_aquaculture_mass_culture": ("03", "양식 · 배양 기술", "Cultivation & Farming", "violet"),
+    "processing_materials_market": ("04", "가공 · 소재 · 시장", "Processing, Materials & Market", "orange"),
+    "blue_carbon_feed_methane": ("05", "블루카본 · 메탄 저감 · 환경", "Blue Carbon, Methane & Environment", "cyan"),
+    RELATED_CATEGORY: ("06", "연관 연구", "Related Research", "amber"),
 }
-# 마크다운 섹션 출력 순서 (분류 점수 계산은 CATEGORY_ORDER 4개만 사용)
+# 마크다운 섹션 출력 순서 (분류 점수 계산은 CATEGORY_ORDER 5개만 사용)
 SECTION_ORDER = CATEGORY_ORDER + [RELATED_CATEGORY]
+
+SECTION_GUIDE = """- breeding_molecular_pathology (01 육종·유전체·병해): 품종 개량, 신품종·돌연변이주의 형질 평가, 유전체·전사체·분자마커·계통분류·종 판별, 해조류 자체가 걸리는 병해(붉은갯병 등)와 병원균
+- thallus_lifecycle_conchocelis (02 엽체 생리·생활사): 광합성·색소·스트레스 반응 등 엽체의 생리, 사상체·포자·생식 등 생활사 조절 기전
+- smart_aquaculture_mass_culture (03 양식·배양 기술): 양식장 환경과 생산성 분석, 채묘, 대량 배양, 스마트 양식, 양식 현장에 영향을 주는 요인(예: 양식 자재 유래 미세플라스틱)
+- processing_materials_market (04 가공·소재·시장): 김·해조류 식품 가공과 품질 측정, 성분·영양 분석, 기능성 소재와 추출물(다당류·펩타이드·피코빌리단백질·MAAs 등의 구조·활성), 발효, 수출·유통·시장 분석
+- blue_carbon_feed_methane (05 블루카본·메탄 저감·환경): 해조류 탄소 격리, 바다고리풀 등 사료 첨가를 통한 반추동물 메탄 저감, 양식이 연안 탄소·생태에 미치는 영향
+경계 사례:
+  · 다당류·펩타이드 구조-활성, 추출물 효능 → processing_materials_market
+  · 마른김 무기질 측정, 김 수출 시장 분석 → processing_materials_market
+  · 돌연변이주의 경제 형질 평가, 분자 도구로 계통 선발, 유전자 기능 규명 → breeding_molecular_pathology
+  · 스트레스에 대한 엽체 반응, 색소 대사 효소의 생리 기능 → thallus_lifecycle_conchocelis
+  · 양식 자재(부표 등)에서 나온 미세플라스틱이 양식 김에 미치는 영향 → smart_aquaculture_mass_culture
+  · 바다고리풀 양식·급여를 통한 메탄 저감 → blue_carbon_feed_methane"""
+
+RELEVANCE_GUIDE = """- core: 김속(Pyropia·Porphyra·Neopyropia·Neoporphyra 등)·바다고리풀 또는 해조류 양식 자체를 다루는 연구 (그 해조류에서 얻은 소재·제품·시장 연구 포함)
+- related: 해조류 연구이지만 핵심 생물군 밖이거나, 사람이 김·해조류를 먹은 뒤의 건강·질병을 보는 연구(코호트·임상 등)
+- unrelated: 해조류가 연구 대상이 아닌 논문 (인문학, 다른 생물만 다룬 연구 등)"""
+
 
 def classify_article_safe(article: dict, taxa_list: list, categories_raw: Any) -> Tuple[List[str], str]:
     title = article.get("title", "")
@@ -768,43 +796,23 @@ def classify_article_safe(article: dict, taxa_list: list, categories_raw: Any) -
                     matched_taxa.append(taxa["name"])
                     break
 
+    # AI 를 못 쓸 때만 쓰는 규칙 기반 분류: keywords.json 의 섹션별 키워드를 단어 단위로 셉니다.
     cat_scores: Dict[str, int] = {cid: 0 for cid in CATEGORY_ORDER}
-
     if isinstance(categories_raw, dict):
         for cid, cinfo in categories_raw.items():
-            if cid not in cat_scores:
-                cat_scores[cid] = 0
-            if isinstance(cinfo, dict):
-                kws = cinfo.get("keywords", [])
-                if isinstance(kws, list):
-                    for kw in kws:
-                        if isinstance(kw, str) and kw.lower() in full_text:
-                            cat_scores[cid] += 1
-                kws_ko = cinfo.get("keywords_ko", [])
-                if isinstance(kws_ko, list):
-                    for kw in kws_ko:
-                        if isinstance(kw, str) and kw.lower() in full_text:
-                            cat_scores[cid] += 3
-            elif isinstance(cinfo, list):
-                for kw in cinfo:
-                    if isinstance(kw, str) and kw.lower() in full_text:
-                        cat_scores[cid] += 1
-            elif isinstance(cinfo, str):
-                if cinfo.lower() in full_text:
+            if cid not in cat_scores or not isinstance(cinfo, dict):
+                continue
+            for kw in cinfo.get("keywords", []) or []:
+                if isinstance(kw, str) and _keyword_hit(kw, full_text):
+                    cat_scores[cid] += 1
+            for kw in cinfo.get("keywords_ko", []) or []:
+                if isinstance(kw, str) and _keyword_hit(kw, full_text):
                     cat_scores[cid] += 2
-
-    if any(k in full_text for k in ["dna", "barcode", "genom", "crispr", "유전체", "전사체", "품종", "병해", "pathogen", "pcr"]):
-        cat_scores["breeding_molecular_pathology"] += 3
-    if any(k in full_text for k in ["conchocel", "spore", "thallus", "광합성", "각포자", "사상체", "엽체", "pigment", "생리"]):
-        cat_scores["thallus_lifecycle_conchocelis"] += 3
-    if any(k in full_text for k in ["bioreactor", "aquaculture", "seeding", "배양", "채묘", "양식", "smart", "반응기"]):
-        cat_scores["smart_aquaculture_mass_culture"] += 3
-    if any(k in full_text for k in ["carbon", "methane", "rdoc", "asparagopsis", "블루카본", "메탄", "사료", "탄소격리"]):
-        cat_scores["blue_carbon_feed_methane"] += 3
 
     best_cat = max(cat_scores.items(), key=lambda x: x[1])[0]
     if cat_scores[best_cat] == 0:
-        best_cat = "thallus_lifecycle_conchocelis"
+        # 아무 키워드도 없으면 응용 연구인 경우가 많아 04 로 둡니다 (예전엔 02 로 몰렸음).
+        best_cat = "processing_materials_market"
 
     return list(set(matched_taxa)), best_cat
 
@@ -818,7 +826,7 @@ def classify_article_safe(article: dict, taxa_list: list, categories_raw: Any) -
 # 7. 동적 요약 엔진 (Gemini ➔ Claude ➔ 룰베이스 하이브리드)
 # ═══════════════════════════════════════════════════════════════════════════
 
-SUMMARY_PROMPT_VERSION = "v4"  # 프롬프트를 바꾸면 올려서 캐시를 무효화하세요.
+SUMMARY_PROMPT_VERSION = "v6"  # 프롬프트를 바꾸면 올려서 캐시를 무효화하세요.
 
 
 def _parse_ai_json(text: str) -> Optional[dict]:
@@ -976,17 +984,26 @@ def generate_natural_summary(
 
 [논문 정보]
 - 논문 제목: {title}
-- 대상 생물군: {taxa_str}
-- 연구 분야: {category_name}
+- 대상 생물군(키워드 추정): {taxa_str}
 - 실제 초록:
 {abstract[:3000]}
 
-[출력 형식 - 순수 JSON만 반환]
+[출력 형식 - 순수 JSON만 반환. section·relevance 를 먼저 판정하세요]
 {{
+  "relevance": "core | related | unrelated",
+  "section": "아래 섹션 id 중 하나",
   "headline": "논문 핵심을 압축한 35~55자 안팎의 국문 헤드라인",
   "takeaways": ["연구 배경·목적 (1문장)", "핵심 실험 결과와 수치 (1문장)", "연구진의 결론 (1문장)"],
   "implications": "takeaways 와 겹치지 않는 실질적 시사점 (1~2문장)"
-}}"""
+}}
+
+[section 정의 - "이 연구가 주로 무엇을 밝히거나 만들려 하는가" 기준으로 하나만.
+ 해조류에서 무언가를 추출·가공·판매하는 연구만 processing_materials_market 이고,
+ 해조류 자체의 유전자·생리·생활사·양식 환경을 밝히는 연구는 여기에 넣지 마세요.]
+{SECTION_GUIDE}
+
+[relevance 정의]
+{RELEVANCE_GUIDE}"""
 
     if len(abstract) >= 200:
         for source, caller in _ai_callers():
@@ -1009,6 +1026,8 @@ def generate_natural_summary(
                 "implications": implications,
                 "is_ai": True,
                 "summary_source": source,
+                "section": parsed.get("section") if parsed.get("section") in CATEGORY_ORDER else None,
+                "relevance": parsed.get("relevance") if parsed.get("relevance") in ("core", "related", "unrelated") else None,
             }
             cache[cache_key] = result
             save_summary_cache(cache)
@@ -1027,6 +1046,27 @@ def generate_natural_summary(
         "is_ai": False,
         "summary_source": "abstract_extract",
     }
+
+
+METHANE_TITLE_RE = re.compile(r"methane|bromoform|메탄|브로모포름|브로모폼", re.I)
+
+
+def resolve_section(keyword_tier: str, rule_cat: str, summary: Dict[str, Any],
+                    title: str = "") -> Optional[Tuple[str, str]]:
+    """
+    최종 (섹션, 등급). AI 판정이 있으면 우선, 없으면 키워드 규칙.
+    - AI 가 unrelated → None (수록하지 않음)
+    - 키워드 등급이 related 이거나 AI 가 related(사람의 섭취·건강 연구 등) → 06 연관 연구
+    - 제목에 메탄·브로모포름이 있으면 05 (경량 모델이 '양식 산업화'로 보고 04 에 넣는 경우가 있어 고정)
+    """
+    relevance = summary.get("relevance")
+    if relevance == "unrelated":
+        return None
+    if keyword_tier == "related" or relevance == "related":
+        return RELATED_CATEGORY, "related"
+    if METHANE_TITLE_RE.search(title or ""):
+        return "blue_carbon_feed_methane", "core"
+    return (summary.get("section") or rule_cat), "core"
 
 
 def generate_section_insights(papers: List[dict]) -> Dict[str, dict]:
@@ -1082,6 +1122,81 @@ def generate_section_insights(papers: List[dict]) -> Dict[str, dict]:
         insights[cat_id] = result
         print(f"  [인사이트] {cat_name}: {result['title']} ({result['source']})")
     return insights
+
+
+def render_issue_markdown(date_str: str, papers: List[dict], insights: Dict[str, dict]) -> str:
+    """한 호의 마크다운 아카이브 본문 (fetch_and_archive 와 resummarize_issues 가 함께 사용)."""
+    cat_grouped: Dict[str, List[dict]] = {cid: [] for cid in SECTION_ORDER}
+    for p in papers:
+        cat_grouped.setdefault(p["category"], []).append(p)
+
+    taxa_all_set = list({t for p in papers for t in p["taxa"]})
+    sources_used = list({p["source"] for p in papers})
+
+    frontmatter = (
+        f'---\n'
+        f'title: "김·바다고리풀속 및 블루카본 연구 격주 다이제스트 ({date_str})"\n'
+        f'date: "{date_str}"\n'
+        f'version: "3.0"\n'
+        f'total_papers: {len(papers)}\n'
+        f'sources: {json.dumps(sources_used, ensure_ascii=False)}\n'
+        f'taxa_covered: {json.dumps(taxa_all_set, ensure_ascii=False)}\n'
+        f'categories: {json.dumps(list(cat_grouped.keys()), ensure_ascii=False)}\n'
+        f'tags: ["Phyco", "BlueCarbon", "Seaweed", "Crossref", "KCI", "PubMed"]\n'
+        f'---\n'
+    )
+
+    md_body = [
+        frontmatter,
+        f"# 🌊 김/바다고리풀속 및 블루카본 연구 격주 매거진 ({date_str})\n",
+        f"> **발행일**: {date_str} | **총 수록 논문**: {len(papers)}편 (초록 검증 완료) | **수집 소스**: {', '.join(sources_used)}  ",
+        f"> **대상 생물군**: {', '.join(taxa_all_set) or 'Pyropia, Asparagopsis'}\n",
+        "---\n",
+    ]
+
+    for cat_id in SECTION_ORDER:
+        meta = CATEGORY_NAME_MAP[cat_id]
+        cat_no, cat_name_ko, cat_name_en, _ = meta
+        papers_in_cat = cat_grouped.get(cat_id, [])
+        if not papers_in_cat:
+            continue
+
+        md_body.append(f"## 🔬 SECTION {cat_no}: {cat_name_ko} ({cat_name_en})\n")
+        ins = insights.get(cat_id, {})
+        md_body.append(f"> 💡 **Editor's Insight — {ins.get('title', cat_name_ko)}**  ")
+        md_body.append(f"> {ins.get('content', '')} ({len(papers_in_cat)}편 수록)\n")
+
+        for pidx, paper in enumerate(papers_in_cat, 1):
+            lang_tag = "🇰🇷 국내" if paper.get("is_domestic") else "🌐 해외"
+            md_body.append(f"### {pidx}. {paper['headline']}")
+            md_body.append(f"- **원문 제목**: {paper['title']}")
+            md_body.append(f"- **저자**: {paper['authors']}")
+            md_body.append(f"- **저널**: *{paper['journal']}* ({paper['year']}) | **출처**: {lang_tag} {paper['source']} | **원문 열람**: [{paper['doi'] or 'Link'}]({paper['url']})")
+            md_body.append(f"- **대상 생물군**: `{', '.join(paper['taxa'])}`")
+            md_body.append(f"- **대표 이미지**: ![]({paper['thumbnail_url']})\n")
+
+            md_body.append("#### 📌 핵심 요약 포인트 (Key Takeaways)")
+            for t_idx, t_point in enumerate(paper["takeaways"], 1):
+                md_body.append(f"{t_idx}. {t_point}")
+            md_body.append("")
+
+            if paper.get("implications"):
+                md_body.append(f"#### 💡 연구자 시사점 (Researcher's Takeaway)\n{paper['implications']}\n")
+
+            md_body.append(f"#### 📄 논문 초록 전문 (Abstract)\n{paper['abstract']}\n")
+            md_body.append("---\n")
+
+    if papers:
+        md_body.append("## 📊 이번 호 수록 논문 메타데이터 한눈에 보기\n")
+        md_body.append("| 헤드라인 | 생물군 | 섹션 | 소스 | 원문 링크 |")
+        md_body.append("|:---|:---|:---|:---:|:---:|")
+        for p in papers[:35]:
+            hl = (p['headline'][:48] + "…") if len(p['headline']) > 48 else p['headline']
+            src_icon = "🇰🇷" if p.get("is_domestic") else "🌐"
+            md_body.append(f"| {hl} | *{', '.join(p['taxa'])}* | {p['category_name']} | {src_icon} {p['source']} | [열람]({p['url']}) |")
+        md_body.append("\n---\n*Phyco & Blue Carbon Research Archive Pipeline v3.0*")
+
+    return "\n".join(md_body)
 
 
 # ═══════════════════════════════════════════════════════════════════════════
@@ -1224,24 +1339,24 @@ def run_pipeline() -> None:
         doi = raw.get("doi", "")
         doi_url = raw.get("url") or (f"https://doi.org/{doi}" if doi else "#")
 
-        matched_taxa, best_cat = classify_article_safe(raw, target_taxa, categories_raw)
-        tier = raw.get("_tier", "core")
-        if tier == "related":
-            best_cat = RELATED_CATEGORY
+        matched_taxa, rule_cat = classify_article_safe(raw, target_taxa, categories_raw)
         if not matched_taxa:
             matched_taxa = ["Unclassified"]
-
-        meta = CATEGORY_NAME_MAP.get(best_cat, ("02", "엽체 생리 · 생활사 · 사상체", "Thallus", "emerald"))
-        cat_no, cat_name_ko, cat_name_en, badge_color = meta
 
         summary = generate_natural_summary(
             title=title,
             abstract=abstract,
-            category_name=cat_name_ko,
+            category_name=CATEGORY_NAME_MAP[rule_cat][1],
             taxa_list=matched_taxa,
             paper_lang=paper_lang,
             doi=doi
         )
+        resolved = resolve_section(raw.get("_tier", "core"), rule_cat, summary, title)
+        if resolved is None:
+            print(f"  [제외] AI 판정 '해조류 무관': {title[:60]}")
+            continue
+        best_cat, tier = resolved
+        cat_no, cat_name_ko, cat_name_en, badge_color = CATEGORY_NAME_MAP[best_cat]
 
         paper = {
             "title": title,
@@ -1285,81 +1400,12 @@ def run_pipeline() -> None:
     # ──────────────────────────────────────────────────────────────────
     # STEP 4: 영구 마크다운 아카이브 생성 및 저장
     # ──────────────────────────────────────────────────────────────────
-    print("\n[4/5] 4분할 섹션 영구 마크다운 아카이브 빌드 중...")
+    print("\n[4/5] 마크다운 아카이브 저장 중...")
     archive_file = ARCHIVES_DIR / f"{today_str}-weekly-digest.md"
-
-    cat_grouped: Dict[str, List[dict]] = {cid: [] for cid in SECTION_ORDER}
-    for p in processed_papers:
-        cat_grouped.setdefault(p["category"], []).append(p)
 
     taxa_all_set = list({t for p in processed_papers for t in p["taxa"]})
     sources_used = list({p["source"] for p in processed_papers})
-
-    frontmatter = (
-        f'---\n'
-        f'title: "김·바다고리풀속 및 블루카본 연구 격주 다이제스트 ({today_str})"\n'
-        f'date: "{today_str}"\n'
-        f'version: "3.0"\n'
-        f'total_papers: {len(processed_papers)}\n'
-        f'sources: {json.dumps(sources_used, ensure_ascii=False)}\n'
-        f'taxa_covered: {json.dumps(taxa_all_set, ensure_ascii=False)}\n'
-        f'categories: {json.dumps(list(cat_grouped.keys()), ensure_ascii=False)}\n'
-        f'tags: ["Phyco", "BlueCarbon", "Seaweed", "Crossref", "KCI", "PubMed"]\n'
-        f'---\n'
-    )
-
-    md_body = [
-        frontmatter,
-        f"# 🌊 김/바다고리풀속 및 블루카본 연구 격주 매거진 ({today_str})\n",
-        f"> **발행일**: {today_str} | **총 수록 논문**: {len(processed_papers)}편 (초록 검증 완료) | **수집 소스**: {', '.join(sources_used)}  ",
-        f"> **대상 생물군**: {', '.join(taxa_all_set) or 'Pyropia, Asparagopsis'}\n",
-        "---\n",
-    ]
-
-    for cat_id in SECTION_ORDER:
-        meta = CATEGORY_NAME_MAP[cat_id]
-        cat_no, cat_name_ko, cat_name_en, _ = meta
-        papers_in_cat = cat_grouped.get(cat_id, [])
-        if not papers_in_cat:
-            continue
-
-        md_body.append(f"## 🔬 SECTION {cat_no}: {cat_name_ko} ({cat_name_en})\n")
-        ins = editor_insights.get(cat_id, {})
-        md_body.append(f"> 💡 **Editor's Insight — {ins.get('title', cat_name_ko)}**  ")
-        md_body.append(f"> {ins.get('content', '')} ({len(papers_in_cat)}편 수록)\n")
-
-        for pidx, paper in enumerate(papers_in_cat, 1):
-            lang_tag = "🇰🇷 국내" if paper.get("is_domestic") else "🌐 해외"
-            md_body.append(f"### {pidx}. {paper['headline']}")
-            md_body.append(f"- **원문 제목**: {paper['title']}")
-            md_body.append(f"- **저자**: {paper['authors']}")
-            md_body.append(f"- **저널**: *{paper['journal']}* ({paper['year']}) | **출처**: {lang_tag} {paper['source']} | **원문 열람**: [{paper['doi'] or 'Link'}]({paper['url']})")
-            md_body.append(f"- **대상 생물군**: `{', '.join(paper['taxa'])}`")
-            md_body.append(f"- **대표 이미지**: ![]({paper['thumbnail_url']})\n")
-
-            md_body.append("#### 📌 핵심 요약 포인트 (Key Takeaways)")
-            for t_idx, t_point in enumerate(paper["takeaways"], 1):
-                md_body.append(f"{t_idx}. {t_point}")
-            md_body.append("")
-
-            if paper.get("implications"):
-                md_body.append(f"#### 💡 연구자 시사점 (Researcher's Takeaway)\n{paper['implications']}\n")
-
-            md_body.append(f"#### 📄 논문 초록 전문 (Abstract)\n{paper['abstract']}\n")
-            md_body.append("---\n")
-
-    if processed_papers:
-        md_body.append("## 📊 이번 호 수록 논문 메타데이터 한눈에 보기\n")
-        md_body.append("| 헤드라인 | 생물군 | 섹션 | 소스 | 원문 링크 |")
-        md_body.append("|:---|:---|:---|:---:|:---:|")
-        for p in processed_papers[:35]:
-            hl = (p['headline'][:48] + "…") if len(p['headline']) > 48 else p['headline']
-            src_icon = "🇰🇷" if p.get("is_domestic") else "🌐"
-            md_body.append(f"| {hl} | *{', '.join(p['taxa'])}* | {p['category_name']} | {src_icon} {p['source']} | [열람]({p['url']}) |")
-        md_body.append("\n---\n*Phyco & Blue Carbon Research Archive Pipeline v3.0*")
-
-    with open(archive_file, "w", encoding="utf-8") as f:
-        f.write("\n".join(md_body))
+    archive_file.write_text(render_issue_markdown(today_str, processed_papers, editor_insights), encoding="utf-8")
     print(f"  => Markdown 아카이브 영구 저장 완료: {archive_file}")
 
     # ──────────────────────────────────────────────────────────────────

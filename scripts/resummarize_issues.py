@@ -46,18 +46,29 @@ def main() -> None:
             if not args.dry_run:
                 data["editor_insights"] = fa.generate_section_insights(data.get("articles", []))
                 json_path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+                md_path.write_text(fa.render_issue_markdown(data.get("date") or md_path.name[:10],
+                                                            data.get("articles", []), data["editor_insights"]),
+                                   encoding="utf-8")
             continue
         if json_path.exists() and not args.force:
             print(f"- {md_path.name}: 이미 JSON 있음 → 건너뜀 (--force 로 다시 만들기)")
             continue
 
         meta, body = build_site.parse_frontmatter(md_path.read_text(encoding="utf-8"))
-        parsed = build_site.extract_articles_from_markdown(body)
+        # JSON 이 있으면(--force) 그 논문 목록을 씁니다: 출처·국내 여부 등 마크다운에 없는 정보가 보존됩니다.
+        if json_path.exists():
+            parsed = json.loads(json_path.read_text(encoding="utf-8")).get("articles", [])
+        else:
+            parsed = build_site.extract_articles_from_markdown(body)
 
         # 예전 코드는 가짜 초록("관련 학술 문헌 제목: …")이나 무관한 논문(효모·감자 육종 등)도 실었으므로
         # 현재 수집 기준(초록 검증 + 해조류 관련도)을 다시 적용합니다.
         articles = []
+        from_json = json_path.exists()
         for art in parsed:
+            if from_json and art.get("tier"):
+                articles.append(art)  # 수집 당시 영문 제목·초록까지 보고 통과한 논문
+                continue
             tier = fa.relevance_tier(art["title"], art.get("abstract", ""))
             if not fa.is_valid_abstract(art.get("abstract", "")) or tier is None:
                 print(f"  - 제외: {art['title'][:60]}")
@@ -73,16 +84,29 @@ def main() -> None:
             continue
 
         ai_count = 0
+        kept = []
+        config = fa.load_keywords()
         for idx, art in enumerate(articles, 1):
             lang = "ko" if fa._has_hangul(art["title"]) else "en"
+            _taxa, rule_cat = fa.classify_article_safe(
+                {"title": art["title"], "abstractText": art.get("abstract", "")},
+                config.get("target_taxa", {}).get("genera", []), config.get("research_categories", {}))
             summary = fa.generate_natural_summary(
                 title=art["title"],
                 abstract=art.get("abstract", ""),
-                category_name=art.get("category_name", ""),
+                category_name=fa.CATEGORY_NAME_MAP[rule_cat][1],
                 taxa_list=[t for t in art.get("taxa", []) if t and t != "Unclassified"],
                 paper_lang=lang,
                 doi=art.get("doi", ""),
             )
+            # 섹션 재판정 (AI 판정 우선, unrelated 면 제외)
+            resolved = fa.resolve_section(art.get("tier", "core"), rule_cat, summary, art["title"])
+            if resolved is None:
+                print(f"  [{idx:02d}] 제외(해조류 무관) {art['title'][:50]}")
+                continue
+            art["category"], art["tier"] = resolved
+            art["category_name"] = fa.CATEGORY_NAME_MAP[art["category"]][1]
+            kept.append(art)
             if summary.get("is_ai"):
                 ai_count += 1
                 art["headline"] = summary["headline"]
@@ -91,10 +115,11 @@ def main() -> None:
             art["lang"] = lang
             art["is_ai_summary"] = bool(summary.get("is_ai"))
             art["summary_source"] = summary.get("summary_source", "markdown")
-            print(f"  [{idx:02d}] {art['summary_source']:<16} {art['title'][:50]}")
+            print(f"  [{idx:02d}] {art['summary_source']:<8} {art['category'][:14]:<14} {art['title'][:50]}")
             if summary.get("is_ai") and not summary.get("is_cached"):
                 time.sleep(4.5)  # Gemini 무료 티어 분당 한도
 
+        articles = kept
         insights = fa.generate_section_insights(articles)
         json_path.write_text(
             json.dumps({"date": meta.get("date", ""), "editor_insights": insights,
@@ -103,6 +128,10 @@ def main() -> None:
             encoding="utf-8",
         )
         print(f"  => {json_path.name} 저장 (AI 요약 {ai_count}/{len(articles)}편)")
+        # 마크다운 아카이브도 새 섹션·요약으로 다시 씀 (GitHub archives/ 에서 보는 기록)
+        md_path.write_text(fa.render_issue_markdown(meta.get("date") or md_path.name[:10], articles, insights),
+                           encoding="utf-8")
+        print(f"  => {md_path.name} 다시 작성")
 
 
 if __name__ == "__main__":

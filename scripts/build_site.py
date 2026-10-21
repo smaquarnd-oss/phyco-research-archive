@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 """
 Phyco & Blue Carbon Magazine Static Site Builder v2.0
-- 4분할 섹션 체제: SECTION 01 육종/분자/병해, 02 엽체/생활사/사상체,
-                   03 스마트 양식/대량 배양, 04 블루카본/산업 응용
+- 6개 섹션 체제 (SECTIONS 목록 참고): 01 육종·유전체·병해, 02 엽체 생리·생활사,
+                   03 양식·배양 기술, 04 가공·소재·시장, 05 블루카본·메탄 저감·환경, 06 연관 연구
 - 썸네일 키워드 기반 매칭 + 중복 없는 배정
 - UI: 헤드라인, 3가지 Key Takeaways, 연구자 시사점, 토글형 초록
 - Editor's Insight 섹션별 탑재
@@ -34,24 +34,62 @@ PUBLIC_DATA_DIR = PUBLIC_DIR / "data"
 PUBLIC_DIR.mkdir(parents=True, exist_ok=True)
 PUBLIC_DATA_DIR.mkdir(parents=True, exist_ok=True)
 
-# 카테고리 표시명 및 섹션 번호
-CATEGORY_META = {
-    "breeding_molecular_pathology":    {"no": "01", "name_ko": "육종 · 분자생물학 · 병해",    "name_en": "Breeding & Molecular Pathology",        "color": "rose",    "icon": "🧬"},
-    "thallus_lifecycle_conchocelis":   {"no": "02", "name_ko": "엽체 생리 · 생활사 · 사상체", "name_en": "Thallus Physiology & Life Cycle",        "color": "emerald", "icon": "🌱"},
-    "smart_aquaculture_mass_culture":  {"no": "03", "name_ko": "스마트 양식 및 대량 배양 기술","name_en": "Smart Aquaculture & Mass Culture",        "color": "violet",  "icon": "🏭"},
-    "blue_carbon_feed_methane":        {"no": "04", "name_ko": "블루카본 및 산업적 응용",       "name_en": "Blue Carbon & Industrial Applications", "color": "cyan",    "icon": "🌍"},
-    "related_research":                {"no": "05", "name_ko": "연관 연구",                  "name_en": "Related Research",                      "color": "amber",   "icon": "🔗"},
-    # 레거시 호환
-    "thallus_lifecycle_cultivation":   {"no": "02", "name_ko": "엽체 · 생활사 · 양식·배양",    "name_en": "Thallus & Cultivation",                 "color": "emerald", "icon": "🌱"},
-}
-
-SECTION_ORDER = [
-    "breeding_molecular_pathology",
-    "thallus_lifecycle_conchocelis",
-    "smart_aquaculture_mass_culture",
-    "blue_carbon_feed_methane",
-    "related_research",
+# 섹션 정의 (사이트의 메뉴·섹션 블록·JS 매핑이 모두 이 목록에서 만들어집니다)
+# (카테고리 id, HTML slug, 번호, 아이콘, 국문명, 영문명, Tailwind 색, 메뉴 표기)
+SECTIONS = [
+    ("breeding_molecular_pathology",   "breeding",    "01", "🧬", "육종 · 유전체 · 병해",        "Breeding, Genomics & Disease",       "rose",    "육종·유전체·병해"),
+    ("thallus_lifecycle_conchocelis",  "physiology",  "02", "🌱", "엽체 생리 · 생활사",          "Physiology & Life Cycle",            "emerald", "엽체 생리·생활사"),
+    ("smart_aquaculture_mass_culture", "aquaculture", "03", "🏭", "양식 · 배양 기술",            "Cultivation & Farming",              "violet",  "양식·배양"),
+    ("processing_materials_market",    "processing",  "04", "🏷️", "가공 · 소재 · 시장",          "Processing, Materials & Market",     "orange",  "가공·소재·시장"),
+    ("blue_carbon_feed_methane",       "bluecarbon",  "05", "🌍", "블루카본 · 메탄 저감 · 환경", "Blue Carbon, Methane & Environment", "cyan",    "블루카본·메탄·환경"),
+    ("related_research",               "related",     "06", "🔗", "연관 연구",                   "Related Research",                   "amber",   "연관 연구"),
 ]
+SECTION_ORDER = [sec[0] for sec in SECTIONS]
+CATEGORY_META = {
+    sec[0]: {"no": sec[2], "icon": sec[3], "name_ko": sec[4], "name_en": sec[5], "color": sec[6]} for sec in SECTIONS
+}
+# 레거시 호환
+CATEGORY_META["thallus_lifecycle_cultivation"] = dict(CATEGORY_META["thallus_lifecycle_conchocelis"])
+
+
+def render_nav_html() -> str:
+    links = []
+    for cat, slug, no, icon, _ko, _en, c, short in SECTIONS:
+        links.append(
+            f'          <a href="#sec-{slug}" id="nav-{slug}" class="px-3 py-1 rounded-md bg-{c}-50 text-{c}-800 '
+            f'dark:bg-{c}-950/60 dark:text-{c}-300 hover:bg-{c}-100 font-medium transition flex items-center gap-1 '
+            f'border border-{c}-200 dark:border-{c}-800">\n            <span>{icon} {no}. {short}</span>\n          </a>'
+        )
+    return "\n".join(links)
+
+
+def render_sections_html() -> str:
+    blocks = []
+    for cat, slug, no, icon, ko, en, c, _short in SECTIONS:
+        label = "Editor's Note" if cat == "related_research" else "Editor's Insight"
+        blocks.append(f"""    <!-- ========== SECTION {no}: {ko} ========== -->
+    <section id="sec-{slug}" class="scroll-mt-32">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between border-b-2 border-{c}-500 pb-3 mb-6">
+        <div>
+          <span class="text-xs font-black tracking-widest text-{c}-600 dark:text-{c}-400 uppercase">SECTION {no}</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white flex items-center gap-2">
+            <span>{icon} {ko}</span>
+            <span class="text-sm font-normal text-slate-400">({html.escape(en)})</span>
+          </h2>
+        </div>
+        <span id="badge-count-{slug}" class="text-xs font-semibold px-2.5 py-1 rounded-full bg-{c}-100 text-{c}-800 dark:bg-{c}-950 dark:text-{c}-300 w-fit mt-2 sm:mt-0">0편 수록</span>
+      </div>
+      <div class="rounded-2xl bg-gradient-to-r from-{c}-500/10 via-{c}-500/5 to-transparent border border-{c}-200 dark:border-{c}-900/60 p-5 mb-8 shadow-sm">
+        <div class="flex items-center gap-2 text-{c}-800 dark:text-{c}-300 font-bold text-sm mb-2">
+          <i data-lucide="feather" class="w-4 h-4 text-{c}-600"></i>
+          <span>{label}: <span id="insight-title-{slug}" class="font-extrabold"></span></span>
+        </div>
+        <p id="insight-content-{slug}" class="text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed"></p>
+      </div>
+      <div id="grid-{slug}" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"><!-- JS 주입 --></div>
+    </section>
+""")
+    return "\n".join(blocks)
 
 
 def parse_frontmatter(content):
@@ -87,9 +125,11 @@ def detect_category_from_header(header: str) -> str | None:
     h = header.lower()
     if "연관 연구" in h or "related research" in h:
         return "related_research"
+    if "가공" in h or "소재" in h or "시장" in h or "processing" in h:
+        return "processing_materials_market"
     if "육종" in h or "breeding" in h or "분자" in h or "병해" in h:
         return "breeding_molecular_pathology"
-    if "스마트 양식" in h or "대량 배양" in h or "mass culture" in h or "aquaculture" in h or "채묘" in h:
+    if "스마트 양식" in h or "대량 배양" in h or "배양 기술" in h or "mass culture" in h or "aquaculture" in h or "cultivation" in h or "채묘" in h:
         return "smart_aquaculture_mass_culture"
     if "엽체" in h or "생활사" in h or "사상체" in h or "thallus" in h or "conchocel" in h:
         return "thallus_lifecycle_conchocelis"
@@ -340,15 +380,18 @@ def build_site():
     html_content = generate_magazine_html(latest_archive, archives_index, get_repo_url())
     index_file = PUBLIC_DIR / "index.html"
     index_file.write_text(html_content, encoding="utf-8")
-    print(f" => 4분할 학술 매거진 빌드 완료: {index_file}")
+    print(f" => 학술 매거진 빌드 완료: {index_file}")
 
 
 def generate_magazine_html(latest_archive, archives_index, repo_url=""):
     """
-    4분할 전문 학술 매거진 스타일 싱글 페이지 정적 HTML 템플릿을 생성합니다.
+    전문 학술 매거진 스타일 싱글 페이지 정적 HTML 템플릿을 생성합니다.
     주의: Python f-string이므로 JS 중괄호는 모두 {{ }} 로 이스케이프.
     """
     index_json_str = json.dumps(archives_index, ensure_ascii=False).replace("</", r"<\/")
+    nav_html = render_nav_html()
+    sections_html = render_sections_html()
+    sections_json = json.dumps([{"cat": sec[0], "slug": sec[1]} for sec in SECTIONS], ensure_ascii=False)
     repo_href = html.escape(repo_url or "https://github.com", quote=True)
     archives_href = html.escape(f"{repo_url}/tree/main/archives" if repo_url else "https://github.com", quote=True)
 
@@ -437,28 +480,14 @@ def generate_magazine_html(latest_archive, archives_index, repo_url=""):
       </div>
     </div>
 
-    <!-- 4분할 스티키 섹션 바로가기 네비게이터 -->
+    <!-- 섹션 바로가기 네비게이터 -->
     <div class="border-t border-slate-200/60 dark:border-slate-800/80 bg-white/70 dark:bg-deepsea-900/70 backdrop-blur-md">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex items-center justify-between text-xs overflow-x-auto gap-4">
         <span class="text-slate-400 font-semibold uppercase tracking-wider shrink-0 flex items-center gap-1">
           <i data-lucide="compass" class="w-3.5 h-3.5"></i> 섹션:
         </span>
         <div class="flex items-center space-x-2 shrink-0">
-          <a href="#sec-breeding" class="px-3 py-1 rounded-md bg-rose-50 text-rose-800 dark:bg-rose-950/60 dark:text-rose-300 hover:bg-rose-100 font-medium transition flex items-center gap-1 border border-rose-200 dark:border-rose-800">
-            <span>🧬 01. 육종·분자·병해</span>
-          </a>
-          <a href="#sec-conchocelis" class="px-3 py-1 rounded-md bg-emerald-50 text-emerald-800 dark:bg-emerald-950/60 dark:text-emerald-300 hover:bg-emerald-100 font-medium transition flex items-center gap-1 border border-emerald-200 dark:border-emerald-800">
-            <span>🌱 02. 엽체·생활사·사상체</span>
-          </a>
-          <a href="#sec-aquaculture" class="px-3 py-1 rounded-md bg-violet-50 text-violet-800 dark:bg-violet-950/60 dark:text-violet-300 hover:bg-violet-100 font-medium transition flex items-center gap-1 border border-violet-200 dark:border-violet-800">
-            <span>🏭 03. 스마트 양식·배양</span>
-          </a>
-          <a href="#sec-bluecarbon" class="px-3 py-1 rounded-md bg-cyan-50 text-cyan-800 dark:bg-cyan-950/60 dark:text-cyan-300 hover:bg-cyan-100 font-medium transition flex items-center gap-1 border border-cyan-200 dark:border-cyan-800">
-            <span>🌍 04. 블루카본·산업 응용</span>
-          </a>
-          <a href="#sec-related" id="nav-related" class="px-3 py-1 rounded-md bg-amber-50 text-amber-800 dark:bg-amber-950/60 dark:text-amber-300 hover:bg-amber-100 font-medium transition flex items-center gap-1 border border-amber-200 dark:border-amber-800">
-            <span>🔗 05. 연관 연구</span>
-          </a>
+{nav_html}
         </div>
       </div>
     </div>
@@ -482,7 +511,7 @@ def generate_magazine_html(latest_archive, archives_index, repo_url=""):
         </h1>
         <p class="mt-4 text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
           <em>Pyropia</em>, <em>Porphyra</em>, <em>Neopyropia</em>, <em>Neoporphyra</em>, <em>Phycocalidia</em> 및 <em>Asparagopsis</em>의
-          최신 학술 논문을 4개 전문 섹션과 연관 연구로 엄선하여 핵심 요약, 시사점, 에디터 트렌드 브리핑과 함께 제공합니다.
+          최신 학술 논문을 5개 전문 섹션과 연관 연구로 엄선하여 핵심 요약, 시사점, 에디터 트렌드 브리핑과 함께 제공합니다.
         </p>
         <div class="mt-6 flex flex-wrap gap-4 pt-2">
           <div class="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
@@ -534,116 +563,7 @@ def generate_magazine_html(latest_archive, archives_index, repo_url=""):
   <!-- 매거진 본문: 4대 카테고리별 섹션 구역 분리 -->
   <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
 
-    <!-- ========== SECTION 01: 육종 · 분자생물학 · 병해 ========== -->
-    <section id="sec-breeding" class="scroll-mt-32">
-      <div class="flex flex-col sm:flex-row sm:items-end justify-between border-b-2 border-rose-500 pb-3 mb-6">
-        <div>
-          <span class="text-xs font-black tracking-widest text-rose-600 dark:text-rose-400 uppercase">SECTION 01</span>
-          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white flex items-center gap-2">
-            <span>🧬 육종 · 분자생물학 · 병해</span>
-            <span class="text-sm font-normal text-slate-400">(Breeding &amp; Pathology)</span>
-          </h2>
-        </div>
-        <span id="badge-count-breeding" class="text-xs font-semibold px-2.5 py-1 rounded-full bg-rose-100 text-rose-800 dark:bg-rose-950 dark:text-rose-300 w-fit mt-2 sm:mt-0">0편 수록</span>
-      </div>
-      <div class="rounded-2xl bg-gradient-to-r from-rose-500/10 via-rose-500/5 to-transparent border border-rose-200 dark:border-rose-900/60 p-5 mb-8 shadow-sm">
-        <div class="flex items-center gap-2 text-rose-800 dark:text-rose-300 font-bold text-sm mb-2">
-          <i data-lucide="feather" class="w-4 h-4 text-rose-600"></i>
-          <span>Editor's Insight: <span id="insight-title-breeding" class="font-extrabold"></span></span>
-        </div>
-        <p id="insight-content-breeding" class="text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed"></p>
-      </div>
-      <div id="grid-breeding" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"><!-- JS 주입 --></div>
-    </section>
-
-    <!-- ========== SECTION 02: 엽체 생리 · 생활사 · 사상체 ========== -->
-    <section id="sec-conchocelis" class="scroll-mt-32">
-      <div class="flex flex-col sm:flex-row sm:items-end justify-between border-b-2 border-emerald-500 pb-3 mb-6">
-        <div>
-          <span class="text-xs font-black tracking-widest text-emerald-600 dark:text-emerald-400 uppercase">SECTION 02</span>
-          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white flex items-center gap-2">
-            <span>🌱 엽체 생리 · 생활사 · 사상체</span>
-            <span class="text-sm font-normal text-slate-400">(Thallus &amp; Life Cycle)</span>
-          </h2>
-        </div>
-        <span id="badge-count-conchocelis" class="text-xs font-semibold px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300 w-fit mt-2 sm:mt-0">0편 수록</span>
-      </div>
-      <div class="rounded-2xl bg-gradient-to-r from-emerald-500/10 via-emerald-500/5 to-transparent border border-emerald-200 dark:border-emerald-900/60 p-5 mb-8 shadow-sm">
-        <div class="flex items-center gap-2 text-emerald-800 dark:text-emerald-300 font-bold text-sm mb-2">
-          <i data-lucide="feather" class="w-4 h-4 text-emerald-600"></i>
-          <span>Editor's Insight: <span id="insight-title-conchocelis" class="font-extrabold"></span></span>
-        </div>
-        <p id="insight-content-conchocelis" class="text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed"></p>
-      </div>
-      <div id="grid-conchocelis" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"><!-- JS 주입 --></div>
-    </section>
-
-    <!-- ========== SECTION 03: 스마트 양식 및 대량 배양 기술 ========== -->
-    <section id="sec-aquaculture" class="scroll-mt-32">
-      <div class="flex flex-col sm:flex-row sm:items-end justify-between border-b-2 border-violet-500 pb-3 mb-6">
-        <div>
-          <span class="text-xs font-black tracking-widest text-violet-600 dark:text-violet-400 uppercase">SECTION 03</span>
-          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white flex items-center gap-2">
-            <span>🏭 스마트 양식 및 대량 배양 기술</span>
-            <span class="text-sm font-normal text-slate-400">(Smart Aquaculture &amp; Mass Culture)</span>
-          </h2>
-        </div>
-        <span id="badge-count-aquaculture" class="text-xs font-semibold px-2.5 py-1 rounded-full bg-violet-100 text-violet-800 dark:bg-violet-950 dark:text-violet-300 w-fit mt-2 sm:mt-0">0편 수록</span>
-      </div>
-      <div class="rounded-2xl bg-gradient-to-r from-violet-500/10 via-violet-500/5 to-transparent border border-violet-200 dark:border-violet-900/60 p-5 mb-8 shadow-sm">
-        <div class="flex items-center gap-2 text-violet-800 dark:text-violet-300 font-bold text-sm mb-2">
-          <i data-lucide="feather" class="w-4 h-4 text-violet-600"></i>
-          <span>Editor's Insight: <span id="insight-title-aquaculture" class="font-extrabold"></span></span>
-        </div>
-        <p id="insight-content-aquaculture" class="text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed"></p>
-      </div>
-      <div id="grid-aquaculture" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"><!-- JS 주입 --></div>
-    </section>
-
-    <!-- ========== SECTION 04: 블루카본 및 산업적 응용 ========== -->
-    <section id="sec-bluecarbon" class="scroll-mt-32">
-      <div class="flex flex-col sm:flex-row sm:items-end justify-between border-b-2 border-cyan-500 pb-3 mb-6">
-        <div>
-          <span class="text-xs font-black tracking-widest text-cyan-600 dark:text-cyan-400 uppercase">SECTION 04</span>
-          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white flex items-center gap-2">
-            <span>🌍 블루카본 및 산업적 응용</span>
-            <span class="text-sm font-normal text-slate-400">(Blue Carbon &amp; Industrial Applications)</span>
-          </h2>
-        </div>
-        <span id="badge-count-bluecarbon" class="text-xs font-semibold px-2.5 py-1 rounded-full bg-cyan-100 text-cyan-800 dark:bg-cyan-950 dark:text-cyan-300 w-fit mt-2 sm:mt-0">0편 수록</span>
-      </div>
-      <div class="rounded-2xl bg-gradient-to-r from-cyan-500/10 via-cyan-500/5 to-transparent border border-cyan-200 dark:border-cyan-900/60 p-5 mb-8 shadow-sm">
-        <div class="flex items-center gap-2 text-cyan-800 dark:text-cyan-300 font-bold text-sm mb-2">
-          <i data-lucide="feather" class="w-4 h-4 text-cyan-600"></i>
-          <span>Editor's Insight: <span id="insight-title-bluecarbon" class="font-extrabold"></span></span>
-        </div>
-        <p id="insight-content-bluecarbon" class="text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed"></p>
-      </div>
-      <div id="grid-bluecarbon" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"><!-- JS 주입 --></div>
-    </section>
-
-    <!-- ========== SECTION 05: 연관 연구 (핵심 생물군 밖의 해조류 연구) ========== -->
-    <section id="sec-related" class="scroll-mt-32">
-      <div class="flex flex-col sm:flex-row sm:items-end justify-between border-b-2 border-amber-500 pb-3 mb-6">
-        <div>
-          <span class="text-xs font-black tracking-widest text-amber-600 dark:text-amber-400 uppercase">SECTION 05</span>
-          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white flex items-center gap-2">
-            <span>🔗 연관 연구</span>
-            <span class="text-sm font-normal text-slate-400">(Related Research)</span>
-          </h2>
-        </div>
-        <span id="badge-count-related" class="text-xs font-semibold px-2.5 py-1 rounded-full bg-amber-100 text-amber-800 dark:bg-amber-950 dark:text-amber-300 w-fit mt-2 sm:mt-0">0편 수록</span>
-      </div>
-      <div class="rounded-2xl bg-gradient-to-r from-amber-500/10 via-amber-500/5 to-transparent border border-amber-200 dark:border-amber-900/60 p-5 mb-8 shadow-sm">
-        <div class="flex items-center gap-2 text-amber-800 dark:text-amber-300 font-bold text-sm mb-2">
-          <i data-lucide="feather" class="w-4 h-4 text-amber-600"></i>
-          <span>Editor's Note: <span id="insight-title-related" class="font-extrabold"></span></span>
-        </div>
-        <p id="insight-content-related" class="text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed"></p>
-      </div>
-      <div id="grid-related" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"><!-- JS 주입 --></div>
-    </section>
-
+{sections_html}
     <!-- 검색 결과 없음 -->
     <div id="empty-state" class="hidden text-center py-20 bg-white dark:bg-deepsea-900 rounded-2xl border border-slate-200 dark:border-slate-800">
       <i data-lucide="file-search" class="w-14 h-14 mx-auto text-slate-300 dark:text-slate-600 mb-3"></i>
@@ -687,7 +607,7 @@ def generate_magazine_html(latest_archive, archives_index, repo_url=""):
         <p class="font-bold text-sm text-slate-800 dark:text-slate-200">PHYCO &amp; BLUE CARBON RESEARCH MAGAZINE v2.0</p>
         <p class="mt-1">Automated Research Pipeline powered by GitHub Actions &amp; Vercel Global Edge</p>
         <p class="mt-0.5 text-slate-400 text-[11px]">Target Genera: Pyropia, Porphyra, Neopyropia, Neoporphyra, Phycocalidia, Asparagopsis</p>
-        <p class="mt-0.5 text-slate-400 text-[11px]">4+1 Sections: Breeding/Molecular · Thallus/Life Cycle · Smart Aquaculture · Blue Carbon · Related Research</p>
+        <p class="mt-0.5 text-slate-400 text-[11px]">5+1 Sections: Breeding · Physiology · Cultivation · Processing &amp; Market · Blue Carbon · Related Research</p>
       </div>
       <div class="flex items-center space-x-4">
         <a href="{repo_href}" target="_blank" rel="noopener noreferrer" class="hover:text-ocean-600 dark:hover:text-ocean-400 transition flex items-center gap-1 font-medium">
@@ -833,7 +753,7 @@ def generate_magazine_html(latest_archive, archives_index, repo_url=""):
     }}
 
     // ──────────────────────────────────────────────────────────────
-    // 4분할 섹션 렌더링
+    // 섹션 렌더링
     // ──────────────────────────────────────────────────────────────
     function renderSections() {{
       const allArticles = currentArchive.articles || [];
@@ -858,75 +778,34 @@ def generate_magazine_html(latest_archive, archives_index, repo_url=""):
 
       filterCount.innerText = filtered.length;
 
-      // 4분할 그룹
-      const SECTION_CATS = [
-        'breeding_molecular_pathology',
-        'thallus_lifecycle_conchocelis',
-        'smart_aquaculture_mass_culture',
-        'blue_carbon_feed_methane',
-        'related_research',
-      ];
-      // 레거시 카테고리 → 신규 카테고리 매핑
-      const LEGACY_MAP = {{
-        'thallus_lifecycle_cultivation': 'thallus_lifecycle_conchocelis',
-      }};
+      // 섹션 목록 (build_site.py 의 SECTIONS 에서 생성)
+      const SECTIONS = {sections_json};
+      const LEGACY_MAP = {{ 'thallus_lifecycle_cultivation': 'thallus_lifecycle_conchocelis' }};
 
       const groups = {{}};
-      SECTION_CATS.forEach(id => groups[id] = []);
-
+      SECTIONS.forEach(sec => groups[sec.cat] = []);
       filtered.forEach((art, idx) => {{
-        let cat = art.category || 'thallus_lifecycle_conchocelis';
-        if (LEGACY_MAP[cat]) cat = LEGACY_MAP[cat];
-        if (!groups[cat]) cat = 'thallus_lifecycle_conchocelis';
+        let cat = LEGACY_MAP[art.category] || art.category;
+        if (!groups[cat]) cat = 'related_research';
         groups[cat].push({{ art, globalIdx: idx }});
       }});
 
-      // 각 그리드 주입
-      const gridMap = {{
-        'breeding_molecular_pathology':   'grid-breeding',
-        'thallus_lifecycle_conchocelis':  'grid-conchocelis',
-        'smart_aquaculture_mass_culture': 'grid-aquaculture',
-        'blue_carbon_feed_methane':       'grid-bluecarbon',
-        'related_research':               'grid-related',
-      }};
-      const badgeMap = {{
-        'breeding_molecular_pathology':   'badge-count-breeding',
-        'thallus_lifecycle_conchocelis':  'badge-count-conchocelis',
-        'smart_aquaculture_mass_culture': 'badge-count-aquaculture',
-        'blue_carbon_feed_methane':       'badge-count-bluecarbon',
-        'related_research':               'badge-count-related',
-      }};
-
-      SECTION_CATS.forEach(cat => {{
-        const gridEl = document.getElementById(gridMap[cat]);
-        const badgeEl = document.getElementById(badgeMap[cat]);
-        if (gridEl) gridEl.innerHTML = groups[cat].map(item => renderCard(item.art, item.globalIdx)).join('');
-        if (badgeEl) badgeEl.innerText = `${{groups[cat].length}}편 수록`;
-      }});
-      // 연관 연구는 논문이 있을 때만 섹션·메뉴 표시
-      const hasRelated = groups['related_research'].length > 0;
-      document.getElementById('sec-related').classList.toggle('hidden', !hasRelated);
-      document.getElementById('nav-related').classList.toggle('hidden', !hasRelated);
-
-      // 에디터 인사이트 텍스트 갱신
       const insights = currentArchive.editor_insights || {{}};
-      const insightDomMap = {{
-        'breeding_molecular_pathology':   ['insight-title-breeding',    'insight-content-breeding'],
-        'thallus_lifecycle_conchocelis':  ['insight-title-conchocelis', 'insight-content-conchocelis'],
-        'smart_aquaculture_mass_culture': ['insight-title-aquaculture', 'insight-content-aquaculture'],
-        'blue_carbon_feed_methane':       ['insight-title-bluecarbon',  'insight-content-bluecarbon'],
-        'related_research':               ['insight-title-related',     'insight-content-related'],
-      }};
-      Object.entries(insightDomMap).forEach(([cat, [titleId, contentId]]) => {{
+      SECTIONS.forEach(({{cat, slug}}) => {{
+        const items = groups[cat];
+        document.getElementById('grid-' + slug).innerHTML = items.map(item => renderCard(item.art, item.globalIdx)).join('');
+        document.getElementById('badge-count-' + slug).innerText = `${{items.length}}편 수록`;
+        // 논문이 없는 섹션은 본문·메뉴 모두 숨김
+        document.getElementById('sec-' + slug).classList.toggle('hidden', items.length === 0);
+        document.getElementById('nav-' + slug).classList.toggle('hidden', items.length === 0);
+
+        // Editor's Insight: 그 호 논문으로 만든 것만, 없으면 상자 숨김
         const ins = insights[cat];
-        const tEl = document.getElementById(titleId);
-        const cEl = document.getElementById(contentId);
-        const box = tEl ? tEl.closest('.rounded-2xl') : null;
-        if (box) box.classList.toggle('hidden', !(ins && ins.content));
-        if (ins) {{
-          if (tEl) tEl.innerText = ins.title || '';
-          if (cEl) cEl.innerText = ins.content || '';
-        }}
+        const tEl = document.getElementById('insight-title-' + slug);
+        const cEl = document.getElementById('insight-content-' + slug);
+        tEl.closest('.rounded-2xl').classList.toggle('hidden', !(ins && ins.content));
+        tEl.innerText = (ins && ins.title) || '';
+        cEl.innerText = (ins && ins.content) || '';
       }});
 
       emptyState.classList.toggle('hidden', filtered.length > 0);
