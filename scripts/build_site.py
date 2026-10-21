@@ -6,7 +6,7 @@ Phyco & Blue Carbon Magazine Static Site Builder v2.0
                    03 스마트 양식/대량 배양, 04 블루카본/산업 응용
 - 썸네일 키워드 기반 매칭 + 중복 없는 배정
 - UI: 헤드라인, 3가지 Key Takeaways, 연구자 시사점, 토글형 초록
-- Editor's Weekly Insight 섹션별 탑재
+- Editor's Insight 섹션별 탑재
 """
 
 import sys
@@ -38,7 +38,7 @@ PUBLIC_DATA_DIR.mkdir(parents=True, exist_ok=True)
 DEFAULT_INSIGHTS = {
     "breeding_molecular_pathology": {
         "title": "기후 온난화 대응 내열성 분자마커와 붉은갯병 감염 초기 전사체 분석의 고도화",
-        "content": "이번 주 육종 및 병해 연구 트렌드는 해수 온도 상승에 따른 내삼투압/열충격 단백질(HSP) 발현 메커니즘 규명과 더불어, 주요 병원체(Pythium porphyrae)에 대응하는 방어 전사인자(bZIP, MYB) 동정이 두드러집니다. DNA 바코딩 기반 신분류체계 확립과 다중 오믹스 분석을 통한 유용 유전자원 선발이 양식장 현장 품종 개량의 핵심 열쇠로 자리잡고 있습니다."
+        "content": "이번 호 육종 및 병해 연구 트렌드는 해수 온도 상승에 따른 내삼투압/열충격 단백질(HSP) 발현 메커니즘 규명과 더불어, 주요 병원체(Pythium porphyrae)에 대응하는 방어 전사인자(bZIP, MYB) 동정이 두드러집니다. DNA 바코딩 기반 신분류체계 확립과 다중 오믹스 분석을 통한 유용 유전자원 선발이 양식장 현장 품종 개량의 핵심 열쇠로 자리잡고 있습니다."
     },
     "thallus_lifecycle_conchocelis": {
         "title": "사상체(Conchocelis) 각포자 방출 메커니즘과 엽체 생리 환경 적응 전략",
@@ -334,7 +334,9 @@ def build_site():
             print(f"  - {md_path.name}: 논문 0편 → 건너뜀")
             continue
 
-        title = meta.get("title", f"연구 주간 다이제스트 ({file_date})")
+        # frontmatter 가 없는 옛 형식은 첫 번째 "# 제목" 줄을 씁니다.
+        m_h1 = re.search(r"^#\s+(?:🌊\s*)?(.+)$", body, re.MULTILINE)
+        title = meta.get("title") or (m_h1.group(1).strip() if m_h1 else f"연구 격주 다이제스트 ({file_date})")
         archive_entry = {
             "filename": md_path.name,
             "title": title,
@@ -381,7 +383,7 @@ def generate_magazine_html(latest_archive, archives_index, repo_url=""):
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>김/바다고리풀속 &amp; 블루카본 연구 매거진 | Phyco &amp; Blue Carbon Weekly</title>
+  <title>김/바다고리풀속 &amp; 블루카본 연구 매거진 | Phyco &amp; Blue Carbon Biweekly</title>
   <meta name="description" content="김(Pyropia/Porphyra), 바다고리풀(Asparagopsis), 블루카본 및 메탄저감 해조류 연구 자동화 학술 매거진">
 
   <!-- Favicon SVG -->
@@ -444,7 +446,7 @@ def generate_magazine_html(latest_archive, archives_index, repo_url=""):
             PHYCO &amp; BLUE CARBON
             <span class="text-[11px] px-2 py-0.5 rounded-full bg-ocean-100 text-ocean-800 dark:bg-ocean-950 dark:text-ocean-300 font-bold border border-ocean-300 dark:border-ocean-700">Research Magazine</span>
           </a>
-          <p class="text-[11px] text-slate-500 dark:text-slate-400 hidden sm:block">홍조류 신분류체계 생물학 · 스마트 양식 · 해양 탄소격리 전문 주간지</p>
+          <p class="text-[11px] text-slate-500 dark:text-slate-400 hidden sm:block">홍조류 신분류체계 생물학 · 스마트 양식 · 해양 탄소격리 전문 격주간지</p>
         </div>
       </div>
 
@@ -494,7 +496,7 @@ def generate_magazine_html(latest_archive, archives_index, repo_url=""):
       <div class="max-w-3xl">
         <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-ocean-100/90 dark:bg-ocean-950/90 border border-ocean-300 dark:border-ocean-800 text-ocean-900 dark:text-ocean-300 text-xs font-bold mb-4">
           <i data-lucide="book-open" class="w-3.5 h-3.5"></i>
-          <span>WEEKLY RESEARCH MAGAZINE</span>
+          <span>BIWEEKLY RESEARCH MAGAZINE</span>
           <span class="mx-1">•</span>
           <span id="hero-issue-date">2026-10-07호</span>
         </div>
@@ -506,7 +508,7 @@ def generate_magazine_html(latest_archive, archives_index, repo_url=""):
         </h1>
         <p class="mt-4 text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
           <em>Pyropia</em>, <em>Porphyra</em>, <em>Neopyropia</em>, <em>Neoporphyra</em>, <em>Phycocalidia</em> 및 <em>Asparagopsis</em>의
-          최신 학술 논문을 4개 전문 섹션으로 엄선하여 핵심 요약, 시사점, 에디터 트렌드 브리핑과 함께 제공합니다.
+          최신 학술 논문을 4개 전문 섹션과 연관 연구로 엄선하여 핵심 요약, 시사점, 에디터 트렌드 브리핑과 함께 제공합니다.
         </p>
         <div class="mt-6 flex flex-wrap gap-4 pt-2">
           <div class="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
@@ -519,7 +521,7 @@ def generate_magazine_html(latest_archive, archives_index, repo_url=""):
           </div>
           <div class="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
             <span class="w-2.5 h-2.5 rounded-full bg-cyan-500"></span>
-            발행 주기: <strong class="text-slate-900 dark:text-white">매주 수요일 정기 발행</strong>
+            발행 주기: <strong class="text-slate-900 dark:text-white">격주 수요일 정기 발행</strong>
           </div>
         </div>
       </div>
@@ -573,10 +575,10 @@ def generate_magazine_html(latest_archive, archives_index, repo_url=""):
       <div class="rounded-2xl bg-gradient-to-r from-rose-500/10 via-rose-500/5 to-transparent border border-rose-200 dark:border-rose-900/60 p-5 mb-8 shadow-sm">
         <div class="flex items-center gap-2 text-rose-800 dark:text-rose-300 font-bold text-sm mb-2">
           <i data-lucide="feather" class="w-4 h-4 text-rose-600"></i>
-          <span>Editor's Weekly Insight: <span id="insight-title-breeding" class="font-extrabold">기후 온난화 대응 내열성 분자마커와 병해 전사체 고도화</span></span>
+          <span>Editor's Insight: <span id="insight-title-breeding" class="font-extrabold">기후 온난화 대응 내열성 분자마커와 병해 전사체 고도화</span></span>
         </div>
         <p id="insight-content-breeding" class="text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
-          이번 주 육종 및 병해 연구 트렌드는 해수 온도 상승에 따른 내삼투압/열충격 단백질(HSP) 발현 메커니즘 규명과 더불어, 주요 병원체(Pythium porphyrae)에 대응하는 방어 전사인자(bZIP, MYB) 동정이 두드러집니다.
+          이번 호 육종 및 병해 연구 트렌드는 해수 온도 상승에 따른 내삼투압/열충격 단백질(HSP) 발현 메커니즘 규명과 더불어, 주요 병원체(Pythium porphyrae)에 대응하는 방어 전사인자(bZIP, MYB) 동정이 두드러집니다.
         </p>
       </div>
       <div id="grid-breeding" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"><!-- JS 주입 --></div>
@@ -597,7 +599,7 @@ def generate_magazine_html(latest_archive, archives_index, repo_url=""):
       <div class="rounded-2xl bg-gradient-to-r from-emerald-500/10 via-emerald-500/5 to-transparent border border-emerald-200 dark:border-emerald-900/60 p-5 mb-8 shadow-sm">
         <div class="flex items-center gap-2 text-emerald-800 dark:text-emerald-300 font-bold text-sm mb-2">
           <i data-lucide="feather" class="w-4 h-4 text-emerald-600"></i>
-          <span>Editor's Weekly Insight: <span id="insight-title-conchocelis" class="font-extrabold">사상체 각포자 방출 메커니즘과 엽체 생리 환경 적응</span></span>
+          <span>Editor's Insight: <span id="insight-title-conchocelis" class="font-extrabold">사상체 각포자 방출 메커니즘과 엽체 생리 환경 적응</span></span>
         </div>
         <p id="insight-content-conchocelis" class="text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
           엽체 생리 및 생활사 연구 분야에서는 광주기·수온 변동에 의한 각포자(conchospore) 대량 방출 제어 기전과 엽상체 기조직 발달 초기 단계 분자 마커가 주목받고 있습니다.
@@ -621,7 +623,7 @@ def generate_magazine_html(latest_archive, archives_index, repo_url=""):
       <div class="rounded-2xl bg-gradient-to-r from-violet-500/10 via-violet-500/5 to-transparent border border-violet-200 dark:border-violet-900/60 p-5 mb-8 shadow-sm">
         <div class="flex items-center gap-2 text-violet-800 dark:text-violet-300 font-bold text-sm mb-2">
           <i data-lucide="feather" class="w-4 h-4 text-violet-600"></i>
-          <span>Editor's Weekly Insight: <span id="insight-title-aquaculture" class="font-extrabold">자유사상체 대량 배양과 스마트 채묘 시스템의 경제성 최적화</span></span>
+          <span>Editor's Insight: <span id="insight-title-aquaculture" class="font-extrabold">자유사상체 대량 배양과 스마트 채묘 시스템의 경제성 최적화</span></span>
         </div>
         <p id="insight-content-aquaculture" class="text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
           스마트 양식 및 대량 배양 분야는 굴패각 의존도를 제로화하는 자유사상체(free-living conchocelis) 액체 배양 조건 최적화와 LED 파장별 성장률 비교, IoT 기반 실시간 수질 제어형 채묘 시스템 개발이 핵심 성과로 보고되었습니다.
@@ -645,7 +647,7 @@ def generate_magazine_html(latest_archive, archives_index, repo_url=""):
       <div class="rounded-2xl bg-gradient-to-r from-cyan-500/10 via-cyan-500/5 to-transparent border border-cyan-200 dark:border-cyan-900/60 p-5 mb-8 shadow-sm">
         <div class="flex items-center gap-2 text-cyan-800 dark:text-cyan-300 font-bold text-sm mb-2">
           <i data-lucide="feather" class="w-4 h-4 text-cyan-600"></i>
-          <span>Editor's Weekly Insight: <span id="insight-title-bluecarbon" class="font-extrabold">바다고리풀 메탄 감축 실증과 RDOC 기반 블루카본 표준화</span></span>
+          <span>Editor's Insight: <span id="insight-title-bluecarbon" class="font-extrabold">바다고리풀 메탄 감축 실증과 RDOC 기반 블루카본 표준화</span></span>
         </div>
         <p id="insight-content-bluecarbon" class="text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
           블루카본 및 산업 응용 분야는 Asparagopsis taxiformis의 장기 급여를 통한 반추위 장내 메탄 70~80% 억제 효과와 조직 내 브로모포름 잔류 안전성 검증이 핵심 성과로 보고되었습니다.
@@ -721,14 +723,14 @@ def generate_magazine_html(latest_archive, archives_index, repo_url=""):
         <p class="font-bold text-sm text-slate-800 dark:text-slate-200">PHYCO &amp; BLUE CARBON RESEARCH MAGAZINE v2.0</p>
         <p class="mt-1">Automated Research Pipeline powered by GitHub Actions &amp; Vercel Global Edge</p>
         <p class="mt-0.5 text-slate-400 text-[11px]">Target Genera: Pyropia, Porphyra, Neopyropia, Neoporphyra, Phycocalidia, Asparagopsis</p>
-        <p class="mt-0.5 text-slate-400 text-[11px]">4-Section System: Breeding/Molecular · Thallus/Life Cycle · Smart Aquaculture · Blue Carbon</p>
+        <p class="mt-0.5 text-slate-400 text-[11px]">4+1 Sections: Breeding/Molecular · Thallus/Life Cycle · Smart Aquaculture · Blue Carbon · Related Research</p>
       </div>
       <div class="flex items-center space-x-4">
         <a href="{repo_href}" target="_blank" rel="noopener noreferrer" class="hover:text-ocean-600 dark:hover:text-ocean-400 transition flex items-center gap-1 font-medium">
           <i data-lucide="github" class="w-4 h-4"></i> GitHub Repository
         </a>
         <span>•</span>
-        <span>Every Wednesday Auto-Update</span>
+        <span>Biweekly (Wed) Auto-Update</span>
       </div>
     </div>
   </footer>

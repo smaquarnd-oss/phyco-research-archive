@@ -1239,7 +1239,7 @@ def run_pipeline() -> None:
 
     frontmatter = (
         f'---\n'
-        f'title: "김·바다고리풀속 및 블루카본 연구 주간 다이제스트 ({today_str})"\n'
+        f'title: "김·바다고리풀속 및 블루카본 연구 격주 다이제스트 ({today_str})"\n'
         f'date: "{today_str}"\n'
         f'version: "3.0"\n'
         f'total_papers: {len(processed_papers)}\n'
@@ -1252,7 +1252,7 @@ def run_pipeline() -> None:
 
     md_body = [
         frontmatter,
-        f"# 🌊 김/바다고리풀속 및 블루카본 연구 주간 매거진 ({today_str})\n",
+        f"# 🌊 김/바다고리풀속 및 블루카본 연구 격주 매거진 ({today_str})\n",
         f"> **발행일**: {today_str} | **총 수록 논문**: {len(processed_papers)}편 (초록 검증 완료) | **수집 소스**: {', '.join(sources_used)}  ",
         f"> **대상 생물군**: {', '.join(taxa_all_set) or 'Pyropia, Asparagopsis'}\n",
         "---\n",
@@ -1266,7 +1266,7 @@ def run_pipeline() -> None:
             continue
 
         md_body.append(f"## 🔬 SECTION {cat_no}: {cat_name_ko} ({cat_name_en})\n")
-        md_body.append(f"> 💡 **Weekly Research Briefing**: 본 섹션에서는 {cat_name_ko} 분야의 최신 연구 성과 {len(papers_in_cat)}편을 엄선하여 브리핑합니다.\n")
+        md_body.append(f"> 💡 **Research Briefing**: 본 섹션에서는 {cat_name_ko} 분야의 최신 연구 성과 {len(papers_in_cat)}편을 엄선하여 브리핑합니다.\n")
 
         for pidx, paper in enumerate(papers_in_cat, 1):
             lang_tag = "🇰🇷 국내" if paper.get("is_domestic") else "🌐 해외"
@@ -1289,7 +1289,7 @@ def run_pipeline() -> None:
             md_body.append("---\n")
 
     if processed_papers:
-        md_body.append("## 📊 이번 주 수록 논문 메타데이터 한눈에 보기\n")
+        md_body.append("## 📊 이번 호 수록 논문 메타데이터 한눈에 보기\n")
         md_body.append("| 헤드라인 | 생물군 | 섹션 | 소스 | 원문 링크 |")
         md_body.append("|:---|:---|:---|:---:|:---:|")
         for p in processed_papers[:35]:

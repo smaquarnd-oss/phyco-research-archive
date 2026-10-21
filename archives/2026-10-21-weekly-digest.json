@@ -1,0 +1,401 @@
+{
+  "date": "",
+  "articles": [
+    {
+      "headline": "김 품종 판별을 위한 저렴하고 간편한 다중 PCR 분석법 개발",
+      "title": "Development of a multiplex PCR assay for the authentication of six commercial",
+      "authors": "Noh E, Dong C, Park H, Jung H et al.",
+      "journal": "Food chemistry. Molecular sciences",
+      "url": "#",
+      "doi": "10.1016/j.fochms.2026.100458",
+      "year": "2026",
+      "taxa": [
+        "Pyropia"
+      ],
+      "category": "breeding_molecular_pathology",
+      "category_name": "육종 · 분자생물학 · 병해",
+      "thumbnail_url": "https://images.unsplash.com/photo-1563674407-b5de7db5ccb0?auto=format&fit=crop&w=800&q=80",
+      "takeaways": [
+        "전 세계 김 시장의 확대에 따라 경제적 동기를 가진 원료 혼입을 막고 종을 정확히 판별할 수 있는 범용적 분석 방법의 필요성이 대두되었습니다.",
+        "rbcL 유전자의 종 특이적 단일염기다형성을 타겟으로 한 다중 PCR 분석법은 1.5% 아가로스 겔 상에서 172~781 bp 크기의 계단형 밴드를 형성하며 10 ng/μL의 민감도를 보였습니다.",
+        "의도적 미스매치가 도입된 프라이머를 활용한 이 분석법은 복잡한 가공식품 매트릭스에서도 대상 종을 효과적으로 구별해 내어 상용 김 제품의 품질 관리에 활용될 수 있습니다."
+      ],
+      "implications": "일반 실험실에서도 고가의 장비 없이 54°C의 어닐링 온도 조건만으로 다수 품종의 김과 혼합 제품을 판별할 수 있어, 양식 현장과 유통 관리 기관에서 신속한 원산지 및 품종 검증 수단으로 즉시 도입할 수 있습니다.",
+      "abstract": "The global expansion of the Pyropia (laver) market requires reliable methods to authenticate species and prevent economically motivated adulteration (EMA). While automated molecular techniques exist, their reliance on specialized instrumentation limits routine application in standard laboratories. We hypothesized that pairing species-specific SNPs within the rbcL gene with mismatch-engineered primers enables the discrimination of closely related Pyropia species without advanced instrumentation. In this study, we developed a multiplex PCR assay targeting the rbcL gene to differentiate six Pyropia species (P. yezoensis, P. tenera, P. dentata, P. haitanensis, P. seriata, and P. suborbiculata). By analyzing 162 rbcL sequences, we identified conserved species-specific SNPs. We designed a primer set comprising six forward primers with intentional mismatches to improve specificity, paired with a single common reverse primer. The optimized assay (annealing temperature of 54 °C) generated a step-wise pattern of amplicons ranging from 172 to 781 bp, which were resolvable on a conventional 1.5% agarose gel. The assay demonstrated species specificity with no cross-reactivity and exhibited an analytical sensitivity of 10 ng/μL of genomic DNA. To validate the method, we tested 20 commercial laver products using a multi-point sampling strategy. The assay authenticated single-species compositions and identified multi-species blends. These results indicate that analyzing multiple regions per sheet is necessary to determine the true composition of commercial products. These findings support our hypothesis that mismatch-engineered multiplex PCR effectively discriminates target species in complex matrices, providing an accessible and practical tool for verifying composition during routine quality control.",
+      "source": "PubMed",
+      "is_domestic": false,
+      "tier": "core",
+      "lang": "en",
+      "is_ai_summary": true,
+      "summary_source": "gemini"
+    },
+    {
+      "headline": "해양 유산균 발효로 극대화된 방풍김의 장 건강 및 항염증 효능",
+      "title": "Marine-derived lactic acid bacteria fermentation enhances the bioactivity of Neopyropia haitanensis by improving intestinal homeostasis",
+      "authors": "Liu Z, Chen J, Xu J, Yi H et al.",
+      "journal": "Food research international (Ottawa, Ont.)",
+      "url": "#",
+      "doi": "10.1016/j.foodres.2026.120522",
+      "year": "2026",
+      "taxa": [
+        "Neopyropia",
+        "Pyropia"
+      ],
+      "category": "breeding_molecular_pathology",
+      "category_name": "육종 · 분자생물학 · 병해",
+      "thumbnail_url": "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=800&q=80",
+      "takeaways": [
+        "해조류 기반 식품의 기능성을 높이기 위해 해양 유래 젖산균 3종을 선별하여 방풍김의 발효 효과를 분석했습니다.",
+        "발효물은 대장염 마우스 모델에서 체중 감소와 혈변 등 증상을 완화하고, 혈청 IL-6를 낮추며 IL-10을 높이는 동시에 항산화 효소 활성을 개선했습니다.",
+        "대사체 분석 결과, 발효 과정에서 증가한 특정 생리활성 대사물들이 항산화 및 장 장벽 기능 회복과 강한 상관관계를 보였습니다."
+      ],
+      "implications": "현장 양식가와 가공 기업은 해양 유산균 발효 기술을 적용하여 항산화 및 장내 면역 조절 기능이 강화된 고부가가치 해조류 기반 건강기능식품 소재를 개발할 수 있습니다.",
+      "abstract": "This study investigated the functional fermentation of Neopyropia haitanensis using marine-derived lactic acid bacteria (LAB), aiming to develop effective strategies to improve the bioactivity and functionality of seaweed-based foods. Fifteen LAB strains were isolated from marine sources, among which three strains, namely Pediococcus pentosaceus HYZ2-1, Limosilactobacillus reuteri HYS1-1, and Ligilactobacillus salivarius HYD1-1 with superior fermentation performance, were selected. In vitro cellular assays indicated that the fermented products exhibited antioxidant, anti-inflammatory, and intestinal barrier-enhancing effects. Furthermore, in colitis mice, the fermented products alleviated symptoms such as weight loss, hematochezia, and colon shortening, and significantly reduced serum interleukin (IL)-6 levels while increasing IL-10 levels, compared with the unfermented samples. Colon tissues showed decreased malondialdehyde and increased superoxide dismutase and catalase activities. The gene expressions of tight junctions and mucin 2 were upregulated. Metabolomic analysis revealed consistent upregulation of specific bioactive metabolites across all fermented groups, and these metabolites were strongly correlated with the observed improvements in antioxidant capacity, immune modulation, and intestinal barrier integrity. Overall, this study demonstrates the functional advantages of marine-derived LAB in enhancing the bioactivity of N. haitanensis, providing new insights into the development of seaweed-based functional foods, especially for gut health.",
+      "source": "PubMed",
+      "is_domestic": false,
+      "tier": "core",
+      "lang": "en",
+      "is_ai_summary": true,
+      "summary_source": "gemini"
+    },
+    {
+      "headline": "김 단백질과 알긴산으로 동물성 지방을 완벽히 모사한 친환경 픽커링 에멀션 젤 개발",
+      "title": "Succinylated nori protein-alginate complex particles prepared using temperature-controlled ultrasonication for the formation of high internal phase Pickering emulsion gels as plant-based fat analogues",
+      "authors": "Si X, Li Z, Chen Y, Li B et al.",
+      "journal": "Ultrasonics sonochemistry",
+      "url": "#",
+      "doi": "10.1016/j.ultsonch.2026.108029",
+      "year": "2026",
+      "taxa": [
+        "Pyropia/Porphyra complex"
+      ],
+      "category": "breeding_molecular_pathology",
+      "category_name": "육종 · 분자생물학 · 병해",
+      "thumbnail_url": "https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=800&q=80",
+      "takeaways": [
+        "식물성 대체 지방 개발을 위해 숙신산화 김 단백질, 알긴산, 아마씨유를 활용한 고내상 픽커링 에멀션 젤을 제조했다.",
+        "초음파 처리 조건 450W·30분과 최적 비율 1:5에서 입자 크기가 23.08μm로 줄고 고체상의 우수한 점탄성과 유지 능력을 보였다.",
+        "개발된 소재는 돼지고기 지방과 유사한 열적 거동과 미세구조를 나타내며 육류 패티의 지방을 성공적으로 대체했다."
+      ],
+      "implications": "해조류 부산물과 식물성 오일을 결합해 실제 육류의 식감과 조직감을 구현한 대체 지방 소재를 상용화함으로써, 친환경 식품 가공 산업의 원료 다변화와 지속가능한 대체식품 시장 확대에 활용할 수 있다.",
+      "abstract": "In this study, succinylated nori protein (SNP), sodium alginate (SA), and flaxseed oil were used to develop novel high-internal-phase Pickering emulsion (HIPPE) gels with potential application as plant-based fat analogues. Stable composite particles were successfully fabricated through ultrasonication combined with temperature control. The ultrasonic treatment condition was identified as 450 W for 30 min, under which the Pickering particles exhibited the smallest particle size and superior emulsifying ability. The optimal formulation parameters were identified as an SNP-to-SA ratio of 1:5, an SNP-SA complex particle concentration of 3%, and an oil-phase fraction of 75%, which resulted in optimal oil retention and emulsion stability. Confocal laser scanning microscopy and cryo-scanning electron microscopy revealed that the SNP-based emulsion produced smaller droplets (23.08 ± 0.09 μm) and a more compact core-shell interfacial structure than the emulsion prepared with native nori protein. These structural improvements were associated with enhanced adsorption kinetics and wettability, with a contact angle approaching 90°, indicating optimal amphiphilicity. Rheological analysis further demonstrated that the emulsion exhibited more solid-like viscoelastic behavior, with a greater difference between G' and G″ than that prepared with native nori protein. Moreover, microscopic observations showed that the dense packing of lipid droplets within the gel network resembled the cellular architecture of animal fat tissue. The thermal behavior of the HIPPE gels in the range of 200-500 °C was similar to the two downward endothermic peaks observed for pork fat during cooking. Sensory and texture analyses of meat patties revealed that 25% and 50% fat substitution levels could closely mimic full-fat meat patties. Overall, the proposed material provides an environmentally friendly and healthy strategy for developing fat analogues from marine-derived protein resources and flaxseed oil, while mimicking animal fat tissue in terms of texture, microstructure, thermal behavior, and sensory properties.",
+      "source": "PubMed",
+      "is_domestic": false,
+      "tier": "core",
+      "lang": "en",
+      "is_ai_summary": true,
+      "summary_source": "gemini"
+    },
+    {
+      "headline": "김(Pyropia yezoensis) 포자체 발달을 조절하는 KNOX-HDAC2 복합체와 유전자 억제 메커니즘 규명",
+      "title": "KNOX-HDAC2 complex suppresses the CAND1 expression is involved in sporophytic development of Pyropia yezoensis",
+      "authors": "Yang X, Xu L, He H, Zeb A et al.",
+      "journal": "Plant physiology and biochemistry : PPB",
+      "url": "#",
+      "doi": "10.1016/j.plaphy.2026.111860",
+      "year": "2026",
+      "taxa": [
+        "Pyropia"
+      ],
+      "category": "thallus_lifecycle_conchocelis",
+      "category_name": "엽체 생리 · 생활사 · 사상체",
+      "thumbnail_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
+      "takeaways": [
+        "홍조류 방사륵(Pyropia yezoensis)에서 세대교번과 세포 운명을 결정하는 하등 광합성 진핵생물의 조절 기작은 그동안 명확히 밝혀지지 않았다.",
+        "AP-MS와 DAP-seq 분석 결과, PyKNOX는 히스톤 탈아세틸화효소인 PyHDAC2와 복합체를 형성해 'TGAG' 모티프를 인식하고 유비퀴틴-프로테아세마 경로의 핵심 인자인 PyCAND1 프로모터에 직접 결합하여 발현을 억제함을 확인했다.",
+        "이들 복합체는 이배체 사상체와 각포자낭 단계에서 강하게 발현되어 PyCAND1과 강한 음의 상관관계를 보이며 홍조류 생활사 전환의 유전적 조절 네트워크를 입증했다."
+      ],
+      "implications": "현장 양식가와 산업계는 이번에 밝혀진 유전자 발현 조절 및 사상체 발달 메커니즘을 김 종자 생산 기술의 효율화와 우량 품종 육성 공정 설계에 활용할 수 있다.",
+      "abstract": "The alternation of generations is a critical developmental process in plants. Knotted1-like homeobox (KNOX) transcription factors are known to regulate cell fate and alternation of generations in land plants, while their regulatory mechanisms in basal photosynthetic eukaryotes remain elusive. Here, we characterized the PyKNOX, a highly conserved homeodomain transcription factor from the red algae Pyropia yezoensis and demonstrated its essential role in maintaining the sporophyte phase. Using affinity purification-mass spectrometry (AP-MS) alongside in vitro and in vivo interaction assays, we revealed that PyKNOX physically recruits the histone deacetylase PyHDAC2 to assemble a transcriptional repressor complex. Genome-wide binding landscape analysis via DNA affinity purification sequencing (DAP-seq) identified a conserved \"TGAG\" core motif and highlighted a significant enrichment of target genes within the Skp1-Cullin1-F-box (SCF) ubiquitin ligase complex. Further yeast one-hybrid (Y1H), EMAS and molecular docking assays unequivocally confirmed that PyKNOX directly targets and binds to the promoter of PyCAND1, a key exchange factor in the ubiquitin-proteasome pathway. Spatiotemporal expression profiling demonstrated that the PyKNOX-PyHDAC2 complex is highly upregulated during the diploid sporophyte stages (free-living filaments and conchosporangial branches), showing a strong negative correlation with the PyCAND1 expression. Together, our findings propose a coordinated epigenetic and transcriptional network where the PyKNOX-PyHDAC2 complex suppresses expression of the SCF component CAND1 in sporophytic development of P.yezoensis. This study provides evolutionary insights into the genetic cascades governing life cycle transitions in red algae P. yezoensis, and offers theoretical guidance for the future nori seedling industry.",
+      "source": "PubMed",
+      "is_domestic": false,
+      "tier": "core",
+      "lang": "en",
+      "is_ai_summary": true,
+      "summary_source": "gemini"
+    },
+    {
+      "headline": "초음파 병행 乳산균 발효로 방사무늬김의 비린내를 저감하는 메커니즘 규명",
+      "title": "Mechanistic insights into deodorization of Pyropia haitanensis by ultrasound-assisted Lactiplantibacillus plantarum fermentation: Linking key odorants with amino acid metabolism",
+      "authors": "Wang D, Zhang Y, Xu X, Wei B et al.",
+      "journal": "Food chemistry",
+      "url": "#",
+      "doi": "10.1016/j.foodchem.2026.151510",
+      "year": "2026",
+      "taxa": [
+        "Pyropia"
+      ],
+      "category": "thallus_lifecycle_conchocelis",
+      "category_name": "엽체 생리 · 생활사 · 사상체",
+      "thumbnail_url": "https://images.unsplash.com/photo-1614728894747-a83421789f10?auto=format&fit=crop&w=800&q=80",
+      "takeaways": [
+        "방사무늬김의 특유한 비린내는 소비자의 수용성과 산업적 활용을 제한하는 주요 요인으로 작용해왔습니다.",
+        "초음파 보조 발효 과정에서 아미노산 대사가 유의미하게 활성화되었으며, 특히 L-3-페닐젖산이 17.61배로 가장 크게 증가했습니다.",
+        "방향족 아미노산 대사 촉진은 불쾌한 냄새를 마스킹하고 풍미 대사물질의 축적을 유도하는 핵심 기전으로 작용합니다."
+      ],
+      "implications": "현장 양식가와 가공 기업은 초음파 기반의 유산균 발효 공정을 도입하여 김 가공품의 관능적 결함을 극복하고 고부가가치 상품군 개발을 추진할 수 있습니다.",
+      "abstract": "The fishy odor of Pyropia haitanensis limits its sensory acceptance and industrial utilization. In this study, ultrasound-assisted fermentation (UAF) combined with Lactiplantibacillus plantarum was employed to investigate the molecular mechanism underlying deodorization of P. haitanensis. Gas chromatography-olfactometry-mass spectrometry (GC-O-MS) identified nonanal, 1-octen-3-ol, and trans-β-ionone as the major contributors to the fishy odor. UAF effectively reduced the fishy odor intensity. Furthermore, gas chromatography-tandem mass spectrometry (GC-MS/MS) combined with flavor omission and recombination experiments identified six key flavor compounds associated with odor reduction. Metabolomic analysis revealed significant enrichment of amino acid metabolism during UAF, with L-3-phenyllactic acid showing the greatest increase (17.61-fold). Correlation analysis and metabolite addition experiments demonstrated that UAF activated aromatic amino acid metabolism, promoted the accumulation of pleasant flavor metabolites, and masked undesirable odors. Overall, this study provides new mechanistic insights into UAF-mediated deodorization and supports the high-value utilization of P. haitanensis.",
+      "source": "PubMed",
+      "is_domestic": false,
+      "tier": "core",
+      "lang": "en",
+      "is_ai_summary": true,
+      "summary_source": "gemini"
+    },
+    {
+      "headline": "김 로스팅 과정 중 대사물질 변화와 항산화 능력의 상관관계 규명",
+      "title": "Roasting-induced changes in the metabolite profile of laver (",
+      "authors": "Song S, Chae S, Cho S, Kim H et al.",
+      "journal": "Food chemistry: X",
+      "url": "#",
+      "doi": "10.1016/j.fochx.2026.104450",
+      "year": "2026",
+      "taxa": [
+        "Neopyropia",
+        "Pyropia"
+      ],
+      "category": "thallus_lifecycle_conchocelis",
+      "category_name": "엽체 생리 · 생활사 · 사상체",
+      "thumbnail_url": "https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=800&q=80",
+      "takeaways": [
+        "방사무늬김(Neopyropia yezoensis)의 로스팅 온도와 시간에 따른 비휘발성 대사물질의 변화를 분석하고자 본 연구가 수행되었습니다.",
+        "열처리가 강화될수록 마이코스포린 유사 아미노산(MAAs)은 초기값의 0.08배로 감소한 반면, 탈수된 MAAs는 1.22~13.61배 증가했고 ABTS와 FRAP 항산화 활성도 각각 최대 4.55배, 4.18배 높아졌습니다.",
+        "탈수된 MAAs의 확장된 공액 구조와 전자 비국소화가 라디칼 안정화를 촉진하여 항산화 활성을 강하게 유도하는 것으로 확인되었습니다."
+      ],
+      "implications": "현장 가공 공정에서는 항산화 효능을 극대화하기 위해 탈수 MAAs 생성 조건을 타겟으로 한 정밀한 로스팅 온도 및 시간 제어 프로토콜을 도입할 필요가 있습니다.",
+      "abstract": "This study investigated non-volatile metabolites in laver (Neopyropia yezoensis) roasted under different temperature/time conditions. Ultra-performance liquid chromatography-quadrupole time-of-flight mass spectrometry-based metabolomics identified 69 metabolites, including mycosporine-like amino acids (MAAs) and their dehydrated derivatives. Multivariate analysis showed that dehydrated MAAs were among the key roasting-responsive metabolites. As roasting intensity increased, MAAs decreased to 0.08-fold of the initial value, while dehydrated MAAs increased 1.22- to 13.61-fold. Antioxidant activity increased, with ABTS+ radical scavenging activity and FRAP exhibiting maximum increases of 4.55- and 4.18-fold, respectively. Pearson's correlation analysis revealed strong positive associations (r > 0.93) between dehydrated MAAs and antioxidant activity. This pattern is consistent with the extended conjugation and enhanced electron delocalization of dehydrated MAAs, which may facilitate radical stabilization. These findings provide insight into metabolite and antioxidant activity changes during roasting and offer fundamental data for optimizing roasting conditions.",
+      "source": "PubMed",
+      "is_domestic": false,
+      "tier": "core",
+      "lang": "en",
+      "is_ai_summary": true,
+      "summary_source": "gemini"
+    },
+    {
+      "headline": "침입 해조류 추출물을 활용한 토마토 역병 방제 및 면역 강화",
+      "title": "From sea to farm: Repurposing invasive macroalgae into biocidal and defense-enhancing tools against tomato late blight (Phytophthora infestans)",
+      "authors": "Laureano G, Fonseca B, Carreiras J, Felix C et al.",
+      "journal": "Plant science : an international journal of experimental plant biology",
+      "url": "#",
+      "doi": "10.1016/j.plantsci.2026.113445",
+      "year": "2026",
+      "taxa": [
+        "Asparagopsis"
+      ],
+      "category": "thallus_lifecycle_conchocelis",
+      "category_name": "엽체 생리 · 생활사 · 사상체",
+      "thumbnail_url": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
+      "takeaways": [
+        "저비용 친환경 농업 자재 확보와 생태계 교란 생물 문제 해결을 동시에 달성하기 위해 아스파라곱시스 아마타와 사가숨 무티쿰 등 침입 해조류의 농업적 활용 가능성에 주목했다.",
+        "토마토에 조추출물을 처리한 결과 광화학 에너지 분포, 막 지질 조성, 산화환원 균형 및 이차 대사 과정이 조절되어 식물 방어력이 향상되었으며, 특히 아스파라곱시스 아마타가 더욱 강력한 반응을 유도했다.",
+        "해조류 추출물은 병원균의 활동을 억제하는 동시에 기주 식물의 방어 체계를 활성화함으로써 감염 기간 동안 식물의 회복력을 높여 지속 가능한 생물학적 방제제로 기능할 수 있다."
+      ],
+      "implications": "해양 생태계를 위협하는 침입 해조류를 수거해 고부가가치 농업용 방제 자재로 업사이클링함으로써, 폐기물 처리 비용 절감과 친환경 농약 대체 효과를 동시에 거두는 현장 적용형 자원 순환 모델을 구축할 수 있다.",
+      "abstract": "Marine seaweeds are increasingly recognized as sources of bioactive compounds with potential applications in sustainable agriculture, including as biocontrol agents. The selection of invasive species such as Asparagopsis armata and Sargassum muticum offers a dual benefit: obtaining bioactive metabolites from a low-cost resource while simultaneously mitigating their ecological impacts using this harmful biomass. In the present study, crude extracts from A. armata and S. muticum were applied to tomato plants and were effective as biocontrol agents against Phytophthora infestans. Treatments modulated key physiological and metabolic processes, including photochemical energy distribution, membrane lipid composition, redox balance, and secondary metabolism, effectively eliciting plants for enhanced defense. Asparagopsis armata elicited particularly strong responses, whereas S. muticum induced moderate but consistent effects across multiple pathways. These changes were correlated with the pathogen inoculation outcome and improved plant resilience during infection. These findings provide physiological insights into how these macroalgae can suppress pathogen activity while enhancing host defenses, highlighting their potential as sustainable biocontrol agents. Exploiting A. armata and S. muticum in this context presents a resource-efficient biocontrol strategy that links plant adjuvant defense enhancer effect with the valorization of underexploited marine biomass, reinforcing their potential within sustainable agricultural systems.",
+      "source": "PubMed",
+      "is_domestic": false,
+      "tier": "core",
+      "lang": "en",
+      "is_ai_summary": true,
+      "summary_source": "gemini"
+    },
+    {
+      "headline": "루굴롭테릭스 오카무레 정착 초기, 이동성 저서동물 군집 재편의 실체",
+      "title": "Beyond species loss: early epifaunal reorganization following Rugulopteryx okamurae establishment in a successive-invasion context",
+      "authors": "Florido M, Megina C, Navarro-Barranco C, Guerra-García J et al.",
+      "journal": "Marine environmental research",
+      "url": "#",
+      "doi": "10.1016/j.marenvres.2026.108461",
+      "year": "2026",
+      "taxa": [
+        "Asparagopsis"
+      ],
+      "category": "thallus_lifecycle_conchocelis",
+      "category_name": "엽체 생리 · 생활사 · 사상체",
+      "thumbnail_url": "https://images.unsplash.com/photo-1559827260-dc66d52bef19?auto=format&fit=crop&w=800&q=80",
+      "takeaways": [
+        "북태평양 갈조류 루굴롭테릭스의 급격한 확산이 지중해와 대북대양 저서생태계에 미치는 생태적 연쇄 효과를 분석하고자 스페인 알보란 해역에서 시공간적 평가를 수행했습니다.",
+        "정착 2년 차 초기 단계에서 루굴롭테릭스 군집은 토종 할로프테리스 스코파리아보다는 기존에 정착한 침입종 아스파라곱시스 탁시포르미스와 유사한 양상을 보였으나, 뚜렷한 종다양성이나 밀도 증가로는 이어지지 않았습니다.",
+        "초기 침입 단계에서 나타난 이러한 저서동물 군집의 재편은 종 및 서식지 의존적으로 발생하며, 광범위한 분류학적 영향보다 선행될 수 있음을 시사합니다."
+      ],
+      "implications": "현장 관리자와 정책 담당자는 신종 해양 침입종의 생태계 평가 시 단순 종 손실 분석을 넘어, 이미 정착한 선행 침입종과의 생태적 상호작용 및 서식지 특성을 고려한 종 단위의 장기 모니터링 전략을 수립해야 합니다.",
+      "abstract": "Marine invasions are rapidly transforming coastal ecosystems, while their ecological impacts remain difficult to predict under accelerating scenarios of successive invasions. This is particularly critical for the North Pacific phaeophycean Rugulopteryx okamurae, whose unprecedented spread is transforming Mediterranean and North Atlantic benthic communities through poorly understood cascading ecological effects. Here, we provide the first spatio-temporal assessment of how R. okamurae restructures mobile epifaunal communities. We used a spatially replicated BACI design across invaded and non-invaded stations in the Alboran Sea (southern Spain), with samplings conducted before (2014) and after (2021) the establishment of R. okamurae. We disentangled the effects associated with the arrival of R. okamurae from its role as a novel habitat provider. To characterize these invasion effects, we used the native Halopteris scoparia and the invasive Asparagopsis taxiformis as reference habitat-forming species. Two years after its arrival, the invasion of R. okamurae was still at an incipient stage. Invasion-related responses were limited to increased richness in A. taxiformis and several habitat- and species-specific changes. Assemblages on R. okamurae more closely resembled those associated with the pre-established invader A. taxiformis than those of the native H. scoparia, while showing low habitat affinity and no consistent gains in richness or density. These patterns, detectable because sampling captured an early invasion stage, suggest that epifaunal reorganization is species- and habitat-dependent and may precede broader taxonomic impacts. This highlights the importance of species-level analyses and previous invasion history when assessing the ecological impacts of newly established habitat-forming invaders.",
+      "source": "PubMed",
+      "is_domestic": false,
+      "tier": "core",
+      "lang": "en",
+      "is_ai_summary": true,
+      "summary_source": "gemini"
+    },
+    {
+      "headline": "메탄 저감 제제에 따른 반추위 미생물 군집의 DNA·RNA·vDNA 비교 분석",
+      "title": "Comparative metataxonomic analysis of total, viable, and active rumen microbial communities under methane-mitigated conditions",
+      "authors": "Lee W, Kim G, Li W, Park T",
+      "journal": "Environmental microbiome",
+      "url": "#",
+      "doi": "10.1186/s40793-026-00963-y",
+      "year": "2026",
+      "taxa": [
+        "Asparagopsis"
+      ],
+      "category": "thallus_lifecycle_conchocelis",
+      "category_name": "엽체 생리 · 생활사 · 사상체",
+      "thumbnail_url": "https://images.unsplash.com/photo-1509563768818-dafe9ad27b4e?auto=format&fit=crop&w=800&q=80",
+      "takeaways": [
+        "반추위 미생물 연구 시 사세 세포의 신호를 배제하고 생존성과 활성을 정확히 평가하기 위해 총 DNA, PMA 처리 DNA, RNA 기반의 분석법을 비교했습니다.",
+        "모넨신(MON) 처리가 가장 뚜렷한 발효 및 미생물 조성 변화를 유도한 반면, RNA 프로파일은 가장 낮은 알파 다양성을 보였고 파라박테로이데스는 vDNA에서 상대적 풍부도가 유의하게 높았습니다.",
+        "PMA 처리 DNA는 손상된 세포의 신호를 줄이고 기존 DNA와 RNA에서 포착되지 않던 막 무결성 세포군을 드러내어 RNA 분석의 기술적 한계를 보완할 수 있습니다."
+      ],
+      "implications": "현장 연구자들은 RNA 추출이 까다로운 반추위 샘플 분석 시 PMA 처리 DNA(vDNA)를 대안적 방법으로 활용하여 생존 미생물 군집을 더욱 신뢰성 있게 평가할 수 있습니다.",
+      "abstract": "[BACKGROUND] The rumen microbiota play a central role in digestion and methane production, thereby influencing ruminant productivity. Evaluating methane mitigation strategies requires consideration of both microbial viability and activity. DNA-based methods may include signals from dead or damaged cells, whereas RNA-based approaches may underrepresent viable populations with low transcriptional activity. Propidium monoazide (PMA) reduces DNA signals from membrane-compromised cells, providing an indirect, membrane-integrity-based assessment of microbial viability. This study compared taxonomic and predicted functional profiles obtained by 16S rRNA gene amplicon sequencing of total DNA (tDNA), PMA-treated DNA (vDNA), and RNA-derived cDNA (RNA) from rumen samples subjected to three in vitro methane mitigation treatments: 3-nitrooxypropanol (NOP), monensin (MON), and Asparagopsis sp. (ASP).\n\n[RESULTS] MON treatment induced the most pronounced changes in fermentation parameters and microbial composition, whereas the NOP and ASP groups exhibited similar fermentation outcomes. RNA-derived profiles exhibited the lowest alpha diversity, with vDNA profiles falling between those of RNA and tDNA. Procrustes analysis revealed metric-dependent similarities among sample types; Bray-Curtis distances showed closer alignment between tDNA and RNA, whereas Jaccard distances showed greater similarity between vDNA and RNA. Parabacteroides exhibited significantly higher relative abundance in vDNA than in tDNA or RNA. Notably, Succiniclasticum showed opposing correlations with the acetate-to-propionate ratio between tDNA and RNA under MON treatment, whereas no significant correlation was detected in vDNA. Differential analysis of PICRUSt2-predicted methanogenesis-related KEGG modules revealed sample type- and treatment-specific patterns.\n\n[CONCLUSIONS] PMA-treated DNA provided a distinct perspective on the rumen microbiota by reducing signals from membrane-compromised cells and revealing populations that were differently represented in tDNA and RNA-derived profiles, including membrane-intact populations with low RNA representation. Thus, vDNA may serve as a practical additional approach when RNA analysis is technically constrained.",
+      "source": "PubMed",
+      "is_domestic": false,
+      "tier": "core",
+      "lang": "en",
+      "is_ai_summary": true,
+      "summary_source": "gemini"
+    },
+    {
+      "headline": "상업용 비료를 활용한 김(Pyropia) 사상체 인공 기질 배양 및 영양염 흡수 효율 분석",
+      "title": "Crecimiento in vitro de Conchocelis, Pyropia sp. sobre sustrato artificial con diferentes fertilizantes comerciales",
+      "authors": "GERONIMO MALDONADO G, ADVINCULA ZEBALLOS O, BALDEON W",
+      "journal": "Manglar",
+      "url": "https://doi.org/10.57188/manglar.2022.047",
+      "doi": "10.57188/manglar.2022.047",
+      "year": "2022",
+      "taxa": [
+        "Pyropia"
+      ],
+      "category": "thallus_lifecycle_conchocelis",
+      "category_name": "엽체 생리 · 생활사 · 사상체",
+      "thumbnail_url": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
+      "takeaways": [
+        "김 초기 생활사인 사상체 단계의 최적 양식 기술 정보가 부족한 상황에서 상업용 비료가 생장에 미치는 영향을 파악하고자 했다.",
+        "라몰리나 수경액 처리 시 사상체 면적이 4.15 mm2로 컸고, 바이폴란 비료는 63.09%의 더 높은 기질 피복률을 보였으며 최대 질산염 및 인산염 흡수량이 각각 확인되었다.",
+        "상업용 비료를 이용한 인공 기질에서의 사상체 체외 배양 가능성이 입증되어 페루 내 지속 가능한 김 양식 산업의 기반을 마련했다."
+      ],
+      "implications": "현장 양식가와 정책 담당자는 고가의 전용 배양액 대신 라몰리나 수경액이나 바이폴란 같은 상업용 비료를 현장 여건(면적 증대 vs 피복률 제고)에 맞게 선택하여 김 종자 생산 원가를 절감하고 인프라를 구축할 수 있다.",
+      "abstract": "Aquaculture industries have grown recently, but there is still a lack of information on culture techniques for the early life stages of Pyropia sp. (Rhodophyta). This research aimed to determine the optimum concentration of Bayfolan® brand commercial sources of essential nutrients and La Molina® A and B hydroponic solution, for the growth and development of the \"conchocelis\" stage of Pyropia. The phase was investigated under conditions of temperature 15.03 ±0.31 °C, salinity 36.05 ±0.23 PSU, electrical conductivity 55.95 ± 0.14 mS/cm, irradiance 15.93 ±0.03 µmol m-2 s-1 and subjected to different treatments and control with Bayfolan® fertilizers and hydroponic solution A and B La Molina. Likewise, the results obtained were the maximum Nitrate uptake with Bayfolan® fertilizer and La Molina Hydroponic Solution with 0.1465 mM and 1.369 mM and Phosphate presenting a maximum uptake 0.0312 mM and 0.053 mM, respectively. The experiments were evaluated in a LED germination chamber (TE-4020 Tecnal) programmed for a time interval of 800 hours of settlement of Cigotospora for its growth to conchocelis; in addition, the comparison of means was performed by a Tukey test with a value of p ≥ 0.05, obtaining a growth on the substrate of 4.15 mm2 with the La Molina solution and 1.54 mm2 with the Bayfolan® Solution, but with different coverage of conchocelis on the substrate 49.75% y 63.09%. Leaving as evidence that the growth of \"Conchocelis\" is cultivated in vitro with commercial fertilizers, a strategy for a sustainable industry of \"nori\" in Peru.",
+      "source": "Crossref",
+      "is_domestic": false,
+      "tier": "core",
+      "lang": "en",
+      "is_ai_summary": true,
+      "summary_source": "gemini"
+    },
+    {
+      "headline": "방사무늬돌김 녹색 돌연변이 및 이형접합체 사상체의 유리 아미노산 함량 분석",
+      "title": "Free amino acid contents of the gametophytic blades from the green mutant conchocelis and the heterozygous conchocelis in Porphyra yezoensis Ueda (Bangiales, Rhodophyta)",
+      "authors": "Niwa K, Furuita H, Aruga Y",
+      "journal": "Journal of Applied Phycology",
+      "url": "https://doi.org/10.1023/a:1026087316190",
+      "doi": "10.1023/a:1026087316190",
+      "year": "2003",
+      "taxa": [
+        "Porphyra"
+      ],
+      "category": "thallus_lifecycle_conchocelis",
+      "category_name": "엽체 생리 · 생활사 · 사상체",
+      "thumbnail_url": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
+      "takeaways": [
+        "방사무늬돌김(Porphyra yezoensis)의 녹색 돌연변이 사상체와 이형접합체 사상체로부터 유래한 엽체의 유리 아미노산 함량을 비교하여 생화학적 특성을 파악하고자 했다.",
+        "돌연변이 및 이형접합체 사상체에서 유래한 엽체들의 유리 아미노산 조성과 함량에서 뚜렷한 차이가 관찰되었다.",
+        "이러한 아미노산 함량의 차이는 사상체의 유전적 변이가 엽체의 대사 산물과 품질 특성에 직접적인 영향을 미친다는 것을 시사한다."
+      ],
+      "implications": "김 양식 현장에서는 품종 개량 시 유전적 변이가 맛과 영양 성분의 지표인 아미노산 조성에 미치는 영향을 면밀히 평가해야 하며, 이를 활용한 고품질 품종 선발 전략을 수립할 필요가 있습니다.",
+      "abstract": "관련 학술 문헌 제목: Free amino acid contents of the gametophytic blades from the green mutant conchocelis and the heterozygous conchocelis in Porphyra yezoensis Ueda (Bangiales, Rhodophyta). 자세한 연구 성과는 원문 링크를 참고하십시오.",
+      "source": "Crossref",
+      "is_domestic": false,
+      "tier": "core",
+      "lang": "en",
+      "is_ai_summary": true,
+      "summary_source": "gemini"
+    },
+    {
+      "headline": "노화 미세플라스틱이 김의 광합성 및 대사에 미치는 영향",
+      "title": "Aged Buoy-derived Microplastics Alter Photosynthetic Performance and Metabolic Regulation in Pyropia yezoensis without Short-term Growth Inhibition",
+      "authors": "Feng Z, Duan Y, Bai B, Wei X et al.",
+      "journal": "Environmental pollution (Barking, Essex : 1987)",
+      "url": "#",
+      "doi": "10.1016/j.envpol.2026.129370",
+      "year": "2026",
+      "taxa": [
+        "Pyropia"
+      ],
+      "category": "smart_aquaculture_mass_culture",
+      "category_name": "스마트 양식 및 대량 배양 기술",
+      "thumbnail_url": "https://images.unsplash.com/photo-1608408891571-89c4aa18ef7c?auto=format&fit=crop&w=800&q=80",
+      "takeaways": [
+        "양식장 부이 유래 미세플라스틱이 해조류 양식 구역에 미치는 생태적 영향을 파악하고자 김을 대상으로 연구를 진행했습니다.",
+        "0.1~10 mg/L 농도의 노화된 PVC 및 PET에 7일간 노출된 김은 단기적 성장은 저해되지 않았으나, PVC는 지질 과산화와 탄수화물 고갈을, PET는 단백질 축적과 항산화 반응을 유발했습니다.",
+        "두 미세플라스틱 폴리머는 김에게 서로 다른 아교생리적 및 대사적 변화를 일으키므로, 향후 생태계 위험성 평가 시 고분자 종류와 노화 상태를 반드시 고려해야 합니다."
+      ],
+      "implications": "해양 양식 현장에서는 플라스틱 부이의 노화로 인한 미세플라스틱 오염이 김의 성장에 즉각적인 타격을 주지 않더라도 대사계와 항산화 시스템에 잠재적 교란을 일으키므로, 양식 기자재의 친환경 소재 대체 및 관리 기준 마련이 시급합니다.",
+      "abstract": "Plastic aquaculture equipment can release microplastics into seaweed mariculture zones, yet the effects of these particles on cultivated macroalgae remain poorly understood. In this study, Pyropia yezoensis thalli were exposed to field-aged buoy-derived polyvinyl chloride (PVC) and polyethylene terephthalate (PET) microplastics at 0.1, 1, and 10 mg/L for 7 d. Relative growth rate was not significantly affected, whereas other sublethal endpoints showed polymer-specific changes. PVC exposure was associated with stronger lipid peroxidation, carbohydrate depletion at high concentration, and increasing integrated stress. PET exposure mainly induced protein accumulation and peroxidase-related antioxidant responses, with the highest integrated deviation occurring at the lowest concentration. Metabolomic profiling further supported these physiological patterns. PVC-related metabolic changes were mainly associated with antioxidant regulation, lipid metabolism, and pigment-related pathways, consistent with membrane oxidative damage and phycobiliprotein disturbance. PET-related changes were more closely linked to protein synthesis, transport regulation, and cofactor-dependent antioxidant processes. Overall, aged PVC and PET microplastics induced distinct sublethal responses in P. yezoensis, highlighting the need to consider polymer identity, aging status, and combined biomarker-metabolomic endpoints in ecological risk assessment of seaweed mariculture systems.",
+      "source": "PubMed",
+      "is_domestic": false,
+      "tier": "core",
+      "lang": "en",
+      "is_ai_summary": true,
+      "summary_source": "gemini"
+    },
+    {
+      "headline": "해조류 펩타이드의 생리활성과 지속가능성, 그리고 산업적 한계",
+      "title": "Navigating the potential of algal peptides: health effects, market applications, and scientific challenges",
+      "authors": "Khaliq M, Noor Z, Moazzam M, Saeed F et al.",
+      "journal": "Annals of medicine",
+      "url": "#",
+      "doi": "10.1080/07853890.2026.2637282",
+      "year": "2026",
+      "taxa": [
+        "Neopyropia",
+        "Pyropia"
+      ],
+      "category": "blue_carbon_feed_methane",
+      "category_name": "블루카본 및 산업적 응용",
+      "thumbnail_url": "https://images.unsplash.com/photo-1498084393753-b411b2d26b34?auto=format&fit=crop&w=800&q=80",
+      "takeaways": [
+        "전통 단백질을 대체할 친환경 기능성 소재로서 해조류 유래 생리활성 펩타이드의 영양학적 가치와 건강 증진 효과를 종합적으로 평가하고자 문헌 조사를 수행했습니다.",
+        "Limnospira와 Neopyropia 등 다양한 조류에서 추출한 펩타이드는 효소 저해를 통한 혈압 및 대사 조절, 항산화·항염증 효과를 보였으며, 제한적인 인체 시험에서 혈압과 혈당 등 대사 지표의 유의미한 개선이 관찰되었습니다.",
+        "해조류 펩타이드는 지속가능한 영양 공급원으로 주목받으나, 복잡한 공정 비용과 불확실한 생체 이용률로 인해 임상 적용과 상용화에 한계가 있어 표준화된 생산과 추가 임상 연구가 필수적입니다."
+      ],
+      "implications": "현장 양식가와 산업계는 에너지 집약적인 후처리 공정을 개선하고 표준화된 생산 체계를 구축해야 하며, 정책 담당자는 명확한 생체 이용률 검증과 대규모 인체 시험을 뒷받침할 규제 및 지원 방안을 마련해야 합니다.",
+      "abstract": "[INTRODUCTION] Algae-derived bioactive peptides are gaining recognition as functional ingredients offering health benefits and sustainability advantages over conventional proteins. This review aimed to evaluate the current evidence on algal peptides, focusing on their nutritional content, mechanistic actions, health effects, potential for sustainability, and translational challenges.\n\n[MATERIALS AND METHODS] A comprehensive literature search was conducted across PubMed, Scopus, ScienceDirect, Springer, Elsevier, and Google Scholar. Peer-reviewed studies reporting bioactive peptides derived from microalgae, macroalgae, or Cyanophyceae were included. In vitro, animal, and human intervention studies evaluating molecular mechanisms, metabolic outcomes, or clinical relevance were considered.\n\n[RESULTS] Available evidence shows that algal peptides exert multifunctional bioactivities, including inhibition of angiotensin-converting enzyme and renin, antioxidant and anti-inflammatory effects, modulation of glucose metabolism via α-amylase, α-glucosidase, and DPP-IV inhibition, and regulation of lipid metabolism and adipogenesis. Frequently studied sources included Limnospira, Chlorella, Auxenochlorella, Nannochloropsis, Undaria, Palmaria, Ulva, and Neopyropia. Limited human trials suggest modest but clinically relevant improvements in blood pressure, glycemic control, lipid profiles, and body-weight-related outcomes, primarily using whole algal biomass or extracts. Life-cycle assessments highlight favorable land-use efficiency and carbon sequestration potential, although economic feasibility is constrained by energy-intensive downstream processing.\n\n[CONCLUSION] Algal-derived peptides demonstrate promising health-promoting effects and align with sustainable nutrition goals. However, their clinical translation is limited by variability in peptide characterization, uncertain bioavailability, and lack of robust human trials. Standardized production methods, improved delivery strategies, comprehensive safety assessments, and well-designed clinical studies are essential to support their application in functional foods and nutraceuticals.",
+      "source": "PubMed",
+      "is_domestic": false,
+      "tier": "core",
+      "lang": "en",
+      "is_ai_summary": true,
+      "summary_source": "gemini"
+    },
+    {
+      "headline": "홍조류 유래 화장품 성분 60종에 대한 안전성 평가 결과",
+      "title": "Safety Assessment of Red Algae-Derived Ingredients as Used in Cosmetics",
+      "authors": "Ferguson P, Bergfeld W, Belsito D, Cohen D et al.",
+      "journal": "International journal of toxicology",
+      "url": "#",
+      "doi": "10.1177/10915818261474837",
+      "year": "2026",
+      "taxa": [
+        "Pyropia/Porphyra complex"
+      ],
+      "category": "related_research",
+      "category_name": "연관 연구",
+      "thumbnail_url": "https://images.unsplash.com/photo-1552728089-57bdde30beb3?auto=format&fit=crop&w=800&q=80",
+      "takeaways": [
+        "국제 화장품 성분 사전(Dictionary)에 등록된 60종의 홍조류 유래 피부 컨디셔닝 성분을 대상으로 전문가 패널이 안전성을 평가했습니다.",
+        "평가 결과 16개 성분은 현재의 사용 관행과 농도에서 안전한 것으로 판명되었으나, 비소와 중금속 등의 불순물 관리가 강조되었습니다.",
+        "나머지 44개 성분에 대해서는 화장품 제형 내 사용 안전성을 판단하기에 가용 데이터가 불충분하다는 결론이 내려졌습니다."
+      ],
+      "implications": "관련 업계는 비소나 중금속 같은 잔류 불순물을 통제하기 위해 우수제조관리기준(GMP)을 철저히 준수해야 하며, 데이터가 부족한 44개 성분에 대해서는 추가적인 안전성 입증 자료를 확보해야 합니다.",
+      "abstract": "The Expert Panel for Cosmetic Ingredient Safety (Panel) assessed the safety of red algae-derived ingredients. Sixty red algae-derived ingredients were found in the International Cosmetic Ingredient Dictionary (Dictionary); however, several of these ingredients may be equivalent according to accepted scientific names. These ingredients are mostly reported to function in cosmetics as skin-conditioning agents. Impurities, particularly arsenic, heavy metals, and pesticides, may be present in these ingredients; industry should continue to use good manufacturing practices to monitor and limit these possible impurities. The Panel considered the available data and concluded that 16 red algae-derived ingredients are safe in cosmetics in the present practices of use and concentration described in this safety assessment. The Panel also concluded that the data are insufficient to make a determination of safety that the remaining 44 ingredients are safe under the intended conditions of use in cosmetic formulations.",
+      "source": "PubMed",
+      "is_domestic": false,
+      "tier": "related",
+      "lang": "en",
+      "is_ai_summary": true,
+      "summary_source": "gemini"
+    }
+  ],
+  "resummarized": true
+}
