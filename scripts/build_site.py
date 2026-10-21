@@ -49,6 +49,10 @@ DEFAULT_INSIGHTS = {
         "title": "바다고리풀 브로모포름 메탄 감축 실증과 RDOC 기반 블루카본 탄소 격리 플럭스 표준화",
         "content": "블루카본 및 산업 응용 분야는 Asparagopsis taxiformis의 장기 급여를 통한 반추위 장내 메탄 70~80% 억제 효과와 조직 내 브로모포름 잔류 안전성 검증이 핵심 성과로 보고되었습니다. 아울러 대형 홍조류의 연간 침적 불용성 유기탄소(RDOC/POC)를 탄소배출권(mCDR)으로 공인받기 위한 정량적 방법론 연구가 급물살을 타고 있습니다."
     },
+    "related_research": {
+        "title": "김·바다고리풀 밖으로 넓힌 해조류 연구",
+        "content": "핵심 대상 생물군(김속·바다고리풀)은 아니지만 해조류 자원·생태·소재 연구 가운데 양식 현장과 정책에 참고할 만한 논문을 함께 소개합니다."
+    },
     # 레거시
     "thallus_lifecycle_cultivation": {
         "title": "패각 대체 스마트 사상체 배양과 인산·질소 영양염 대사 적응 전략",
@@ -62,6 +66,7 @@ CATEGORY_META = {
     "thallus_lifecycle_conchocelis":   {"no": "02", "name_ko": "엽체 생리 · 생활사 · 사상체", "name_en": "Thallus Physiology & Life Cycle",        "color": "emerald", "icon": "🌱"},
     "smart_aquaculture_mass_culture":  {"no": "03", "name_ko": "스마트 양식 및 대량 배양 기술","name_en": "Smart Aquaculture & Mass Culture",        "color": "violet",  "icon": "🏭"},
     "blue_carbon_feed_methane":        {"no": "04", "name_ko": "블루카본 및 산업적 응용",       "name_en": "Blue Carbon & Industrial Applications", "color": "cyan",    "icon": "🌍"},
+    "related_research":                {"no": "05", "name_ko": "연관 연구",                  "name_en": "Related Research",                      "color": "amber",   "icon": "🔗"},
     # 레거시 호환
     "thallus_lifecycle_cultivation":   {"no": "02", "name_ko": "엽체 · 생활사 · 양식·배양",    "name_en": "Thallus & Cultivation",                 "color": "emerald", "icon": "🌱"},
 }
@@ -71,6 +76,7 @@ SECTION_ORDER = [
     "thallus_lifecycle_conchocelis",
     "smart_aquaculture_mass_culture",
     "blue_carbon_feed_methane",
+    "related_research",
 ]
 
 
@@ -105,6 +111,8 @@ def parse_frontmatter(content):
 def detect_category_from_header(header: str) -> str | None:
     """섹션 헤더 문자열로 카테고리 ID를 감지합니다."""
     h = header.lower()
+    if "연관 연구" in h or "related research" in h:
+        return "related_research"
     if "육종" in h or "breeding" in h or "분자" in h or "병해" in h:
         return "breeding_molecular_pathology"
     if "스마트 양식" in h or "대량 배양" in h or "mass culture" in h or "aquaculture" in h or "채묘" in h:
@@ -423,6 +431,9 @@ def generate_magazine_html(latest_archive, archives_index):
           <a href="#sec-bluecarbon" class="px-3 py-1 rounded-md bg-cyan-50 text-cyan-800 dark:bg-cyan-950/60 dark:text-cyan-300 hover:bg-cyan-100 font-medium transition flex items-center gap-1 border border-cyan-200 dark:border-cyan-800">
             <span>🌍 04. 블루카본·산업 응용</span>
           </a>
+          <a href="#sec-related" id="nav-related" class="px-3 py-1 rounded-md bg-amber-50 text-amber-800 dark:bg-amber-950/60 dark:text-amber-300 hover:bg-amber-100 font-medium transition flex items-center gap-1 border border-amber-200 dark:border-amber-800">
+            <span>🔗 05. 연관 연구</span>
+          </a>
         </div>
       </div>
     </div>
@@ -594,6 +605,30 @@ def generate_magazine_html(latest_archive, archives_index):
       <div id="grid-bluecarbon" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"><!-- JS 주입 --></div>
     </section>
 
+    <!-- ========== SECTION 05: 연관 연구 (핵심 생물군 밖의 해조류 연구) ========== -->
+    <section id="sec-related" class="scroll-mt-32">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between border-b-2 border-amber-500 pb-3 mb-6">
+        <div>
+          <span class="text-xs font-black tracking-widest text-amber-600 dark:text-amber-400 uppercase">SECTION 05</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white flex items-center gap-2">
+            <span>🔗 연관 연구</span>
+            <span class="text-sm font-normal text-slate-400">(Related Research)</span>
+          </h2>
+        </div>
+        <span id="badge-count-related" class="text-xs font-semibold px-2.5 py-1 rounded-full bg-amber-100 text-amber-800 dark:bg-amber-950 dark:text-amber-300 w-fit mt-2 sm:mt-0">0편 수록</span>
+      </div>
+      <div class="rounded-2xl bg-gradient-to-r from-amber-500/10 via-amber-500/5 to-transparent border border-amber-200 dark:border-amber-900/60 p-5 mb-8 shadow-sm">
+        <div class="flex items-center gap-2 text-amber-800 dark:text-amber-300 font-bold text-sm mb-2">
+          <i data-lucide="feather" class="w-4 h-4 text-amber-600"></i>
+          <span>Editor's Note: <span id="insight-title-related" class="font-extrabold">김·바다고리풀 밖으로 넓힌 해조류 연구</span></span>
+        </div>
+        <p id="insight-content-related" class="text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
+          핵심 대상 생물군은 아니지만 참고할 만한 해조류 연구를 함께 소개합니다.
+        </p>
+      </div>
+      <div id="grid-related" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"><!-- JS 주입 --></div>
+    </section>
+
     <!-- 검색 결과 없음 -->
     <div id="empty-state" class="hidden text-center py-20 bg-white dark:bg-deepsea-900 rounded-2xl border border-slate-200 dark:border-slate-800">
       <i data-lucide="file-search" class="w-14 h-14 mx-auto text-slate-300 dark:text-slate-600 mb-3"></i>
@@ -682,9 +717,13 @@ def generate_magazine_html(latest_archive, archives_index):
 
     // 논문 카드 렌더러
     function renderCard(art, idx) {{
-      const taxaBadges = (art.taxa || []).map(t =>
+      const taxaBadges = (art.taxa || []).filter(t => t && t !== 'Unclassified' && t !== '-').map(t =>
         `<span class="px-2 py-0.5 rounded text-[11px] font-semibold bg-black/60 backdrop-blur-md text-white border border-white/20 italic">${{esc(t)}}</span>`
       ).join(' ');
+
+      const extraBadges =
+        (art.tier === 'related' ? `<span class="px-2 py-0.5 rounded text-[11px] font-bold bg-amber-400/90 text-amber-950 border border-amber-200/60">연관 연구</span>` : '') +
+        (art.is_domestic ? `<span class="px-2 py-0.5 rounded text-[11px] font-bold bg-white/90 text-slate-800 border border-white/40">🇰🇷 국내</span>` : '');
 
       const takeawaysList = (art.takeaways || []).map((point, pIdx) => `
         <li class="flex items-start gap-2 text-xs text-slate-700 dark:text-slate-300 leading-relaxed">
@@ -704,7 +743,7 @@ def generate_magazine_html(latest_archive, archives_index):
                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
                 loading="lazy" />
               <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
-              <div class="absolute top-3 left-3 flex flex-wrap gap-1">${{taxaBadges}}</div>
+              <div class="absolute top-3 left-3 flex flex-wrap gap-1">${{extraBadges}}${{taxaBadges}}</div>
               <div class="absolute top-3 right-3">
                 <span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-white/90 dark:bg-black/80 backdrop-blur-md text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-700">
                   ${{esc(art.journal || 'Journal')}}
@@ -808,6 +847,7 @@ def generate_magazine_html(latest_archive, archives_index):
         'thallus_lifecycle_conchocelis',
         'smart_aquaculture_mass_culture',
         'blue_carbon_feed_methane',
+        'related_research',
       ];
       // 레거시 카테고리 → 신규 카테고리 매핑
       const LEGACY_MAP = {{
@@ -830,12 +870,14 @@ def generate_magazine_html(latest_archive, archives_index):
         'thallus_lifecycle_conchocelis':  'grid-conchocelis',
         'smart_aquaculture_mass_culture': 'grid-aquaculture',
         'blue_carbon_feed_methane':       'grid-bluecarbon',
+        'related_research':               'grid-related',
       }};
       const badgeMap = {{
         'breeding_molecular_pathology':   'badge-count-breeding',
         'thallus_lifecycle_conchocelis':  'badge-count-conchocelis',
         'smart_aquaculture_mass_culture': 'badge-count-aquaculture',
         'blue_carbon_feed_methane':       'badge-count-bluecarbon',
+        'related_research':               'badge-count-related',
       }};
 
       SECTION_CATS.forEach(cat => {{
@@ -844,6 +886,10 @@ def generate_magazine_html(latest_archive, archives_index):
         if (gridEl) gridEl.innerHTML = groups[cat].map(item => renderCard(item.art, item.globalIdx)).join('');
         if (badgeEl) badgeEl.innerText = `${{groups[cat].length}}편 수록`;
       }});
+      // 연관 연구는 논문이 있을 때만 섹션·메뉴 표시
+      const hasRelated = groups['related_research'].length > 0;
+      document.getElementById('sec-related').classList.toggle('hidden', !hasRelated);
+      document.getElementById('nav-related').classList.toggle('hidden', !hasRelated);
 
       // 에디터 인사이트 텍스트 갱신
       const insights = currentArchive.editor_insights || {{}};
@@ -852,9 +898,10 @@ def generate_magazine_html(latest_archive, archives_index):
         'thallus_lifecycle_conchocelis':  ['insight-title-conchocelis', 'insight-content-conchocelis'],
         'smart_aquaculture_mass_culture': ['insight-title-aquaculture', 'insight-content-aquaculture'],
         'blue_carbon_feed_methane':       ['insight-title-bluecarbon',  'insight-content-bluecarbon'],
+        'related_research':               ['insight-title-related',     'insight-content-related'],
       }};
       Object.entries(insightDomMap).forEach(([cat, [titleId, contentId]]) => {{
-        const ins = insights[cat] || insights['thallus_lifecycle_cultivation'];
+        const ins = insights[cat];
         if (ins) {{
           const tEl = document.getElementById(titleId);
           const cEl = document.getElementById(contentId);

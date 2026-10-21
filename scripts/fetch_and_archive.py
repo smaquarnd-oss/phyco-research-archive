@@ -243,7 +243,7 @@ GENERAL_DOMAIN_KEYWORDS = [
     "macroalgae",
     "seaweed farming",
     "blue carbon",
-    "해조",  # "해조류" 포함
+    "해조류",  # "해조" 만 쓰면 "위해조직"·"해조신문" 에 걸림
 ]
 
 def is_valid_abstract(abstract: Optional[str]) -> bool:
@@ -284,12 +284,41 @@ def _keyword_hit(kw: str, text: str) -> bool:
     return kw in text
 
 
-def is_domain_relevant(title: str, abstract: str, keywords: str = "") -> bool:
-    """해조류 및 김 연구 관련 논문만 통과시킵니다."""
+# "연관 연구"(5번째 섹션)로 받아주는 넓은 해조류 키워드. 미세조류만 다루는 논문은 걸리지 않도록
+# 대형 해조류를 가리키는 말만 넣었습니다.
+RELATED_DOMAIN_KEYWORDS = [
+    "kelp", "red alga", "brown alga", "rhodophyt", "phaeophyc", "intertidal alga",
+    "ulva", "sargassum", "saccharina", "undaria", "gracilaria", "ecklonia", "ishige",
+    "fucoidan", "phlorotannin",
+    # agar(→agarose gel)·carrageenan(염증 모델)·alginate(의료용 하이드로젤)는 다른 분야 논문을 끌어와서 제외
+    "미역", "다시마", "모자반", "파래", "우뭇가사리", "홍조류", "갈조류", "곰피", "감태",
+    "후코이단", "블루카본",
+]
+
+
+def relevance_tier(title: str, abstract: str, keywords: str = "") -> Optional[str]:
+    """
+    'core'    : 김속·바다고리풀·해조류 양식 등 핵심 키워드 → 4개 본 섹션
+    'related' : 일반 해조류 키워드만 → 5번째 "연관 연구" 섹션 (호당 상한 있음)
+    None      : 수록하지 않음
+    """
     combined = f"{title} {abstract} {keywords}".lower()
-    strong_hits = sum(1 for kw in STRONG_DOMAIN_KEYWORDS if _keyword_hit(kw, combined))
-    general_hits = sum(1 for kw in GENERAL_DOMAIN_KEYWORDS if _keyword_hit(kw, combined))
-    return strong_hits >= 1 or general_hits >= 2
+    if any(_keyword_hit(kw, combined) for kw in STRONG_DOMAIN_KEYWORDS):
+        return "core"
+    # 연관 연구: 제목에 해조류 키워드가 있거나, 서로 다른 키워드가 2개 이상
+    # (초록에 "seaweed 유래 섬유" 처럼 한 번 스치듯 나온 의학 논문 등을 거르기 위해)
+    broad = GENERAL_DOMAIN_KEYWORDS + RELATED_DOMAIN_KEYWORDS
+    title_l = (title or "").lower()
+    if any(_keyword_hit(kw, title_l) for kw in broad):
+        return "related"
+    if sum(1 for kw in broad if _keyword_hit(kw, combined)) >= 2:
+        return "related"
+    return None
+
+
+def is_domain_relevant(title: str, abstract: str, keywords: str = "") -> bool:
+    """해조류 관련 논문이면 True (핵심·연관 모두). 등급은 relevance_tier 로 따로 판정합니다."""
+    return relevance_tier(title, abstract, keywords) is not None
 
 
 # ═══════════════════════════════════════════════════════════════════════════
@@ -571,6 +600,11 @@ def _parse_kci_record(record: ET.Element) -> Optional[dict]:
     }
 
 
+def _is_domestic(raw: dict) -> bool:
+    src = raw.get("_source", raw.get("source", ""))
+    return src == "KCI" or "국내" in src or raw.get("_lang", raw.get("lang")) == "ko"
+
+
 def search_kci_oaipmh(from_date: str, until_date: str, max_pages: int = 400) -> Tuple[List[dict], bool]:
     """
     KCI OAI-PMH 에서 [from_date, until_date] 사이에 '등록·갱신된' 레코드를 전부 받아
@@ -706,12 +740,17 @@ CATEGORY_ORDER = [
     "blue_carbon_feed_methane"
 ]
 
+RELATED_CATEGORY = "related_research"
+
 CATEGORY_NAME_MAP = {
     "breeding_molecular_pathology": ("01", "육종 · 분자생물학 · 병해", "Breeding & Pathology", "rose"),
     "thallus_lifecycle_conchocelis": ("02", "엽체 생리 · 생활사 · 사상체", "Thallus & Life Cycle", "emerald"),
     "smart_aquaculture_mass_culture": ("03", "스마트 양식 및 대량 배양 기술", "Smart Aquaculture & Mass Culture", "violet"),
     "blue_carbon_feed_methane": ("04", "블루카본 및 산업적 응용", "Blue Carbon & Applications", "cyan"),
+    RELATED_CATEGORY: ("05", "연관 연구", "Related Research", "amber"),
 }
+# 마크다운 섹션 출력 순서 (분류 점수 계산은 CATEGORY_ORDER 4개만 사용)
+SECTION_ORDER = CATEGORY_ORDER + [RELATED_CATEGORY]
 
 def classify_article_safe(article: dict, taxa_list: list, categories_raw: Any) -> Tuple[List[str], str]:
     title = article.get("title", "")
@@ -1012,6 +1051,7 @@ def run_pipeline() -> None:
     kci_initial_days = int(settings.get("kci_initial_days", 14))
     kci_max_pages = int(settings.get("kci_max_pages", 400))
     max_papers = int(settings.get("max_papers_per_issue", 60))
+    max_related = int(settings.get("max_related_per_issue", 10))
 
     today = datetime.now().date()
     today_str = today.isoformat()
@@ -1029,7 +1069,9 @@ def run_pipeline() -> None:
 
         if not is_valid_abstract(abstract):
             return
-        if not is_domain_relevant(title, abstract):
+        # KCI 는 국문·영문 제목/초록이 따로 있어 둘 다 봅니다.
+        tier = relevance_tier(f"{title} {item.get('title_en', '')}", f"{abstract} {item.get('abstract_en', '')}")
+        if tier is None:
             return
         if is_already_published(published, title, doi, today_str):
             skipped_published += 1
@@ -1038,6 +1080,7 @@ def run_pipeline() -> None:
         pmid = item.get("pmid", item.get("id", ""))
         fp = paper_fingerprint(title, doi, pmid)
         if fp not in collected:
+            item["_tier"] = tier
             collected[fp] = item
 
     # ──────────────────────────────────────────────────────────────────
@@ -1096,11 +1139,17 @@ def run_pipeline() -> None:
             _add_article(it)
 
     print(f"\n  기발행 논문 제외: {skipped_published}편")
-    if len(collected) > max_papers:
-        # 국내 논문을 먼저 살리고 나머지는 수집 순서대로 자릅니다 (상한: max_papers_per_issue).
-        ordered = sorted(collected.items(), key=lambda kv: kv[1].get("_lang") != "ko")
-        print(f"  [!] {len(collected)}편 > 상한 {max_papers}편 → 초과분은 다음 호로")
-        collected = dict(ordered[:max_papers])
+    # 상한: 핵심 논문은 max_papers_per_issue, 연관 연구는 max_related_per_issue. 국내 논문을 먼저 남깁니다.
+    def _cap(items: List[Tuple[str, dict]], limit: int, label: str) -> List[Tuple[str, dict]]:
+        items = sorted(items, key=lambda kv: not _is_domestic(kv[1]))
+        if len(items) > limit:
+            print(f"  [!] {label} {len(items)}편 > 상한 {limit}편 → 초과분은 다음 호로")
+        return items[:limit]
+
+    core_items = [kv for kv in collected.items() if kv[1].get("_tier") == "core"]
+    related_items = [kv for kv in collected.items() if kv[1].get("_tier") == "related"]
+    print(f"  핵심 논문 {len(core_items)}편 · 연관 연구 {len(related_items)}편")
+    collected = dict(_cap(core_items, max_papers, "핵심 논문") + _cap(related_items, max_related, "연관 연구"))
 
     # ──────────────────────────────────────────────────────────────────
     # STEP 3: 논문 분류 및 동적 요약 생성 (캐시 시스템 연동)
@@ -1121,6 +1170,9 @@ def run_pipeline() -> None:
         doi_url = raw.get("url") or (f"https://doi.org/{doi}" if doi else "#")
 
         matched_taxa, best_cat = classify_article_safe(raw, target_taxa, categories_raw)
+        tier = raw.get("_tier", "core")
+        if tier == "related":
+            best_cat = RELATED_CATEGORY
         if not matched_taxa:
             matched_taxa = ["Unclassified"]
 
@@ -1154,6 +1206,8 @@ def run_pipeline() -> None:
             "badge_color": badge_color,
             "source": source,
             "lang": paper_lang,
+            "tier": tier,
+            "is_domestic": _is_domestic(raw),
             "is_ai_summary": summary.get("is_ai", False),
             "summary_source": summary.get("summary_source", "unknown"),
         }
@@ -1176,7 +1230,7 @@ def run_pipeline() -> None:
     print("\n[4/5] 4분할 섹션 영구 마크다운 아카이브 빌드 중...")
     archive_file = ARCHIVES_DIR / f"{today_str}-weekly-digest.md"
 
-    cat_grouped: Dict[str, List[dict]] = {cid: [] for cid in CATEGORY_ORDER}
+    cat_grouped: Dict[str, List[dict]] = {cid: [] for cid in SECTION_ORDER}
     for p in processed_papers:
         cat_grouped.setdefault(p["category"], []).append(p)
 
@@ -1204,7 +1258,7 @@ def run_pipeline() -> None:
         "---\n",
     ]
 
-    for cat_id in CATEGORY_ORDER:
+    for cat_id in SECTION_ORDER:
         meta = CATEGORY_NAME_MAP[cat_id]
         cat_no, cat_name_ko, cat_name_en, _ = meta
         papers_in_cat = cat_grouped.get(cat_id, [])
@@ -1215,7 +1269,7 @@ def run_pipeline() -> None:
         md_body.append(f"> 💡 **Weekly Research Briefing**: 본 섹션에서는 {cat_name_ko} 분야의 최신 연구 성과 {len(papers_in_cat)}편을 엄선하여 브리핑합니다.\n")
 
         for pidx, paper in enumerate(papers_in_cat, 1):
-            lang_tag = "🇰🇷 국내" if paper.get("lang") == "ko" else "🌐 해외"
+            lang_tag = "🇰🇷 국내" if paper.get("is_domestic") else "🌐 해외"
             md_body.append(f"### {pidx}. {paper['headline']}")
             md_body.append(f"- **원문 제목**: {paper['title']}")
             md_body.append(f"- **저자**: {paper['authors']}")
@@ -1240,7 +1294,7 @@ def run_pipeline() -> None:
         md_body.append("|:---|:---|:---|:---:|:---:|")
         for p in processed_papers[:35]:
             hl = (p['headline'][:48] + "…") if len(p['headline']) > 48 else p['headline']
-            src_icon = "🇰🇷" if p.get("lang") == "ko" else "🌐"
+            src_icon = "🇰🇷" if p.get("is_domestic") else "🌐"
             md_body.append(f"| {hl} | *{', '.join(p['taxa'])}* | {p['category_name']} | {src_icon} {p['source']} | [열람]({p['url']}) |")
         md_body.append("\n---\n*Phyco & Blue Carbon Research Archive Pipeline v3.0*")
 
@@ -1278,8 +1332,8 @@ def run_pipeline() -> None:
     _write_json(PIPELINE_STATE_FILE, state)
     print(f"  => 기발행 목록 {len(published)}개 키 · KCI 수집 기준일 {state.get('kci_oai_harvested_until', '-')}")
 
-    ko_count = sum(1 for p in processed_papers if p.get('lang') == 'ko')
-    en_count = sum(1 for p in processed_papers if p.get('lang') == 'en')
+    ko_count = sum(1 for p in processed_papers if p.get("is_domestic"))
+    en_count = len(processed_papers) - ko_count
     print(f"\n[5/5] 파이프라인 완수! 총 {len(processed_papers)}편 실존 논문 확정 (국내: {ko_count}편 / 해외: {en_count}편)")
     print("=" * 70)
 
