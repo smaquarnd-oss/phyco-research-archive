@@ -1,5 +1,803 @@
 [
   {
+    "filename": "2026-10-21-weekly-digest.md",
+    "title": "연구 주간 다이제스트 (2026-10-21)",
+    "date": "2026-10-21",
+    "total_papers": 38,
+    "taxa_covered": [
+      "Pyropia",
+      "Asparagopsis"
+    ],
+    "categories": [],
+    "editor_insights": {
+      "breeding_molecular_pathology": {
+        "title": "기후 온난화 대응 내열성 분자마커와 붉은갯병 감염 초기 전사체 분석의 고도화",
+        "content": "이번 주 육종 및 병해 연구 트렌드는 해수 온도 상승에 따른 내삼투압/열충격 단백질(HSP) 발현 메커니즘 규명과 더불어, 주요 병원체(Pythium porphyrae)에 대응하는 방어 전사인자(bZIP, MYB) 동정이 두드러집니다. DNA 바코딩 기반 신분류체계 확립과 다중 오믹스 분석을 통한 유용 유전자원 선발이 양식장 현장 품종 개량의 핵심 열쇠로 자리잡고 있습니다."
+      },
+      "thallus_lifecycle_conchocelis": {
+        "title": "사상체(Conchocelis) 각포자 방출 메커니즘과 엽체 생리 환경 적응 전략",
+        "content": "엽체 생리 및 생활사 연구 분야에서는 광주기·수온 변동에 의한 각포자(conchospore) 대량 방출 제어 기전과 엽상체 기조직 발달 초기 단계 분자 마커가 주목받고 있습니다. 특히 Neopyropia / Neoporphyra 신분류군의 색소체 구조 및 사상체 분기점 비교 연구가 활발히 진행 중입니다."
+      },
+      "smart_aquaculture_mass_culture": {
+        "title": "자유사상체 대량 배양과 스마트 채묘 시스템의 경제성 최적화",
+        "content": "스마트 양식 및 대량 배양 분야는 굴패각 의존도를 제로화하는 자유사상체(free-living conchocelis) 액체 배양 조건 최적화와 LED 파장별 성장률 비교, 그리고 IoT 기반 실시간 수질 제어형 채묘 시스템 개발이 핵심 성과로 보고되었습니다. 배양 공학적 접근을 통한 단위 면적당 수확량 극대화가 산업 현장의 핵심 과제로 부각되고 있습니다."
+      },
+      "blue_carbon_feed_methane": {
+        "title": "바다고리풀 브로모포름 메탄 감축 실증과 RDOC 기반 블루카본 탄소 격리 플럭스 표준화",
+        "content": "블루카본 및 산업 응용 분야는 Asparagopsis taxiformis의 장기 급여를 통한 반추위 장내 메탄 70~80% 억제 효과와 조직 내 브로모포름 잔류 안전성 검증이 핵심 성과로 보고되었습니다. 아울러 대형 홍조류의 연간 침적 불용성 유기탄소(RDOC/POC)를 탄소배출권(mCDR)으로 공인받기 위한 정량적 방법론 연구가 급물살을 타고 있습니다."
+      },
+      "thallus_lifecycle_cultivation": {
+        "title": "패각 대체 스마트 사상체 배양과 인산·질소 영양염 대사 적응 전략",
+        "content": "엽체 생리 및 양식 기술 분야에서는 기존 굴패각 배양의 한계를 뛰어넘는 액체 통기 자유사상체 배양 조건과 연안 영양염(N, P) 결핍에 대응하는 periplasmic alkaline phosphatase 등의 효소 기전이 집중 조명되었습니다."
+      }
+    },
+    "articles": [
+      {
+        "headline": "Development of a multiplex PCR assay for the authentication of…",
+        "title": "Development of a multiplex PCR assay for the authentication of six commercial",
+        "authors": "Noh E, Dong C, Park H, Jung H et al.",
+        "journal": "Food chemistry. Molecular sciences (2026)",
+        "url": "#",
+        "taxa": [
+          "Pyropia"
+        ],
+        "category": "breeding_molecular_pathology",
+        "category_name": "육종 · 분자생물학 · 병해",
+        "thumbnail_url": "https://images.unsplash.com/photo-1563674407-b5de7db5ccb0?auto=format&fit=crop&w=800&q=80",
+        "takeaways": [
+          "연구 목적: The global expansion of the Pyropia (laver) market requires reliable methods to authenticate species and prevent economically motivated adulteration (EMA).",
+          "주요 발견: While automated molecular techniques exist, their reliance on specialized instrumentation limits routine application in standard laboratories.",
+          "결론 및 성과: These findings support our hypothesis that mismatch-engineered multiplex PCR effectively discriminates target species in complex matrices, providing an accessible and practical tool for verifying composition during routine quality control.."
+        ],
+        "implications": "본 연구는 Pyropia의 육종 · 분자생물학 · 병해 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.",
+        "abstract": "The global expansion of the Pyropia (laver) market requires reliable methods to authenticate species and prevent economically motivated adulteration (EMA). While automated molecular techniques exist, their reliance on specialized instrumentation limits routine application in standard laboratories. We hypothesized that pairing species-specific SNPs within the rbcL gene with mismatch-engineered primers enables the discrimination of closely related Pyropia species without advanced instrumentation. In this study, we developed a multiplex PCR assay targeting the rbcL gene to differentiate six Pyropia species (P. yezoensis, P. tenera, P. dentata, P. haitanensis, P. seriata, and P. suborbiculata). By analyzing 162 rbcL sequences, we identified conserved species-specific SNPs. We designed a primer set comprising six forward primers with intentional mismatches to improve specificity, paired with a single common reverse primer. The optimized assay (annealing temperature of 54 °C) generated a step-wise pattern of amplicons ranging from 172 to 781 bp, which were resolvable on a conventional 1.5% agarose gel. The assay demonstrated species specificity with no cross-reactivity and exhibited an analytical sensitivity of 10 ng/μL of genomic DNA. To validate the method, we tested 20 commercial laver products using a multi-point sampling strategy. The assay authenticated single-species compositions and identified multi-species blends. These results indicate that analyzing multiple regions per sheet is necessary to determine the true composition of commercial products. These findings support our hypothesis that mismatch-engineered multiplex PCR effectively discriminates target species in complex matrices, providing an accessible and practical tool for verifying composition during routine quality control."
+      },
+      {
+        "headline": "Marine-derived lactic acid bacteria fermentation enhances the…",
+        "title": "Marine-derived lactic acid bacteria fermentation enhances the bioactivity of Neopyropia haitanensis by improving intestinal homeostasis",
+        "authors": "Liu Z, Chen J, Xu J, Yi H et al.",
+        "journal": "Food research international (Ottawa, Ont.) (2026)",
+        "url": "#",
+        "taxa": [
+          "Neopyropia",
+          "Pyropia"
+        ],
+        "category": "breeding_molecular_pathology",
+        "category_name": "육종 · 분자생물학 · 병해",
+        "thumbnail_url": "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=800&q=80",
+        "takeaways": [
+          "연구 목적: This study investigated the functional fermentation of Neopyropia haitanensis using marine-derived lactic acid bacteria (LAB), aiming to develop effective strategies to improve the bioactivity and functionality of seaweed-based foods.",
+          "주요 발견: Fifteen LAB strains were isolated from marine sources, among which three strains, namely Pediococcus pentosaceus HYZ2-1, Limosilactobacillus reuteri HYS1-1, and Ligilactobacillus salivarius HYD1-1 with superior fermentation performance, were selected.",
+          "결론 및 성과: haitanensis, providing new insights into the development of seaweed-based functional foods, especially for gut health.."
+        ],
+        "implications": "본 연구는 Neopyropia, Pyropia의 육종 · 분자생물학 · 병해 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.",
+        "abstract": "This study investigated the functional fermentation of Neopyropia haitanensis using marine-derived lactic acid bacteria (LAB), aiming to develop effective strategies to improve the bioactivity and functionality of seaweed-based foods. Fifteen LAB strains were isolated from marine sources, among which three strains, namely Pediococcus pentosaceus HYZ2-1, Limosilactobacillus reuteri HYS1-1, and Ligilactobacillus salivarius HYD1-1 with superior fermentation performance, were selected. In vitro cellular assays indicated that the fermented products exhibited antioxidant, anti-inflammatory, and intestinal barrier-enhancing effects. Furthermore, in colitis mice, the fermented products alleviated symptoms such as weight loss, hematochezia, and colon shortening, and significantly reduced serum interleukin (IL)-6 levels while increasing IL-10 levels, compared with the unfermented samples. Colon tissues showed decreased malondialdehyde and increased superoxide dismutase and catalase activities. The gene expressions of tight junctions and mucin 2 were upregulated. Metabolomic analysis revealed consistent upregulation of specific bioactive metabolites across all fermented groups, and these metabolites were strongly correlated with the observed improvements in antioxidant capacity, immune modulation, and intestinal barrier integrity. Overall, this study demonstrates the functional advantages of marine-derived LAB in enhancing the bioactivity of N. haitanensis, providing new insights into the development of seaweed-based functional foods, especially for gut health."
+      },
+      {
+        "headline": "Succinylated nori protein-alginate complex particles prepared…",
+        "title": "Succinylated nori protein-alginate complex particles prepared using temperature-controlled ultrasonication for the formation of high internal phase Pickering emulsion gels as plant-based fat analogues",
+        "authors": "Si X, Li Z, Chen Y, Li B et al.",
+        "journal": "Ultrasonics sonochemistry (2026)",
+        "url": "#",
+        "taxa": [
+          "Pyropia/Porphyra complex"
+        ],
+        "category": "breeding_molecular_pathology",
+        "category_name": "육종 · 분자생물학 · 병해",
+        "thumbnail_url": "https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=800&q=80",
+        "takeaways": [
+          "연구 목적: In this study, succinylated nori protein (SNP), sodium alginate (SA), and flaxseed oil were used to develop novel high-internal-phase Pickering emulsion (HIPPE) gels with potential application as plant-based fat analogues.",
+          "주요 발견: Stable composite particles were successfully fabricated through ultrasonication combined with temperature control.",
+          "결론 및 성과: Overall, the proposed material provides an environmentally friendly and healthy strategy for developing fat analogues from marine-derived protein resources and flaxseed oil, while mimicking animal fat tissue in terms of texture, microstructure, thermal behavior, and sensory properties.."
+        ],
+        "implications": "본 연구는 Pyropia/Porphyra complex의 육종 · 분자생물학 · 병해 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.",
+        "abstract": "In this study, succinylated nori protein (SNP), sodium alginate (SA), and flaxseed oil were used to develop novel high-internal-phase Pickering emulsion (HIPPE) gels with potential application as plant-based fat analogues. Stable composite particles were successfully fabricated through ultrasonication combined with temperature control. The ultrasonic treatment condition was identified as 450 W for 30 min, under which the Pickering particles exhibited the smallest particle size and superior emulsifying ability. The optimal formulation parameters were identified as an SNP-to-SA ratio of 1:5, an SNP-SA complex particle concentration of 3%, and an oil-phase fraction of 75%, which resulted in optimal oil retention and emulsion stability. Confocal laser scanning microscopy and cryo-scanning electron microscopy revealed that the SNP-based emulsion produced smaller droplets (23.08 ± 0.09 μm) and a more compact core-shell interfacial structure than the emulsion prepared with native nori protein. These structural improvements were associated with enhanced adsorption kinetics and wettability, with a contact angle approaching 90°, indicating optimal amphiphilicity. Rheological analysis further demonstrated that the emulsion exhibited more solid-like viscoelastic behavior, with a greater difference between G' and G″ than that prepared with native nori protein. Moreover, microscopic observations showed that the dense packing of lipid droplets within the gel network resembled the cellular architecture of animal fat tissue. The thermal behavior of the HIPPE gels in the range of 200-500 °C was similar to the two downward endothermic peaks observed for pork fat during cooking. Sensory and texture analyses of meat patties revealed that 25% and 50% fat substitution levels could closely mimic full-fat meat patties. Overall, the proposed material provides an environmentally friendly and healthy strategy for developing fat analogues from marine-derived protein resources and flaxseed oil, while mimicking animal fat tissue in terms of texture, microstructure, thermal behavior, and sensory properties."
+      },
+      {
+        "headline": "Testing options for the commercialization of abalone selective…",
+        "title": "Testing options for the commercialization of abalone selective breeding using bioeconomic simulation modelling",
+        "authors": "Robinson N, Li X, Hayes B",
+        "journal": "Aquaculture Research (2010)",
+        "url": "https://doi.org/10.1111/j.1365-2109.2010.02528.x",
+        "taxa": [
+          "Pyropia/Porphyra complex"
+        ],
+        "category": "breeding_molecular_pathology",
+        "category_name": "육종 · 분자생물학 · 병해",
+        "thumbnail_url": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80",
+        "takeaways": [
+          "연구 배경: 관련 학술 문헌 제목: Testing options for the commercialization of abalone selective breeding using bioeconomic simulation modelling.",
+          "주요 성과: 자세한 연구 성과는 원문 링크를 참고하십시오..",
+          "생물군 Pyropia/Porphyra complex의 환경 적응 분석."
+        ],
+        "implications": "본 연구는 Pyropia/Porphyra complex의 육종 · 분자생물학 · 병해 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.",
+        "abstract": "관련 학술 문헌 제목: Testing options for the commercialization of abalone selective breeding using bioeconomic simulation modelling. 자세한 연구 성과는 원문 링크를 참고하십시오."
+      },
+      {
+        "headline": "Modelling selective breeding in protandrous, batch-reared Asian…",
+        "title": "Modelling selective breeding in protandrous, batch-reared Asian sea bass (Lates calcarifer, Bloch) using walkback selection",
+        "authors": "Robinson N, Schipp G, Bosmans J, Jerry D",
+        "journal": "Aquaculture Research (2010)",
+        "url": "https://doi.org/10.1111/j.1365-2109.2010.02584.x",
+        "taxa": [
+          "Pyropia/Porphyra complex"
+        ],
+        "category": "breeding_molecular_pathology",
+        "category_name": "육종 · 분자생물학 · 병해",
+        "thumbnail_url": "https://images.unsplash.com/photo-1484557052118-f32bd25b45b5?auto=format&fit=crop&w=800&q=80",
+        "takeaways": [
+          "연구 배경: 관련 학술 문헌 제목: Modelling selective breeding in protandrous, batch-reared Asian sea bass (Lates calcarifer, Bloch) using walkback selection.",
+          "주요 성과: 자세한 연구 성과는 원문 링크를 참고하십시오..",
+          "생물군 Pyropia/Porphyra complex의 환경 적응 분석."
+        ],
+        "implications": "본 연구는 Pyropia/Porphyra complex의 육종 · 분자생물학 · 병해 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.",
+        "abstract": "관련 학술 문헌 제목: Modelling selective breeding in protandrous, batch-reared Asian sea bass (Lates calcarifer, Bloch) using walkback selection. 자세한 연구 성과는 원문 링크를 참고하십시오."
+      },
+      {
+        "headline": "Using marker data in conventional breeding programmes: A case of…",
+        "title": "Using marker data in conventional breeding programmes: A case of study in selective breeding programs of scallops",
+        "authors": "Martinez V",
+        "journal": "Aquaculture (2007)",
+        "url": "https://doi.org/10.1016/j.aquaculture.2007.07.130",
+        "taxa": [
+          "Pyropia/Porphyra complex"
+        ],
+        "category": "breeding_molecular_pathology",
+        "category_name": "육종 · 분자생물학 · 병해",
+        "thumbnail_url": "https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&fit=crop&w=800&q=80",
+        "takeaways": [
+          "연구 배경: 관련 학술 문헌 제목: Using marker data in conventional breeding programmes: A case of study in selective breeding programs of scallops.",
+          "주요 성과: 자세한 연구 성과는 원문 링크를 참고하십시오..",
+          "생물군 Pyropia/Porphyra complex의 환경 적응 분석."
+        ],
+        "implications": "본 연구는 Pyropia/Porphyra complex의 육종 · 분자생물학 · 병해 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.",
+        "abstract": "관련 학술 문헌 제목: Using marker data in conventional breeding programmes: A case of study in selective breeding programs of scallops. 자세한 연구 성과는 원문 링크를 참고하십시오."
+      },
+      {
+        "headline": "Yeast strain selection",
+        "title": "Yeast strain selection",
+        "authors": "Loison G",
+        "journal": "Biochimie (1991)",
+        "url": "https://doi.org/10.1016/0300-9084(91",
+        "taxa": [
+          "Pyropia/Porphyra complex"
+        ],
+        "category": "breeding_molecular_pathology",
+        "category_name": "육종 · 분자생물학 · 병해",
+        "thumbnail_url": "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=800&q=80",
+        "takeaways": [
+          "연구 배경: 관련 학술 문헌 제목: Yeast strain selection.",
+          "주요 성과: 자세한 연구 성과는 원문 링크를 참고하십시오..",
+          "생물군 Pyropia/Porphyra complex의 환경 적응 분석."
+        ],
+        "implications": "본 연구는 Pyropia/Porphyra complex의 육종 · 분자생물학 · 병해 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.",
+        "abstract": "관련 학술 문헌 제목: Yeast strain selection. 자세한 연구 성과는 원문 링크를 참고하십시오."
+      },
+      {
+        "headline": "Application of the knowledge-based approach to strain selection…",
+        "title": "Application of the knowledge-based approach to strain selection for a bioaugmentation process of phenanthrene- and Cr(VI)-contaminated soil",
+        "authors": "Ibarrolaza A, Coppotelli B, Del Panno M, Donati E et al.",
+        "journal": "Journal of Applied Microbiology (2011)",
+        "url": "https://doi.org/10.1111/j.1365-2672.2011.05036.x",
+        "taxa": [
+          "Pyropia/Porphyra complex"
+        ],
+        "category": "breeding_molecular_pathology",
+        "category_name": "육종 · 분자생물학 · 병해",
+        "thumbnail_url": "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=800&q=80",
+        "takeaways": [
+          "연구 배경: 관련 학술 문헌 제목: Application of the knowledge-based approach to strain selection for a bioaugmentation process of phenanthrene- and Cr(VI)-contaminated soil.",
+          "주요 성과: 자세한 연구 성과는 원문 링크를 참고하십시오..",
+          "생물군 Pyropia/Porphyra complex의 환경 적응 분석."
+        ],
+        "implications": "본 연구는 Pyropia/Porphyra complex의 육종 · 분자생물학 · 병해 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.",
+        "abstract": "관련 학술 문헌 제목: Application of the knowledge-based approach to strain selection for a bioaugmentation process of phenanthrene- and Cr(VI)-contaminated soil. 자세한 연구 성과는 원문 링크를 참고하십시오."
+      },
+      {
+        "headline": "Yeast Strain Selection",
+        "title": "Yeast Strain Selection",
+        "authors": "Meyers S, Panchal C",
+        "journal": "Mycologia (1992)",
+        "url": "https://doi.org/10.2307/3760335",
+        "taxa": [
+          "Pyropia/Porphyra complex"
+        ],
+        "category": "breeding_molecular_pathology",
+        "category_name": "육종 · 분자생물학 · 병해",
+        "thumbnail_url": "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=800&q=80",
+        "takeaways": [
+          "연구 배경: 관련 학술 문헌 제목: Yeast Strain Selection.",
+          "주요 성과: 자세한 연구 성과는 원문 링크를 참고하십시오..",
+          "생물군 Pyropia/Porphyra complex의 환경 적응 분석."
+        ],
+        "implications": "본 연구는 Pyropia/Porphyra complex의 육종 · 분자생물학 · 병해 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.",
+        "abstract": "관련 학술 문헌 제목: Yeast Strain Selection. 자세한 연구 성과는 원문 링크를 참고하십시오."
+      },
+      {
+        "headline": "Yeast strain selection",
+        "title": "Yeast strain selection",
+        "authors": "Robinson R",
+        "journal": "Food Chemistry (1991)",
+        "url": "https://doi.org/10.1016/0308-8146(91",
+        "taxa": [
+          "Pyropia/Porphyra complex"
+        ],
+        "category": "breeding_molecular_pathology",
+        "category_name": "육종 · 분자생물학 · 병해",
+        "thumbnail_url": "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=800&q=80",
+        "takeaways": [
+          "연구 배경: 관련 학술 문헌 제목: Yeast strain selection.",
+          "주요 성과: 자세한 연구 성과는 원문 링크를 참고하십시오..",
+          "생물군 Pyropia/Porphyra complex의 환경 적응 분석."
+        ],
+        "implications": "본 연구는 Pyropia/Porphyra complex의 육종 · 분자생물학 · 병해 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.",
+        "abstract": "관련 학술 문헌 제목: Yeast strain selection. 자세한 연구 성과는 원문 링크를 참고하십시오."
+      },
+      {
+        "headline": "몇가지 감귤 단배성 품종의 육종 모본으로서의 가치 평가",
+        "title": "몇가지 감귤 단배성 품종의 육종 모본으로서의 가치 평가",
+        "authors": "Park Y, Yang C",
+        "journal": "Journal of Asian Agriculture and Biotechnology (2020)",
+        "url": "https://doi.org/10.51711/jaab.2020.36.2.2",
+        "taxa": [
+          "Pyropia/Porphyra complex"
+        ],
+        "category": "breeding_molecular_pathology",
+        "category_name": "육종 · 분자생물학 · 병해",
+        "thumbnail_url": "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=800&q=80",
+        "takeaways": [
+          "연구 배경: 관련 학술 문헌 제목: 몇가지 감귤 단배성 품종의 육종 모본으로서의 가치 평가.",
+          "주요 성과: 자세한 연구 성과는 원문 링크를 참고하십시오..",
+          "생물군 Pyropia/Porphyra complex의 환경 적응 분석."
+        ],
+        "implications": "본 연구는 Pyropia/Porphyra complex의 육종 · 분자생물학 · 병해 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.",
+        "abstract": "관련 학술 문헌 제목: 몇가지 감귤 단배성 품종의 육종 모본으로서의 가치 평가. 자세한 연구 성과는 원문 링크를 참고하십시오."
+      },
+      {
+        "headline": "Potato breeding via protoplast fusion",
+        "title": "Potato breeding via protoplast fusion",
+        "authors": "Cho K, Park T",
+        "journal": "Journal of Plant Biotechnology (2014)",
+        "url": "https://doi.org/10.5010/jpb.2014.41.2.65",
+        "taxa": [
+          "Pyropia/Porphyra complex"
+        ],
+        "category": "breeding_molecular_pathology",
+        "category_name": "육종 · 분자생물학 · 병해",
+        "thumbnail_url": "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=800&q=80",
+        "takeaways": [
+          "연구 배경: 관련 학술 문헌 제목: Potato breeding via protoplast fusion.",
+          "주요 성과: 자세한 연구 성과는 원문 링크를 참고하십시오..",
+          "생물군 Pyropia/Porphyra complex의 환경 적응 분석."
+        ],
+        "implications": "본 연구는 Pyropia/Porphyra complex의 육종 · 분자생물학 · 병해 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.",
+        "abstract": "관련 학술 문헌 제목: Potato breeding via protoplast fusion. 자세한 연구 성과는 원문 링크를 참고하십시오."
+      },
+      {
+        "headline": "KNOX-HDAC2 complex suppresses the CAND1 expression is involved…",
+        "title": "KNOX-HDAC2 complex suppresses the CAND1 expression is involved in sporophytic development of Pyropia yezoensis",
+        "authors": "Yang X, Xu L, He H, Zeb A et al.",
+        "journal": "Plant physiology and biochemistry : PPB (2026)",
+        "url": "#",
+        "taxa": [
+          "Pyropia"
+        ],
+        "category": "thallus_lifecycle_conchocelis",
+        "category_name": "엽체 생리 · 생활사 · 사상체",
+        "thumbnail_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
+        "takeaways": [
+          "연구 목적: The alternation of generations is a critical developmental process in plants.",
+          "주요 발견: Knotted1-like homeobox (KNOX) transcription factors are known to regulate cell fate and alternation of generations in land plants, while their regulatory mechanisms in basal photosynthetic eukaryotes remain elusive.",
+          "결론 및 성과: yezoensis, and offers theoretical guidance for the future nori seedling industry.."
+        ],
+        "implications": "본 연구는 Pyropia의 엽체 생리 · 생활사 · 사상체 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.",
+        "abstract": "The alternation of generations is a critical developmental process in plants. Knotted1-like homeobox (KNOX) transcription factors are known to regulate cell fate and alternation of generations in land plants, while their regulatory mechanisms in basal photosynthetic eukaryotes remain elusive. Here, we characterized the PyKNOX, a highly conserved homeodomain transcription factor from the red algae Pyropia yezoensis and demonstrated its essential role in maintaining the sporophyte phase. Using affinity purification-mass spectrometry (AP-MS) alongside in vitro and in vivo interaction assays, we revealed that PyKNOX physically recruits the histone deacetylase PyHDAC2 to assemble a transcriptional repressor complex. Genome-wide binding landscape analysis via DNA affinity purification sequencing (DAP-seq) identified a conserved \"TGAG\" core motif and highlighted a significant enrichment of target genes within the Skp1-Cullin1-F-box (SCF) ubiquitin ligase complex. Further yeast one-hybrid (Y1H), EMAS and molecular docking assays unequivocally confirmed that PyKNOX directly targets and binds to the promoter of PyCAND1, a key exchange factor in the ubiquitin-proteasome pathway. Spatiotemporal expression profiling demonstrated that the PyKNOX-PyHDAC2 complex is highly upregulated during the diploid sporophyte stages (free-living filaments and conchosporangial branches), showing a strong negative correlation with the PyCAND1 expression. Together, our findings propose a coordinated epigenetic and transcriptional network where the PyKNOX-PyHDAC2 complex suppresses expression of the SCF component CAND1 in sporophytic development of P.yezoensis. This study provides evolutionary insights into the genetic cascades governing life cycle transitions in red algae P. yezoensis, and offers theoretical guidance for the future nori seedling industry."
+      },
+      {
+        "headline": "Mechanistic insights into deodorization of Pyropia haitanensis…",
+        "title": "Mechanistic insights into deodorization of Pyropia haitanensis by ultrasound-assisted Lactiplantibacillus plantarum fermentation: Linking key odorants with amino acid metabolism",
+        "authors": "Wang D, Zhang Y, Xu X, Wei B et al.",
+        "journal": "Food chemistry (2026)",
+        "url": "#",
+        "taxa": [
+          "Pyropia"
+        ],
+        "category": "thallus_lifecycle_conchocelis",
+        "category_name": "엽체 생리 · 생활사 · 사상체",
+        "thumbnail_url": "https://images.unsplash.com/photo-1614728894747-a83421789f10?auto=format&fit=crop&w=800&q=80",
+        "takeaways": [
+          "연구 목적: The fishy odor of Pyropia haitanensis limits its sensory acceptance and industrial utilization.",
+          "주요 발견: In this study, ultrasound-assisted fermentation (UAF) combined with Lactiplantibacillus plantarum was employed to investigate the molecular mechanism underlying deodorization of P.",
+          "결론 및 성과: Overall, this study provides new mechanistic insights into UAF-mediated deodorization and supports the high-value utilization of P."
+        ],
+        "implications": "본 연구는 Pyropia의 엽체 생리 · 생활사 · 사상체 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.",
+        "abstract": "The fishy odor of Pyropia haitanensis limits its sensory acceptance and industrial utilization. In this study, ultrasound-assisted fermentation (UAF) combined with Lactiplantibacillus plantarum was employed to investigate the molecular mechanism underlying deodorization of P. haitanensis. Gas chromatography-olfactometry-mass spectrometry (GC-O-MS) identified nonanal, 1-octen-3-ol, and trans-β-ionone as the major contributors to the fishy odor. UAF effectively reduced the fishy odor intensity. Furthermore, gas chromatography-tandem mass spectrometry (GC-MS/MS) combined with flavor omission and recombination experiments identified six key flavor compounds associated with odor reduction. Metabolomic analysis revealed significant enrichment of amino acid metabolism during UAF, with L-3-phenyllactic acid showing the greatest increase (17.61-fold). Correlation analysis and metabolite addition experiments demonstrated that UAF activated aromatic amino acid metabolism, promoted the accumulation of pleasant flavor metabolites, and masked undesirable odors. Overall, this study provides new mechanistic insights into UAF-mediated deodorization and supports the high-value utilization of P. haitanensis."
+      },
+      {
+        "headline": "Roasting-induced changes in the metabolite profile of laver (",
+        "title": "Roasting-induced changes in the metabolite profile of laver (",
+        "authors": "Song S, Chae S, Cho S, Kim H et al.",
+        "journal": "Food chemistry: X (2026)",
+        "url": "#",
+        "taxa": [
+          "Neopyropia",
+          "Pyropia"
+        ],
+        "category": "thallus_lifecycle_conchocelis",
+        "category_name": "엽체 생리 · 생활사 · 사상체",
+        "thumbnail_url": "https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=800&q=80",
+        "takeaways": [
+          "연구 목적: This study investigated non-volatile metabolites in laver (Neopyropia yezoensis) roasted under different temperature/time conditions.",
+          "주요 발견: Ultra-performance liquid chromatography-quadrupole time-of-flight mass spectrometry-based metabolomics identified 69 metabolites, including mycosporine-like amino acids (MAAs) and their dehydrated derivatives.",
+          "결론 및 성과: These findings provide insight into metabolite and antioxidant activity changes during roasting and offer fundamental data for optimizing roasting conditions.."
+        ],
+        "implications": "본 연구는 Neopyropia, Pyropia의 엽체 생리 · 생활사 · 사상체 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.",
+        "abstract": "This study investigated non-volatile metabolites in laver (Neopyropia yezoensis) roasted under different temperature/time conditions. Ultra-performance liquid chromatography-quadrupole time-of-flight mass spectrometry-based metabolomics identified 69 metabolites, including mycosporine-like amino acids (MAAs) and their dehydrated derivatives. Multivariate analysis showed that dehydrated MAAs were among the key roasting-responsive metabolites. As roasting intensity increased, MAAs decreased to 0.08-fold of the initial value, while dehydrated MAAs increased 1.22- to 13.61-fold. Antioxidant activity increased, with ABTS+ radical scavenging activity and FRAP exhibiting maximum increases of 4.55- and 4.18-fold, respectively. Pearson's correlation analysis revealed strong positive associations (r > 0.93) between dehydrated MAAs and antioxidant activity. This pattern is consistent with the extended conjugation and enhanced electron delocalization of dehydrated MAAs, which may facilitate radical stabilization. These findings provide insight into metabolite and antioxidant activity changes during roasting and offer fundamental data for optimizing roasting conditions."
+      },
+      {
+        "headline": "From sea to farm: Repurposing invasive macroalgae into biocidal…",
+        "title": "From sea to farm: Repurposing invasive macroalgae into biocidal and defense-enhancing tools against tomato late blight (Phytophthora infestans)",
+        "authors": "Laureano G, Fonseca B, Carreiras J, Felix C et al.",
+        "journal": "Plant science : an international journal of experimental plant biology (2026)",
+        "url": "#",
+        "taxa": [
+          "Asparagopsis"
+        ],
+        "category": "thallus_lifecycle_conchocelis",
+        "category_name": "엽체 생리 · 생활사 · 사상체",
+        "thumbnail_url": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
+        "takeaways": [
+          "연구 목적: Marine seaweeds are increasingly recognized as sources of bioactive compounds with potential applications in sustainable agriculture, including as biocontrol agents.",
+          "주요 발견: The selection of invasive species such as Asparagopsis armata and Sargassum muticum offers a dual benefit: obtaining bioactive metabolites from a low-cost resource while simultaneously mitigating their ecological impacts using this harmful biomass.",
+          "결론 및 성과: muticum in this context presents a resource-efficient biocontrol strategy that links plant adjuvant defense enhancer effect with the valorization of underexploited marine biomass, reinforcing their potential within sustainable agricultural systems.."
+        ],
+        "implications": "본 연구는 Asparagopsis의 엽체 생리 · 생활사 · 사상체 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.",
+        "abstract": "Marine seaweeds are increasingly recognized as sources of bioactive compounds with potential applications in sustainable agriculture, including as biocontrol agents. The selection of invasive species such as Asparagopsis armata and Sargassum muticum offers a dual benefit: obtaining bioactive metabolites from a low-cost resource while simultaneously mitigating their ecological impacts using this harmful biomass. In the present study, crude extracts from A. armata and S. muticum were applied to tomato plants and were effective as biocontrol agents against Phytophthora infestans. Treatments modulated key physiological and metabolic processes, including photochemical energy distribution, membrane lipid composition, redox balance, and secondary metabolism, effectively eliciting plants for enhanced defense. Asparagopsis armata elicited particularly strong responses, whereas S. muticum induced moderate but consistent effects across multiple pathways. These changes were correlated with the pathogen inoculation outcome and improved plant resilience during infection. These findings provide physiological insights into how these macroalgae can suppress pathogen activity while enhancing host defenses, highlighting their potential as sustainable biocontrol agents. Exploiting A. armata and S. muticum in this context presents a resource-efficient biocontrol strategy that links plant adjuvant defense enhancer effect with the valorization of underexploited marine biomass, reinforcing their potential within sustainable agricultural systems."
+      },
+      {
+        "headline": "Beyond species loss: early epifaunal reorganization following…",
+        "title": "Beyond species loss: early epifaunal reorganization following Rugulopteryx okamurae establishment in a successive-invasion context",
+        "authors": "Florido M, Megina C, Navarro-Barranco C, Guerra-García J et al.",
+        "journal": "Marine environmental research (2026)",
+        "url": "#",
+        "taxa": [
+          "Asparagopsis"
+        ],
+        "category": "thallus_lifecycle_conchocelis",
+        "category_name": "엽체 생리 · 생활사 · 사상체",
+        "thumbnail_url": "https://images.unsplash.com/photo-1559827260-dc66d52bef19?auto=format&fit=crop&w=800&q=80",
+        "takeaways": [
+          "연구 목적: Marine invasions are rapidly transforming coastal ecosystems, while their ecological impacts remain difficult to predict under accelerating scenarios of successive invasions.",
+          "주요 발견: This is particularly critical for the North Pacific phaeophycean Rugulopteryx okamurae, whose unprecedented spread is transforming Mediterranean and North Atlantic benthic communities through poorly understood cascading ecological effects.",
+          "결론 및 성과: This highlights the importance of species-level analyses and previous invasion history when assessing the ecological impacts of newly established habitat-forming invaders.."
+        ],
+        "implications": "본 연구는 Asparagopsis의 엽체 생리 · 생활사 · 사상체 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.",
+        "abstract": "Marine invasions are rapidly transforming coastal ecosystems, while their ecological impacts remain difficult to predict under accelerating scenarios of successive invasions. This is particularly critical for the North Pacific phaeophycean Rugulopteryx okamurae, whose unprecedented spread is transforming Mediterranean and North Atlantic benthic communities through poorly understood cascading ecological effects. Here, we provide the first spatio-temporal assessment of how R. okamurae restructures mobile epifaunal communities. We used a spatially replicated BACI design across invaded and non-invaded stations in the Alboran Sea (southern Spain), with samplings conducted before (2014) and after (2021) the establishment of R. okamurae. We disentangled the effects associated with the arrival of R. okamurae from its role as a novel habitat provider. To characterize these invasion effects, we used the native Halopteris scoparia and the invasive Asparagopsis taxiformis as reference habitat-forming species. Two years after its arrival, the invasion of R. okamurae was still at an incipient stage. Invasion-related responses were limited to increased richness in A. taxiformis and several habitat- and species-specific changes. Assemblages on R. okamurae more closely resembled those associated with the pre-established invader A. taxiformis than those of the native H. scoparia, while showing low habitat affinity and no consistent gains in richness or density. These patterns, detectable because sampling captured an early invasion stage, suggest that epifaunal reorganization is species- and habitat-dependent and may precede broader taxonomic impacts. This highlights the importance of species-level analyses and previous invasion history when assessing the ecological impacts of newly established habitat-forming invaders."
+      },
+      {
+        "headline": "Comparative metataxonomic analysis of total, viable, and active…",
+        "title": "Comparative metataxonomic analysis of total, viable, and active rumen microbial communities under methane-mitigated conditions",
+        "authors": "Lee W, Kim G, Li W, Park T",
+        "journal": "Environmental microbiome (2026)",
+        "url": "#",
+        "taxa": [
+          "Asparagopsis"
+        ],
+        "category": "thallus_lifecycle_conchocelis",
+        "category_name": "엽체 생리 · 생활사 · 사상체",
+        "thumbnail_url": "https://images.unsplash.com/photo-1509563768818-dafe9ad27b4e?auto=format&fit=crop&w=800&q=80",
+        "takeaways": [
+          "연구 목적: [BACKGROUND] The rumen microbiota play a central role in digestion and methane production, thereby influencing ruminant productivity.",
+          "주요 발견: Evaluating methane mitigation strategies requires consideration of both microbial viability and activity.",
+          "결론 및 성과: Thus, vDNA may serve as a practical additional approach when RNA analysis is technically constrained.."
+        ],
+        "implications": "본 연구는 Asparagopsis의 엽체 생리 · 생활사 · 사상체 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.",
+        "abstract": "[BACKGROUND] The rumen microbiota play a central role in digestion and methane production, thereby influencing ruminant productivity. Evaluating methane mitigation strategies requires consideration of both microbial viability and activity. DNA-based methods may include signals from dead or damaged cells, whereas RNA-based approaches may underrepresent viable populations with low transcriptional activity. Propidium monoazide (PMA) reduces DNA signals from membrane-compromised cells, providing an indirect, membrane-integrity-based assessment of microbial viability. This study compared taxonomic and predicted functional profiles obtained by 16S rRNA gene amplicon sequencing of total DNA (tDNA), PMA-treated DNA (vDNA), and RNA-derived cDNA (RNA) from rumen samples subjected to three in vitro methane mitigation treatments: 3-nitrooxypropanol (NOP), monensin (MON), and Asparagopsis sp. (ASP).\n\n[RESULTS] MON treatment induced the most pronounced changes in fermentation parameters and microbial composition, whereas the NOP and ASP groups exhibited similar fermentation outcomes. RNA-derived profiles exhibited the lowest alpha diversity, with vDNA profiles falling between those of RNA and tDNA. Procrustes analysis revealed metric-dependent similarities among sample types; Bray-Curtis distances showed closer alignment between tDNA and RNA, whereas Jaccard distances showed greater similarity between vDNA and RNA. Parabacteroides exhibited significantly higher relative abundance in vDNA than in tDNA or RNA. Notably, Succiniclasticum showed opposing correlations with the acetate-to-propionate ratio between tDNA and RNA under MON treatment, whereas no significant correlation was detected in vDNA. Differential analysis of PICRUSt2-predicted methanogenesis-related KEGG modules revealed sample type- and treatment-specific patterns.\n\n[CONCLUSIONS] PMA-treated DNA provided a distinct perspective on the rumen microbiota by reducing signals from membrane-compromised cells and revealing populations that were differently represented in tDNA and RNA-derived profiles, including membrane-intact populations with low RNA representation. Thus, vDNA may serve as a practical additional approach when RNA analysis is technically constrained."
+      },
+      {
+        "headline": "Selective fertilization in plants in relation to plant breeding.…",
+        "title": "Selective fertilization in plants in relation to plant breeding. I. Chinese cabbage (Brassica pekinensis RUPR.). 2. Mechanisms involved in selective fertilization",
+        "authors": "MURAKAMI K",
+        "journal": "Japanese Journal of Breeding (1964)",
+        "url": "https://doi.org/10.1270/jsbbs1951.14.238",
+        "taxa": [
+          "Pyropia/Porphyra complex"
+        ],
+        "category": "thallus_lifecycle_conchocelis",
+        "category_name": "엽체 생리 · 생활사 · 사상체",
+        "thumbnail_url": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
+        "takeaways": [
+          "연구 목적: 관련 학술 문헌 제목: Selective fertilization in plants in relation to plant breeding.",
+          "주요 발견: Chinese cabbage (Brassica pekinensis RUPR.).",
+          "결론 및 성과: 자세한 연구 성과는 원문 링크를 참고하십시오.."
+        ],
+        "implications": "본 연구는 Pyropia/Porphyra complex의 엽체 생리 · 생활사 · 사상체 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.",
+        "abstract": "관련 학술 문헌 제목: Selective fertilization in plants in relation to plant breeding. I. Chinese cabbage (Brassica pekinensis RUPR.). 2. Mechanisms involved in selective fertilization.. 자세한 연구 성과는 원문 링크를 참고하십시오."
+      },
+      {
+        "headline": "A selection system for transgenic plants based on galactose as…",
+        "title": "A selection system for transgenic plants based on galactose as selective agent and a UDP-glucose:galactose-1-phosphate uridyltransferase gene as selective gene",
+        "authors": "Joersbo M, Jørgensen K, Brunstedt J",
+        "journal": "Molecular Breeding (2003)",
+        "url": "https://doi.org/10.1023/a:1023402424215",
+        "taxa": [
+          "Pyropia/Porphyra complex"
+        ],
+        "category": "thallus_lifecycle_conchocelis",
+        "category_name": "엽체 생리 · 생활사 · 사상체",
+        "thumbnail_url": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
+        "takeaways": [
+          "연구 배경: 관련 학술 문헌 제목: A selection system for transgenic plants based on galactose as selective agent and a UDP-glucose:galactose-1-phosphate uridyltransferase gene as selective gene.",
+          "주요 성과: 자세한 연구 성과는 원문 링크를 참고하십시오..",
+          "생물군 Pyropia/Porphyra complex의 환경 적응 분석."
+        ],
+        "implications": "본 연구는 Pyropia/Porphyra complex의 엽체 생리 · 생활사 · 사상체 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.",
+        "abstract": "관련 학술 문헌 제목: A selection system for transgenic plants based on galactose as selective agent and a UDP-glucose:galactose-1-phosphate uridyltransferase gene as selective gene. 자세한 연구 성과는 원문 링크를 참고하십시오."
+      },
+      {
+        "headline": "Study on Selection of Bacillus Sp. Strain Has Active Carbon…",
+        "title": "Study on Selection of Bacillus Sp. Strain Has Active Carbon Metabolism for Peat Treatment",
+        "authors": "Thanh T",
+        "journal": "RA JOURNAL OF APPLIED RESEARCH (2022)",
+        "url": "https://doi.org/10.47191/rajar/v8i10.06",
+        "taxa": [
+          "Pyropia/Porphyra complex"
+        ],
+        "category": "thallus_lifecycle_conchocelis",
+        "category_name": "엽체 생리 · 생활사 · 사상체",
+        "thumbnail_url": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
+        "takeaways": [
+          "연구 목적: The objective of selecting strains of Bacillus sp.",
+          "주요 발견: has high activity in carbon metabolism for peat treatment, firstly focusing on the ability to degrade lignin, cellulose, phosphorus and protein.",
+          "결론 및 성과: At the same time, the selected microbial strains have a high biosafety level (level of 1, the safest level in the biosafety scale).."
+        ],
+        "implications": "본 연구는 Pyropia/Porphyra complex의 엽체 생리 · 생활사 · 사상체 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.",
+        "abstract": "The objective of selecting strains of Bacillus sp. has high activity in carbon metabolism for peat treatment, firstly focusing on the ability to degrade lignin, cellulose, phosphorus and protein. From the gene pool, by surveying the microbial strains capable of degrading carbon-rich substrates including lignin, cellulose, insoluble phosphate, proteolytic, we have identified two Bacillus sp. strains contain Bacillus polyfermenticus and Bacillus subtilis strains have strong ability to metabolize carbon-rich substrates and decompose phosphorus in peat. The Bacillus polyfermenticus strain had cellulose, lignin, organophosphorus and starch-degrading ring diameters of 41, 40, 23 and 38 mm, respectively. The Bacillus subtilis strain had cellulose, lignin, organophosphorus and starch-degrading ring diameters of 40, 41, 24 and 29 mm, respectively. In addition, the content of humic acids formed after 48 hours of fermentation increased 2.5 times compared to the original without the addition of Bacillus polyfermenticus strain and increased 2.8 times compared to the original without the addition of Bacillus subtilis strain. Therefore, two strains of Bacillus sp. selected with high efficiency in producing humic acid products. At the same time, the selected microbial strains have a high biosafety level (level of 1, the safest level in the biosafety scale)."
+      },
+      {
+        "headline": "Breeding of Ethanol-producing and Ethanol-tolerant Saccharomyces…",
+        "title": "Breeding of Ethanol-producing and Ethanol-tolerant Saccharomyces cerevisiae using Genome Shuffling",
+        "authors": "Park A, Kim Y",
+        "journal": "Journal of Life Science (2013)",
+        "url": "https://doi.org/10.5352/jls.2013.23.10.1192",
+        "taxa": [
+          "Pyropia/Porphyra complex"
+        ],
+        "category": "thallus_lifecycle_conchocelis",
+        "category_name": "엽체 생리 · 생활사 · 사상체",
+        "thumbnail_url": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
+        "takeaways": [
+          "연구 배경: 관련 학술 문헌 제목: Breeding of Ethanol-producing and Ethanol-tolerant Saccharomyces cerevisiae using Genome Shuffling.",
+          "주요 성과: 자세한 연구 성과는 원문 링크를 참고하십시오..",
+          "생물군 Pyropia/Porphyra complex의 환경 적응 분석."
+        ],
+        "implications": "본 연구는 Pyropia/Porphyra complex의 엽체 생리 · 생활사 · 사상체 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.",
+        "abstract": "관련 학술 문헌 제목: Breeding of Ethanol-producing and Ethanol-tolerant Saccharomyces cerevisiae using Genome Shuffling. 자세한 연구 성과는 원문 링크를 참고하십시오."
+      },
+      {
+        "headline": "Resistance Evaluation of Radish (Raphanus sativus L.) Inbred…",
+        "title": "Resistance Evaluation of Radish (Raphanus sativus L.) Inbred Lines against Turnip mosaic virus",
+        "authors": "Yoon J, Choi G, Kim S, Choi S",
+        "journal": "Research in Plant Disease (2017)",
+        "url": "https://doi.org/10.5423/rpd.2017.23.1.60",
+        "taxa": [
+          "Pyropia/Porphyra complex"
+        ],
+        "category": "thallus_lifecycle_conchocelis",
+        "category_name": "엽체 생리 · 생활사 · 사상체",
+        "thumbnail_url": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
+        "takeaways": [
+          "연구 배경: 관련 학술 문헌 제목: Resistance Evaluation of Radish (Raphanus sativus L.) Inbred Lines against Turnip mosaic virus.",
+          "주요 성과: 자세한 연구 성과는 원문 링크를 참고하십시오..",
+          "생물군 Pyropia/Porphyra complex의 환경 적응 분석."
+        ],
+        "implications": "본 연구는 Pyropia/Porphyra complex의 엽체 생리 · 생활사 · 사상체 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.",
+        "abstract": "관련 학술 문헌 제목: Resistance Evaluation of Radish (Raphanus sativus L.) Inbred Lines against Turnip mosaic virus. 자세한 연구 성과는 원문 링크를 참고하십시오."
+      },
+      {
+        "headline": "Characteristics of Newly Bred Shiitake Strain \"Chunbaegko\"",
+        "title": "Characteristics of Newly Bred Shiitake Strain \"Chunbaegko\"",
+        "authors": "Bak W, Park Y, Lee B, Ka K et al.",
+        "journal": "The Korean Journal of Mycology (2013)",
+        "url": "https://doi.org/10.4489/kjm.2013.41.1.28",
+        "taxa": [
+          "Pyropia/Porphyra complex"
+        ],
+        "category": "thallus_lifecycle_conchocelis",
+        "category_name": "엽체 생리 · 생활사 · 사상체",
+        "thumbnail_url": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
+        "takeaways": [
+          "연구 배경: 관련 학술 문헌 제목: Characteristics of Newly Bred Shiitake Strain \"Chunbaegko\".",
+          "주요 성과: 자세한 연구 성과는 원문 링크를 참고하십시오..",
+          "생물군 Pyropia/Porphyra complex의 환경 적응 분석."
+        ],
+        "implications": "본 연구는 Pyropia/Porphyra complex의 엽체 생리 · 생활사 · 사상체 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.",
+        "abstract": "관련 학술 문헌 제목: Characteristics of Newly Bred Shiitake Strain \"Chunbaegko\". 자세한 연구 성과는 원문 링크를 참고하십시오."
+      },
+      {
+        "headline": "Tibellia, a new genus of the Bacidiaceae with a byssoid thallus…",
+        "title": "Tibellia, a new genus of the Bacidiaceae with a byssoid thallus (lichenized Ascomycetes, Lecanorales)",
+        "authors": "Hafellner J, Vezda A",
+        "journal": "Nova Hedwigia (1992)",
+        "url": "https://doi.org/10.1127/nova.hedwigia/55/1992/183",
+        "taxa": [
+          "Pyropia/Porphyra complex"
+        ],
+        "category": "thallus_lifecycle_conchocelis",
+        "category_name": "엽체 생리 · 생활사 · 사상체",
+        "thumbnail_url": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
+        "takeaways": [
+          "연구 배경: 관련 학술 문헌 제목: Tibellia, a new genus of the Bacidiaceae with a byssoid thallus (lichenized Ascomycetes, Lecanorales).",
+          "주요 성과: 자세한 연구 성과는 원문 링크를 참고하십시오..",
+          "생물군 Pyropia/Porphyra complex의 환경 적응 분석."
+        ],
+        "implications": "본 연구는 Pyropia/Porphyra complex의 엽체 생리 · 생활사 · 사상체 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.",
+        "abstract": "관련 학술 문헌 제목: Tibellia, a new genus of the Bacidiaceae with a byssoid thallus (lichenized Ascomycetes, Lecanorales). 자세한 연구 성과는 원문 링크를 참고하십시오."
+      },
+      {
+        "headline": "A NEW SUGGESTION ON THE ORIGIN OF THALLUS IN THE MARCHANTIALES.…",
+        "title": "A NEW SUGGESTION ON THE ORIGIN OF THALLUS IN THE MARCHANTIALES. I. THE THALLUS STRUCTURE",
+        "authors": "Mehra P",
+        "journal": "American Journal of Botany (1957)",
+        "url": "https://doi.org/10.1002/j.1537-2197.1957.tb10570.x",
+        "taxa": [
+          "Pyropia/Porphyra complex"
+        ],
+        "category": "thallus_lifecycle_conchocelis",
+        "category_name": "엽체 생리 · 생활사 · 사상체",
+        "thumbnail_url": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
+        "takeaways": [
+          "연구 목적: 관련 학술 문헌 제목: A NEW SUGGESTION ON THE ORIGIN OF THALLUS IN THE MARCHANTIALES.",
+          "주요 발견: THE THALLUS STRUCTURE.",
+          "결론 및 성과: 자세한 연구 성과는 원문 링크를 참고하십시오.."
+        ],
+        "implications": "본 연구는 Pyropia/Porphyra complex의 엽체 생리 · 생활사 · 사상체 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.",
+        "abstract": "관련 학술 문헌 제목: A NEW SUGGESTION ON THE ORIGIN OF THALLUS IN THE MARCHANTIALES. I. THE THALLUS STRUCTURE. 자세한 연구 성과는 원문 링크를 참고하십시오."
+      },
+      {
+        "headline": "Thallus",
+        "title": "Thallus",
+        "authors": "Miller L",
+        "journal": "Fairy Tale Review (2019)",
+        "url": "https://doi.org/10.1353/fair.2019.a812636",
+        "taxa": [
+          "Pyropia/Porphyra complex"
+        ],
+        "category": "thallus_lifecycle_conchocelis",
+        "category_name": "엽체 생리 · 생활사 · 사상체",
+        "thumbnail_url": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
+        "takeaways": [
+          "연구 배경: 관련 학술 문헌 제목: Thallus.",
+          "주요 성과: 자세한 연구 성과는 원문 링크를 참고하십시오..",
+          "생물군 Pyropia/Porphyra complex의 환경 적응 분석."
+        ],
+        "implications": "본 연구는 Pyropia/Porphyra complex의 엽체 생리 · 생활사 · 사상체 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.",
+        "abstract": "관련 학술 문헌 제목: Thallus. 자세한 연구 성과는 원문 링크를 참고하십시오."
+      },
+      {
+        "headline": "Thallus",
+        "title": "Thallus",
+        "authors": "Miller",
+        "journal": "Fairy Tale Review (2019)",
+        "url": "https://doi.org/10.13110/fairtalerevi.15.1.0098",
+        "taxa": [
+          "Pyropia/Porphyra complex"
+        ],
+        "category": "thallus_lifecycle_conchocelis",
+        "category_name": "엽체 생리 · 생활사 · 사상체",
+        "thumbnail_url": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
+        "takeaways": [
+          "연구 배경: 관련 학술 문헌 제목: Thallus.",
+          "주요 성과: 자세한 연구 성과는 원문 링크를 참고하십시오..",
+          "생물군 Pyropia/Porphyra complex의 환경 적응 분석."
+        ],
+        "implications": "본 연구는 Pyropia/Porphyra complex의 엽체 생리 · 생활사 · 사상체 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.",
+        "abstract": "관련 학술 문헌 제목: Thallus. 자세한 연구 성과는 원문 링크를 참고하십시오."
+      },
+      {
+        "headline": "Zur Morphologie und Systematik desTrebouxia-Phycobionten im…",
+        "title": "Zur Morphologie und Systematik desTrebouxia-Phycobionten im Thallus vonUsnea longissima (Lecanorales)",
+        "authors": "Gärtner G, Ingolić E",
+        "journal": "Plant Systematics and Evolution (1988)",
+        "url": "https://doi.org/10.1007/bf00936346",
+        "taxa": [
+          "Pyropia/Porphyra complex"
+        ],
+        "category": "thallus_lifecycle_conchocelis",
+        "category_name": "엽체 생리 · 생활사 · 사상체",
+        "thumbnail_url": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
+        "takeaways": [
+          "연구 배경: 관련 학술 문헌 제목: Zur Morphologie und Systematik desTrebouxia-Phycobionten im Thallus vonUsnea longissima (Lecanorales).",
+          "주요 성과: 자세한 연구 성과는 원문 링크를 참고하십시오..",
+          "생물군 Pyropia/Porphyra complex의 환경 적응 분석."
+        ],
+        "implications": "본 연구는 Pyropia/Porphyra complex의 엽체 생리 · 생활사 · 사상체 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.",
+        "abstract": "관련 학술 문헌 제목: Zur Morphologie und Systematik desTrebouxia-Phycobionten im Thallus vonUsnea longissima (Lecanorales). 자세한 연구 성과는 원문 링크를 참고하십시오."
+      },
+      {
+        "headline": "Aragonite Formation by Conchocelis; The Sites of Primary…",
+        "title": "Aragonite Formation by Conchocelis; The Sites of Primary Biomineralization",
+        "authors": "Boney A",
+        "journal": "Nova Hedwigia (1984)",
+        "url": "https://doi.org/10.1127/nova.hedwigia/39/1984/259",
+        "taxa": [
+          "Pyropia/Porphyra complex"
+        ],
+        "category": "thallus_lifecycle_conchocelis",
+        "category_name": "엽체 생리 · 생활사 · 사상체",
+        "thumbnail_url": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
+        "takeaways": [
+          "연구 배경: 관련 학술 문헌 제목: Aragonite Formation by Conchocelis; The Sites of Primary Biomineralization.",
+          "주요 성과: 자세한 연구 성과는 원문 링크를 참고하십시오..",
+          "생물군 Pyropia/Porphyra complex의 환경 적응 분석."
+        ],
+        "implications": "본 연구는 Pyropia/Porphyra complex의 엽체 생리 · 생활사 · 사상체 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.",
+        "abstract": "관련 학술 문헌 제목: Aragonite Formation by Conchocelis; The Sites of Primary Biomineralization. 자세한 연구 성과는 원문 링크를 참고하십시오."
+      },
+      {
+        "headline": "Crecimiento in vitro de Conchocelis, Pyropia sp. sobre sustrato…",
+        "title": "Crecimiento in vitro de Conchocelis, Pyropia sp. sobre sustrato artificial con diferentes fertilizantes comerciales",
+        "authors": "GERONIMO MALDONADO G, ADVINCULA ZEBALLOS O, BALDEON W",
+        "journal": "Manglar (2022)",
+        "url": "https://doi.org/10.57188/manglar.2022.047",
+        "taxa": [
+          "Pyropia"
+        ],
+        "category": "thallus_lifecycle_conchocelis",
+        "category_name": "엽체 생리 · 생활사 · 사상체",
+        "thumbnail_url": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
+        "takeaways": [
+          "연구 목적: Aquaculture industries have grown recently, but there is still a lack of information on culture techniques for the early life stages of Pyropia sp.",
+          "주요 발견: This research aimed to determine the optimum concentration of Bayfolan® brand commercial sources of essential nutrients and La Molina® A and B hydroponic solution, for the growth and development of the \"conchocelis\" stage of Pyropia.",
+          "결론 및 성과: Leaving as evidence that the growth of \"Conchocelis\" is cultivated in vitro with commercial fertilizers, a strategy for a sustainable industry of \"nori\" in Peru.."
+        ],
+        "implications": "본 연구는 Pyropia의 엽체 생리 · 생활사 · 사상체 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.",
+        "abstract": "Aquaculture industries have grown recently, but there is still a lack of information on culture techniques for the early life stages of Pyropia sp. (Rhodophyta). This research aimed to determine the optimum concentration of Bayfolan® brand commercial sources of essential nutrients and La Molina® A and B hydroponic solution, for the growth and development of the \"conchocelis\" stage of Pyropia. The phase was investigated under conditions of temperature 15.03 ±0.31 °C, salinity 36.05 ±0.23 PSU, electrical conductivity 55.95 ± 0.14 mS/cm, irradiance 15.93 ±0.03 µmol m-2 s-1 and subjected to different treatments and control with Bayfolan® fertilizers and hydroponic solution A and B La Molina. Likewise, the results obtained were the maximum Nitrate uptake with Bayfolan® fertilizer and La Molina Hydroponic Solution with 0.1465 mM and 1.369 mM and Phosphate presenting a maximum uptake 0.0312 mM and 0.053 mM, respectively. The experiments were evaluated in a LED germination chamber (TE-4020 Tecnal) programmed for a time interval of 800 hours of settlement of Cigotospora for its growth to conchocelis; in addition, the comparison of means was performed by a Tukey test with a value of p ≥ 0.05, obtaining a growth on the substrate of 4.15 mm2 with the La Molina solution and 1.54 mm2 with the Bayfolan® Solution, but with different coverage of conchocelis on the substrate 49.75% y 63.09%. Leaving as evidence that the growth of \"Conchocelis\" is cultivated in vitro with commercial fertilizers, a strategy for a sustainable industry of \"nori\" in Peru."
+      },
+      {
+        "headline": "Cryoconservation du conchocelis de Porphyra linearis…",
+        "title": "Cryoconservation du conchocelis de Porphyra linearis (Rhodophyceae)",
+        "authors": "Arbault S, Delanoue G",
+        "journal": "Cryptogamie. Algologie (1994)",
+        "url": "https://doi.org/10.5962/p.309392",
+        "taxa": [
+          "Porphyra"
+        ],
+        "category": "thallus_lifecycle_conchocelis",
+        "category_name": "엽체 생리 · 생활사 · 사상체",
+        "thumbnail_url": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
+        "takeaways": [
+          "연구 배경: 관련 학술 문헌 제목: Cryoconservation du conchocelis de Porphyra linearis (Rhodophyceae).",
+          "주요 성과: 자세한 연구 성과는 원문 링크를 참고하십시오..",
+          "생물군 Porphyra의 환경 적응 분석."
+        ],
+        "implications": "본 연구는 Porphyra의 엽체 생리 · 생활사 · 사상체 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.",
+        "abstract": "관련 학술 문헌 제목: Cryoconservation du conchocelis de Porphyra linearis (Rhodophyceae). 자세한 연구 성과는 원문 링크를 참고하십시오."
+      },
+      {
+        "headline": "On the Shedding of Spores from “Conchocelis-Phase” of Porphyra…",
+        "title": "On the Shedding of Spores from “Conchocelis-Phase” of Porphyra tenera Cultured in Shells of Bivalves",
+        "authors": "SUTO S, MARUYAMA T, UMEBAYASHI O",
+        "journal": "NIPPON SUISAN GAKKAISHI (1954)",
+        "url": "https://doi.org/10.2331/suisan.20.490",
+        "taxa": [
+          "Porphyra"
+        ],
+        "category": "thallus_lifecycle_conchocelis",
+        "category_name": "엽체 생리 · 생활사 · 사상체",
+        "thumbnail_url": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
+        "takeaways": [
+          "연구 배경: 관련 학술 문헌 제목: On the Shedding of Spores from “Conchocelis-Phase” of Porphyra tenera Cultured in Shells of Bivalves.",
+          "주요 성과: 자세한 연구 성과는 원문 링크를 참고하십시오..",
+          "생물군 Porphyra의 환경 적응 분석."
+        ],
+        "implications": "본 연구는 Porphyra의 엽체 생리 · 생활사 · 사상체 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.",
+        "abstract": "관련 학술 문헌 제목: On the Shedding of Spores from “Conchocelis-Phase” of Porphyra tenera Cultured in Shells of Bivalves. 자세한 연구 성과는 원문 링크를 참고하십시오."
+      },
+      {
+        "headline": "Free amino acid contents of the gametophytic blades from the…",
+        "title": "Free amino acid contents of the gametophytic blades from the green mutant conchocelis and the heterozygous conchocelis in Porphyra yezoensis Ueda (Bangiales, Rhodophyta)",
+        "authors": "Niwa K, Furuita H, Aruga Y",
+        "journal": "Journal of Applied Phycology (2003)",
+        "url": "https://doi.org/10.1023/a:1026087316190",
+        "taxa": [
+          "Porphyra"
+        ],
+        "category": "thallus_lifecycle_conchocelis",
+        "category_name": "엽체 생리 · 생활사 · 사상체",
+        "thumbnail_url": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
+        "takeaways": [
+          "연구 배경: 관련 학술 문헌 제목: Free amino acid contents of the gametophytic blades from the green mutant conchocelis and the heterozygous conchocelis in Porphyra yezoensis Ueda (Bangiales, Rhodophyta).",
+          "주요 성과: 자세한 연구 성과는 원문 링크를 참고하십시오..",
+          "생물군 Porphyra의 환경 적응 분석."
+        ],
+        "implications": "본 연구는 Porphyra의 엽체 생리 · 생활사 · 사상체 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.",
+        "abstract": "관련 학술 문헌 제목: Free amino acid contents of the gametophytic blades from the green mutant conchocelis and the heterozygous conchocelis in Porphyra yezoensis Ueda (Bangiales, Rhodophyta). 자세한 연구 성과는 원문 링크를 참고하십시오."
+      },
+      {
+        "headline": "Changes of Tissue N Content and Community Structure of…",
+        "title": "Changes of Tissue N Content and Community Structure of Macroalgae on Intertidal Rocky Shores in Tongyeong Area due to Sewage Discharge",
+        "authors": "Kang Y, Park S, Oak J, Lee J et al.",
+        "journal": "Korean Journal of Fisheries and Aquatic Sciences (2009)",
+        "url": "https://doi.org/10.5657/kfas.2009.42.3.276",
+        "taxa": [
+          "Pyropia/Porphyra complex"
+        ],
+        "category": "thallus_lifecycle_conchocelis",
+        "category_name": "엽체 생리 · 생활사 · 사상체",
+        "thumbnail_url": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
+        "takeaways": [
+          "연구 배경: 관련 학술 문헌 제목: Changes of Tissue N Content and Community Structure of Macroalgae on Intertidal Rocky Shores in Tongyeong Area due to Sewage Discharge.",
+          "주요 성과: 자세한 연구 성과는 원문 링크를 참고하십시오..",
+          "생물군 Pyropia/Porphyra complex의 환경 적응 분석."
+        ],
+        "implications": "본 연구는 Pyropia/Porphyra complex의 엽체 생리 · 생활사 · 사상체 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.",
+        "abstract": "관련 학술 문헌 제목: Changes of Tissue N Content and Community Structure of Macroalgae on Intertidal Rocky Shores in Tongyeong Area due to Sewage Discharge. 자세한 연구 성과는 원문 링크를 참고하십시오."
+      },
+      {
+        "headline": "Aged Buoy-derived Microplastics Alter Photosynthetic Performance…",
+        "title": "Aged Buoy-derived Microplastics Alter Photosynthetic Performance and Metabolic Regulation in Pyropia yezoensis without Short-term Growth Inhibition",
+        "authors": "Feng Z, Duan Y, Bai B, Wei X et al.",
+        "journal": "Environmental pollution (Barking, Essex : 1987) (2026)",
+        "url": "#",
+        "taxa": [
+          "Pyropia"
+        ],
+        "category": "smart_aquaculture_mass_culture",
+        "category_name": "스마트 양식 및 대량 배양 기술",
+        "thumbnail_url": "https://images.unsplash.com/photo-1608408891571-89c4aa18ef7c?auto=format&fit=crop&w=800&q=80",
+        "takeaways": [
+          "연구 목적: Plastic aquaculture equipment can release microplastics into seaweed mariculture zones, yet the effects of these particles on cultivated macroalgae remain poorly understood.",
+          "주요 발견: In this study, Pyropia yezoensis thalli were exposed to field-aged buoy-derived polyvinyl chloride (PVC) and polyethylene terephthalate (PET) microplastics at 0.1, 1, and 10 mg/L for 7 d.",
+          "결론 및 성과: yezoensis, highlighting the need to consider polymer identity, aging status, and combined biomarker-metabolomic endpoints in ecological risk assessment of seaweed mariculture systems.."
+        ],
+        "implications": "본 연구는 Pyropia의 스마트 양식 및 대량 배양 기술 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.",
+        "abstract": "Plastic aquaculture equipment can release microplastics into seaweed mariculture zones, yet the effects of these particles on cultivated macroalgae remain poorly understood. In this study, Pyropia yezoensis thalli were exposed to field-aged buoy-derived polyvinyl chloride (PVC) and polyethylene terephthalate (PET) microplastics at 0.1, 1, and 10 mg/L for 7 d. Relative growth rate was not significantly affected, whereas other sublethal endpoints showed polymer-specific changes. PVC exposure was associated with stronger lipid peroxidation, carbohydrate depletion at high concentration, and increasing integrated stress. PET exposure mainly induced protein accumulation and peroxidase-related antioxidant responses, with the highest integrated deviation occurring at the lowest concentration. Metabolomic profiling further supported these physiological patterns. PVC-related metabolic changes were mainly associated with antioxidant regulation, lipid metabolism, and pigment-related pathways, consistent with membrane oxidative damage and phycobiliprotein disturbance. PET-related changes were more closely linked to protein synthesis, transport regulation, and cofactor-dependent antioxidant processes. Overall, aged PVC and PET microplastics induced distinct sublethal responses in P. yezoensis, highlighting the need to consider polymer identity, aging status, and combined biomarker-metabolomic endpoints in ecological risk assessment of seaweed mariculture systems."
+      },
+      {
+        "headline": "Navigating the potential of algal peptides: health effects,…",
+        "title": "Navigating the potential of algal peptides: health effects, market applications, and scientific challenges",
+        "authors": "Khaliq M, Noor Z, Moazzam M, Saeed F et al.",
+        "journal": "Annals of medicine (2026)",
+        "url": "#",
+        "taxa": [
+          "Neopyropia",
+          "Pyropia"
+        ],
+        "category": "blue_carbon_feed_methane",
+        "category_name": "블루카본 및 산업적 응용",
+        "thumbnail_url": "https://images.unsplash.com/photo-1498084393753-b411b2d26b34?auto=format&fit=crop&w=800&q=80",
+        "takeaways": [
+          "연구 목적: [INTRODUCTION] Algae-derived bioactive peptides are gaining recognition as functional ingredients offering health benefits and sustainability advantages over conventional proteins.",
+          "주요 발견: This review aimed to evaluate the current evidence on algal peptides, focusing on their nutritional content, mechanistic actions, health effects, potential for sustainability, and translational challenges.",
+          "결론 및 성과: Standardized production methods, improved delivery strategies, comprehensive safety assessments, and well-designed clinical studies are essential to support their application in functional foods and nutraceuticals.."
+        ],
+        "implications": "본 연구는 Neopyropia, Pyropia의 블루카본 및 산업적 응용 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.",
+        "abstract": "[INTRODUCTION] Algae-derived bioactive peptides are gaining recognition as functional ingredients offering health benefits and sustainability advantages over conventional proteins. This review aimed to evaluate the current evidence on algal peptides, focusing on their nutritional content, mechanistic actions, health effects, potential for sustainability, and translational challenges.\n\n[MATERIALS AND METHODS] A comprehensive literature search was conducted across PubMed, Scopus, ScienceDirect, Springer, Elsevier, and Google Scholar. Peer-reviewed studies reporting bioactive peptides derived from microalgae, macroalgae, or Cyanophyceae were included. In vitro, animal, and human intervention studies evaluating molecular mechanisms, metabolic outcomes, or clinical relevance were considered.\n\n[RESULTS] Available evidence shows that algal peptides exert multifunctional bioactivities, including inhibition of angiotensin-converting enzyme and renin, antioxidant and anti-inflammatory effects, modulation of glucose metabolism via α-amylase, α-glucosidase, and DPP-IV inhibition, and regulation of lipid metabolism and adipogenesis. Frequently studied sources included Limnospira, Chlorella, Auxenochlorella, Nannochloropsis, Undaria, Palmaria, Ulva, and Neopyropia. Limited human trials suggest modest but clinically relevant improvements in blood pressure, glycemic control, lipid profiles, and body-weight-related outcomes, primarily using whole algal biomass or extracts. Life-cycle assessments highlight favorable land-use efficiency and carbon sequestration potential, although economic feasibility is constrained by energy-intensive downstream processing.\n\n[CONCLUSION] Algal-derived peptides demonstrate promising health-promoting effects and align with sustainable nutrition goals. However, their clinical translation is limited by variability in peptide characterization, uncertain bioavailability, and lack of robust human trials. Standardized production methods, improved delivery strategies, comprehensive safety assessments, and well-designed clinical studies are essential to support their application in functional foods and nutraceuticals."
+      },
+      {
+        "headline": "Safety Assessment of Red Algae-Derived Ingredients as Used in…",
+        "title": "Safety Assessment of Red Algae-Derived Ingredients as Used in Cosmetics",
+        "authors": "Ferguson P, Bergfeld W, Belsito D, Cohen D et al.",
+        "journal": "International journal of toxicology (2026)",
+        "url": "#",
+        "taxa": [
+          "Pyropia/Porphyra complex"
+        ],
+        "category": "blue_carbon_feed_methane",
+        "category_name": "블루카본 및 산업적 응용",
+        "thumbnail_url": "https://images.unsplash.com/photo-1552728089-57bdde30beb3?auto=format&fit=crop&w=800&q=80",
+        "takeaways": [
+          "연구 목적: The Expert Panel for Cosmetic Ingredient Safety (Panel) assessed the safety of red algae-derived ingredients.",
+          "주요 발견: Sixty red algae-derived ingredients were found in the International Cosmetic Ingredient Dictionary (Dictionary); however, several of these ingredients may be equivalent according to accepted scientific names.",
+          "결론 및 성과: The Panel also concluded that the data are insufficient to make a determination of safety that the remaining 44 ingredients are safe under the intended conditions of use in cosmetic formulations.."
+        ],
+        "implications": "본 연구는 Pyropia/Porphyra complex의 블루카본 및 산업적 응용 분야에서 유의미한 실험 데이터를 확보하며 양식 기술 고도화에 기여합니다.",
+        "abstract": "The Expert Panel for Cosmetic Ingredient Safety (Panel) assessed the safety of red algae-derived ingredients. Sixty red algae-derived ingredients were found in the International Cosmetic Ingredient Dictionary (Dictionary); however, several of these ingredients may be equivalent according to accepted scientific names. These ingredients are mostly reported to function in cosmetics as skin-conditioning agents. Impurities, particularly arsenic, heavy metals, and pesticides, may be present in these ingredients; industry should continue to use good manufacturing practices to monitor and limit these possible impurities. The Panel considered the available data and concluded that 16 red algae-derived ingredients are safe in cosmetics in the present practices of use and concentration described in this safety assessment. The Panel also concluded that the data are insufficient to make a determination of safety that the remaining 44 ingredients are safe under the intended conditions of use in cosmetic formulations."
+      }
+    ]
+  },
+  {
     "filename": "2026-10-15-weekly-digest.md",
     "title": "김·바다고리풀속 및 블루카본 연구 주간 다이제스트 (2026-10-15)",
     "date": "2026-10-15",
