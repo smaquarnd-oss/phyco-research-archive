@@ -226,7 +226,7 @@ STRONG_DOMAIN_KEYWORDS = [
     "김 종자",
     "김 사상체",
     "김 각포자",
-    "사상체",
+    "사상체",  # "사상체질"(한의학)은 _keyword_hit 에서 제외
     "각포자",
     "각포자낭",
     "콘코셀리스",
@@ -243,8 +243,7 @@ GENERAL_DOMAIN_KEYWORDS = [
     "macroalgae",
     "seaweed farming",
     "blue carbon",
-    "해조류",
-    "해조",
+    "해조",  # "해조류" 포함
 ]
 
 def is_valid_abstract(abstract: Optional[str]) -> bool:
@@ -275,20 +274,21 @@ def is_valid_abstract(abstract: Optional[str]) -> bool:
     return True
 
 
+def _keyword_hit(kw: str, text: str) -> bool:
+    """영문 키워드는 단어 시작 경계를 요구(laver ≠ slavery, nori ≠ minority), 한글은 부분 일치."""
+    kw = kw.lower()
+    if kw.isascii():
+        return re.search(r"\b" + re.escape(kw), text) is not None
+    if kw == "사상체":
+        return re.search(r"사상체(?!질)", text) is not None
+    return kw in text
+
+
 def is_domain_relevant(title: str, abstract: str, keywords: str = "") -> bool:
     """해조류 및 김 연구 관련 논문만 통과시킵니다."""
     combined = f"{title} {abstract} {keywords}".lower()
-
-    strong_hits = sum(
-        1 for kw in STRONG_DOMAIN_KEYWORDS
-        if kw.lower() in combined
-    )
-
-    general_hits = sum(
-        1 for kw in GENERAL_DOMAIN_KEYWORDS
-        if kw.lower() in combined
-    )
-
+    strong_hits = sum(1 for kw in STRONG_DOMAIN_KEYWORDS if _keyword_hit(kw, combined))
+    general_hits = sum(1 for kw in GENERAL_DOMAIN_KEYWORDS if _keyword_hit(kw, combined))
     return strong_hits >= 1 or general_hits >= 2
 
 
@@ -445,9 +445,12 @@ def search_pubmed(query: str, page_size: int = 8) -> List[dict]:
         return []
 
 
-def search_crossref_korean(query: str, page_size: int = 6) -> List[dict]:
-    encoded_q = urllib.parse.quote(query)
-    url = f"https://api.crossref.org/works?query={encoded_q}&filter=has-abstract:true&rows={page_size}&sort=published&order=desc"
+def search_crossref_korean(query: str, page_size: int = 6, from_date: str = "", issn: str = "") -> List[dict]:
+    """Crossref 검색. issn 을 주면 그 저널 안에서만, from_date 를 주면 그 이후 발행분만."""
+    filters = ["has-abstract:true"] + ([f"from-pub-date:{from_date}"] if from_date else [])
+    base = f"https://api.crossref.org/journals/{issn}/works" if issn else "https://api.crossref.org/works"
+    q = f"query={urllib.parse.quote(query)}&" if query else ""
+    url = f"{base}?{q}filter={','.join(filters)}&rows={page_size}&sort=published&order=desc"
     resp_text = fetch_with_retry(url)
     if not resp_text:
         return []
@@ -501,7 +504,7 @@ def search_crossref_korean(query: str, page_size: int = 6) -> List[dict]:
                 "_lang": lang,
             })
 
-        print(f"  [Crossref/KCI] '{query}' -> 유효 실존 논문 {len(valid_articles)}편 확보")
+        print(f"  [Crossref] '{query or issn}' -> 유효 논문 {len(valid_articles)}편")
         return valid_articles
 
     except Exception as e:
@@ -509,105 +512,187 @@ def search_crossref_korean(query: str, page_size: int = 6) -> List[dict]:
         return []
 
 
-def search_kci_oaipmh(days_back: int = 7) -> List[dict]:
-    """
-    KCI OAI-PMH 프로토콜을 활용하여 최근 발행된 논문 메타데이터를 XML로 수집합니다.
-    (색인 지연 누락 방지를 위해 최소 30일~60일의 넉넉한 기간 확보)
-    """
-    base_url = "https://open.kci.go.kr/oai/request"
-    
-    # 💡 until_date 변수 정의 보완
-    until_date = datetime.now().date()
-    effective_days = max(days_back * 4, 30)
-    from_date = until_date - timedelta(days=effective_days)
-    
-    params = {
-        "verb": "ListRecords",
-        "set": "ARTI",
-        "metadataPrefix": "oai_dc",
-        "from": from_date.isoformat(),
-        "until": until_date.isoformat()
+KCI_OAI_URL = "https://open.kci.go.kr/oai/request"
+_DC = "{http://purl.org/dc/elements/1.1/}"
+_OAI = "{http://www.openarchives.org/OAI/2.0/}"
+
+
+def _has_hangul(text: str) -> bool:
+    return any(0xAC00 <= ord(c) <= 0xD7A3 for c in text or "")
+
+
+def _parse_kci_record(record: ET.Element) -> Optional[dict]:
+    """OAI-PMH oai_dc 레코드 1건 → 내부 논문 dict. 삭제 레코드나 메타데이터 없는 건 None."""
+    header = record.find(f"{_OAI}header")
+    if header is not None and header.get("status") == "deleted":
+        return None
+    dc = record.find(f"{_OAI}metadata/{{http://www.openarchives.org/OAI/2.0/oai_dc/}}dc")
+    if dc is None:
+        return None
+
+    def by_lang(tag: str) -> Dict[str, str]:
+        out: Dict[str, str] = {}
+        for el in dc.findall(f"{_DC}{tag}"):
+            if el.text and el.text.strip():
+                out.setdefault(el.get("lang", "original"), strip_html(el.text))
+        return out
+
+    titles, descs = by_lang("title"), by_lang("description")
+    title_ko, title_en = titles.get("original", ""), titles.get("english", "")
+    desc_ko, desc_en = descs.get("original", ""), descs.get("english", "")
+
+    # 국문 초록이 충분하면 국문, 아니면 영문 초록을 씁니다.
+    abstract = desc_ko if len(desc_ko) >= MIN_ABSTRACT_LENGTH else (desc_en or desc_ko)
+    title = title_ko or title_en
+
+    ids = {el.get("type", ""): (el.text or "").strip() for el in dc.findall(f"{_DC}identifier")}
+    doi = re.sub(r"^https?://(dx\.)?doi\.org/", "", ids.get("doi", ""), flags=re.I)
+    journal = (ids.get("journalInfo", "").split(",")[0] or dc.findtext(f"{_DC}publisher") or "KCI 등재학술지").strip()
+    url = dc.findtext(f"{_DC}url") or (f"https://doi.org/{doi}" if doi else "#")
+    date = (dc.findtext(f"{_DC}date") or "").strip()
+    creators = (dc.findtext(f"{_DC}creator") or "").split(";")
+    # "홍길동(소속)" → "홍길동"
+    names = [re.sub(r"\(.*?\)", "", c).strip() for c in creators if c.strip()]
+
+    return {
+        "id": ids.get("artiId") or doi or paper_fingerprint(title),
+        "doi": doi,
+        "title": title,
+        "title_en": title_en,
+        "abstractText": abstract,
+        "abstract_en": desc_en,
+        "authorString": ", ".join(names[:4]) + (" 외" if len(names) > 4 else "") if names else "국내 연구진",
+        "journalTitle": journal,
+        "pubYear": date[:4],
+        "subject": dc.findtext(f"{_DC}subject") or "",
+        "url": url,
+        "_source": "KCI",
+        "_lang": "ko" if _has_hangul(title + abstract) else "en",
     }
-    
-    url = f"{base_url}?{urllib.parse.urlencode(params)}"
-    print(f"  [OAI-PMH] KCI 논문 넉넉한 기간 하베스팅 중 ({from_date} ~ {until_date})...")
-    
-    xml_text = fetch_with_retry(url)
-    if not xml_text:
-        return []
 
+
+def search_kci_oaipmh(from_date: str, until_date: str, max_pages: int = 400) -> Tuple[List[dict], bool]:
+    """
+    KCI OAI-PMH 에서 [from_date, until_date] 사이에 '등록·갱신된' 레코드를 전부 받아
+    해조류 관련 논문만 남깁니다. (키 불필요)
+
+    - OAI-PMH 는 키워드 검색이 없어서 기간 내 전 분야 레코드를 페이지(100건)씩 받아야 합니다.
+      2주치 ≈ 100페이지 · 1만 건 · 약 5~6분.
+    - 날짜는 발행일이 아니라 갱신일이라 옛 논문도 섞이므로 발행연도(작년 이후)로 한 번 더 거릅니다.
+
+    반환: (논문 목록, 끝까지 받았는지). 끝까지 못 받았으면 다음 실행 때 같은 시작일부터 다시 받습니다.
+    """
+    min_year = datetime.now().year - 1
+    params: Dict[str, str] = {
+        "verb": "ListRecords", "set": "ARTI", "metadataPrefix": "oai_dc",
+        "from": from_date, "until": until_date,
+    }
+    print(f"  [KCI-OAI] {from_date} ~ {until_date} 등록분 하베스팅 (최대 {max_pages}페이지)...")
+    articles: List[dict] = []
+    seen = 0
+    started = time.time()
+
+    for page in range(1, max_pages + 1):
+        xml_text = fetch_with_retry(f"{KCI_OAI_URL}?{urllib.parse.urlencode(params)}", timeout=90, max_retries=4)
+        if not xml_text:
+            print(f"  [!] KCI-OAI {page}페이지 수신 실패 → 이번에는 여기까지만 (다음 실행 때 이어서)")
+            return articles, False
+        try:
+            root = ET.fromstring(xml_text.encode("utf-8"))
+        except ET.ParseError as e:
+            print(f"  [!] KCI-OAI {page}페이지 XML 오류: {e}")
+            return articles, False
+
+        err = root.find(f"{_OAI}error")
+        if err is not None:
+            if err.get("code") == "noRecordsMatch":
+                break
+            print(f"  [!] KCI-OAI 오류: {err.get('code')} {err.text}")
+            return articles, False
+
+        for rec in root.iter(f"{_OAI}record"):
+            seen += 1
+            art = _parse_kci_record(rec)
+            if not art or not art["pubYear"].isdigit() or int(art["pubYear"]) < min_year:
+                continue
+            if not is_valid_abstract(art["abstractText"]):
+                continue
+            if not is_domain_relevant(art["title"] + " " + art["title_en"],
+                                      art["abstractText"] + " " + art["abstract_en"], art["subject"]):
+                continue
+            articles.append(art)
+
+        token = root.find(f".//{_OAI}resumptionToken")
+        if page % 20 == 0:
+            print(f"    … {page}페이지 / {seen}건 확인 / 관련 {len(articles)}편 ({time.time() - started:.0f}초)")
+        if token is None or not (token.text or "").strip():
+            print(f"  [KCI-OAI] 완료: {page}페이지 · {seen}건 중 관련 논문 {len(articles)}편 ({time.time() - started:.0f}초)")
+            return articles, True
+        params = {"verb": "ListRecords", "resumptionToken": token.text.strip()}
+
+    print(f"  [!] KCI-OAI 최대 페이지({max_pages}) 도달 → 나머지는 다음 실행 때 이어서")
+    return articles, False
+
+
+# ═══════════════════════════════════════════════════════════════════════════
+# 4-1. 수집 상태 · 기발행 논문 목록 (GitHub Actions 가 함께 커밋)
+# ═══════════════════════════════════════════════════════════════════════════
+
+STATE_DIR = BASE_DIR / "data"
+PIPELINE_STATE_FILE = STATE_DIR / "pipeline_state.json"
+PUBLISHED_FILE = STATE_DIR / "published_papers.json"
+
+
+def _read_json(path: Path, default: Any) -> Any:
     try:
-        root = ET.fromstring(xml_text.encode('utf-8'))
-        
-        namespaces = {
-            'oai': 'http://www.openarchives.org/OAI/2.0/',
-            'dc': 'http://purl.org/dc/elements/1.1/'
-        }
-        
-        articles = []
-        for record in root.findall(".//oai:record", namespaces):
-            header = record.find("oai:header", namespaces)
-            if header is not None and header.get("status") == "deleted":
-                continue
-                
-            metadata = record.find("oai:metadata", namespaces)
-            if metadata is None:
-                continue
-                
-            dc_elem = metadata.find("{http://www.openarchives.org/OAI/2.0/oai_dc/}dc")
-            if dc_elem is None:
-                dc_elem = list(metadata)[0] if len(list(metadata)) > 0 else None
-                if dc_elem is None:
-                    continue
+        return json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return default
 
-            titles = [elem.text for elem in dc_elem.findall("{http://purl.org/dc/elements/1.1/}title") if elem.text]
-            title = strip_html(titles[0]) if titles else ""
-            
-            descriptions = [elem.text for elem in dc_elem.findall("{http://purl.org/dc/elements/1.1/}description") if elem.text]
-            abstract = ""
-            if descriptions:
-                abstract = strip_html(max(descriptions, key=len))
-                
-            creators = [elem.text for elem in dc_elem.findall("{http://purl.org/dc/elements/1.1/}creator") if elem.text]
-            author_str = ", ".join(creators[:4]) + (" 외" if len(creators) > 4 else "") if creators else "국내 연구진"
-            
-            dates = [elem.text for elem in dc_elem.findall("{http://purl.org/dc/elements/1.1/}date") if elem.text]
-            pub_year = dates[0][:4] if dates else str(datetime.now().year)
-            
-            identifiers = [elem.text for elem in dc_elem.findall("{http://purl.org/dc/elements/1.1/}identifier") if elem.text]
-            doi = ""
-            url = "#"
-            for ident in identifiers:
-                if "10." in ident:
-                    doi = ident.split("doi.org/")[-1].strip()
-                    url = f"https://doi.org/{doi}"
-                elif "kci.go.kr" in ident:
-                    url = ident
 
-            if not is_valid_abstract(abstract):
-                continue
-            if not is_domain_relevant(title, abstract):
-                continue
+def _write_json(path: Path, data: Any) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
 
-            articles.append({
-                "id": doi or paper_fingerprint(title),
-                "doi": doi,
-                "title": title,
-                "authorString": author_str,
-                "journalTitle": "KCI 등재학술지 (OAI-PMH)",
-                "pubYear": pub_year,
-                "abstractText": abstract,
-                "url": url,
-                "_source": "KCI-OAI",
-                "_lang": "ko"
-            })
-            
-        print(f"  [KCI-OAI] 조건 부합 실존 논문 {len(articles)}편 하베스팅 완료")
-        return articles
 
-    except Exception as e:
-        print(f"  [!] KCI OAI-PMH XML 파싱 오류: {e}")
-        return []
+def _norm_title(title: str) -> str:
+    return re.sub(r"[\W_]+", "", (title or "").lower())
+
+
+def registry_keys(title: str, doi: str = "") -> List[str]:
+    """같은 논문을 DOI 로도, 제목으로도 알아볼 수 있게 키를 2개까지 만듭니다."""
+    keys = []
+    if doi:
+        keys.append("doi:" + doi.strip().lower())
+    t = _norm_title(title)
+    if len(t) >= 20:
+        keys.append("title:" + t[:150])
+    return keys
+
+
+def load_published_registry() -> Dict[str, str]:
+    """{키: 실린 호 날짜}. 파일이 없으면 기존 archives/*.md, *.json 에서 처음 한 번 만들어 둡니다."""
+    data = _read_json(PUBLISHED_FILE, None)
+    if isinstance(data, dict):
+        return data
+    registry: Dict[str, str] = {}
+    for md in sorted(ARCHIVES_DIR.glob("*.md")):
+        m_date = re.search(r"\d{4}-\d{2}-\d{2}", md.name)
+        issue = m_date.group(0) if m_date else md.stem
+        text = md.read_text(encoding="utf-8")
+        for block in text.split("\n### ")[1:]:
+            m_title = re.search(r"\*\*원문 제목\*\*:\s*([^\n]+)", block)
+            m_doi = re.search(r"\[(10\.[^\]]+)\]\(", block)
+            if m_title:
+                for k in registry_keys(m_title.group(1), m_doi.group(1) if m_doi else ""):
+                    registry.setdefault(k, issue)
+    print(f"  [기발행 목록] 기존 아카이브에서 {len(registry)}개 키로 초기 생성")
+    return registry
+
+
+def is_already_published(registry: Dict[str, str], title: str, doi: str, today: str) -> bool:
+    # 같은 날 다시 실행할 때는 오늘 호에 실린 논문을 다시 허용합니다.
+    return any(registry.get(k) not in (None, today) for k in registry_keys(title, doi))
 
 
 # ═══════════════════════════════════════════════════════════════════════════
@@ -714,7 +799,7 @@ def _parse_ai_json(text: str) -> Optional[dict]:
 
 # Gemini 모델 순서: GEMINI_MODEL (쉼표로 여러 개 가능) → 기본값.
 # "gemini-flash-latest" 같은 별칭은 Google이 가리키는 모델을 바꾸므로 버전을 고정합니다.
-DEFAULT_GEMINI_MODELS = "gemini-3.6-flash,gemini-flash-lite-latest"
+DEFAULT_GEMINI_MODELS = "gemini-flash-lite-latest,gemini-3.6-flash"
 DEFAULT_CLAUDE_MODEL = "claude-haiku-5-5"
 
 # 이번 실행에서 계속 실패한 모델은 건너뜁니다 (논문마다 같은 대기 시간을 반복하지 않도록).
@@ -920,11 +1005,24 @@ def run_pipeline() -> None:
     config = load_keywords()
     target_taxa = config.get("target_taxa", {}).get("genera", [])
     categories_raw = config.get("research_categories", {})
-    lookback_days = config.get("search_settings", {}).get("days_lookback", 7)
+    settings = config.get("search_settings", {})
+    # 기발행 논문을 빼므로 기간을 넉넉히 잡아도 같은 논문이 반복되지 않습니다.
+    intl_days = int(settings.get("days_lookback_international", 60))
+    domestic_days = int(settings.get("days_lookback_domestic", 365))
+    kci_initial_days = int(settings.get("kci_initial_days", 14))
+    kci_max_pages = int(settings.get("kci_max_pages", 400))
+    max_papers = int(settings.get("max_papers_per_issue", 60))
+
+    today = datetime.now().date()
+    today_str = today.isoformat()
+    published = load_published_registry()
+    state = _read_json(PIPELINE_STATE_FILE, {})
+    skipped_published = 0
 
     collected: Dict[str, dict] = {}
 
     def _add_article(item: dict) -> None:
+        nonlocal skipped_published
         title = item.get("title", "")
         doi = item.get("doi", "")
         abstract = item.get("abstractText", "")
@@ -932,6 +1030,9 @@ def run_pipeline() -> None:
         if not is_valid_abstract(abstract):
             return
         if not is_domain_relevant(title, abstract):
+            return
+        if is_already_published(published, title, doi, today_str):
+            skipped_published += 1
             return
 
         pmid = item.get("pmid", item.get("id", ""))
@@ -942,9 +1043,9 @@ def run_pipeline() -> None:
     # ──────────────────────────────────────────────────────────────────
     # STEP 1: 글로벌 영문 DB 수집 (PubMed & Europe PMC)
     # ──────────────────────────────────────────────────────────────────
-    print("\n[1/5] 글로벌 영문 생명과학 DB 검색 중 (PubMed & Europe PMC)...")
-    date_from = (datetime.now().date() - timedelta(days=lookback_days * 4)).isoformat()
-    date_to = datetime.now().date().isoformat()
+    date_from = (today - timedelta(days=intl_days)).isoformat()
+    date_to = today_str
+    print(f"\n[1/5] 글로벌 영문 DB 검색 중 (PubMed & Europe PMC, {date_from} 이후)...")
 
     for taxa in target_taxa:
         if not isinstance(taxa, dict) or not taxa.get("enabled", True):
@@ -953,12 +1054,12 @@ def run_pipeline() -> None:
         print(f"  → 영문 생물군 '{taxa_name}' 검색...")
 
         epmc_q = f'("{taxa_name}") AND (FIRST_PDATE:[{date_from} TO {date_to}])'
-        epmc_items = search_europe_pmc(epmc_q, page_size=8)
+        epmc_items = search_europe_pmc(epmc_q, page_size=25)
         if len(epmc_items) < 2:
             aliases = taxa.get("aliases") or [taxa_name]
             alias_terms = " OR ".join(f'"{a}"' for a in aliases[:3])
             epmc_q = f'({alias_terms}) AND (FIRST_PDATE:[{date_from} TO {date_to}])'
-            epmc_items += search_europe_pmc(epmc_q, page_size=8)
+            epmc_items += search_europe_pmc(epmc_q, page_size=25)
         for it in epmc_items:
             _add_article(it)
 
@@ -966,26 +1067,40 @@ def run_pipeline() -> None:
             f'{taxa_name}[Title/Abstract] AND '
             f'("{date_from}"[Date - Publication] : "{date_to}"[Date - Publication])'
         )
-        for it in search_pubmed(pubmed_q, page_size=6):
+        for it in search_pubmed(pubmed_q, page_size=20):
             _add_article(it)
 
     # ──────────────────────────────────────────────────────────────────
-    # STEP 2: 국내 학술지 및 한국어 논문 수집 (KCI OAI-PMH & Crossref)
+    # STEP 2: 국내 논문 (KCI OAI-PMH 증분 수집 + Crossref)
     # ──────────────────────────────────────────────────────────────────
-    print("\n[2/5] 국내 학술지 및 한국어 실존 논문 검색 중 (KCI OAI-PMH & Crossref)...")
-    
-    kci_oai_items = search_kci_oaipmh(days_back=lookback_days)
-    for it in kci_oai_items:
+    print("\n[2/5] 국내 학술지 논문 검색 중 (KCI OAI-PMH & Crossref)...")
+
+    # KCI: 지난번에 받은 날짜 이후분만 (처음이면 최근 kci_initial_days 일)
+    kci_from = state.get("kci_oai_harvested_until") or (today - timedelta(days=kci_initial_days)).isoformat()
+    kci_items, kci_complete = search_kci_oaipmh(kci_from, today_str, max_pages=kci_max_pages)
+    for it in kci_items:
         _add_article(it)
 
+    domestic_from = (today - timedelta(days=domestic_days)).isoformat()
     korean_queries = [
         "김 양식", "해조류 육종", "사상체 각포자", "블루카본 해조류",
         "방사무늬김", "잇바디돌김", "바다고리풀 메탄", "해조류 바이오리액터"
     ]
     for kq in korean_queries:
-        cr_items = search_crossref_korean(kq, page_size=4)
-        for it in cr_items:
+        for it in search_crossref_korean(kq, page_size=10, from_date=domestic_from):
             _add_article(it)
+    # 초록을 Crossref 에 꾸준히 등록하는 국내 해조류 저널
+    for issn in settings.get("crossref_domestic_issns", ["1226-2617"]):  # Algae (한국조류학회)
+        for it in search_crossref_korean("", page_size=40, from_date=domestic_from, issn=issn):
+            it["_source"] = "Crossref (국내 저널)"
+            _add_article(it)
+
+    print(f"\n  기발행 논문 제외: {skipped_published}편")
+    if len(collected) > max_papers:
+        # 국내 논문을 먼저 살리고 나머지는 수집 순서대로 자릅니다 (상한: max_papers_per_issue).
+        ordered = sorted(collected.items(), key=lambda kv: kv[1].get("_lang") != "ko")
+        print(f"  [!] {len(collected)}편 > 상한 {max_papers}편 → 초과분은 다음 호로")
+        collected = dict(ordered[:max_papers])
 
     # ──────────────────────────────────────────────────────────────────
     # STEP 3: 논문 분류 및 동적 요약 생성 (캐시 시스템 연동)
@@ -1059,7 +1174,6 @@ def run_pipeline() -> None:
     # STEP 4: 영구 마크다운 아카이브 생성 및 저장
     # ──────────────────────────────────────────────────────────────────
     print("\n[4/5] 4분할 섹션 영구 마크다운 아카이브 빌드 중...")
-    today_str = datetime.now().strftime("%Y-%m-%d")
     archive_file = ARCHIVES_DIR / f"{today_str}-weekly-digest.md"
 
     cat_grouped: Dict[str, List[dict]] = {cid: [] for cid in CATEGORY_ORDER}
@@ -1153,6 +1267,16 @@ def run_pipeline() -> None:
     with open(json_path, "w", encoding="utf-8") as f:
         json.dump(latest_data, f, ensure_ascii=False, indent=2)
     print(f"  => 프론트엔드 JSON 데이터 갱신 완료: {json_path}")
+
+    for p in processed_papers:
+        for k in registry_keys(p["title"], p.get("doi", "")):
+            published[k] = today_str
+    _write_json(PUBLISHED_FILE, published)
+    if kci_complete:
+        state["kci_oai_harvested_until"] = today_str
+    state["last_run"] = today_str
+    _write_json(PIPELINE_STATE_FILE, state)
+    print(f"  => 기발행 목록 {len(published)}개 키 · KCI 수집 기준일 {state.get('kci_oai_harvested_until', '-')}")
 
     ko_count = sum(1 for p in processed_papers if p.get('lang') == 'ko')
     en_count = sum(1 for p in processed_papers if p.get('lang') == 'en')
