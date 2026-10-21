@@ -9,18 +9,19 @@ Phyco & Blue Carbon Magazine Static Site Builder v2.0
 - Editor's Weekly Insight 섹션별 탑재
 """
 
-import os
 import sys
 import re
 import json
 from pathlib import Path
-from datetime import datetime
 
 # Windows 콘솔 및 다국어 지원을 위한 UTF-8 강제 설정
 if hasattr(sys.stdout, 'reconfigure'):
     sys.stdout.reconfigure(encoding='utf-8', errors='replace')
 if hasattr(sys.stderr, 'reconfigure'):
     sys.stderr.reconfigure(encoding='utf-8', errors='replace')
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from common import assign_unique_thumbnails, clean_summary  # noqa: E402
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 ARCHIVES_DIR = BASE_DIR / "archives"
@@ -29,85 +30,6 @@ PUBLIC_DATA_DIR = PUBLIC_DIR / "data"
 
 PUBLIC_DIR.mkdir(parents=True, exist_ok=True)
 PUBLIC_DATA_DIR.mkdir(parents=True, exist_ok=True)
-
-# 4분할 카테고리별 썸네일 풀
-CURATED_THUMBNAILS = {
-    "breeding_molecular_pathology": [
-        "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1563674407-b5de7db5ccb0?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1484557052118-f32bd25b45b5?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1530497610245-94d3c16cda28?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1582719471384-894fbb16e074?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1581093588401-fbb62a02f120?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1581093450021-4a7360e9a6b5?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1576086476234-1103be98f096?auto=format&fit=crop&w=800&q=80",
-    ],
-    "thallus_lifecycle_conchocelis": [
-        "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1614728894747-a83421789f10?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1559827260-dc66d52bef19?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1509563768818-dafe9ad27b4e?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1544551763-77ef2d0cf967?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1682687220063-4742bd7fd538?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1528183429752-a97d0bf99b5a?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1498084393753-b411b2d26b34?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=800&q=80",
-    ],
-    "smart_aquaculture_mass_culture": [
-        "https://images.unsplash.com/photo-1581093458791-9f3c3900df4b?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1594122230689-45899d9e6f69?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1608408891571-89c4aa18ef7c?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1530541930197-ff16ac917b0e?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1574943320219-553eb213f72d?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1516216628859-9bcceabb84ca?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=800&q=80",
-    ],
-    "blue_carbon_feed_methane": [
-        "https://images.unsplash.com/photo-1682687220063-4742bd7fd538?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1682687220199-d0124f48f95b?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1498084393753-b411b2d26b34?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1552728089-57bdde30beb3?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1534951009808-766178b47a4f?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1516214104703-d870798883c5?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80",
-    ],
-    # 레거시 카테고리 폴백
-    "thallus_lifecycle_cultivation": [
-        "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1581093458791-9f3c3900df4b?auto=format&fit=crop&w=800&q=80",
-    ],
-}
 
 # 4개 섹션 기본 에디터 인사이트
 DEFAULT_INSIGHTS = {
@@ -200,9 +122,6 @@ def extract_articles_from_markdown(body: str) -> list:
     current_category = "thallus_lifecycle_conchocelis"
     current_cat_name = "엽체 생리 · 생활사 · 사상체"
 
-    # 카테고리별 썸네일 사용 추적 (build 시 중복 방지)
-    used_thumbs_per_cat: dict[str, set] = {}
-
     sections = body.split("\n## ")
     for sec in sections:
         lines = sec.splitlines()
@@ -243,11 +162,20 @@ def extract_articles_from_markdown(body: str) -> list:
             if m_jour:
                 journal = m_jour.group(1).strip().replace("*", "")
 
+            year = ""
+            m_year = re.search(r"\((\d{4})\)", journal)
+            if m_year:
+                year = m_year.group(1)
+                journal = journal[:m_year.start()].strip()
+
             # DOI URL
             doi_url = "#"
+            doi = ""
             m_doi = re.search(r"-\s*\*\*.*?\*\*:\s*.*?\[(.*?)\]\((.*?)\)", sub_text)
             if m_doi:
                 doi_url = m_doi.group(2).strip()
+                if m_doi.group(1).startswith("10."):
+                    doi = m_doi.group(1).strip()
             else:
                 m_link = re.search(r"https?://[^\s\)]+", sub_text)
                 if m_link:
@@ -271,20 +199,10 @@ def extract_articles_from_markdown(body: str) -> list:
             if m_thumb:
                 thumbnail_url = m_thumb.group(1).strip()
 
-            if not thumbnail_url:
-                pool = CURATED_THUMBNAILS.get(current_category, CURATED_THUMBNAILS.get("thallus_lifecycle_conchocelis", []))
-                used_set = used_thumbs_per_cat.setdefault(current_category, set())
-                assigned = None
-                for url in pool:
-                    if url not in used_set:
-                        assigned = url
-                        used_set.add(url)
-                        break
-                thumbnail_url = assigned or (pool[len(used_set) % len(pool)] if pool else "")
-
             # 3가지 핵심 요약 포인트
             takeaways = []
-            m_takeaways = re.search(r"####\s*📌\s*3가지 핵심 요약.*?\n(.*?)(?=\n####|\n---|\Z)", sub_text, re.DOTALL)
+            # 헤더 문구가 버전마다 달라("3가지 핵심 요약" / "핵심 요약 포인트") 이모지로만 찾습니다.
+            m_takeaways = re.search(r"####\s*📌[^\n]*\n(.*?)(?=\n####|\n---|\Z)", sub_text, re.DOTALL)
             if m_takeaways:
                 raw_t = m_takeaways.group(1).strip()
                 for line in raw_t.splitlines():
@@ -294,35 +212,20 @@ def extract_articles_from_markdown(body: str) -> list:
 
             # 연구자 시사점
             implications = ""
-            m_imp = re.search(r"####\s*💡\s*연구자 시사점.*?\n(.*?)(?=\n####|\n---|\Z)", sub_text, re.DOTALL)
+            m_imp = re.search(r"####\s*💡[^\n]*\n(.*?)(?=\n####|\n---|\Z)", sub_text, re.DOTALL)
             if m_imp:
                 implications = m_imp.group(1).strip()
 
             # 원문 초록
             abstract_text = ""
-            m_abs = re.search(r"####\s*📄\s*논문 원문 초록.*?\n(.*?)(?=\n####|\n---|\Z)", sub_text, re.DOTALL)
+            m_abs = re.search(r"####\s*📄[^\n]*\n(.*?)(?=\n####|\n---|\Z)", sub_text, re.DOTALL)
             if m_abs:
                 abstract_text = m_abs.group(1).strip()
-            else:
-                m_abs_old = re.search(r"####\s*(?:📄|📌)\s*.*?(?:Abstract|초록).*?\n(.*?)(?=\n####|\n---|\Z)", sub_text, re.DOTALL)
-                if m_abs_old:
-                    abstract_text = m_abs_old.group(1).strip()
 
-            # Takeaways 보정 (없을 경우)
+            # 중복 제거 · 템플릿 제거 · 부족하면 초록에서 추출 (시사점은 없으면 비워서 카드에서 숨김)
+            takeaways, implications = clean_summary(takeaways, implications, abstract_text)
             if not takeaways:
-                if abstract_text:
-                    sentences = [s.strip() for s in re.split(r"\.\s+", abstract_text) if len(s.strip()) > 15]
-                    if len(sentences) >= 3:
-                        takeaways = [f"연구 목적: {sentences[0]}.", f"주요 발견: {sentences[1]}.", f"결론 및 성과: {sentences[-1]}."]
-                    elif len(sentences) == 2:
-                        takeaways = [f"연구 배경: {sentences[0]}.", f"주요 성과: {sentences[1]}.", f"생물군 {', '.join(taxa)}의 환경 적응 분석."]
-                    else:
-                        takeaways = [f"{', '.join(taxa)} 대상 {current_cat_name} 분석 수행.", f"학술 논문 DOI를 통해 상세 프로토콜 제공."]
-                else:
-                    takeaways = [f"{', '.join(taxa)} 관련 {current_cat_name} 최신 성과.", "정규 색인 학술지 논문."]
-
-            if not implications:
-                implications = f"본 연구는 {', '.join(taxa)}의 {current_cat_name} 전략 수립 및 관련 산업화 연구에 기초 학술적 근거를 제공합니다."
+                takeaways = [title]
 
             articles.append({
                 "headline": headline,
@@ -330,6 +233,8 @@ def extract_articles_from_markdown(body: str) -> list:
                 "authors": authors,
                 "journal": journal,
                 "url": doi_url,
+                "doi": doi,
+                "year": year,
                 "taxa": taxa,
                 "category": current_category,
                 "category_name": current_cat_name,
@@ -359,7 +264,20 @@ def build_site():
     for md_path in md_files:
         content = md_path.read_text(encoding="utf-8")
         meta, body = parse_frontmatter(content)
-        articles = extract_articles_from_markdown(body)
+
+        # fetch_and_archive.py 가 함께 저장한 JSON 이 있으면 그대로 사용 (마크다운 재파싱 손실 없음)
+        json_path = md_path.with_suffix(".json")
+        if json_path.exists():
+            articles = json.loads(json_path.read_text(encoding="utf-8")).get("articles", [])
+            for art in articles:
+                art["takeaways"], art["implications"] = clean_summary(
+                    art.get("takeaways", []), art.get("implications", ""), art.get("abstract", "")
+                )
+        else:
+            articles = extract_articles_from_markdown(body)
+
+        # 한 호 안에서 같은 사진이 두 번 나오지 않게 (카테고리를 넘어서도)
+        assign_unique_thumbnails(articles)
 
         file_date = meta.get("date")
         if not file_date:
@@ -379,8 +297,9 @@ def build_site():
         }
         archives_index.append(archive_entry)
 
-        if latest_archive is None:
-            latest_archive = archive_entry
+    # 날짜 기준 최신순. 첫 화면은 논문이 있는 가장 최근 호.
+    archives_index.sort(key=lambda a: a["date"], reverse=True)
+    latest_archive = next((a for a in archives_index if a["articles"]), archives_index[0])
 
     with open(PUBLIC_DATA_DIR / "archives-index.json", "w", encoding="utf-8") as f:
         json.dump(archives_index, f, ensure_ascii=False, indent=2)
@@ -397,8 +316,8 @@ def generate_magazine_html(latest_archive, archives_index):
     4분할 전문 학술 매거진 스타일 싱글 페이지 정적 HTML 템플릿을 생성합니다.
     주의: Python f-string이므로 JS 중괄호는 모두 {{ }} 로 이스케이프.
     """
-    latest_json_str = json.dumps(latest_archive, ensure_ascii=False)
-    index_json_str = json.dumps(archives_index, ensure_ascii=False)
+    latest_json_str = json.dumps(latest_archive, ensure_ascii=False).replace("</", r"<\/")
+    index_json_str = json.dumps(archives_index, ensure_ascii=False).replace("</", r"<\/")
 
     return f"""<!DOCTYPE html>
 <html lang="ko" class="scroll-smooth">
@@ -737,6 +656,13 @@ def generate_magazine_html(latest_archive, archives_index):
     let selectedTaxa = 'all';
     let searchQuery = '';
 
+    function esc(v) {{
+      return String(v ?? '').replace(/[&<>"']/g, c => ({{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}}[c]));
+    }}
+    function safeUrl(u) {{
+      return /^https?:[/][/]/i.test(u || '') ? esc(u) : '#';
+    }}
+
     function initIcons() {{
       if (window.lucide) lucide.createIcons();
     }}
@@ -757,13 +683,13 @@ def generate_magazine_html(latest_archive, archives_index):
     // 논문 카드 렌더러
     function renderCard(art, idx) {{
       const taxaBadges = (art.taxa || []).map(t =>
-        `<span class="px-2 py-0.5 rounded text-[11px] font-semibold bg-black/60 backdrop-blur-md text-white border border-white/20 italic">${{t}}</span>`
+        `<span class="px-2 py-0.5 rounded text-[11px] font-semibold bg-black/60 backdrop-blur-md text-white border border-white/20 italic">${{esc(t)}}</span>`
       ).join(' ');
 
       const takeawaysList = (art.takeaways || []).map((point, pIdx) => `
         <li class="flex items-start gap-2 text-xs text-slate-700 dark:text-slate-300 leading-relaxed">
           <span class="shrink-0 w-4 h-4 rounded-full bg-ocean-100 dark:bg-ocean-950 text-ocean-700 dark:text-ocean-300 flex items-center justify-center text-[10px] font-bold mt-0.5 border border-ocean-300 dark:border-ocean-800">${{pIdx + 1}}</span>
-          <span>${{point}}</span>
+          <span>${{esc(point)}}</span>
         </li>
       `).join('');
 
@@ -774,18 +700,18 @@ def generate_magazine_html(latest_archive, archives_index):
           <div>
             <!-- 썸네일 -->
             <div class="relative h-48 w-full overflow-hidden bg-slate-100 dark:bg-slate-800">
-              <img src="${{art.thumbnail_url}}" alt="${{art.headline}}"
+              <img src="${{safeUrl(art.thumbnail_url)}}" alt="${{esc(art.headline)}}"
                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
                 loading="lazy" />
               <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
               <div class="absolute top-3 left-3 flex flex-wrap gap-1">${{taxaBadges}}</div>
               <div class="absolute top-3 right-3">
                 <span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-white/90 dark:bg-black/80 backdrop-blur-md text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-700">
-                  ${{art.journal || 'Journal'}}
+                  ${{esc(art.journal || 'Journal')}}
                 </span>
               </div>
               <div class="absolute bottom-2.5 left-3 right-3 text-[11px] text-white/90 truncate">
-                <i data-lucide="user" class="w-3 h-3 inline mr-1 text-ocean-300"></i> ${{art.authors || 'Authors'}}
+                <i data-lucide="user" class="w-3 h-3 inline mr-1 text-ocean-300"></i> ${{esc(art.authors || 'Authors')}}
               </div>
             </div>
 
@@ -793,10 +719,10 @@ def generate_magazine_html(latest_archive, archives_index):
             <div class="p-5 sm:p-6 space-y-4">
               <!-- 헤드라인 -->
               <h3 class="text-base sm:text-lg font-bold text-slate-900 dark:text-white group-hover:text-ocean-600 dark:group-hover:text-ocean-400 transition-colors leading-snug line-clamp-2">
-                <a href="${{art.url}}" target="_blank" rel="noopener noreferrer">${{art.headline}}</a>
+                <a href="${{safeUrl(art.url)}}" target="_blank" rel="noopener noreferrer">${{esc(art.headline)}}</a>
               </h3>
               <!-- 원문 제목 -->
-              <p class="text-xs text-slate-500 dark:text-slate-400 line-clamp-2 font-mono">${{art.title}}</p>
+              <p class="text-xs text-slate-500 dark:text-slate-400 line-clamp-2 font-mono">${{esc(art.title)}}</p>
 
               <!-- Key Takeaways -->
               <div class="pt-3 border-t border-slate-100 dark:border-slate-800/80">
@@ -814,7 +740,7 @@ def generate_magazine_html(latest_archive, archives_index):
                     <i data-lucide="lightbulb" class="w-3 h-3 text-amber-500"></i>
                     <span>Researcher's Takeaway (시사점)</span>
                   </h5>
-                  <p class="text-xs text-slate-700 dark:text-slate-300 leading-relaxed">${{art.implications}}</p>
+                  <p class="text-xs text-slate-700 dark:text-slate-300 leading-relaxed">${{esc(art.implications)}}</p>
                 </div>
               ` : ''}}
 
@@ -829,9 +755,9 @@ def generate_magazine_html(latest_archive, archives_index):
                 <div id="abstract-drawer-${{idx}}" class="hidden mt-3 p-4 rounded-xl bg-slate-50 dark:bg-deepsea-950 border border-slate-200 dark:border-slate-800 text-xs font-serif-mag text-slate-700 dark:text-slate-300 leading-relaxed max-h-80 overflow-y-auto whitespace-pre-line shadow-inner">
                   <div class="text-[10px] font-mono uppercase tracking-wider text-slate-400 mb-1.5 font-sans font-bold flex items-center justify-between">
                     <span>ORIGINAL ABSTRACT</span>
-                    <span>DOI: ${{art.doi || 'Linked'}}</span>
+                    <span>DOI: ${{esc(art.doi || '-')}}</span>
                   </div>
-                  ${{cleanAbstract}}
+                  ${{esc(cleanAbstract)}}
                 </div>
               </div>
             </div>
@@ -839,8 +765,8 @@ def generate_magazine_html(latest_archive, archives_index):
 
           <!-- 카드 푸터 -->
           <div class="px-5 sm:px-6 py-3 border-t border-slate-100 dark:border-slate-800/80 bg-slate-50/50 dark:bg-deepsea-900/50 flex items-center justify-between">
-            <span class="text-[11px] text-slate-400">${{art.journal || 'Academic Article'}} (${{art.year || '2026'}})</span>
-            <a href="${{art.url}}" target="_blank" rel="noopener noreferrer"
+            <span class="text-[11px] text-slate-400">${{esc(art.journal || 'Academic Article')}}${{art.year ? ' (' + esc(art.year) + ')' : ''}}</span>
+            <a href="${{safeUrl(art.url)}}" target="_blank" rel="noopener noreferrer"
               class="inline-flex items-center gap-1.5 text-xs font-bold text-ocean-600 dark:text-ocean-400 hover:text-ocean-800 dark:hover:text-ocean-300 transition">
               <span>원문 열람 (DOI)</span>
               <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
@@ -1002,7 +928,7 @@ def generate_magazine_html(latest_archive, archives_index):
         <div class="p-3.5 rounded-xl border border-slate-200 dark:border-slate-800 hover:bg-ocean-50/60 dark:hover:bg-slate-800/60 transition cursor-pointer flex items-center justify-between"
              onclick="switchArchive('${{arch.date}}')">
           <div>
-            <h4 class="text-sm font-bold text-slate-800 dark:text-slate-200">${{arch.title}}</h4>
+            <h4 class="text-sm font-bold text-slate-800 dark:text-slate-200">${{esc(arch.title)}}</h4>
             <p class="text-xs text-slate-400 mt-0.5">발행일: ${{arch.date}} • 분석 논문: ${{arch.total_papers || (arch.articles || []).length}}편</p>
           </div>
           <span class="text-xs font-bold text-ocean-600 dark:text-ocean-400 flex items-center gap-1">
@@ -1029,6 +955,7 @@ def generate_magazine_html(latest_archive, archives_index):
     }};
 
     // 초기 렌더링
+    document.getElementById('hero-issue-date').innerText = currentArchive.date + '호';
     document.getElementById('stat-papers').innerText = (currentArchive.articles || []).length + '편';
     renderSections();
     initIcons();

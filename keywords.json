@@ -332,6 +332,6 @@
     ],
     "language": "multilingual",
     "generate_ai_summary": true,
-    "gemini_model": "gemini-2.5-flash"
+    "gemini_model": "gemini-3.6-flash"
   }
 }

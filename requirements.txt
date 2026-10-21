@@ -1,5 +1,4 @@
-# Phyco & Blue Carbon Research Archive Pipeline Dependencies
-requests>=2.31.0
-pyyaml>=6.0.1
-python-dateutil>=2.8.2
-google-genai>=1.0.0
+# Phyco & Blue Carbon Research Archive Pipeline dependencies.
+# Keep this file ASCII-only: pip on Korean Windows reads it as cp949.
+# Everything else uses the Python standard library.
+certifi>=2024.2.2   # CA bundle for verified HTTPS (fixes PubMed SSL errors on Windows)
