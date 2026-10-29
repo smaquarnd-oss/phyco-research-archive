@@ -1796,5 +1796,993 @@
     "summary_source": "gemini",
     "section": "smart_aquaculture_mass_culture",
     "relevance": "core"
+  },
+  "v7:a4bf23f27018e0b477a42a1f80a99fb8": {
+    "headline": "사료용 Asparagopsis 첨가를 통한 반추동물 메탄 배출 저감 잠재력",
+    "takeaways": [
+      "농업 부문에서 발생하는 주요 온실가스인 반추동물의 메탄 배출 저감을 위해 붉은해조류 사료 첨가 방식이 주목받고 있다.",
+      "건조한 Asparagopsis를 사료에 약 0.5%만 혼합해도 반추위 메탄 배출량을 최대 95%까지 줄일 수 있는 것으로 나타났다.",
+      "아시아태평양 지역은 우수한 기후 조건과 오랜 양식 전통을 바탕으로 Asparagopsis 대량 생산을 주도할 잠재력이 크다."
+    ],
+    "implications": "현장 양식가와 정책 담당자는 아태지역의 기존 양식 인프라를 활용하여 Asparagopsis 대량 생산 체계를 구축하고, 국제 협력을 통해 사료 시장 상용화를 추진해야 한다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": null,
+    "relevance": "core"
+  },
+  "v7:4e8ac0ac871cec48ff32e4e6285bdc1a": {
+    "headline": "마른김의 주요 무기질 신속 측정을 위한 FT-NIR 정량 모델 개발",
+    "takeaways": [
+      "마른김의 주요 무기질 함량을 신속하고 비파괴적으로 측정하기 위한 FT-NIR 분광법 기반의 정량 모델 구축을 시도했다.",
+      "1,800~2,500 nm 파장 대역과 부분최소제곱회귀법을 적용한 결과, 4종의 무기질 분석에서 교차 및 검증 회귀계수 0.97 이상과 Q값 0.94 이상을 달성했다.",
+      "FT-NIR 분광 분석이 마른김의 주요 무기질 함량을 높은 신뢰도로 측정할 수 있는 효과적인 방법임을 확인했다."
+    ],
+    "implications": "현장 가공 공장이나 품질 관리 부서에서 화학적 전처리 없이 수초 내에 김의 무기질 성분을 전수 조사할 수 있어, 제품 표준화와 품질 등급 판정 자동화 라인 구축에 바로 활용할 수 있습니다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "processing_materials_market",
+    "relevance": "core"
+  },
+  "v7:69ae108aeebf78cb03080abf4794bb6f": {
+    "headline": "지리가중회귀모형으로 분석한 지역별 김 양식 성과 결정요인",
+    "takeaways": [
+      "전국 161개 시·군의 물김 생산량과 생산단가를 종속변수로 삼아 양식 성과의 공간적 이질성과 결정요인을 파악하고자 하였다.",
+      "전남·전북은 생산기반 요인이 물김 생산량에 큰 영향을 미친 반면, 충남·수도권·부산은 가공 및 수출 요인이 생산단가에 큰 영향을 주었다.",
+      "김 양식 성과는 생산·가공·수출 구조의 지역별 연계에 따라 차별적으로 형성되므로 맞춤형 산업 정책이 필요하다."
+    ],
+    "implications": "지방자치단체별로 생산 중심 지원 또는 가공·수출 인프라 확충 등 차별화된 자원 배분 전략을 수립해야 합니다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "smart_aquaculture_mass_culture",
+    "relevance": "core"
+  },
+  "v7:8514d9cbe1cdde5534a23feaf9e10ffb": {
+    "headline": "머신러닝으로 분석한 한국 김 수출 시장의 유형과 핵심 영향요인",
+    "takeaways": [
+      "마른김을 중간재, 조미김을 최종 소비재로 구분하여 2015년부터 2024년까지 94개국의 김 수출시장을 분석하고자 했다.",
+      "XGBoost 모형을 활용한 분석 결과 전체 정확도 77.1%로 수출시장이 복합시장과 마른김 및 조미김 성장시장으로 분류되었으며, 전년도 수출액과 생산가능인구 비율 등이 주요 영향요인으로 확인되었다.",
+      "김 수출 확대를 위해서는 시장 유형별 특성과 주요 영향요인을 반영한 차별화된 전략이 필요하다."
+    ],
+    "implications": "수출 담당 기관이나 가공업체는 대상 국가의 인구 구조와 전년도 수출 실적을 바탕으로 마른김과 조미김 시장을 구분하여 맞춤형 진출 전략을 수립해야 합니다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "processing_materials_market",
+    "relevance": "core"
+  },
+  "v7:b3a49b22c6fcf8533fdf524b6f37ec38": {
+    "headline": "UAE 수산식품 유통채널 특성과 한국산 수출 제약요인 분석",
+    "takeaways": [
+      "아랍에미리트(UAE) 두바이와 아부다비의 수산시장, 대형 유통매장, 프리미엄 전문 매장을 대상으로 수입 동향과 유통 특성을 조사하고 한국산 수산식품의 수출 제약요인을 분석하였다.",
+      "김은 일반 소매채널에서, 냉동·가공수산물은 한국계 전문 매장에서 주로 유통되었으며, 넙치는 한국·중국계 매장에서 활어로 판매되는 등 품목별 차이가 확인되었다.",
+      "현지 수입업체는 신선도와 가격을 우선 고려하며, 한국산 수출 확대를 위해 제품 형태 다변화, 전문 매장 활용, 셰프 대상 조리 테스트 및 맞춤형 소비 방식 홍보가 필요하다."
+    ],
+    "implications": "현지 프리미엄 채널 진입을 위해 소량 테스트 수출과 조리 시연을 연계하고, 수입서류 간소화 및 맞춤형 제품 정보 패키지를 선제적으로 구축해야 합니다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "processing_materials_market",
+    "relevance": "core"
+  },
+  "v7:309b81ee052cff876564ccd6b9599d01": {
+    "headline": "한국산 '곱창김'의 신종 규명: Pyropia eudentata sp. nov. 학술적 분리",
+    "takeaways": [
+      "형태적 유사성으로 인해 혼동되어 온 한국산 Pyropia dentata의 정확한 분류군 정립과 은폐된 다양성 평가가 필요했습니다.",
+      "소기관 유전체와 다중좌위 계통 분석 결과, 한국산 집단은 원산지 기준의 Pyropia dentata와 명확히 구분되는 별개의 계통을 형성했습니다.",
+      "통합적 유전체 및 형태학적 증거를 바탕으로 한국산 집단을 신종인 Pyropia eudentata sp. nov.로 제안했습니다."
+    ],
+    "implications": "현장 양식가와 연구자는 향후 품종 관리 및 종 판별 시 신종으로 밝혀진 Pyropia eudentata의 유전적 특성을 반영해야 하며, 이는 양식 산업의 종자 인증 및 생물학적 데이터 관리 체계를 개선하는 데 활용될 수 있습니다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "breeding_molecular_pathology",
+    "relevance": "core"
+  },
+  "v7:09c6274e713d3b7206469244ec2d961a": {
+    "headline": "동결 전 건조 처리가 Pyropia yezoensis의 난균류 병해 저항성을 높인다",
+    "takeaways": [
+      "고수온기 Pyropia yezoensis 양식에 큰 위협이 되는 붉은갯병과 갯녹병 등 난균류 병해를 제어하기 위한 연구를 진행했다.",
+      "약 80%의 수분을 손실시키는 건조 후 -20°C에서 동결하는 처리(DTF)를 거친 엽체는 대조군에 비해 병 발생이 지연되고 감염 심각도가 유의하게 낮아졌으며, PyHSP 유전자의 발현이 증가했다.",
+      "동결 전 건조 처리가 유도하는 스트레스 반응이 열쇼크 단백질(HSP) 전사와 연관되어 병원균 저항성을 강화하며, 동아시아 양식 현장의 냉동망 관행에 대한 생물학적 근거를 제공한다."
+    ],
+    "implications": "현장 양식가들은 고수온기 초기 양식에서 냉동망 처리 과정의 수분 손실률과 온도(15~20°C 구간)를 정밀하게 조절하여 병해 피해를 예방하는 방안을 실무에 적용할 수 있다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "breeding_molecular_pathology",
+    "relevance": "core"
+  },
+  "v7:a0515570c3cb5ac80fca01e3878bb509": {
+    "headline": "홍조류 Pyropia haitanensis의 제아잔틴 에폭시다아제 진화와 스트레스 대응 기전",
+    "takeaways": [
+      "홍조류 내 카로티노이드 대사의 핵심인 제아잔틴 에폭시다아제(ZEP)의 진화적 기원과 기능은 그간 명확히 규명되지 않았다.",
+      "재조합 PhZEP 단백질은 제아잔틴을 안테라잔틴으로 특이적으로 전환하였으며, 발현량은 강광 조건에서 중등도로, 건조 스트레스 시 상대 수분 함량 4.8%에서 9.52배까지 급증했다.",
+      "PhZEP는 명확한 제아잔틴 에폭시다아제 활성을 보이며 홍조류의 광 보호 전략과 비생물적 스트레스 반응에 관여하는 것으로 확인되었다."
+    ],
+    "implications": "현장 양식가와 연구자는 기후 변화에 따른 고온·건조 스트레스 환경에서 방사무늬김 등 홍조류의 품종 내건성 강화 및 광 보호 메커니즘을 분자 수준에서 진단하고 모니터링하는 지표로 활용할 수 있습니다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "thallus_lifecycle_conchocelis",
+    "relevance": "core"
+  },
+  "v7:04609a221a8e06857e41ffdd8aa057c5": {
+    "headline": "방사무늬김의 유전자 형질 전환을 위한 분자 도구 개발과 최적 계통 규명",
+    "takeaways": [
+      "Pyropia yezoensis는 조간대 적응 기전 연구의 모델이자 경제적으로 중요한 양식 생물이지만, 유전자 형질 전환 도구가 제한적이어서 추가 개발이 필요하다.",
+      "형광단백질 8종의 발현을 평가한 결과 PyZsYellow, PyZsGFP, PysGFP 등에서 특이적 형광 신호가 확인되었으며, RZ 계통이 가장 높은 전환 잠재력을 보였다.",
+      "이번에 검증된 핵 국소화 신호 서열, T2A 린커 및 세포 크기와 전환 효율 간의 상관관계는 향후 유전자 기능 연구를 위한 체계적인 도구 키트 구축에 기여한다."
+    ],
+    "implications": "현장 양식가와 연구자는 이번에 발굴된 RZ 계통과 엽체 중부의 높은 효율 특성을 활용하여 유전자 교정 및 품종 개량 실험의 성공률을 높일 수 있다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "breeding_molecular_pathology",
+    "relevance": "core"
+  },
+  "v7:4485362ff42973bec66e9be96629bcc2": {
+    "headline": "Pyropia haitanensis 사상체 성숙의 핵심 메커니즘과 지질 대사의 역할 규명",
+    "takeaways": [
+      "Pyropia haitanensis의 사상체 발달 비동기화는 신품종의 대규모 양식을 제한하는 주요 요인으로 작용해왔습니다.",
+      "조기 성숙 계통(S1)은 후기 성숙 계통(S2)보다 포스파티딜콜린(PC) 합성을 일찍 개시하고, 트리아실글리세롤(TG)을 빠르게 대사하여 에너지를 공급함으로써 사상체 성숙과 각포자낭 형성을 촉진했습니다.",
+      "지질 대사, 특히 인지질 대사는 자유 생활형 사상체의 성숙 과정을 유도하고 세포막 유동성을 유지하는 핵심적인 역할을 담당합니다."
+    ],
+    "implications": "현장 양식가와 육종 연구자는 사상체 배양 시 지질 대사 경로를 조절하는 환경 요인을 제어함으로써 종자 생산의 동기화율을 높이고 신품종 보급의 효율성을 개선할 수 있습니다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "thallus_lifecycle_conchocelis",
+    "relevance": "core"
+  },
+  "v7:70b338090e3b904f7d3f787bff682de0": {
+    "headline": "Pyropia yezoensis의 포자체 발달을 조절하는 KNOX-HDAC2 전사 억제 복합체 규명",
+    "takeaways": [
+      "홍조류의 세대교섭 및 세포 운명 결정에 관여하는 유전적 조절 기전은 그동안 명확히 밝혀지지 않았다.",
+      "AP-MS, DAP-seq, Y1H 등의 분석을 통해 PyKNOX가 히스톤 탈아세틸화효소 PyHDAC2와 복합체를 형성하여 스가 'TGAG' 모티프를 인지하고 SCF 유비퀴틴 리가제 구성 요소인 PyCAND1의 프로모터에 직접 결합해 발현을 억제함을 밝혔다.",
+      "PyKNOX-PyHDAC2 복합체는 이배체 포자체 단계에서 크게 발현되어 PyCAND1 발현과 강한 음의 상관관계를 보이며, 이는 홍조류 생활사 전환의 유전적 경로에 대한 진화적 통찰을 제공한다."
+    ],
+    "implications": "본 연구에서 밝혀진 Pyropia yezoensis의 포자체 발달 유전자 네트워크는 향후 우수 품종 선발 및 김 양식 산업의 종자 개량 기술 개발을 위한 이론적 기반으로 활용될 수 있다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "breeding_molecular_pathology",
+    "relevance": "core"
+  },
+  "v7:83e8e50579a480852ae4ed7334c337bf": {
+    "headline": "양식 부표 미세플라스틱이 김의 생리 및 대사에 미치는 영향",
+    "takeaways": [
+      "양식장 내 플라스틱 자재에서 유래한 미세플라스틱이 양식 해조류에 미치는 영향은 아직 잘 알려지지 않았습니다.",
+      "Pyropia yezoensis를 0.1, 1, 10 mg/L의 PVC 및 PET 미세플라스틱에 7일간 노출한 결과 단기 성장은 저해되지 않았으나 폴리머 종류별로 지질 과산화, 단백질 축적 등 뚜렷한 아치사 반응과 대사 변화가 나타났습니다.",
+      "노출된 PVC와 PET는 서로 다른 생리적·대사적 반응을 유도하므로, 해조류 양식장의 생태 리스크 평가 시 플라스틱의 종류와 노출 상태를 함께 고려해야 합니다."
+    ],
+    "implications": "해조류 양식 구역 내 노후화된 PVC 및 PET 부표 등 양식 자재 관리 기준을 강화하고, 미세플라스틱 오염에 따른 양식 생물의 잠재적 스트레스 요인을 반영한 환경 모니터링 정책이 필요합니다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "smart_aquaculture_mass_culture",
+    "relevance": "core"
+  },
+  "v7:bc99180acb9fed5d81933aa8ba5b0c27": {
+    "headline": "푸트레신 대사를 통한 Pyropia 초기 포자 발달 조절 기전 규명",
+    "takeaways": [
+      "Pyropia 양식 생산성은 껍질 사상체에서 방출된 각포자의 부착, 극화, 감수분열을 거쳐 유아로 발달하는 초기 발효 효율에 크게 좌우됩니다.",
+      "포자 발달 과정에서 푸트레신 합성 관련 유전자 ODC, ADC, CPA의 발현과 세포 내 푸트레신 함량이 크게 증가했으며, 외인성 푸트레신 처리 시 극화율과 감수분열율이 향상되었습니다.",
+      "특이적 저해제 DFMO와 siRNA를 통한 PyODC 침일 실험을 통해 푸트레신과 PyODC가 각포자의 초기 발달 및 극화·감수분열 과정에 필수적인 역할을 함을 입증했습니다."
+    ],
+    "implications": "종묘 생산 현장에서 푸트레신 대사 경로를 정밀하게 조절하면 각포자의 발달 효율을 높이고 양식 성공률을 극대화하는 새로운 기술적 전략으로 활용할 수 있습니다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "thallus_lifecycle_conchocelis",
+    "relevance": "core"
+  },
+  "v7:669abe08dedb1c571cb39ce25fe082f1": {
+    "headline": "Porphyra haitanensis 다당류의 궤양성 대장염 예방 기전 규명",
+    "takeaways": [
+      "Porphyra haitanensis로부터 고압 열수 추출법으로 얻은 다당류가 궤양성 대장염 억제에 잠재력이 있으나 그 작용 기전은 명확히 밝혀지지 않았다.",
+      "추출된 다당류는 갈락토스 85.65%와 퓨코스 11.24%로 구성된 황산화 비정질 다당류이며, 면역 조절 활성과 함께 Firmicutes, Lachnospiraceae_NK4A136_group, Ligilactobacillus의 증식을 촉진하고 단쇄지방산 합성을 유도했다.",
+      "생성된 단쇄지방산이 TLR4/MyD88/NF-κB 경로를 억제함으로써 장내 염증을 완화하고 상피 장벽을 강화하여 궤양성 대장염을 예방하는 것으로 나타났다."
+    ],
+    "implications": "제조 공정에서 황산화 다당류의 구조적 특성을 활용하여 장내 미생물과 면역 대사 축을 타깃으로 하는 기능성 식품 및 천연 치료제 개발의 기초 자료로 활용할 수 있다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "processing_materials_market",
+    "relevance": "core"
+  },
+  "v7:1033632f7fb31cbd8c504feb0d8ebe6b": {
+    "headline": "목포 김 가공단지 방류수가 연안 수질에 미치는 영향과 관리 방안",
+    "takeaways": [
+      "김(Pyropia spp.) 가공 산업의 급격한 확장에 따라 해역으로 유입되는 방류수의 증거 기반 관리가 요구되고 있습니다.",
+      "목포 김 가공단지 인근 해역 조사 결과, 방류 시즌 동안 용존유기탄소(DOC)와 입자유기탄소(POC)가 각각 59.6%, 242% 급증했습니다.",
+      "총유기탄소(TOC)가 연안 수질 관리의 핵심 지표로 도출되었으며, 규제 기준 마련을 위해 장기 모니터링이 필요합니다."
+    ],
+    "implications": "현장 양식가와 지자체는 가공단지 인근의 유기물 및 영양염류 부하를 줄이기 위해 TOC 중심의 방류수 모니터링 체계를 도입하고, 향후 구체적인 수질 규제 기준 수립을 위한 다중 해역 장기 조사에 착수해야 합니다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "blue_carbon_feed_methane",
+    "relevance": "core"
+  },
+  "v7:fce21454ac3334571de6f82eec7d273c": {
+    "headline": "Porphyra haitanensis 유래 R-phycocyanin의 수중 수은 고감도 검출 및 제거",
+    "takeaways": [
+      "홍조류에 풍부한 피코빌리단백질이 중금속 이온과 결합하는 잠재력에 주목하여 수중 중금속 제거 및 검출 연구가 필요했습니다.",
+      "Porphyra haitanensis의 R-phycocyanin은 Hg 2+에 대해 1.76 × 10 7 M -1의 높은 결합 친화도를 보였으며, 흡수 스펙트럼 강도를 75% 감소시키고 융점을 14 °C 낮추었습니다.",
+      "알긴산젤에 고정화된 R-phycocyanin은 오염된 식수에서 2 ppb 수준의 Hg 2+를 감지하고 2시간 동안 25% 제거하는 이중 기능을 입증했습니다."
+    ],
+    "implications": "현장 양식가나 수질 정화 정책 담당자는 해조류 부산물이나 단백질 추출물을 활용해 저비용·고효율의 중금속 바이오센서 및 수질 정화 필터 소재를 개발하는 후속 실증 사업을 추진할 수 있습니다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "processing_materials_market",
+    "relevance": "core"
+  },
+  "v7:377d6a78e12962224211ac5fdd1046e4": {
+    "headline": "중국 하이저우만 대규모 Porphyra yezoensis 양식이 퇴적물 탄소 격리에 미치는 영향",
+    "takeaways": [
+      "해조류 양식이 자연 기반 블루카본 해법으로 널리 권장되고 있으나 퇴적물 탄소 격리에 미치는 장기적 영향은 명확히 규명되지 않았습니다.",
+      "중국 하이저우만의 고밀도 Porphyra yezoensis 양식장과 비양식장을 비교 분석한 결과, 표층 퇴적물에서는 유기탄소가 약간 증가했으나 주상 코어 퇴적물에서는 탄소 격리의 장기적 차이가 없었으며 탄소 매립 플럭스는 양식장 TOC 7.2 ± 1.6, TIC 17.7 ± 3.5 g m -2 yr -1, 비양식장 TOC 7.0 ± 1.5, TIC 16.7 ± 3.4 g m -2 yr -1로 유사했습니다.",
+      "집약적 Porphyra 양식은 영양염 경쟁으로 식물플랑크톤 성장을 억제하고 분해 효과를 유발하여 장기적인 탄소 매립 효율을 제한하므로, 해조류 양식의 탄소 싱크 가설은 일반화하지 않고 사례별로 평가해야 합니다."
+    ],
+    "implications": "정책 담당자와 현장 양식가들은 해조류 양식이 즉각적인 유기물 유입을 일으키더라도 장기적 퇴적물 탄소 매립으로 직결되지 않는다는 점을 고려하여, 블루카본 인증 및 생태계 서비스 평가 시 개별 해역의 퇴적물 코어 분석 데이터를 기반으로 한 신중한 접근을 취해야 합니다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "blue_carbon_feed_methane",
+    "relevance": "core"
+  },
+  "v7:82f50bec53101c6f9ea1da8b4a7f8f5c": {
+    "headline": "Porphyra umbilicalis 피코빌리단백질에서 발굴한 KEAP1 타깃 항산화 펩타이드",
+    "takeaways": [
+      "홍조류 Porphyra umbilicalis의 피코빌리단백질은 생리활성 펩타이드의 풍부한 전구체이지만, 고효능 서열의 표적 발굴은 여전히 도전적인 과제입니다.",
+      "가상 효소 가수분해로 얻은 908개 서열을 필터링하고 분자 도킹 및 동역학 시뮬레이션을 거쳐 KEAP1 켈치 도메인에 안정적으로 결합하는 4개 후보 펩타이드(FK, FKP, FRS, RRF)를 선별했으며, 이들은 DPPH·ABTS 라디칼 소거능과 Fe2+ 킬레이팅 능력을 보이고 Caco-2 세포에서 산화 스트레스를 유의하게 억제했습니다.",
+      "본 연구는 해양 유래 펩타이드 발굴을 위한 실용적인 워크플로우를 제시하며, 발굴된 4개 후보 펩타이드는 실제 P. umbilicalis 가수분해물 내 기능성 식품 소재로서의 가능성을 입증했습니다."
+    ],
+    "implications": "기능성 식품 및 소재 개발 연구자는 in silico 스크리닝과 세포 실험을 결합한 이 펩타이드 발굴 파이프라인을 활용하여 해조류 부산물에서 고부가가치 항산화 소재를 효율적으로 탐색할 수 있습니다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "processing_materials_market",
+    "relevance": "core"
+  },
+  "v7:9528d94e2d3a041dd2c45bb4b5583f7a": {
+    "headline": "몰디브 맹그로브 홍조류의 MAAs 화학적 기초 및 환경 조사",
+    "takeaways": [
+      "기후변화로 맹그로브 고사가 진행되는 몰디브 해역에서 홍조류의 자외선 흡수 물질인 MAAs 분포 조사가 시급했다.",
+      "15개 섬에서 채집한 28개 시료 분석 결과, 4종의 MAAs가 확인되었으며 총 함량은 0.23~6.66 mg g⁻¹ DW 범위를 보였고 Wilsonosiphonia fujiae 등에서 고농도로 검출되었다.",
+      "이번에 밝혀진 맹그로브 홍조류의 화학적 기초 자료는 향후 기후변화 압력 속에서 서식지 보전 및 복원 전략 수립에 활용될 수 있다."
+    ],
+    "implications": "현장 관리자는 맹그로브 캐노피 손실로 인한 자외선 증가가 해조류 생태계에 미치는 스트레스를 모니터링할 때, 본 연구의 MAAs 기준 데이터를 생태계 건강성 지표로 활용할 수 있다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "thallus_lifecycle_conchocelis",
+    "relevance": "core"
+  },
+  "v7:2cfa27d0253739ad46086e4a8fe3cc72": {
+    "headline": "우수한 감칠맛과 독특한 녹색을 지닌 Neopyropia yezoensis 돌연변이주 형질 평가",
+    "takeaways": [
+      "프리미엄 해조류 시장의 수요를 충족할 향미가 뛰어난 Neopyropia 육종 라인 개발이 요구되고 있다.",
+      "화학적으로 유도된 녹색 돌연변이주 Y-G001은 야생형과 동등한 성장률 및 각포자 방출 능력을 보였으며, 감칠맛 유리 아미노산이 12.13%, 핵산이 16.44% 증가하고 EUC가 68.27% 향상되었다.",
+      "유전자형 변이로 고유의 녹색을 유지하고 열풍 건조 시 감칠맛 성분이 증폭되는 Y-G001은 상업적 양식 가치가 높은 유망한 품종이다."
+    ],
+    "implications": "품종 관리 현장에서는 Y-G001의 안정적인 대량 양식 가능성과 건조 공정에서의 풍미 증폭 특성을 활용하여 고부가가치 마른김 제품 라인업을 기획할 수 있다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "breeding_molecular_pathology",
+    "relevance": "core"
+  },
+  "v7:6cb972e16e00f35430658efbea8dc40b": {
+    "headline": "대서양 해조류 7종의 영양 성분 및 단백질 소재화 가능성 평가",
+    "takeaways": [
+      "토착, 침입, 산업 부산물 해조류 간의 영양 및 안전성 통합 평가는 부족하여 대체 단백질 후보 발굴에 한계가 있었다.",
+      "Porphyra umbilicalis는 30.78%, Gracilaria gracilis는 22.69%의 단백질을 기록했으며, Gelidium corneum 부산물은 필수아미노산 함량 44.8 g/100 g과 아미노산 지수 141%를 보였다.",
+      "G. gracilis, P. umbilicalis, Gelidium corneum 부산물이 대체 단백질 소재 개발을 위한 유망한 후보로 확인되었다."
+    ],
+    "implications": "현장 양식가와 가공 산업계는 버려지던 해조류 부산물과 침입종(Rugulopteryx okamurae)을 고부가가치 단백질 사료 및 식품 원료로 업사이클링하는 공급망 다변화 전략을 수립할 수 있다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "processing_materials_market",
+    "relevance": "core"
+  },
+  "v7:1662a93ea5cd1d68b70ebd5c272b657b": {
+    "headline": "상업용 식용 해조류의 무기질 및 지방산 조성 특성 분석",
+    "takeaways": [
+      "최근 건강식품으로 주목받는 상업용 식용 해조류의 무기질 성분과 지방산 조성을 평가하여 안전성과 활용 가치를 파악하고자 했다.",
+      "갈조류는 K와 Na 함량이 높았고, 다시마(kombu)는 CEVA 권고치 2000 mg/kg을 초과하는 요오드를 보였으며, 거의 모든 시료가 Cd(0.5 mg/kg)와 총 As(3 mg/kg)의 권고 기준치를 넘었다.",
+      "안전한 식품 보조제 활용과 혁신적인 식품 소재 개발을 위해 요오드, 카드뮴, 비소 수치에 대한 철저한 관리가 필수적이다."
+    ],
+    "implications": "식품 가공업체와 규제 기관은 시판 해조류 제품의 중금속 및 요오드 함량을 엄격히 모니터링하고, 소비자 노출 저감을 위한 구체적인 섭취 가이드라인과 맞춤형 위험성 평가 체계를 마련해야 합니다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "processing_materials_market",
+    "relevance": "core"
+  },
+  "v7:146d5d29bb01486029ccc4d616ce0a4b": {
+    "headline": "한국 성인의 습관적인 김 섭취와 복부비만 위험 감소의 연관성",
+    "takeaways": [
+      "복부비만은 대사 질환의 주요 위험 요인이며, 한국에서 흔히 소비되는 Porphyra 속 김은 지방 축적을 줄일 수 있는 식이섬유와 생리활성 화합물을 포함하고 있습니다.",
+      "18년간 5,457명의 성인을 추적 조사한 결과, 김을 가장 많이 섭취한 그룹은 가장 적게 섭취한 그룹에 비해 복부비만 위험이 남성은 28%, 여성은 33% 낮았습니다.",
+      "한국 성인에서 습관적인 김 섭취는 복부비만 발생 위험 감소와 유의미한 연관성을 보였으며, 인과관계 확인을 위한 추가적인 전향적 및 중재 연구가 필요합니다."
+    ],
+    "implications": "임상 영양사 및 공중보건 정책 담당자는 대사 질환 예방 식단 가이드라인을 수립할 때 전통 해조류 식품의 섭취 빈도를 주요 변수로 반영할 수 있습니다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "processing_materials_market",
+    "relevance": "related"
+  },
+  "v7:3cc240d35e3642de8fb4bcbc62d01a12": {
+    "headline": "Porphyra haitanensis 유산균 발효물의 대사체 및 생리활성 해석에 관한 고찰",
+    "takeaways": [
+      "Lactiplantibacillus plantarum을 이용한 Porphyra haitanensis 발효는 체지방 개선 관련 활성 및 대사체 재구성을 유도하는 것으로 보고되었습니다.",
+      "비표적 LC-MS 분석을 통해 대사체 변화가 확인되었으나, γ-aminobutyric acid와 p-coumaric acid의 농도 변화는 추가적인 정량 분석이 필요합니다.",
+      "발효물의 췌장 리파아제 저해 활성 증가를 명확히 입증하기 위해서는 대사체의 정밀 검증과 pH 대조군 실험이 요구됩니다."
+    ],
+    "implications": "해조류 발효 음료 개발 및 기능성 소재화 연구에서 대사체의 기전을 명확히 규명하려면 단순한 상대적 풍부도 측정 단계를 넘어 교차 확인과 교차 대조군 설정이 필수적입니다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "processing_materials_market",
+    "relevance": "core"
+  },
+  "v7:84e781a917e6e5fbc8ba9b90165e593a": {
+    "headline": "저품질 Porphyra haitanensis의 Lactiplantibacillus plantarum 발효를 통한 기능성 음료 개발",
+    "takeaways": [
+      "하품 Porphyra haitanensis(FPH)는 식감과 향미가 떨어져 활용도가 낮아, Lactiplantibacillus plantarum 발효를 통한 고부가가치화 가능성을 조사하였다.",
+      "발효 결과 췌장 리파아제, 콜레스테롤 에스테라제, 콜레스테롤 미셀 용해도 저해율이 각각 최대 68.27%, 68.97%, 72.72%로 향상되었고 글리코콜레이트와 타우로콜레이트 결합능도 증가했다.",
+      "최적화된 발효 음료는 90°C에서 10분 살균 시 췌장 리파아제 저해율 93.02%를 유지하며, 4°C 보관 시 유통기한이 308일에 이를 것으로 예측되어 저품질 해조류 활용의 기술적 기반을 마련했다."
+    ],
+    "implications": "현장 가공업체는 저품질 해조류를 유산균 발효와 최적의 배합(발효액 70%, 에리트리톨 10 g/100 mL, 구연산나트륨 0.5 g/100 mL)으로 가공하여 기능성 음료로 상품화할 수 있으며, 4°C 냉장 보관을 통해 유통 안정성을 확보할 수 있다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "processing_materials_market",
+    "relevance": "core"
+  },
+  "v7:c78aee19ca1535bca1e7db622830ab5f": {
+    "headline": "식용 홍조류 Porphyra tenera 다당류 추출물의 노로바이러스 결합 억제 효능",
+    "takeaways": [
+      "식용 홍조류 Porphyra tenera의 후코이단 함유 다당류가 사람 노로바이러스의 숙주 세포 침입을 막는 억제 활성을 분석하고자 했다.",
+      "분자량 3~10 kDa 분획인 F3-10은 GII.4와 GII.17 P 도메인과 서브마이크로몰 수준으로 결합했으며, 소화 조건 하에서 5 mg/mL 농도로 마우스 노로바이러스가를 1.4 log10 PFU/mL 유의하게 감소시켰다.",
+      "Porphyra tenera의 F3-10 다당류 분획은 노로바이러스와 숙주 세포 HBGAs의 결합을 차단하는 유망한 기능성 소재 후보로 확인되었다."
+    ],
+    "implications": "제조 공정에서 3~10 kDa 분자량 범위를 선별하여 표준화하면, 식품 및 소화기 질환 예방을 위한 천연 항바이러스 소재 개발에 활용할 수 있습니다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "processing_materials_market",
+    "relevance": "core"
+  },
+  "v7:13aa70689333157c4863df16dff1c51f": {
+    "headline": "Neopyropia yezoensis 60개 계통의 내한성 평가 및 최적 품종 선발 모델 구축",
+    "takeaways": [
+      "동북아시아의 추운 겨울철 양식 환경은 Neopyropia yezoensis의 성장과 수확량에 심각한 타격을 주어, 내한성이 강화된 우수 계통 선발을 위한 평가 기준 마련이 시급합니다.",
+      "60개 계통을 대상으로 13가지 형질을 분석한 결과, 엽체 면적, 일일 성장률, chlorophyll a, phycoerythrin, allophycocyanin, 그리고 ΦPSII가 내한성의 주요 기여 요인으로 확인되었으며, 65% 이상의 계통에서 내한성이 관찰되었습니다.",
+      "모형 검증을 통해 R² 0.955에 달하는 최적의 내한성 평가 모델(D = 0.387area + 0.122Chl a + 0.242Fᵥ/fm + 0.066APC - 0.086)을 확립하여 신속한 내한성 품종 선발과 육종 효율 향상의 기반을 마련했습니다."
+    ],
+    "implications": "현장 양식가와 육종 연구자들은 확립된 내한성 평가 지수와 수식 모델을 활용하여 저온 피해에 강한 우수 종자를 조기에 선별하고, 기후변화에 대응하는 품종 개량 프로그램을 효율적으로 설계할 수 있습니다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "breeding_molecular_pathology",
+    "relevance": "core"
+  },
+  "v7:4e0e09e0ece8da1763c07b68f0ca6039": {
+    "headline": "침입 갈조류 확산이 이동성 저서동물 군집에 미치는 초기 영향",
+    "takeaways": [
+      "연안 생태계를 빠르게 변화시키는 침입 갈조류 Rugulopteryx okamurae가 이동성 저서동물 군집을 재구성하는 과정에 대한 공간·시간적 평가가 부족했다.",
+      "2014년과 2021년 스페인 알보란 해의 정점을 대상으로 한 BACI 설계 분석 결과, 도입 2년 차의 R. okamurae는 초기 단계에 머물렀으며 Asparagopsis taxiformis와 유사한 군집을 형성했다.",
+      "R. okamurae 정착에 따른 저서동물 군집의 재구성은 종 및 서식지 의존적이며, 이는 광범위한 분류학적 영향보다 선행하여 나타난다."
+    ],
+    "implications": "현장 관리자는 새로운 서식지 형성 침입종의 생태적 영향을 평가할 때, 단일 종의 확산뿐만 아니라 기존에 정착해 있던 외래종(A. taxiformis)과의 상호작용 및 종별 서식지 특성을 고려한 모니터링 전략을 수립해야 합니다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "blue_carbon_feed_methane",
+    "relevance": "related"
+  },
+  "v7:ede05f603287551880e3990aeba4908c": {
+    "headline": "완도 정도리 해조류 군락의 계절별 다양성 및 열대화 경향 분석",
+    "takeaways": [
+      "2020년 완도 정도리 조간대와 조수웅덩이에서 해조류 군락의 종 조성과 생물다양성의 연중 변화를 조사했다.",
+      "총 135종이 확인되었으며 봄철에 86종으로 종 다양성이 정점을 찍은 후 여름철에 급감했고, C/P 및 R/P 지수를 통해 열대화 경향이 확인되었다.",
+      "출현 종의 71.8%가 생태적 상태 그룹 II(ESG II)에 속해 해당 해역이 교란과 오염에 자주 노출됨을 시사하며 지속적인 모니터링이 필요하다."
+    ],
+    "implications": "연안 해역의 기후변화에 따른 열대화 진행 속도와 생태계 교란 지표를 파악하여, 지역 맞춤형 해양 생태계 보전 및 복원 정책을 수립하는 데 활용할 수 있습니다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": null,
+    "relevance": "related"
+  },
+  "v7:77f4572d12147b212774ac830e3d506d": {
+    "headline": "제주 성산산 Ulva sp.의 계절별 영양성분 및 항산화 활성 분석",
+    "takeaways": [
+      "환경 변화로 녹조류 대발생이 증가하고 있으나 유용 자원으로 활용이 부족해, 제주 성산에서 채집한 Ulva sp.의 연간 화학적 조성과 생물학적 활성 평가가 필요했다.",
+      "일 년간 분석한 결과 탄수화물 함량이 가장 높았으며, 단백질은 2023년 12월부터 2024년 2월 사이에 두드러지게 높았고 3월과 10월의 에탄올 추출물은 강력한 항산화 활성을 보였다.",
+      "제주산 Ulva sp. 추출물은 제약 및 건강기능식품 산업에서 유용한 생리활성 소재로 활용될 수 있는 잠재력을 지니고 있다."
+    ],
+    "implications": "녹조류 대발생 시 수거되는 원료의 계절별 영양 성분 변동 데이터를 활용하여, 고단백 시기나 고항산화 시기에 맞춘 맞춤형 고부가가치 기능성 소재 대량 생산 공정을 설계할 수 있습니다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "processing_materials_market",
+    "relevance": "core"
+  },
+  "v7:0462820c36478d6e0eceebc446559d59": {
+    "headline": "큰수염붉은실 추출물의 항산화 및 피부 노화 억제 효능 규명",
+    "takeaways": [
+      "산화 스트레스로 인한 피부 탄력 저하와 주름 형성을 억제할 천연 화장품 소재 발굴이 요구된다.",
+      "70% 에탄올로 추출한 Polysiphonia morrowii 추출물은 다량의 폴리페놀(95.79 mg/g)과 플라보노이드(39.77 mg/g)를 함유하며, DPPH와 ABTS 라디칼 소거능에서 우수한 항산화력을 보였다.",
+      "콜라게나아제, 엘라스타아제, 히알루로니다아제에 대한 강력한 효소 저해 활성을 보여 피부 탄력 유지 및 노화 억제 기능성 소재로서의 가치가 높다."
+    ],
+    "implications": "화장품 원료사 및 제형 연구자는 합성 항산화제를 대체할 지속 가능한 스킨케어 소재로 Polysiphonia morrowii 추출물을 활용하여 고효능 안티에이징 제품을 개발할 수 있다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "processing_materials_market",
+    "relevance": "core"
+  },
+  "v7:11a7a25151d5f35245709b62d73d4302": {
+    "headline": "갈조류 잘록이고리매 추출물의 항산화 및 피부개선 효능과 향장 소재 활용 가능성",
+    "takeaways": [
+      "갈조류 Scytosiphon lomentaria 70% 에탄올 추출물의 기능성 화장품 소재 및 고부가가치 원료로서의 활용 가능성을 평가하고자 했다.",
+      "추출물의 총폴리페놀 함량은 54.69 mg/g, 총플라보노이드 함량은 22.06 mg/g이었으며, ABTS 라디칼 소거능과 함께 콜라게나아제, 엘라스타아제, 히알루로니다아제, 티로시나아제에 대한 농도 의존적인 효소 저해 활성이 관찰되었다.",
+      "Scytosiphon lomentaria 추출물은 우수한 항산화 및 항노화 특성을 지닌 천연 기능성 소재로 활용될 수 있으며 향후 화장품 제형 개발에 유용한 참고 자료를 제공한다."
+    ],
+    "implications": "화장품 제조 현장에서 식물성 천연 항산화·항노화 원료의 수요가 증가하는 추세에 맞춰, Scytosiphon lomentaria 추출물을 고부가가치 안티에이징 스킨케어 제품의 핵심 성분으로 상용화하기 위한 제형 연구를 즉각적으로 추진할 수 있습니다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "processing_materials_market",
+    "relevance": "core"
+  },
+  "v7:2c198b1d8213baf16aeeb6d8f2d75e5c": {
+    "headline": "반려동물 사료 내 곤충 및 해조류 대체 단백질원의 영양적 가치와 활용 가능성",
+    "takeaways": [
+      "반려동물 시장의 급성장 속에서 기존 단백질원의 한계를 극복하기 위해 곤충과 해조류를 대안으로 평가하고자 연구를 수행했습니다.",
+      "동애등재와 밀웜은 건물 기준 40~60%의 조단백질과 필수 아미노산을 함유하고 우수한 소화율을 보였으며, 해조류는 건물 기준 10~30%의 조단백질과 fucoidan, alginate 등의 생리활성 물질을 제공했습니다.",
+      "곤충 단백질은 주요 영양 공급원으로, 해조류 단백질은 기능성 보조제로 활용하여 육류 기반 단백질 의존도를 낮추고 반려동물의 건강을 지원할 수 있습니다."
+    ],
+    "implications": "사료 제조사는 곤충의 높은 소화율과 해조류의 면역 조절·피부 건강 증진 효과를 결합한 맞춤형 반려동물 친환경 사료 레시피 개발에 착수해야 합니다. 양식가와 원료 공급자는 해조류 종별 영양 성분 편차와 중금속 축적 위험을 관리하여 품질 신뢰성을 높여야 합니다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "processing_materials_market",
+    "relevance": "related"
+  },
+  "v7:d41e812e34fd90d41d25db764cba1ecd": {
+    "headline": "갈조류 유래 Ishophloroglucin A의 안드로겐성 탈모 치료 효능",
+    "takeaways": [
+      "안드로겐성 탈모의 주요 원인인 5α-reductase 활성에 대응하기 위해 갈조류 Ishige okamurae에서 분리한 화합물 Ishophloroglucin A의 항탈모 효과를 조사했다.",
+      "분자 도킹 분석 결과 Ishophloroglucin A는 finasteride보다 높은 5α-reductase 결합 친화도를 보였으며, 인간모낭유두세포에서 5α-reductase 활성과 AR, DKK1, TGF-β1, IL-6 발현을 억제하고 Wnt/β-catenin 신호전달계를 활성화했다.",
+      "Ishophloroglucin A는모발 성장을 촉진하는 FGF와 VEGF의 발현을 증가시켜 안드로겐성 탈모 치료를 위한 유망한 후보물질임을 확인했다."
+    ],
+    "implications": "제약 및 코스메틱 분야 연구진은 갈조류 대사산물을 활용한 부작용 저감형 탈모 치료제 및 기능성 두피 케어 소재 개발의 선도 물질로 Ishophloroglucin A를 적극 검토할 수 있다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "processing_materials_market",
+    "relevance": "core"
+  },
+  "v7:9c35758954ee57d0fab2a0827c0eb1c2": {
+    "headline": "감태 추출 플로로탄닌, 노화 동물 모델의 인지 기능 및 시냅스 가소성 개선",
+    "takeaways": [
+      "갈조류 감태(Ecklonia cava) 유래 플로로탄닌이 노화로 인한 인지 저하 및 해마 시냅스 손상을 완화하는지 규명하고자 했다.",
+      "SAMP8 마우스에 17주간 250 또는 500 mg/kg/day 용량의 플로로탄닌을 경구 투여한 결과, Y-미로, 수동 회피, 수중 미로 시험에서 기억력이 향상되었고 해마의 시냅스 단백질(synapsin 1, PSD95) 발현과 수 dendritic spine 밀도가 회복되었다.",
+      "플로로탄닌은 NMDAR2B-CaMKII-CREB 및 BDNF-ERK 신호전달 경로를 재활성화하여 노화에 따른 인지 기능을 개선하는 유망한 식이 중재 소재로 활용될 수 있다."
+    ],
+    "implications": "제조업체 및 건강기능식품 연구자는 갈조류 유래 플로로탄닌을 활용한 고령층 인지 건강 개선용 천연 소재 및 기능성 식품 제형 개발을 추진할 수 있습니다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "processing_materials_market",
+    "relevance": "related"
+  },
+  "v7:3ab158ed0f5c54d0fe677f38f470d9b6": {
+    "headline": "Codium fragile 유래 미네랄 블록 급여를 통한 반추위 메탄 저감 효과",
+    "takeaways": [
+      "반추동물의 가축 장내 메탄 배출과 식이 에너지 손실 문제를 해결하기 위해, 필수 미량원소가 풍부한 Codium fragile 기반 미네랄 블록(TMB)의 반추위 발효 영향 연구를 수행했습니다.",
+      "체외 발효 조건에서 1% TMB 첨가 시 건물 소화율이 77.4%로 소폭 향상되었고, 메탄 생성량은 24% 크게 감소함과 동시에 총 가스 및 이산화탄소 발생량과 아세트산 대 프로피온산 비율이 낮아졌습니다.",
+      "1% TMB 첨가는 발효 효율 개선과 메탄 저감에 긍정적이나, 2% 이상의 과도한 첨가는 메탄 생성 고균과 세균 군집을 교란하여 소화율을 떨어뜨리는 것으로 나타났습니다."
+    ],
+    "implications": "가축 사양 현장에서 메탄 저감제를 활용할 때는 최적 첨가 농도 설정을 엄격히 준수해야 하며, 미생물 군집 스트레스를 유발하지 않는 정밀한 배합비 설계가 사료 효율 유지의 핵심입니다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "blue_carbon_feed_methane",
+    "relevance": "core"
+  },
+  "v7:3a41de093cda545ff5b6056b6606e30d": {
+    "headline": "인도네시아 발리·롬복 해역에서 발견된 Gelidium속 신종 2종 계통 분류",
+    "takeaways": [
+      "열대 해역의 소형 해조류는 형태적 유사성으로 인해 글로벌 생물다양성 연구에서 자주 간과되어 왔다.",
+      "cytochrome c oxidase subunit I 및 rbcL 유전자 서열 분석을 통해 인도네시아 표본에서 총 8개 종을 확인하고 2종의 신종인 Gelidium balteum과 G. brevifolium을 기재했다.",
+      "이번 결과는 기존 형태학적 연구 결과와 큰 차이를 보이며, 동남아시아 열대 해역의 숨겨진 생물다양성을 밝히기 위해 해안선 전반의 추가 채집이 시급함을 보여준다."
+    ],
+    "implications": "현장 양식가와 분류학 연구자는 열대 해역의 복잡한 해안선에서 형태적 유사성 뒤에 숨겨진 자원을 정확히 동정하기 위해 분자 marker 기반의 유전자 분석을 적극 도입해야 한다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "breeding_molecular_pathology",
+    "relevance": "core"
+  },
+  "v7:25272f82b9d8b489782dc177843e99b4": {
+    "headline": "한국 연안 Ecklonia cava의 형태적 변이와 수중 광환경의 관계",
+    "takeaways": [
+      "제주도를 포함한 한국 남·동해안 11개 해역에서 대형 갈조류인 Ecklonia cava 개체군 397마리를 대상으로 10가지 형태적 형질과 6가지 환경 변수의 상관관계를 조사했습니다.",
+      "탁도와 투명도가 형태 변동과 가장 깊은 관련을 보였으며, 완도처럼 탁한 곳에서는 엽상체와 측지가 넓어졌고 울릉도처럼 맑은 곳에서는 줄기가 길어졌습니다.",
+      "Ecklonia cava의 형태적 차이는 주로 수중 광환경에 기인하며, 이는 향후 해조숲 건강 평가와 복원 사업을 위한 기초 자료로 활용될 수 있습니다."
+    ],
+    "implications": "해조숲 조성 및 연안 복원 사업을 추진할 때, 단순한 지역별 일률적 식재가 아니라 대상 해역의 탁도와 투명도 등 수중 광환경 특성을 고려한 맞춤형 관리 전략을 수립해야 합니다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "smart_aquaculture_mass_culture",
+    "relevance": "core"
+  },
+  "v8:a4bf23f27018e0b477a42a1f80a99fb8": {
+    "headline": "사료용 Asparagopsis 첨가로 반추동물 메탄 배출 95% 저감 가능",
+    "takeaways": [
+      "농업 부문 메탄 배출의 주요 원인인 반추동물의 소화 과정 속 메탄 생성을 억제하기 위해 홍조류 사료 첨가 방안이 주목받고 있다.",
+      "사료에 건조된 Asparagopsis를 약 0.5%만 혼합해도 반추위의 메탄 배출량을 최대 95%까지 줄일 수 있는 것으로 나타났다.",
+      "아시아태평양 지역은 우수한 양식 전통과 기후 조건을 갖추고 있어 국제 협력을 바탕으로 한 Asparagopsis 대량 생산과 산업 성장에 큰 잠재력을 지닌다."
+    ],
+    "implications": "아시아태평양 연안 어가는 기존 양식 인프라를 활용해 사료용 Asparagopsis 양식으로 다각화를 도모할 수 있으며, 축산업계는 국제 공급망 구축을 통해 저탄소 사료 규제에 선제적으로 대응해야 한다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "blue_carbon_feed_methane",
+    "relevance": "core"
+  },
+  "v8:4e8ac0ac871cec48ff32e4e6285bdc1a": {
+    "headline": "근적외선 분광기로 마른김 주요 무기질 신속 측정이 가능해졌다",
+    "takeaways": [
+      "마른김의 주요 무기질 함량을 신속하게 정량하기 위한 FT-NIR 분광기 기반의 분석 모델 구축을 추진했다.",
+      "1,800~2,500 nm 파장대와 1차 미분 전처리를 적용한 PLSR 모델 결과, 4개 무기질 모두 보정 및 검증 곡선에서 0.97 이상의 회귀계수와 0.94 이상의 Q-값을 기록했다.",
+      "FT-NIR 분광법을 활용하면 마른김의 칼륨, 나트륨, 마그네슘, 칼슘 함량을 빠르고 신뢰성 있게 측정할 수 있다."
+    ],
+    "implications": "현장 가공 공장이나 품질 관리 부서에서 복잡한 화학 분석 대신 근적외선 분광기를 활용해 마른김의 무기질 성분을 실시간으로 검사하고 품질 등급을 판정하는 데 적용할 수 있다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "processing_materials_market",
+    "relevance": "core"
+  },
+  "v8:69ae108aeebf78cb03080abf4794bb6f": {
+    "headline": "지리가중회귀모형으로 분석한 지역별 김 양식 성과 결정요인",
+    "takeaways": [
+      "2023년 전국 161개 시·군 자료를 바탕으로 물김 생산량과 생산단가에 영향을 미치는 공간적 이질성을 규명하고자 했다.",
+      "일반최소제곱법과 지리가중회귀모형 분석 결과, 전남·전북은 생산기반 요인이, 충남·수도권·부산은 가공 및 수출 요인이 성과에 큰 영향을 미쳤다.",
+      "김 양식 성과는 생산·가공·수출 구조의 지역별 연계관계에 따라 차별적으로 형성됨을 확인했다."
+    ],
+    "implications": "지자체별 양식업 지원 정책을 수립할 때 일률적인 접근에서 벗어나, 지역별로 상이한 생산기반과 가공·수출 구조의 연계성을 반영한 맞춤형 전략을 도입해야 한다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "smart_aquaculture_mass_culture",
+    "relevance": "core"
+  },
+  "v8:8514d9cbe1cdde5534a23feaf9e10ffb": {
+    "headline": "머신러닝 기법으로 분석한 한국 김 수출시장의 유형과 영향요인",
+    "takeaways": [
+      "마른김을 중간재, 조미김을 최종 소비재로 분류하고 거시경제 및 무역 변수를 활용하여 수출시장을 유형화했다.",
+      "XGBoost와 SHAP을 활용한 분석 결과 77.1%의 정확도로 시장이 3가지로 분류되었고 주요 영향요인이 도출되었다.",
+      "김 수출 확대를 위해서는 시장별 특성을 반영한 차별화된 전략을 수립해야 한다."
+    ],
+    "implications": "수출 국가별 인구 구조와 경제적 지표를 고려하여 마른김과 조미김의 맞춤형 마케팅 및 물류 전략을 수립할 수 있다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "processing_materials_market",
+    "relevance": "core"
+  },
+  "v8:b3a49b22c6fcf8533fdf524b6f37ec38": {
+    "headline": "UAE 수산식품 유통채널 특성과 한국산 수산식품 진입 여건 분석",
+    "takeaways": [
+      "아랍에미리트 두바이와 아부다비의 수산시장, 대형 유통매장, 프리미엄 매장, 전문 수입·유통업체 관계자를 대상으로 현지조사와 면담을 실시하여 수입동향과 유통채널별 특성을 파악했다.",
+      "김은 일반 소매채널, 냉동·가공수산물은 한국계 전문 유통매장, 넙치는 한국·중국계 전문 유통매장에서 유통되었으며, 수입업체는 신선도와 가격을 최우선 선택 기준으로 고려했다.",
+      "한국산 수산식품의 수출 제약요인인 제품정보 부족, 높은 물류비, 수입서류 준비 어려움을 극복하기 위해 품목별 유통전략 다변화와 현지 맞춤형 홍보가 필요하다."
+    ],
+    "implications": "현지 수입업체와 셰프를 대상으로 한 소량 샘플 공급 및 조리 테스트를 우선 시행하고, 현지 식문화에 맞춘 소비방식을 지속적으로 홍보하여 장기적인 수요 기반을 구축해야 한다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "processing_materials_market",
+    "relevance": "core"
+  },
+  "v8:309b81ee052cff876564ccd6b9599d01": {
+    "headline": "한국산 양식 김의 신종 규명과 유전체·형질 기반 분류체계 개편",
+    "takeaways": [
+      "동아시아에서 '곱창김'으로 널리 양식되는 Pyropia dentata는 형태적 유사성으로 인해 오랜 기간 분류학적 혼선이 있었다.",
+      "소기관 유전체와 다중좌위 계통 분석 결과, 한국산 양식 집단은 모식산지의 Pyropia dentata와 명확히 구분되는 독립된 계통임을 확인했다.",
+      "유전체 구조와 종 분계 분석을 근거로 한국산 양식 집단을 신종인 Pyropia eudentata sp. nov.로 제안했다."
+    ],
+    "implications": "현장 양어가와 정책 담당자는 향후 종묘 관리 및 품종 인증 과정에서 신종으로 재정립된 분류 체계를 반영하여 종자 이력 추적과 지식재산권 보호를 위한 기초 자료로 활용해야 한다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "breeding_molecular_pathology",
+    "relevance": "core"
+  },
+  "v8:09c6274e713d3b7206469244ec2d961a": {
+    "headline": "탈수·냉동 보존 처리가 Pyropia yezoensis의 병원균 저항성을 높인다",
+    "takeaways": [
+      "고수온기 붉은갯병과 갯병균은 Pyropia yezoensis 양식에 심각한 위협이 된다.",
+      "약 80%의 수분 손실을 유도하는 탈수 후 -20°C 냉동(DTF) 처리된 엽체는 병원균 감염에 대해 지연된 발병과 감소된 감염 심각도를 보였다.",
+      "DTF 처리에 따른 감염 감소는 PyHSP 유전자의 전사 발현 변화와 스트레스 반응 상태에 기인한다."
+    ],
+    "implications": "현장 양식가들은 동결망 보관 관행의 생물학적 타당성을 바탕으로, 종자 보존 및 초기 병해 관리를 위한 예비 스트레스 처리 프로토콜을 현장에 도입할 수 있다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "breeding_molecular_pathology",
+    "relevance": "core"
+  },
+  "v8:a0515570c3cb5ac80fca01e3878bb509": {
+    "headline": "홍조류 Pyropia haitanensis의 제아잔틴 에폭시다제 유전자 기능과 스트레스 응답",
+    "takeaways": [
+      "홍조류 전반에 걸친 제아잔틴 에폭시다제(ZEP) 유전자의 진화적 기원과 적응 패턴을 파악하고자 했다.",
+      "재조합 PhZEP 단백질은 제아잔틴을 안테라잔틴으로 특이적으로 전환했으며, PhZEP 발현은 강광 조건에서 완만히 유도되고 건조 스트레스에서 상대 수분 함량 4.8%일 때 9.52배까지 강하게 증가했다.",
+      "PhZEP은 특이적인 제아잔틴 에폭시다제 활성을 나타내며 홍조류의 광보호 전략과 비생물적 스트레스 응답에 관여한다."
+    ],
+    "implications": "현장 양식가와 연구자는 극단적인 간조 노출이나 강광 환경에서 홍조류의 생리적 스트레스 저항성 메커니즘을 이해하고, 기후 변화에 대응하는 우수 품종 선발 및 양식 환경 관리 지표로 활용할 수 있다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "thallus_lifecycle_conchocelis",
+    "relevance": "core"
+  },
+  "v8:04609a221a8e06857e41ffdd8aa057c5": {
+    "headline": "방사무늬김 유전자 발달을 위한 분자 도구 및 형질전환 효율 평가",
+    "takeaways": [
+      "방사무늬김(Pyropia yezoensis)의 생물학적 이해를 높이기 위해 형질전환에 필요한 분자 도구의 개발이 요구된다.",
+      "총 8개의 형광 단백질 중 PyZsYellow, PyZsGFP, PysGFP의 신호가 검출되었으며, RZ 계통과 엽체 중간 부위에서 가장 높은 형질전환 효율을 확인했다.",
+      "이번 결과는 방사무늬김의 유전자 기능을 규명하고 체계적인 형질전환 도구 키트를 개발하는 데 기여한다."
+    ],
+    "implications": "현장 육종가와 연구자는 RZ 계통과 엽체 중간 부위 등 형질전환 효율이 검증된 최적의 조건과 신호 펩타이드(2×SV40, PyNP), T2A 링커를 활용하여 김 신품종 개발을 위한 유전자 교정 및 도입 실험을 효율적으로 설계할 수 있다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "breeding_molecular_pathology",
+    "relevance": "core"
+  },
+  "v8:4485362ff42973bec66e9be96629bcc2": {
+    "headline": "Pyropia haitanensis 사상체 성숙의 핵심 기전인 지질 대사 규명",
+    "takeaways": [
+      "Pyropia haitanensis의 비동기적 사상체 발달로 인한 신품종 대규모 활용 제약을 극복하고자 지질 대사 기전을 분석했다.",
+      "조기 성숙 계통(S1)은 성숙 초기 포스파티딜콜린(PC) 합성을 일찍 시작하고, 트리아실글리세롤(TG) 분해로 에너지를 빠르게 공급해 성숙을 촉진했다.",
+      "지질 대사, 특히 인지질 대사가 사상체 성숙 개시와 각포자낭 형성에 결정적인 역할을 수행한다."
+    ],
+    "implications": "양식 현장에서 신품종의 불균일한 사상체 발달 문제를 해결하기 위해, 조기 성숙 계통에서 나타나는 PC 합성 시점과 TG 축적 양상을 지표로 활용하여 종자 생산 공정을 최적화할 수 있다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "thallus_lifecycle_conchocelis",
+    "relevance": "core"
+  },
+  "v8:70b338090e3b904f7d3f787bff682de0": {
+    "headline": "홍조류 Pyropia yezoensis의 포자체 발달을 조절하는 유전자 네트워크 규명",
+    "takeaways": [
+      "홍조류 Pyropia yezoensis에서 세대교번과 포자체 발달을 조절하는 Knotted1-like homeobox 유전자의 구체적인 작동 기전은 그동안 밝혀지지 않았다.",
+      "AP-MS 분석과 분자 도구를 통해 PyKNOX가 히스톤 탈아세틸화 효소 PyHDAC2와 복합체를 형성해 유비퀴틴-프로테아제 경로의 핵심 인자인 PyCAND1의 프로모터에 결합하고 이를 억제한다는 사실을 밝혔다.",
+      "PyKNOX-PyHDAC2 복합체는 이배체 포자체 단계에서 크게 발현되어 PyCAND1의 발현과 강한 음의 상관관계를 보이며, 홍조류 생활사 전환의 진화적 통찰과 김 종묘 산업의 이론적 기반을 제공한다."
+    ],
+    "implications": "현장 양식가와 육종 연구자는 본 연구에서 밝혀진 PyKNOX 전사 조절 네트워크를 활용하여 김의 품종 개량 및 우량 종묘 대량 생산 공정의 분자 생물학적 효율을 높일 수 있다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "breeding_molecular_pathology",
+    "relevance": "core"
+  },
+  "v8:83e8e50579a480852ae4ed7334c337bf": {
+    "headline": "양식 부표 미세플라스틱이 김의 생리 및 대사에 미치는 영향",
+    "takeaways": [
+      "양식장 내 플라스틱 자재에서 유래한 미세플라스틱이 해조류 양식 환경에 미치는 영향은 아직 잘 알려지지 않았다.",
+      "0.1, 1, 10 mg/L 농도의 노화된 PVC 및 PET 미세플라스틱에 7일간 노출된 Pyropia yezoensis는 단기적인 성장률 저하 없이 고유한 생리적 및 대사적 변화를 보였다.",
+      "PVC는 지질 과산화와 탄수화물 고갈을 유도한 반면, PET는 단백질 축적과 항산화 반응을 유발하여 폴리머 종류에 따른 차별화된 생태 리스크를 나타냈다."
+    ],
+    "implications": "양식 현장에서 사용되는 플라스틱 부표의 노화 상태와 폴리머 특성을 고려한 친환경 양식 자재 관리 지침을 마련해야 한다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "smart_aquaculture_mass_culture",
+    "relevance": "core"
+  },
+  "v8:bc99180acb9fed5d81933aa8ba5b0c27": {
+    "headline": "방사무늬김 초기 포자 발달을 조절하는 푸트레신 생합성 기전 규명",
+    "takeaways": [
+      "방사무늬김 양식의 생산성을 좌우하는 각포자의 초기 발달 과정에서 푸트레신(PUT)의 생리적 역할은 명확히 밝혀지지 않았다.",
+      "각포자 발달 단계에 따라 ODC, ADC, CPA 등 푸트레신 생합성 관련 유전자의 발현과 세포 내 함량이 유의하게 증가했으며, 외생적 푸트레신 처리 시 극성화율과 감수분열율이 각각 유의하게 향상되었다.",
+      "오르니틴 탈탄산효소(ODC) 억제제와 PyODC 유전자 침묵 실험을 통해 푸트레신이 김 각포자의 초기 발달과 세포 분열에 필수적인 역할을 한다는 사실을 입증했다."
+    ],
+    "implications": "양식 현장에서 각포자의 채묘 효율과 초기 유생 생존율을 높이기 위해 푸트레신 대사 경로를 표적으로 한 정밀 대사 조절 기술 및 배양액 첨가제 개발에 활용할 수 있다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "thallus_lifecycle_conchocelis",
+    "relevance": "core"
+  },
+  "v8:669abe08dedb1c571cb39ce25fe082f1": {
+    "headline": "Porphyra haitanensis 다당류의 궤양성 대장염 예방 효과와 면역-미생물-대사 축 조절 기전",
+    "takeaways": [
+      "Porphyra haitanensis 추출 다당류의 궤양성 대장염 억제 기전은 아직 명확히 밝혀지지 않았다.",
+      "갈락토스 85.65%와 후코스 11.24%로 구성된 고압 열수 추출 다당류는 Firmicutes와 Ligilactobacillus의 증식을 촉진하고 단쇄지방산 합성을 유도했다.",
+      "생성된 단쇄지방산은 TLR4/MyD88/NF-κB 경로를 억제하여 장내 염증을 완화하고 상피 장벽을 강화했다."
+    ],
+    "implications": "제조 공정에서 고압 열수 추출을 활용해 활성 작용기와 생체 적합성이 확보된 해조류 다당류 소재를 얻을 수 있으며, 향후 염증성 장질환 환자를 위한 기능성 식이 중재 요법 개발에 활용할 수 있다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "processing_materials_market",
+    "relevance": "core"
+  },
+  "v8:1033632f7fb31cbd8c504feb0d8ebe6b": {
+    "headline": "목포 김 가공단지 방류수가 연안 수질 및 유기물 농도에 미치는 영향 분석",
+    "takeaways": [
+      "김(Pyropia spp.) 가공 산업 확장에 따라 연안 해역으로 배출되는 방류수에 대한 증거 기반의 환경 관리 필요성이 대두되었다.",
+      "2022년 11월부터 2024년 3월까지 목포의 대규모 Pyropia 가공 단지 인근을 조사한 결과, 방류 수역의 DOC와 POC가 각각 59.6%, 242% 증가했다.",
+      "총유기탄소(TOC)와 영양염류가 국소적 오염의 주요 원인으로 확인되었으며, 향후 포괄적인 TOC 기반 수질 관리 기준 마련이 필요하다."
+    ],
+    "implications": "지자체 및 환경 관리 당국은 개별 가공 공장의 방류수가 연안 생태계에 미치는 국소적 유기물 부하를 통제하기 위해, 단일 지점이 아닌 다중 참조 지점을 포함한 장기 모니터링 네트워크와 TOC 중심의 수질 규제 프레임워크를 구축해야 한다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "blue_carbon_feed_methane",
+    "relevance": "core"
+  },
+  "v8:fce21454ac3334571de6f82eec7d273c": {
+    "headline": "Porphyra haitanensis 유래 R-phycocyanin의 수중 수은 이온 고친화성 결합과 제거",
+    "takeaways": [
+      "홍조류는 중금속 흡착 잠재력이 큰 피코빌리단백질을 풍부하게 함유하고 있어, 본 연구에서는 Porphyra haitanensis의 R-phycocyanin이 중금속 이온과 결합하는 잠재력을 조사했다.",
+      "R-phycocyanin은 Pb 2+, Cd 2+, Hg 2+ 이온에 대해 각각 1.05 × 10 5, 1.99 × 10 5, 1.76 × 10 7 M -1의 결합 친화성을 보였으며, 특히 Hg 2+ 존재 시 흡광도가 75% 감소하고 융점도 14 °C 낮아졌다.",
+      "알지네이트 겔에 고정화된 R-phycocyanin 시스템은 음용수 내 Hg 2+를 2 ppb 수준에서 검출하고 2시간 동안 25% 수준으로 저감했다."
+    ],
+    "implications": "현장 수질 관리 담당자는 알지네이트 겔에 고정화된 R-phycocyanin 바이오 소재를 활용하여 오염된 수계에서 수은을 정밀하게 탐지하고 친환경적으로 제거하는 수처리 공정을 현장에 도입할 수 있다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "processing_materials_market",
+    "relevance": "core"
+  },
+  "v8:377d6a78e12962224211ac5fdd1046e4": {
+    "headline": "집약적 Porphyra yezoensis 양식은 퇴적물 탄소 격리를 장기적으로 증대시키지 않는다",
+    "takeaways": [
+      "해조류 양식이 자연 기반 블루카본 해법으로 널리 권장되고 있으나, 퇴적물의 장기 탄소 격리에 미치는 영향은 아직 명확히 규명되지 않았다.",
+      "중국 하이저우만 고밀도 Porphyra yezoensis 양식장의 표층 및 주상 퇴적물을 분석한 결과, 탄소 매몰 플럭스는 양식장과 비양식장이 각각 TOC 7.2 및 7.0 g m-2 yr-1로 차이가 없었다.",
+      "양식 활동이 표층에 단기적인 유기물 유입을 일으키더라도, 영양염 경쟁으로 인한 식물플랑크톤 감소와 유기물 분해 효과로 인해 장기 탄소 매몰 효율로 이어지지 않는다."
+    ],
+    "implications": "해조류 양식이 전 지구적 블루카본 기여도를 지닌다는 일반적인 가정을 일괄 적용하기보다, 지역별 생태계 특성과 퇴적물 다이나믹스를 고려하여 탄소 싱크 효과를 개별 사례별로 엄밀하게 평가해야 한다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": null,
+    "relevance": "core"
+  },
+  "v8:82f50bec53101c6f9ea1da8b4a7f8f5c": {
+    "headline": "Porphyra umbilicalis 피코빌리단백질 기반 KEAP1 타겟 항산화 펩타이드 발굴",
+    "takeaways": [
+      "홍조류 Porphyra umbilicalis의 피코빌리단백질은 생리활성 펩타이드의 풍부한 전구체이지만, 고효능 서열의 표적 발굴은 여전히 과제로 남아 있다.",
+      "가상 효소 가수분해와 분자 도킹 및 동역학 시뮬레이션을 통해 KEAP1 Kelch 도메인에 안정적으로 결합하는 4개의 후보 펩타이드(FK, FKP, FRS, RRF)를 선별했으며, 이 중 RRF가 가장 강한 세포 보호 효과를 보였다.",
+      "발굴된 4개 펩타이드는 농도 의존적인 라디칼 소거능과 세포 내 산화 스트레스 보호 효과를 확인하여 해양 유래 기능성 소재로서의 가능성을 입증했다."
+    ],
+    "implications": "제조 공정에서는 컴퓨터 기반 스크리닝 파이프라인을 활용해 해양 생물자원으로부터 고효능 항산화 펩타이드를 효율적으로 탐색할 수 있다. 향후 실제 P. umbilicalis 가수분해물 내에서 해당 펩타이드들의 기능을 검증하여 건강기능식품 및 바이오 소재 원료로 상용화할 수 있다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "processing_materials_market",
+    "relevance": "core"
+  },
+  "v8:9528d94e2d3a041dd2c45bb4b5583f7a": {
+    "headline": "몰디브 맹그로브 홍조류의 MAAs 화학적 기초 자료 구축",
+    "takeaways": [
+      "기후변화로 맹그로브 캐노피가 소실되어 자외선 노출이 증가한 몰디브 15개 섬의 홍조류를 대상으로 자외선 흡수 물질인 MAAs 다양성과 광환경을 조사했다.",
+      "HPLC-DAD 분석 결과 4개의 알려진 MAAs(porphyra-334, palythine, shinorine, asterina-330)가 확인되었고 총 함량은 0.23~6.66 mg g⁻¹ DW 범위를 보였으며 Wilsonosiphonia fujiae, Bostrychia tenella 등에서 고농도로 검출되었다.",
+      "확인된 화학적 기준선은 향후 맹그로브 생태계 보전 및 기후 스트레스에 대응하는 복원 전략 수립에 활용될 수 있다."
+    ],
+    "implications": "기후변화에 따른 해양 생태계의 자외선 스트레스 변화를 모니터링할 때, 맹그로브 서식 홍조류의 MAAs 변동 지표를 현장 생태계 건강성 평가와 보전 우선순위 선정에 활용할 수 있다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "processing_materials_market",
+    "relevance": "core"
+  },
+  "v8:2cfa27d0253739ad46086e4a8fe3cc72": {
+    "headline": "Neopyropia yezoensis 녹색 돌연변이주의 우수한 감칠맛과 경제 형질",
+    "takeaways": [
+      "프리미엄 해조류 제품에 대한 시장 수요를 충족하기 위해 뛰어난 풍미를 가진 새로운 Neopyropia 육종 계통 개발이 시급하다.",
+      "화학적으로 유도된 녹색 돌연변이주 Y-G001은 야생형 대비 성장률과 각포자 방출 능력이 동등하면서도, 감칠맛 아미노산이 12.13% 증가하고 등가감칠맛농도(EUC)가 68.27% 더 높았다.",
+      "Y-G001은 독특한 녹색 색소 특성과 우수한 양식 형질, 증진된 감칠맛을 동시에 갖추어 상업적 가치가 매우 높은 유망한 품종이다."
+    ],
+    "implications": "현장 양식가와 가공업체는 열풍 건조 공정이 감칠맛 성분을 증폭시키는 증폭제 역할을 한다는 점을 활용하여, 고부가가치 김 제품 생산을 위한 품종 전환 및 건조 공정 최적화에 이 돌연변이주를 도입할 수 있다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "breeding_molecular_pathology",
+    "relevance": "core"
+  },
+  "v8:6cb972e16e00f35430658efbea8dc40b": {
+    "headline": "대서양 해조류 7종의 단백질 및 영양성분 평가",
+    "takeaways": [
+      "대서양 지역의 자생, 외래, 산업 부산물 해조류를 동일한 프레임워크에서 영양적 가치와 안전성을 비교 평가할 필요가 있다.",
+      "Porphyra umbilicalis와 Gracilaria gracilis가 각각 30.78%와 22.69%로 가장 높은 단백질 함량을 보였고, Gelidium corneum 부산물은 필수아미노산 지수가 141%에 달했다.",
+      "Gracilaria gracilis, Porphyra umbilicalis 및 Gelidium corneum 부산물이 대체 단백질 소재 개발을 위한 유망한 자원으로 확인되었다."
+    ],
+    "implications": "현장 양식가와 가공 산업계는 전통적인 해조류 원료 외에도 산업 부산물과 외래종을 단백질 및 고부가가치 식품 소재 생산의 대체 원료로 활용하는 방안을 적극 검토해야 한다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "processing_materials_market",
+    "relevance": "core"
+  },
+  "v8:1662a93ea5cd1d68b70ebd5c272b657b": {
+    "headline": "상업용 식용 해조류의 무기질 및 지방산 조성 분석",
+    "takeaways": [
+      "식품 소재로서 관심이 높아진 상업용 식용 해조류의 무기질 성분과 지방산 조성을 분석하고자 했다.",
+      "갈조류는 K와 Na 함량이 높았고, 대부분의 시료에서 Cd(0.5 mg/kg)와 총 As(3 mg/kg) 기준치를 초과했으며, 콤부(kombu)는 2000 mg/kg을 넘는 극단적인 요오드 함량을 보였다.",
+      "안전한 식품 보조제 활용과 혁신 식품 개발을 위해 요오드 및 유해 원소의 철저한 관리가 필요하다."
+    ],
+    "implications": "식품 제조사와 유통업체는 규제 기준을 초과하는 카드륨, 비소, 요오드 리스크에 대응하기 위해 원료 모니터링을 강화하고, 소비자 안전을 위한 맞춤형 섭취 가이드라인을 마련해야 한다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "processing_materials_market",
+    "relevance": "core"
+  },
+  "v8:146d5d29bb01486029ccc4d616ce0a4b": {
+    "headline": "한국 성인의 규칙적인 김 섭취와 복부비만 위험 감소의 연관성",
+    "takeaways": [
+      "복부비만은 대사 질환의 주요 위험 요인이며, 김(Porphyra spp.)은 식이섬유와 생리활성 물질을 함유하고 있어 지방 축적을 억제할 수 있다.",
+      "18년 동안 40~69세 성인 5457명을 추적 조사한 결과, 김 섭취 상위 그룹은 하위 그룹에 비해 남성은 28%, 여성은 33% 낮은 복부비만 발생 위험을 보였다.",
+      "평소 김을 자주 섭취하는 식습관은 한국 성인의 복부비만 발생 위험 감소와 유의미한 연관이 있는 것으로 나타났다."
+    ],
+    "implications": "임상 영양학 및 공중보건 정책 수립 시 해조류 중심의 식단이 대사 질환 예방에 기여하는 바를 반영하여, 국민 건강 증진을 위한 식생활 지침에 전통 김 섭취 권장을 적극적으로 포함할 수 있다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "processing_materials_market",
+    "relevance": "related"
+  },
+  "v8:3cc240d35e3642de8fb4bcbc62d01a12": {
+    "headline": "Porphyra haitanensis 유산균 발효물의 대사체 및 기능성 해석에 대한 비판적 고찰",
+    "takeaways": [
+      "Lactiplantibacillus plantarum을 이용한 Porphyra haitanensis 발효 연구가 지질 저하 활성과 대사체 재편을 보고했으나, 기전 해석에 대한 검증이 필요하다.",
+      "비표적 LC-MS 분석은 상대적 풍부도의 변화를 보여주지만, GABA와 p-coumaric acid의 물질 확인 및 농도 측정에는 교차 확인과 표적 정량이 요구된다.",
+      "제조 및 저온 살균 후 관찰된 췌장 리파아제 억제 효과의 상승은 기질 효과 배제를 위한 대조군 설정이 필수적이다."
+    ],
+    "implications": "후속 연구에서는 대사체의 정체, 플럭스, 효소 활성 및 화합물별 기능에 대한 표적 검증을 수행하여 생합성 및 기능적 연관성을 엄격히 입증해야 한다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "processing_materials_market",
+    "relevance": "core"
+  },
+  "v8:84e781a917e6e5fbc8ba9b90165e593a": {
+    "headline": "저품질 4회 채취 김의 락티플란티바실러스 플란타룸 발효를 통한 지질 저하 기능성 음료 개발",
+    "takeaways": [
+      "식감이 떨어지고 향미가 불량해 활용도가 낮은 저품질의 4회 채취 Porphyra haitanensis를 고부가가치화하기 위해 Lactiplantibacillus plantarum 발효를 적용했다.",
+      "발효를 통해 췌장 리파아제와 콜레스테롤 에스테라제 최대 저해율이 각각 68.27%와 68.97%로 향상되었고, 감마아미노낙산(GABA)과 p-쿠마르산(pCA)이 핵심 대사산물로 확인되었다.",
+      "발효액 70%, 에리트리톨 10 g/100 mL, 구연산 0.5 g/100 mL로 최적화된 음료는 90°C에서 10분간 살균 시 췌장 리파아제 저해율 93.02%를 유지하며 4°C에서 308일의 저장 수명을 보였다."
+    ],
+    "implications": "버려지거나 저평가되는 저급 해조류 원료를 미생물 발효와 최적의 배합 공정을 통해 고기능성 음료 제품으로 전환하여, 해조류 가공 부산물의 부가가치를 높이는 실무적 지침으로 활용할 수 있다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "processing_materials_market",
+    "relevance": "core"
+  },
+  "v8:c78aee19ca1535bca1e7db622830ab5f": {
+    "headline": "식용 홍조류 Porphyra tenera 다당류 추출물의 노로바이러스 결합 억제 효과",
+    "takeaways": [
+      "인간 노로바이러스가 세포 침입을 위해 숙주 세포의 수용체에 결합하는 특성을 바탕으로, 식용 홍조류 Porphyra tenera 유래 다당류의 억제 활성을 조사했다.",
+      "Porphyra tenera 다당류 추출물의 분자량 분획인 F3-10은 P 도메인과 직접 결합했으며, 1 mg/mL 농도에서 바이러스 역가를 1.8 log10 PFU/mL 감소시켰고 모의 소화 조건에서도 효과를 유지했다.",
+      "갈락토스, 포도당, 후코스, 자이로스로 구성된 F3-10 분획은 인간 노로바이러스의 숙주 세포 수용체 결합을 차단하는 유망한 소재임을 확인했다."
+    ],
+    "implications": "식품 가공 및 천연물 소재 산업에서는 Porphyra tenera 유래 다당류 분획을 활용하여 식중독 원인 물질인 노로바이러스를 제어하는 기능성 식품 첨가물이나 위생 소재를 개발할 수 있다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "processing_materials_market",
+    "relevance": "core"
+  },
+  "v8:13aa70689333157c4863df16dff1c51f": {
+    "headline": "Neopyropia yezoensis 저온 내성 품종 선발을 위한 복합 평가 모델 개발",
+    "takeaways": [
+      "동아시아 겨울철 양식 환경의 저온 스트레스는 Neopyropia yezoensis의 생장과 수확량에 큰 타격을 주어 내성 품종 선발 기준 마련이 필수적이다.",
+      "60개 균주의 13가지 형질을 분석한 결과 일일생장률과 엽체 면적, 엽록소 a 등이 저온 내성의 주요 요인으로 확인되었으며 65% 이상의 균주가 저온 내성을 보였다.",
+      "회귀계수 R² 0.955의 최적 저온 내성 종합 평가 모델(D)을 확립하여 산업적 육종 현장에서 우수 품종을 신속하게 선발할 수 있게 되었다."
+    ],
+    "implications": "현장 양식가와 육종 연구자는 제시된 종합 평가 모델(D)을 활용하여 대규모 균주 집단에서 저온 내성 개체를 조기에 선별하고, 기후 변화에 대응하는 우량 품종 개발 기간을 단축할 수 있다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "breeding_molecular_pathology",
+    "relevance": "core"
+  },
+  "v8:4e0e09e0ece8da1763c07b68f0ca6039": {
+    "headline": "Rugulopteryx okamurae 침입 초기 모바일 저서생물 군집 재편 양상 분석",
+    "takeaways": [
+      "북태평양 갈조류 Rugulopteryx okamurae의 지중해 및 북대서양 확산이 저서 생태계에 미치는 연쇄적 생태학적 영향은 아직 예측하기 어렵다.",
+      "알보란해의 침입 및 비침입 정점에서 BACI 설계를 활용한 시공간 평가 결과, 도입 2년 차의 R. okamurae 군집은 토착종 Halopteris scoparia보다 기존 침입종인 Asparagopsis taxiformis와 유사한 양상을 보였다.",
+      "초기 침입 단계에서 포착된 이러한 저서생물 군집의 재편은 종 및 서식지 의존적으로 나타나며 광범위한 분류학적 영향보다 선행할 수 있다."
+    ],
+    "implications": "해양 침입종의 생태적 영향을 평가할 때 초기 정착 단계의 미세한 군집 변화와 기존 침입종의 상호작용을 함께 고려하는 종 수준의 모니터링 체계를 구축해야 한다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "blue_carbon_feed_methane",
+    "relevance": "related"
+  },
+  "v8:ede05f603287551880e3990aeba4908c": {
+    "headline": "완도 정도리 해조류 군락의 계절별 다양성과 아열대화 경향 분석",
+    "takeaways": [
+      "전라남도 완도군 정도리 조간대 암반 지역과 조수웅덩이에서 2020년 2월부터 11월까지 해조류의 생물다양성과 군락 구조를 조사했다.",
+      "총 135종의 해조류가 확인되었으며 봄철에 86종으로 종 다양성이 가장 높았고, 기능형 군에서는 성긴가지형이 39.3%로 가장 우세했으며 전체의 71.8%가 생태학적 상태 그룹 II에 속했다.",
+      "C/P, R/P, (C+R)/P 지수 분석 결과 열대 및 온대 요소로의 전환이 관찰되어 기존 연구 대비 아열대화 경향이 나타났다."
+    ],
+    "implications": "현장 관리자와 정책 담당자는 완도 연안의 잦은 환경 교란과 아열대화 추세에 대응하기 위해 해조류 다양성 변동을 지속적으로 모니터링하고 생태계 보전 대책을 수립해야 한다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "blue_carbon_feed_methane",
+    "relevance": "core"
+  },
+  "v8:77f4572d12147b212774ac830e3d506d": {
+    "headline": "제주산 파래(Ulva sp.) 추출물의 계절별 영양 성분 및 항산화 활성",
+    "takeaways": [
+      "환경 변화로 녹조류 대발생이 증가하고 있으나 유용 자원으로 활용되지 못하는 Ulva sp.의 기초 연구가 필요하다.",
+      "제주 성산에서 1년간 채집한 Ulva sp.의 영양 성분을 분석한 결과 탄수화물이 가장 많았고 단백질은 2022년 12월부터 2023년 2월 사이에 두드러지게 높았으며, 2023년 3월과 10월의 70% 에탄올 추출물에서 강력한 항산화 활성이 나타났다.",
+      "Ulva sp. 추출물은 제약 및 건강기능식품 산업에서 활용될 수 있는 생물학적 활성 잠재력을 지니고 있다."
+    ],
+    "implications": "제조업체와 소재 연구자는 계절별 영양 성분과 항산화 활성 변화 데이터를 기반으로 기능성 원료 수급 시기를 최적화할 수 있다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "processing_materials_market",
+    "relevance": "core"
+  },
+  "v8:0462820c36478d6e0eceebc446559d59": {
+    "headline": "큰수염붉은실 추출물의 항산화 및 피부 노화 억제 효능 규명",
+    "takeaways": [
+      "폴리페놀과 플라보노이드가 풍부한 홍조류 큰수염붉은실(Polysiphonia morrowii) 추출물의 항산화 및 항노화 효과를 평가하고자 했다.",
+      "70% 에탄올 추출물은 폴리페놀 95.79 mg/g, 플라보노이드 39.77 mg/g을 함유했고, DPPH(IC50 32.4 μg/mL) 및 ABTS(IC50 10.2 μg/mL) 라디칼 소거능과 함께 콜라게나아제, 엘라스타아제, 히알루로니다아제에 대한 억제 활성을 보였다.",
+      "큰수염붉은실 추출물은 피부 기질 분해 효소를 조절하여 피부 노화를 완화할 수 있으며, 친환경적인 천연 화장품 소재로 활용될 수 있다."
+    ],
+    "implications": "화장품 제조사는 합성 원료의 부작용을 줄이고 피부 탄력 유지와 주름 개선 효과를 높이는 친환경 안티에이징 제형 개발에 본 추출물을 기능성 활성 성분으로 적용할 수 있다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "processing_materials_market",
+    "relevance": "core"
+  },
+  "v8:11a7a25151d5f35245709b62d73d4302": {
+    "headline": "갈조류 잘록이고리매 추출물의 항산화 및 항노화 효능과 향장 소재 잠재력",
+    "takeaways": [
+      "갈조류 Scytosiphon lomentaria 70% 에탄올 추출물의 기능성 화장품 소재 및 고부가가치 물질로서의 잠재력을 평가하고자 했다.",
+      "추출물의 총폴리페놀 함량은 54.69 mg/g, 총플라보노이드 함량은 22.06 mg/g이었으며, 4가지 효소 억제 활성이 농도 의존적으로 증가했고 특히 엘라스타제와 히알루로니다제에 대해 강력한 억제력을 보였다.",
+      "Scytosiphon lomentaria 추출물은 우수한 항산화 및 항노화 특성을 지녀 천연 기능성 소재로 활용될 수 있다."
+    ],
+    "implications": "화장품 제형 개발 과정에서 천연 항산화 및 주름 개선 성분을 확보하기 위해 Scytosiphon lomentaria 추출물을 유효 성분으로 활용한 고부가가치 제품 상용화 연구에 적용할 수 있다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "processing_materials_market",
+    "relevance": "core"
+  },
+  "v8:2c198b1d8213baf16aeeb6d8f2d75e5c": {
+    "headline": "반려동물 사료 내 곤충 및 해조류 기반 대체 단백질원의 잠재력 분석",
+    "takeaways": [
+      "반려동물 시장의 급성장 속에서 기존 단백질원의 한계를 극복하기 위해 곤충과 해조류를 대안으로 평가했다.",
+      "동애등재와 밀웜은 건물 기준 40~60%의 조단백질을 함유하며, 해조류는 다불포화지방산과 후코이단 등 기능성 물질을 제공한다.",
+      "곤충 단백질은 주 영양원으로, 해조류 단백질은 기능성 보조제로 활용하여 육류 의존도를 낮추고 지속 가능성을 높일 수 있다."
+    ],
+    "implications": "사료 제조업계는 알레르기 및 중금속 축적 위험을 방지하기 위해 원료별 가공 공정과 종간 편차를 철저히 관리해야 하며, 이를 바탕으로 친환경 프리미엄 펫푸드 제형을 설계할 수 있다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "processing_materials_market",
+    "relevance": "related"
+  },
+  "v8:d41e812e34fd90d41d25db764cba1ecd": {
+    "headline": "갈조류 유래 Ishophloroglucin A의 안드로겐성 탈모 치료 효과",
+    "takeaways": [
+      "안드로겐성 탈모는 5α-reductase 활성으로 생성된 5α-DHT에 의해 유발되므로, 갈조류인 Ishige okamurae에서 분리한 Ishophloroglucin A의 항탈모 효과를 조사했다.",
+      "분자 도킹 분석에서 Ishophloroglucin A는 finasteride보다 5α-reductase에 대해 더 높은 결합 친화도를 보였으며, human dermal papilla cells에서 효소 활성과 수용체 발현을 억제하고 Wnt/β-catenin 신호전달 경로를 활성화했다.",
+      "이번 결과는 Ishophloroglucin A가 안드로겐성 탈모 치료를 위한 유망한 후보 물질임을 시사한다."
+    ],
+    "implications": "제약 및 코스메틱 분야 연구자들은 finasteride를 대체할 천연물 기반 탈모 치료제 및 기능성 두피 케어 제품 개발 과정에서 Ishige okamurae 추출물과 Ishophloroglucin A를 핵심 원료로 활용할 수 있다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "processing_materials_market",
+    "relevance": "core"
+  },
+  "v8:9c35758954ee57d0fab2a0827c0eb1c2": {
+    "headline": "Ecklonia cava 유래 플로로탄닌, 노화 동물 모델의 인지 기능 및 시냅스 가소성 개선",
+    "takeaways": [
+      "노화에 따른 인지 저하는 해마의 시냅스 구조 및 기능 손상과 깊은 관련이 있어 이에 대한 식단 기반의 보호 전략이 요구된다.",
+      "SAMP8 마우스에게 Ecklonia cava 유래 플로로탄닌을 250 또는 500 mg/kg/day 용량으로 17주간 경구 투여한 결과, 단기·장기 및 공간 기억 능력이 유의미하게 향상되었고 해마 시냅스 단백질인 synapsin 1과 PSD95의 발현이 증가했다.",
+      "플로로탄닌 보충제는 시냅스 가소성 및 신경 영양 지지와 관련된 주요 신호전달 경로를 재활성화함으로써 노화로 인한 인지 기능 저하를 완화할 수 있다."
+    ],
+    "implications": "해조류 유래 플로로탄닌 소재는 노화 관련 인지 기능 저하를 예방하거나 지연하기 위한 기능성 식품 및 천연물 의약품 개발의 유망한 식이 중재 전략으로 활용될 수 있다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "processing_materials_market",
+    "relevance": "related"
+  },
+  "v8:3ab158ed0f5c54d0fe677f38f470d9b6": {
+    "headline": "Codium fragile 기반 미네랄 블록 첨가가 반추위 메탄 배출에 미치는 영향",
+    "takeaways": [
+      "반추동물의 장내 메탄 발생은 온실가스 배출을 가중시키고 사료 에너지 손실을 초래한다.",
+      "Codium fragile 유래 미네랄 블록 1% 첨가는 건물 소화율을 77.4%로 개선하고 메탄 생성을 24% 유의하게 감소시켰다.",
+      "1% 첨가구는 발효 효율을 높이고 메탄을 저감했으나, 2% 이상 첨가 시 미생물 스트레스로 소화율이 저하되었다."
+    ],
+    "implications": "현장 양식가와 사료 제조업체는 해조류 유래 미네랄 첨가제의 최적 배합 비율을 준수하여 가축의 소화율 저하를 방지하고 온실가스 저감 효과를 극대화해야 한다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "blue_carbon_feed_methane",
+    "relevance": "core"
+  },
+  "v8:3a41de093cda545ff5b6056b6606e30d": {
+    "headline": "인도네시아 해역의 Gelidium 속 신종 발굴 및 분자 계통 분석",
+    "takeaways": [
+      "열대 해역의 소형 Gelidium 속은 형태적 유사성으로 인해 과소평가되어 글로벌 생물다양성 이해에 한계가 있었다.",
+      "2009년부터 2026년까지 수집된 표본의 cytochrome c oxidase subunit I 및 rbcL 서열 분석 결과 총 8종이 확인되었으며, 형태학적 특징을 바탕으로 Gelidium balteum sp. nov.와 Gelidium brevifolium sp. nov. 두 신종을 기재했다.",
+      "분자 유전 분석을 통해 확인된 종들은 기존 형태 중심 연구와 큰 차이를 보여, 동남아시아 열대 해역의 숨겨진 생물다양성을 밝히기 위한 추가적인 해안 채집의 필요성을 입증했다."
+    ],
+    "implications": "동남아시아 해역의 정확한 해조류 자원 관리와 신종 발굴을 위해서는 전통적인 형태학적 분류를 넘어 rbcL 등 분자 markers를 활용한 계통분류학적 검증이 필수적이다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "breeding_molecular_pathology",
+    "relevance": "core"
+  },
+  "v8:25272f82b9d8b489782dc177843e99b4": {
+    "headline": "한국 연안 Ecklonia cava의 형태적 다양성은 수중 광환경에 의해 결정된다",
+    "takeaways": [
+      "한국 남동해안 및 제주도를 포함한 11개 지역의 Ecklonia cava 개체군을 대상으로 서식지 환경과 형태적 특성 간의 관계를 조사했다.",
+      "총 397개체의 형태 분석 결과, 탁도와 투명도가 형태 변이와 가장 강하게 연관되었으며 특히 완도 등 탁한 해역에서는 넓은 엽상부, 울릉도 등 맑은 해역에서는 줄기 신장이 관찰되었다.",
+      "Ecklonia cava의 형태적 변이는 수중 광환경에 직접적으로 기인하며, 이는 켈프숲의 건강성 평가와 보전·복원을 위한 기초 자료로 활용될 수 있다."
+    ],
+    "implications": "현장 양식가와 복원 사업자는 해역별 탁도와 광환경 차이가 켈프의 형태적 발달에 미치는 영향을 고려하여 최적의 이식 및 서식처 관리 전략을 수립해야 한다.",
+    "is_ai": true,
+    "summary_source": "gemini",
+    "section": "smart_aquaculture_mass_culture",
+    "relevance": "core"
   }
 }

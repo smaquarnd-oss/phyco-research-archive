@@ -826,7 +826,18 @@ def classify_article_safe(article: dict, taxa_list: list, categories_raw: Any) -
 # 7. 동적 요약 엔진 (Gemini ➔ Claude ➔ 룰베이스 하이브리드)
 # ═══════════════════════════════════════════════════════════════════════════
 
-SUMMARY_PROMPT_VERSION = "v6"  # 프롬프트를 바꾸면 올려서 캐시를 무효화하세요.
+SUMMARY_PROMPT_VERSION = "v8"  # 프롬프트를 바꾸면 올려서 캐시를 무효화하세요.
+
+# 번역 문체 규칙: 학명·기술 용어를 억지로 음차하지 않고, 나머지는 자연스러운 한국어로.
+# 논문 요약과 섹션 Editor's Insight 프롬프트에 함께 들어갑니다.
+TERMINOLOGY_RULES = """[용어·문체 규칙]
+- 학명(속명·종명)은 라틴어 원문 그대로 씁니다. 예: Asparagopsis taxiformis, Pyropia haitanensis, Lactiplantibacillus plantarum
+  ('아스파라고프시스', '락티플란티바실러스 플란타룸'처럼 소리 나는 대로 한글로 옮기지 마세요.)
+- 국문 일반명(방사무늬김·잇바디돌김 등)은 초록에 그 이름이 나오거나 학명과의 대응이 확실할 때만 괄호로 덧붙입니다. 추측해서 붙이지 마세요.
+- 유전자·단백질·효소의 기호와 약어, 분석 기법명은 원문 그대로 씁니다. 예: rbcL, PhZEP, KEAP1, R-phycocyanin, LC-MS, FT-NIR, PCR, MAAs
+- 학계에서 널리 쓰는 한국어 용어가 있으면 한국어로 씁니다. 예: 광합성, 사상체, 각포자, 다당류, 항산화, 제아잔틴, 반추위
+- 영어 문장 구조를 그대로 옮긴 직역투를 피하고, 한국어 학술 기사처럼 자연스럽게 다듬으세요.
+- 문장 끝은 '~했다', '~이다', '~할 수 있다' 같은 기사체로 통일하세요. ('~합니다', '~입니다' 혼용 금지)"""
 
 
 def _parse_ai_json(text: str) -> Optional[dict]:
@@ -981,6 +992,9 @@ def generate_natural_summary(
 3. takeaways 3개는 서로 다른 내용(배경 / 핵심 결과 / 결론)이어야 하며, 초록 문장을 그대로 옮기지 말고 요약하세요.
 4. implications 는 takeaways 의 어느 문장과도 겹치지 않는, 현장 양식가·연구자·정책 담당자 관점의 "그래서 무엇을 할 수 있나"를 쓰세요.
    '본 연구는 ~에 기여합니다' 같은 상투적 문장은 금지입니다.
+5. 아래 용어·문체 규칙을 지키세요.
+
+{TERMINOLOGY_RULES}
 
 [논문 정보]
 - 논문 제목: {title}
@@ -1093,6 +1107,8 @@ def generate_section_insights(papers: List[dict]) -> Dict[str, dict]:
 - 개별 논문을 하나씩 나열하지 말고, 여러 논문에 걸친 공통 흐름·대비되는 결과를 묶어 서술하세요.
 - 목록에 없는 생물·수치·기술을 지어내지 마세요.
 - 논문이 1~2편뿐이면 그 논문들의 의미를 간결하게 정리하세요.
+
+{TERMINOLOGY_RULES}
 
 [논문 목록]
 {chr(10).join(lines)}
